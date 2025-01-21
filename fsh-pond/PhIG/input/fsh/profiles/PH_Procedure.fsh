@@ -1,6 +1,6 @@
 Profile: PH_Procedure
 Parent: Procedure
-Id: PH_Procedure
+Id: PH-Procedure
 * ^url = "https://example.org/fhir/StructureDefinition/PH_Procedure"
 * ^status = #draft
 * extension contains

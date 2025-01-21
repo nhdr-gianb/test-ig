@@ -1,6 +1,6 @@
 Profile: PH_Person
 Parent: Person
-Id: PH_Person
+Id: PH-Person
 * ^url = "https://example.org/fhir/StructureDefinition/PH_Person"
 * ^status = #draft
 * extension contains Sex named sex 0..*

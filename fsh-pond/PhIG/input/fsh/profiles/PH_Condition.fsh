@@ -1,9 +1,9 @@
 Profile: PH_Condition
 Parent: Condition
-Id: PH_Condition
+Id: PH-Condition
 * ^url = "https://example.org/fhir/StructureDefinition/PH_Condition"
 * ^status = #draft
-* extension contains Ext_Organization named extOrganization 0..*
+* extension contains ExtOrganization named extOrganization 0..*
 * extension[extOrganization] ^short = "Health facility where the encounter was"
 * extension[extOrganization] ^definition = "Health facility where the encounter was"
 * extension[extOrganization] ^comment = "This is an extension"

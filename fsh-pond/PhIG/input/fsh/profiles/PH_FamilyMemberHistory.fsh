@@ -1,6 +1,6 @@
 Profile: PH_FamilyMemberHistory
 Parent: FamilyMemberHistory
-Id: PH_FamilyMemberHistory
+Id: PH-FamilyMemberHistory
 * ^url = "https://example.org/fhir/StructureDefinition/PH_FamilyMemberHistory"
 * ^status = #draft
 * instantiatesCanonical ..0

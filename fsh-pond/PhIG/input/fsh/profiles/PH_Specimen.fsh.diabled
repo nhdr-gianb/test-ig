@@ -1,12 +1,12 @@
 Profile: PH_Specimen
 Parent: Specimen
-Id: PH_Specimen
+Id: PH-Specimen
 * ^url = "https://example.org/fhir/StructureDefinition/PH_Specimen"
 * ^status = #draft
 * extension contains
     RecordedDate named recordedDate 0..* and
     ResultDate named resultDate 0..* and
-    Ext_Organization named extOrganization 0..* and
+    ExtOrganization named extOrganization 0..* and
     Species named species 0..*
 * extension[recordedDate] ^short = "The recordedDate represents when this particular Specimen record was uploaded into the NHDR."
 * extension[recordedDate] ^definition = "The recordedDate represents when this particular Specimen record was uploaded into the NHDR."

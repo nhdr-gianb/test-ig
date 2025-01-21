@@ -1,6 +1,6 @@
 Profile: PH_MedicationDispense
 Parent: MedicationDispense
-Id: PH_MedicationDispense
+Id: PH-MedicationDispense
 * ^url = "https://example.org/fhir/StructureDefinition/PH_MedicationDispense"
 * ^status = #draft
 * extension contains Cost named cost 0..*

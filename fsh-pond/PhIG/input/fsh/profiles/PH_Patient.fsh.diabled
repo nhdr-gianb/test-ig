@@ -1,6 +1,6 @@
 Profile: PH_Patient
 Parent: Patient
-Id: PH_Patient
+Id: PH-Patient
 * ^url = "https://example.org/fhir/StructureDefinition/PH_Patient"
 * ^status = #draft
 * . ^short = "Information about an individua ql receiving health care services"

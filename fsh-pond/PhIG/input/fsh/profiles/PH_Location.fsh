@@ -1,6 +1,6 @@
 Profile: PH_Location
 Parent: Location
-Id: PH_Location
+Id: PH-Location
 * ^url = "https://example.org/fhir/StructureDefinition/PH_Location"
 * ^status = #draft
 * meta ..0

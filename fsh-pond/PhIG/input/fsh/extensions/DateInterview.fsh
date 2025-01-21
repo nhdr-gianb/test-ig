@@ -1,6 +1,6 @@
 Extension: DateInterview
 Id: DateInterview
-Context: encounter
+Context: Encounter
 * ^url = "https://example.org/fhir/StructureDefinition/DateInterview"
 * ^status = #draft
 * value[x] only date

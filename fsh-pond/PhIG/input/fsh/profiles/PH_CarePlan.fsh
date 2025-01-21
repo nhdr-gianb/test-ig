@@ -1,6 +1,6 @@
 Profile: PH_CarePlan
 Parent: CarePlan
-Id: PH_CarePlan
+Id: PH-CarePlan
 * ^url = "https://example.org/fhir/StructureDefinition/PH_CarePlan"
 * ^status = #draft
 * identifier ..0

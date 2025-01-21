@@ -1,6 +1,6 @@
 Profile: PH_QuestionnaireResponse
 Parent: QuestionnaireResponse
-Id: PH_QuestionnaireResponse
+Id: PH-QuestionnaireResponse
 * ^url = "https://example.org/fhir/StructureDefinition/PH_QuestionnaireResponse"
 * ^status = #draft
 * identifier ..0

@@ -1,6 +1,6 @@
 Extension: PatientClassification
 Id: PatientClassification
-Context: encounter
+Context: Encounter
 * ^url = "https://example.org/fhir/StructureDefinition/PatientClassification"
 * ^status = #draft
 * value[x] only CodeableConcept

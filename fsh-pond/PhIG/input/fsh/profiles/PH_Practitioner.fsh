@@ -1,6 +1,6 @@
 Profile: PH_Practitioner
 Parent: Practitioner
-Id: PH_Practitioner
+Id: PH-Practitioner
 * ^url = "https://example.org/fhir/StructureDefinition/PH_Practitioner"
 * ^status = #draft
 * . ^definition = "A person who is directly involved in the provisioning of healthcare."

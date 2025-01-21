@@ -1,5 +1,5 @@
-Extension: Ext_Organization
-Id: Ext_Organization
+Extension: ExtOrganization
+Id: ExtOrganization
 Context: Condition, Procedure, Observation, Specimen, DiagnosticReport, MedicationAdministration, MedicationStatement, Immunization
 * ^url = "https://example.org/fhir/StructureDefinition/Ext_Organization"
 * ^status = #draft

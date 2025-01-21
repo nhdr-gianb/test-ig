@@ -1,9 +1,9 @@
 Profile: PH_Immunization
 Parent: Immunization
-Id: PH_Immunization
+Id: PH-Immunization
 * ^url = "https://example.org/fhir/StructureDefinition/PH_Immunization"
 * ^status = #draft
-* extension contains Ext_Organization named extOrganization 0..*
+* extension contains ExtOrganization named extOrganization 0..*
 * extension[extOrganization] ^short = "Organization where the immunization was conducted"
 * extension[extOrganization] ^definition = "Organization where the immunization was conducted."
 * extension[extOrganization] ^comment = "This is an extension"

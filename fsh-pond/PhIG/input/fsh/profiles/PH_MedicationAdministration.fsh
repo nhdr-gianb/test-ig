@@ -1,10 +1,10 @@
 Profile: PH_MedicationAdministration
 Parent: MedicationAdministration
-Id: PH_MedicationAdministration
+Id: PH-MedicationAdministration
 * ^url = "https://example.org/fhir/StructureDefinition/PH_MedicationAdministration"
 * ^status = #draft
 * extension contains
-    Ext_Organization named extOrganization 0..* and
+    ExtOrganization named extOrganization 0..* and
     ExtEncounter named extEncounter 0..* and
     RecordedDate named recordedDate 0..*
 * extension[extOrganization] ^short = "The health facility code where the medication was administered."

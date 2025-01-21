@@ -1,6 +1,6 @@
 Profile: PH_ServiceRequest
 Parent: ServiceRequest
-Id: PH_ServiceRequest
+Id: PH-ServiceRequest
 * ^url = "https://example.org/fhir/StructureDefinition/PH_ServiceRequest"
 * ^status = #draft
 * identifier ..0
