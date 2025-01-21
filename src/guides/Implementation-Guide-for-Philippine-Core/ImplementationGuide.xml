@@ -1,9 +1,10 @@
 <ImplementationGuide xmlns="http://hl7.org/fhir">
-  <url value="/guide/Implementation-Guide-for-Philippine-Core?version=current" />
+  <url value="https://fhirlab.net/guide/Implementation-Guide-for-Philippine-Core" />
+  <version value="1.0.0"/>
   <name value="Implementation Guide for the Philippine Core" />
   <status value="draft" />
+  <packageId value="implementation.guide.nhdr"/>
   <fhirVersion value="4.0.1" />
-  <version value="1.0.0" />
   <definition>
     <page>
       <nameUrl value="Home" />
