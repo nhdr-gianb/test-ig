@@ -6,8 +6,6 @@ Id: PH-MedicationDispense
 * extension contains Cost named cost 0..*
 * extension[cost] ^short = "Cost of the medication"
 * extension[cost] ^definition = "Cost of the medication"
-* extension[cost] ^comment = "This is an extension"
-* extension[cost] ^isModifier = false
 * identifier ..0
 * partOf ..0
 * statusReason[x] ..0

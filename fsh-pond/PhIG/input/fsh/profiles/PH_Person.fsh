@@ -6,8 +6,6 @@ Id: PH-Person
 * extension contains Sex named sex 0..*
 * extension[sex] ^short = "Sex assigned at birth"
 * extension[sex] ^definition = "The sex assigned at birth, as documented on the birth registration"
-* extension[sex] ^comment = "This is an extension"
-* extension[sex] ^isModifier = false
 * gender ..0
 * photo ..0
 * managingOrganization ..0

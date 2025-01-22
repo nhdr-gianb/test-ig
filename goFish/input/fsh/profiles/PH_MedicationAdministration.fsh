@@ -9,16 +9,16 @@ Id: PH_MedicationAdministration
     RecordedDate named recordedDate 0..*
 * extension[extOrganization] ^short = "The health facility code where the medication was administered."
 * extension[extOrganization] ^definition = "The health facility code where the medication was administered."
-* extension[extOrganization] ^comment = "This is an extension"
-* extension[extOrganization] ^isModifier = false
+
+
 * extension[extEncounter] ^short = "The encounter when the medicine was consumed or administered."
 * extension[extEncounter] ^definition = "The encounter when the medicine was consumed or administered."
-* extension[extEncounter] ^comment = "This is an extension"
-* extension[extEncounter] ^isModifier = false
+
+
 * extension[recordedDate] ^short = "The recordedDate represents when this particular Medication Administration record was uploaded into the NHDR."
 * extension[recordedDate] ^definition = "The recordedDate represents when this particular Medication Administration record was uploaded into the NHDR."
-* extension[recordedDate] ^comment = "This is an extension"
-* extension[recordedDate] ^isModifier = false
+
+
 * instantiates ..0
 * partOf ..0
 * status from MedicalAdministrationStatus (required)

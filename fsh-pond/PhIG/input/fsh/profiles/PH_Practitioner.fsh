@@ -9,12 +9,8 @@ Id: PH-Practitioner
     Sex named sex 0..*
 * extension[signature] ^short = "Practitioner Signature"
 * extension[signature] ^definition = "Practitioner Signature"
-* extension[signature] ^comment = "This is an extension"
-* extension[signature] ^isModifier = false
 * extension[sex] ^short = "The sex assigned at birth, as documented on the birth registration"
 * extension[sex] ^definition = "The sex assigned at birth, as documented on the birth registration"
-* extension[sex] ^comment = "This is an extension"
-* extension[sex] ^isModifier = false
 * gender ..0
 * birthDate ..0
 * photo ..0

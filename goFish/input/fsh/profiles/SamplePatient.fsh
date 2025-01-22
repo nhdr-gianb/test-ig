@@ -7,7 +7,7 @@ Description: "This is a sample patient"
 * extension contains
     FatherName named fatherName 0..* and
     Sibling named sibling 0..*
-* extension[fatherName] ^isModifier = false
-* extension[sibling] ^isModifier = false
+
+
 * active ..0
 * telecom ..0

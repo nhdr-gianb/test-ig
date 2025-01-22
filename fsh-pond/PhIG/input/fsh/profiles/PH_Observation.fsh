@@ -13,17 +13,11 @@ Id: PH-Observation
 /*
 * extension[address] ^short = "Address where the observation was made"
 * extension[address] ^definition = "Address where the observation was made"
-* extension[address] ^comment = "This is an extension"
-* extension[address] ^isModifier = false
 */
 * extension[extOrganization] ^short = "Health facility where the observation was made"
 * extension[extOrganization] ^definition = "Health facility where the observation was made"
-* extension[extOrganization] ^comment = "This is an extension"
-* extension[extOrganization] ^isModifier = false
 * extension[recordedDate] ^short = "Date when the observation was submitted to NHDDR"
 * extension[recordedDate] ^definition = "Date when the observation was submitted to NHDDR"
-* extension[recordedDate] ^comment = "This is an extension"
-* extension[recordedDate] ^isModifier = false
 * basedOn ..0
 * partOf ..0
 * focus ..0

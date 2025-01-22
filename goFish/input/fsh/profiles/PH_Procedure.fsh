@@ -9,16 +9,16 @@ Id: PH_Procedure
     IllnessClass named illnessClass 0..*
 * extension[organization] ^short = "The facility where the procedure was done"
 * extension[organization] ^definition = "The facility where the procedure was done"
-* extension[organization] ^comment = "This is an entension"
-* extension[organization] ^isModifier = false
+
+
 * extension[recordedDate] ^short = "This is the date the procedure was recorded in NHDR"
 * extension[recordedDate] ^definition = "This is the date the procedure was recorded in NHDR"
-* extension[recordedDate] ^comment = "This is an extension"
-* extension[recordedDate] ^isModifier = false
+
+
 * extension[illnessClass] ^short = "Illness code of the disease as listed in Philhealth"
 * extension[illnessClass] ^definition = "Illness code of the disease as listed in Philhealth"
-* extension[illnessClass] ^comment = "This is an extension"
-* extension[illnessClass] ^isModifier = false
+
+
 * instantiatesCanonical ..0
 * instantiatesUri ..0
 * basedOn ..0

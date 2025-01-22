@@ -19,60 +19,60 @@ Id: PH_Patient
     Sex named sex 0..*
 * extension[nationality] from $NationalityValueSet (required)
 * extension[nationality] ^definition = "Code representing nationality of patient."
-* extension[nationality] ^comment = "This is an extension"
-* extension[nationality] ^isModifier = false
+
+
 * extension[nationality] ^binding.description = "Nationality ValueSet"
 * extension[nationality].extension[code] from $NationalityValueSet (required)
 * extension[nationality].extension[code] ^sliceName = "code"
-* extension[religion] ^comment = "This is an extension"
-* extension[religion] ^isModifier = false
+
+
 * extension[indigeneousGroup] from IndigenousGroupValueSet (required)
 * extension[indigeneousGroup] ^short = "Indigeneous Group"
 * extension[indigeneousGroup] ^definition = "The indigenerous/ethnic group where the person belongs"
-* extension[indigeneousGroup] ^comment = "This is an extension"
-* extension[indigeneousGroup] ^isModifier = false
+
+
 * extension[indigeneousGroup] ^binding.description = "IndigenousGroup"
 * extension[indigeneousGroup].value[x] from $IndigenousPeopleValueSet (required)
 * extension[indigenousPeople] ^short = "Indigenous People"
 * extension[indigenousPeople] ^definition = "Identify whether a person belongs to an indigenous/ethnic group"
-* extension[indigenousPeople] ^comment = "This is an extension"
-* extension[indigenousPeople] ^isModifier = false
+
+
 * extension[spouseName] ^short = "Name of Spouse"
 * extension[spouseName] ^definition = "Name of the spouse"
-* extension[spouseName] ^comment = "This is an extension"
-* extension[spouseName] ^isModifier = false
+
+
 * extension[fatherName] ^short = "Name of the Father"
 * extension[fatherName] ^definition = "Name of the Father"
-* extension[fatherName] ^comment = "This is an extension"
-* extension[fatherName] ^isModifier = false
+
+
 * extension[motherName] ^short = "Name of the Mother"
 * extension[motherName] ^definition = "Name of the Mother"
-* extension[motherName] ^comment = "This is an extension"
-* extension[motherName] ^isModifier = false
+
+
 * extension[recordedDate] ^short = "Date information was recorded"
 * extension[recordedDate] ^definition = "The recordedDate represents when this particular Patient record was created in the system, which is often a system-generated date."
-* extension[recordedDate] ^comment = "This is an extension"
-* extension[recordedDate] ^isModifier = false
+
+
 * extension[signature] ^short = "Signature"
 * extension[signature] ^definition = "This pertains to the signature"
-* extension[signature] ^comment = "This is an extension"
-* extension[signature] ^isModifier = false
+
+
 * extension[signature].value[x].extension[position] only $originalText
 * extension[signature].value[x].extension[position] ^sliceName = "position"
 * extension[signature].value[x].extension[position] ^short = "Position of the signee"
 * extension[signature].value[x].extension[position] ^definition = "This pertains to the signature of the signee"
-* extension[signature].value[x].extension[position] ^comment = "This is an extension"
-* extension[signature].value[x].extension[position] ^isModifier = false
+
+
 * extension[signature].value[x].extension[reason] only $originalText
 * extension[signature].value[x].extension[reason] ^sliceName = "reason"
 * extension[signature].value[x].extension[reason] ^short = "Reason of the signature"
 * extension[signature].value[x].extension[reason] ^definition = "This pertains to the reason of the signature"
-* extension[signature].value[x].extension[reason] ^isModifier = false
-* extension[occupation] ^isModifier = false
+
+
 * extension[sex] from SexValueSet (extensible)
 * extension[sex] ^short = "Patient's sex"
 * extension[sex] ^definition = "The sex assigned at birth, as documented on the birth registration"
-* extension[sex] ^isModifier = false
+
 * extension[sex] ^binding.description = "Sex"
 * identifier ^slicing.discriminator.type = #value
 * identifier ^slicing.discriminator.path = "id"
@@ -94,7 +94,7 @@ Id: PH_Patient
 * name.id ..0
 * name.extension[middleName] only MiddleName
 * name.extension[middleName] ^sliceName = "middleName"
-* name.extension[middleName] ^isModifier = false
+
 * name.use ..0
 * name.prefix ..0
 * gender ..0
@@ -104,22 +104,22 @@ Id: PH_Patient
 * address.extension[barangay] ^sliceName = "barangay"
 * address.extension[barangay] ^short = "barangay"
 * address.extension[barangay] ^definition = "The barangay is the smallest political unit"
-* address.extension[barangay] ^isModifier = false
+
 * address.extension[region] only Region
 * address.extension[region] ^sliceName = "region"
-* address.extension[region] ^isModifier = false
+
 * address.extension[province] only $originalText
 * address.extension[province] ^sliceName = "province"
-* address.extension[province] ^isModifier = false
+
 * address.extension[city] only $originalText
 * address.extension[city] ^sliceName = "city"
-* address.extension[city] ^isModifier = false
+
 * address.extension[zip] only $originalText
 * address.extension[zip] ^sliceName = "zip"
-* address.extension[zip] ^isModifier = false
+
 * address.extension[pSGC] only PSGC
 * address.extension[pSGC] ^sliceName = "pSGC"
-* address.extension[pSGC] ^isModifier = false
+
 * address.state ^definition = "Pertains to the provincial subdivision"
 * maritalStatus from MaritalStatusValueSet (extensible)
 * maritalStatus ^definition = "This field contains a patient's most recent marital (civil) status.\nRefers to the personal status of each individual with reference to the marriage laws or customs of the country.  It is the same as \"\"civil status\"\", the term usually used in official and private records, documents, transactions, and others, in the country. \n\nAlternate Name: Civil Status"

@@ -8,10 +8,8 @@ Id: PH-Organization
     HeadName named headName 0..* and
     HeadPosition named headPosition 0..*
 * extension[headName] ^definition = "Head of the organization"
-* extension[headName] ^isModifier = false
 * extension[headPosition] ^short = "Position of head of facility"
 * extension[headPosition] ^definition = "Position of head of facility"
-* extension[headPosition] ^isModifier = false
 * identifier ^slicing.description = "This are the slides for the DOH facility code"
 * identifier ^slicing.rules = #open
 * identifier contains

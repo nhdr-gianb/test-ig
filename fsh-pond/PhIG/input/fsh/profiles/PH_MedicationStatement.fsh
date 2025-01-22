@@ -8,12 +8,8 @@ Id: PH-MedicationStatement
     ExtEncounter named extEncounter 0..*
 * extension[extOrganization] ^short = "The health facility code where the medication was administered."
 * extension[extOrganization] ^definition = "The health facility code where the medication was administered."
-* extension[extOrganization] ^comment = "This is an extension"
-* extension[extOrganization] ^isModifier = false
 * extension[extEncounter] ^short = "The encounter when the medicine was consumed or administered."
 * extension[extEncounter] ^definition = "The encounter when the medicine was consumed or administered."
-* extension[extEncounter] ^comment = "This is an extension"
-* extension[extEncounter] ^isModifier = false
 * basedOn ..0
 * partOf ..0
 * category ..0

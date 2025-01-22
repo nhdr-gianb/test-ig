@@ -6,8 +6,8 @@ Id: PH_DiagnosticReport
 * extension contains Ext_Organization named extOrganization 0..*
 * extension[extOrganization] ^short = "Health facility where the diagnosis was made"
 * extension[extOrganization] ^definition = "Health facility where the diagnosis was made"
-* extension[extOrganization] ^comment = "This is an extension"
-* extension[extOrganization] ^isModifier = false
+
+
 * basedOn ..0
 * code from DiagnosticReportCode (preferred)
 * performer ..0

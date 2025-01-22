@@ -6,8 +6,8 @@ Id: PH_Immunization
 * extension contains Ext_Organization named extOrganization 0..*
 * extension[extOrganization] ^short = "Organization where the immunization was conducted"
 * extension[extOrganization] ^definition = "Organization where the immunization was conducted."
-* extension[extOrganization] ^comment = "This is an extension"
-* extension[extOrganization] ^isModifier = false
+
+
 * status from ImmunizationStatus (required)
 * vaccineCode from ImmunizationVaccineCode (example)
 * primarySource ..0
