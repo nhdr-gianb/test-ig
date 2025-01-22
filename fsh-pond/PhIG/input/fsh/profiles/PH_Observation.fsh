@@ -5,13 +5,17 @@ Id: PH-Observation
 * ^status = #draft
 * . ^definition = "Measurements and simple assertions made about a patient, device or other subject.\nUses: Vital signs such as body weight, blood pressure, and temperature; Laboratory Data like blood glucose, or an estimated GFR; Imaging results like bone density or fetal measurements; Clinical Findings* such as abdominal tenderness; Device measurements such as EKG data or Pulse Oximetry data; Clinical assessment tools such as APGAR or a Glasgow Coma Score; Personal characteristics: such as eye-color; Social history like tobacco use, family support, or cognitive status; Core characteristics like pregnancy status, or a death assertion.\nAlternate Name: Vital Signs; Measurement; Results; Tests"
 * extension contains
+/* Not well-modelled. Disabled temporariliy
     Address named address 0..* and
+*/
     ExtOrganization named extOrganization 0..* and
     RecordedDate named recordedDate 0..*
+/*
 * extension[address] ^short = "Address where the observation was made"
 * extension[address] ^definition = "Address where the observation was made"
 * extension[address] ^comment = "This is an extension"
 * extension[address] ^isModifier = false
+*/
 * extension[extOrganization] ^short = "Health facility where the observation was made"
 * extension[extOrganization] ^definition = "Health facility where the observation was made"
 * extension[extOrganization] ^comment = "This is an extension"

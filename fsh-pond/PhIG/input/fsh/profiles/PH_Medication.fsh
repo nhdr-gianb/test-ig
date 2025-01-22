@@ -16,6 +16,7 @@ Id: PH-Medication
 * extension[packaging] ^definition = "Detailed description on the medication packaging"
 * extension[packaging] ^comment = "This is an extension"
 * extension[packaging] ^isModifier = false
+/*
 * extension[packaging].value[x].extension[packcode] only $originalText
 * extension[packaging].value[x].extension[packcode] ^sliceName = "packcode"
 * extension[packaging].value[x].extension[packcode] ^short = "Package Code"
@@ -24,6 +25,7 @@ Id: PH-Medication
 * extension[packaging].value[x].extension[packdesc] ^sliceName = "packdesc"
 * extension[packaging].value[x].extension[packdesc] ^short = "Package Description"
 * extension[packaging].value[x].extension[packdesc] ^isModifier = false
+*/
 * extension[dateUpdated] ^short = "Date of last update"
 * extension[dateUpdated] ^definition = "Date of last update"
 * extension[dateUpdated] ^comment = "This is an extension"

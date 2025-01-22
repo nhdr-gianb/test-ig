@@ -6,7 +6,9 @@ Id: PH-Patient
 * . ^short = "Information about an individua ql receiving health care services"
 * . ^definition = "Demographics and other administrative information about an individual receiving care or other health-related services. The data in the resource covers the \"who\" information about the patient. Its attributes are focused on the demgraphic information necessary to support the administrative, financial and logistical procedures."
 * extension contains
+/*
     $patient-nationality named nationality 0..* and
+*/
     $patient-religion named religion 0..* and
     IndigeneousGroup named indigeneousGroup 0..* and
     IndigenousPeople named indigenousPeople 0..* and
@@ -14,9 +16,12 @@ Id: PH-Patient
     FatherName named fatherName 0..* and
     MotherName named motherName 0..* and
     RecordedDate named recordedDate 0..* and
+    /*
     Signature named signature 0..* and
+    */
     Occupation named occupation 0..* and
     Sex named sex 0..*
+/*
 * extension[nationality] from $NationalityValueSet (required)
 * extension[nationality] ^definition = "Code representing nationality of patient."
 * extension[nationality] ^comment = "This is an extension"
@@ -24,19 +29,22 @@ Id: PH-Patient
 * extension[nationality] ^binding.description = "Nationality ValueSet"
 * extension[nationality].extension[code] from $NationalityValueSet (required)
 * extension[nationality].extension[code] ^sliceName = "code"
+*/
 * extension[religion] ^comment = "This is an extension"
 * extension[religion] ^isModifier = false
-* extension[indigeneousGroup] from IndigenousGroupValueSet (required)
-* extension[indigeneousGroup] ^short = "Indigeneous Group"
-* extension[indigeneousGroup] ^definition = "The indigenerous/ethnic group where the person belongs"
-* extension[indigeneousGroup] ^comment = "This is an extension"
-* extension[indigeneousGroup] ^isModifier = false
-* extension[indigeneousGroup] ^binding.description = "IndigenousGroup"
-* extension[indigeneousGroup].value[x] from $IndigenousPeopleValueSet (required)
+/*
+* extension[indigenousGroup].valueCodeableConcept from $IndigenousPeopleValueSet (required)
+* extension[indigenousGroup] ^short = "Indigeneous Group"
+* extension[indigenousGroup] ^definition = "The indigenerous/ethnic group where the person belongs"
+* extension[indigenousGroup] ^comment = "This is an extension"
+* extension[indigenousGroup] ^isModifier = false
+* extension[indigenousGroup] ^binding.description = "IndigenousGroup"
+* extension[indigenousPeople].valueCodeableConcept from $IndigenousPeopleValueSet (required)
 * extension[indigenousPeople] ^short = "Indigenous People"
 * extension[indigenousPeople] ^definition = "Identify whether a person belongs to an indigenous/ethnic group"
 * extension[indigenousPeople] ^comment = "This is an extension"
 * extension[indigenousPeople] ^isModifier = false
+*/
 * extension[spouseName] ^short = "Name of Spouse"
 * extension[spouseName] ^definition = "Name of the spouse"
 * extension[spouseName] ^comment = "This is an extension"
@@ -53,6 +61,7 @@ Id: PH-Patient
 * extension[recordedDate] ^definition = "The recordedDate represents when this particular Patient record was created in the system, which is often a system-generated date."
 * extension[recordedDate] ^comment = "This is an extension"
 * extension[recordedDate] ^isModifier = false
+/*
 * extension[signature] ^short = "Signature"
 * extension[signature] ^definition = "This pertains to the signature"
 * extension[signature] ^comment = "This is an extension"
@@ -68,12 +77,15 @@ Id: PH-Patient
 * extension[signature].value[x].extension[reason] ^short = "Reason of the signature"
 * extension[signature].value[x].extension[reason] ^definition = "This pertains to the reason of the signature"
 * extension[signature].value[x].extension[reason] ^isModifier = false
+*/
 * extension[occupation] ^isModifier = false
-* extension[sex] from SexValueSet (extensible)
+/*
+* extension[sex] from SexValueSet.valueCodeableConcept (extensible)
 * extension[sex] ^short = "Patient's sex"
 * extension[sex] ^definition = "The sex assigned at birth, as documented on the birth registration"
 * extension[sex] ^isModifier = false
 * extension[sex] ^binding.description = "Sex"
+*/
 * identifier ^slicing.discriminator.type = #value
 * identifier ^slicing.discriminator.path = "id"
 * identifier ^slicing.description = "PhilhealthID"
@@ -92,15 +104,17 @@ Id: PH-Patient
 * identifier[otherID].system ..0
 * identifier[otherID].period ..0
 * name.id ..0
+/*
 * name.extension[middleName] only MiddleName
 * name.extension[middleName] ^sliceName = "middleName"
 * name.extension[middleName] ^isModifier = false
+*/
 * name.use ..0
 * name.prefix ..0
 * gender ..0
 * deceased[x] ^definition = "Indicates if the individual is deceased or not.\nThe \"\"[x]\"\" is replaced with the title-cased name of the type that is actually used."
 * address.extension ^definition = "This pertains to the barangay address"
-* address.extension[barangay] only $originalText
+/*
 * address.extension[barangay] ^sliceName = "barangay"
 * address.extension[barangay] ^short = "barangay"
 * address.extension[barangay] ^definition = "The barangay is the smallest political unit"
@@ -108,19 +122,17 @@ Id: PH-Patient
 * address.extension[region] only Region
 * address.extension[region] ^sliceName = "region"
 * address.extension[region] ^isModifier = false
-* address.extension[province] only $originalText
 * address.extension[province] ^sliceName = "province"
 * address.extension[province] ^isModifier = false
-* address.extension[city] only $originalText
 * address.extension[city] ^sliceName = "city"
 * address.extension[city] ^isModifier = false
-* address.extension[zip] only $originalText
 * address.extension[zip] ^sliceName = "zip"
 * address.extension[zip] ^isModifier = false
 * address.extension[pSGC] only PSGC
 * address.extension[pSGC] ^sliceName = "pSGC"
 * address.extension[pSGC] ^isModifier = false
 * address.state ^definition = "Pertains to the provincial subdivision"
+*/
 * maritalStatus from MaritalStatusValueSet (extensible)
 * maritalStatus ^definition = "This field contains a patient's most recent marital (civil) status.\nRefers to the personal status of each individual with reference to the marriage laws or customs of the country.  It is the same as \"\"civil status\"\", the term usually used in official and private records, documents, transactions, and others, in the country. \n\nAlternate Name: Civil Status"
 * multipleBirth[x] ..0

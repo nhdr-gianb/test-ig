@@ -12,8 +12,11 @@ Id: PH-Encounter
     InvestigatorName named investigatorName 0..* and
     DateInterview named dateInterview 0..* and
     DateInvestigation named dateInvestigation 0..* and
-    ReporterName named reporterName 0..* and
+    ReporterName named reporterName 0..*
+    /* dangling reference - disabled (2)
+     and
     IllnessClass named illnessClass 0..*
+    */
 * extension[ageYears] ^short = "Age in years"
 * extension[ageYears] ^definition = "Age in years"
 * extension[ageYears] ^comment = "This is an extension"
@@ -48,10 +51,12 @@ Id: PH-Encounter
 * extension[reporterName] ^short = "Name of reporter"
 * extension[reporterName] ^definition = "Name of reporter"
 * extension[reporterName] ^isModifier = false
+/* dangling reference - disabled (2)
 * extension[illnessClass] from $EncounterIllnessClassValueSet (extensible)
 * extension[illnessClass] ^definition = "Class of illness"
 * extension[illnessClass] ^isModifier = false
 * extension[illnessClass] ^binding.description = "valueset for case rates"
+*/
 * modifierExtension ..0
 * identifier ^slicing.description = "These are the different encounter IDs"
 * identifier ^slicing.rules = #open
