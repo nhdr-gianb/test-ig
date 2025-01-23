@@ -1,8 +1,0 @@
-canonical: https://example.org/fhir
-fhirVersion: 4.0.1
-FSHOnly: true
-applyExtensionMetadataToRoot: false
-id: example.fhir
-name: ExampleFhir
-status: draft
-version: 1.0.0
