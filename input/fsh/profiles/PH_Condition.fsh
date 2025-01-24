@@ -6,7 +6,6 @@ Id: PH-Condition
 * extension contains ExtOrganization named extOrganization 0..*
 * extension[extOrganization] ^short = "Health facility where the encounter was"
 * extension[extOrganization] ^definition = "Health facility where the encounter was"
-* clinicalStatus.coding from ClinicalStatusValueSet (required)
 * verificationStatus from ConditionVerificationStatusValueSet (required)
 * category from ConditionCategoryValueSet (extensible)
 * severity from ConditionSeverityValueSet (preferred)
