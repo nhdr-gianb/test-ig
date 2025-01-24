@@ -11,7 +11,6 @@ Id: PH-Condition
 * category from ConditionCategoryValueSet (extensible)
 * severity from ConditionSeverityValueSet (preferred)
 * code from ConditionCodeValueSet (example)
-* bodySite from ConditionBodySiteValueSet (example)
 * abatement[x] ..0
 * recorder ..0
 * asserter ..0
