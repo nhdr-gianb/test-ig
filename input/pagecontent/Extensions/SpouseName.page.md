@@ -1,5 +1,5 @@
 ---
-canonical: "https://example.org/fhir/StructureDefinition/SpouseName"
+canonical: "https://philhealth.gov.ph/fhir/StructureDefinition/SpouseName"
 expand: 2
 ---
 

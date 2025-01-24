@@ -1,5 +1,5 @@
 ---
-canonical: "https://example.org/fhir/StructureDefinition/MotherName"
+canonical: "https://philhealth.gov.ph/fhir/StructureDefinition/MotherName"
 expand: 2
 ---
 

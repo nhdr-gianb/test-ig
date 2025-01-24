@@ -1,5 +1,5 @@
 ---
-canonical: "https://example.org/fhir/StructureDefinition/Occupation"
+canonical: "https://philhealth.gov.ph/fhir/StructureDefinition/Occupation"
 expand: 2
 ---
 

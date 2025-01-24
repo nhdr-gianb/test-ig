@@ -1,5 +1,5 @@
 ---
-canonical: "https://example.org/fhir/StructureDefinition/FatherName"
+canonical: "https://philhealth.gov.ph/fhir/StructureDefinition/FatherName"
 expand: 2
 ---
 

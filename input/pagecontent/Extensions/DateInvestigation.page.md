@@ -1,5 +1,5 @@
 ---
-canonical: "https://example.org/fhir/StructureDefinition/DateInvestigation"
+canonical: "https://philhealth.gov.ph/fhir/StructureDefinition/DateInvestigation"
 expand: 2
 ---
 

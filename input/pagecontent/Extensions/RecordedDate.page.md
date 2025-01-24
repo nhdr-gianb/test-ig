@@ -1,5 +1,5 @@
 ---
-canonical: "https://example.org/fhir/StructureDefinition/RecordedDate"
+canonical: "https://philhealth.gov.ph/fhir/StructureDefinition/RecordedDate"
 expand: 2
 ---
 

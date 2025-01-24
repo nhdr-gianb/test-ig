@@ -1,5 +1,5 @@
 ---
-canonical: https://example.org/fhir/StructureDefinition/PH_Person
+canonical: https://philhealth.gov.ph/fhir/StructureDefinition/PH_Person
 expand: 2
 ---
 

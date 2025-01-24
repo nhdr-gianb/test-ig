@@ -1,5 +1,5 @@
 ---
-canonical: "https://example.org/fhir/StructureDefinition/Sex"
+canonical: "https://philhealth.gov.ph/fhir/StructureDefinition/Sex"
 expand: 2
 ---
 

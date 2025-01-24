@@ -1,5 +1,5 @@
 ---
-canonical: "https://example.org/fhir/StructureDefinition/Cost"
+canonical: "https://philhealth.gov.ph/fhir/StructureDefinition/Cost"
 expand: 2
 ---
 

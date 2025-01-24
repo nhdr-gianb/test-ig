@@ -1,5 +1,5 @@
 ---
-canonical: "https://example.org/fhir/StructureDefinition/OrganizationType"
+canonical: "https://philhealth.gov.ph/fhir/StructureDefinition/OrganizationType"
 expand: 2
 ---
 

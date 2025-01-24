@@ -1,5 +1,5 @@
 ---
-canonical: https://example.org/fhir/StructureDefinition/PH_Encounter
+canonical: https://philhealth.gov.ph/fhir/StructureDefinition/PH_Encounter
 expand: 2
 ---
 

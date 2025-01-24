@@ -1,5 +1,5 @@
 ---
-canonical: "https://example.org/fhir/StructureDefinition/Species"
+canonical: "https://philhealth.gov.ph/fhir/StructureDefinition/Species"
 expand: 2
 ---
 

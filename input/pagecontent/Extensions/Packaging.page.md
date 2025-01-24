@@ -1,5 +1,5 @@
 ---
-canonical: "https://example.org/fhir/StructureDefinition/Packaging"
+canonical: "https://philhealth.gov.ph/fhir/StructureDefinition/Packaging"
 expand: 2
 ---
 

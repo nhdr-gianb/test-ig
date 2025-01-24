@@ -1,5 +1,5 @@
 ---
-canonical: "https://example.org/fhir/StructureDefinition/ReporterName"
+canonical: "https://philhealth.gov.ph/fhir/StructureDefinition/ReporterName"
 expand: 2
 ---
 

@@ -1,5 +1,5 @@
 ---
-canonical: "https://example.org/fhir/StructureDefinition/AgeDays"
+canonical: "https://philhealth.gov.ph/fhir/StructureDefinition/AgeDays"
 expand: 2
 ---
 

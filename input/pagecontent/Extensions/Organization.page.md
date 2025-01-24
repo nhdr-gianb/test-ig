@@ -1,5 +1,5 @@
 ---
-canonical: "https://example.org/fhir/StructureDefinition/Ext_Organization"
+canonical: "https://philhealth.gov.ph/fhir/StructureDefinition/Ext_Organization"
 expand: 2
 ---
 

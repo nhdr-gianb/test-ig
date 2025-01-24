@@ -1,5 +1,5 @@
 ---
-canonical: https://example.org/fhir/StructureDefinition/PH_Specimen
+canonical: https://philhealth.gov.ph/fhir/StructureDefinition/PH_Specimen
 expand: 2
 ---
 

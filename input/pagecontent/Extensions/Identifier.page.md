@@ -1,5 +1,5 @@
 ---
-canonical: "https://example.org/fhir/StructureDefinition/Identifier"
+canonical: "https://philhealth.gov.ph/fhir/StructureDefinition/Identifier"
 expand: 2
 ---
 

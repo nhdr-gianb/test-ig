@@ -1,5 +1,5 @@
 ---
-canonical: "https://example.org/fhir/StructureDefinition/Signature"
+canonical: "https://philhealth.gov.ph/fhir/StructureDefinition/Signature"
 expand: 2
 ---
 

@@ -1,5 +1,5 @@
 ---
-canonical: "https://example.org/fhir/StructureDefinition/PatientClassification"
+canonical: "https://philhealth.gov.ph/fhir/StructureDefinition/PatientClassification"
 expand: 2
 ---
 

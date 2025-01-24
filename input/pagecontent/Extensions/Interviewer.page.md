@@ -1,5 +1,5 @@
 ---
-canonical: "https://example.org/fhir/StructureDefinition/Interviewer"
+canonical: "https://philhealth.gov.ph/fhir/StructureDefinition/Interviewer"
 expand: 2
 ---
 

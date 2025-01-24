@@ -1,5 +1,5 @@
 ---
-canonical: https://example.org/fhir/StructureDefinition/PH_Observation
+canonical: https://philhealth.gov.ph/fhir/StructureDefinition/PH_Observation
 expand: 2
 ---
 

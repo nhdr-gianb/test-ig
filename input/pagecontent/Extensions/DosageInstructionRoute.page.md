@@ -1,5 +1,5 @@
 ---
-canonical: "https://example.org/fhir/StructureDefinition/DosageInstruction"
+canonical: "https://philhealth.gov.ph/fhir/StructureDefinition/DosageInstruction"
 expand: 2
 ---
 

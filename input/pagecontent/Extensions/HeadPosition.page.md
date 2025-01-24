@@ -1,5 +1,5 @@
 ---
-canonical: "https://example.org/fhir/StructureDefinition/HeadPosition"
+canonical: "https://philhealth.gov.ph/fhir/StructureDefinition/HeadPosition"
 expand: 2
 ---
 

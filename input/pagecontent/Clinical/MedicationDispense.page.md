@@ -1,5 +1,5 @@
 ---
-canonical: https://example.org/fhir/StructureDefinition/PH_MedicationDispense
+canonical: https://philhealth.gov.ph/fhir/StructureDefinition/PH_MedicationDispense
 expand: 2
 ---
 

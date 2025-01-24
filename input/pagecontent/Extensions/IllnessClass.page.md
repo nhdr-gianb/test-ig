@@ -1,5 +1,5 @@
 ---
-canonical: "https://example.org/fhir/StructureDefinition/IllnessClass"
+canonical: "https://philhealth.gov.ph/fhir/StructureDefinition/IllnessClass"
 expand: 2
 ---
 

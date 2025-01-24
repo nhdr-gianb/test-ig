@@ -1,5 +1,5 @@
 ---
-canonical: "https://example.org/fhir/StructureDefinition/AgeMonths"
+canonical: "https://philhealth.gov.ph/fhir/StructureDefinition/AgeMonths"
 expand: 2
 ---
 

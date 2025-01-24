@@ -1,11 +1,9 @@
 ## {{page-title}}---
-canonical: http://example.org/fhir/StructureDefinition/PH_Patient
+canonical: https://philhealth.gov.ph/fhir/StructureDefinition/PH_Patient
 expand: 2
 ---
 
 # {{page-title}}
-
-⚠️ This is a template for describing your Profile (`StructureDefinition`) resource. To start, update the canonical URL above to the one of your resource. Don't forget to remove this paragraph.
 
 ## Metadata
 

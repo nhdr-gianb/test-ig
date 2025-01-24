@@ -1,5 +1,5 @@
 ---
-canonical: "https://example.org/fhir/StructureDefinition/IndigeneousGroup"
+canonical: "https://philhealth.gov.ph/fhir/StructureDefinition/IndigeneousGroup"
 expand: 2
 ---
 

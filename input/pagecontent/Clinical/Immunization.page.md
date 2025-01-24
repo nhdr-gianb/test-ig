@@ -1,5 +1,5 @@
 ---
-canonical: https://example.org/fhir/StructureDefinition/PH_Immunization
+canonical: https://philhealth.gov.ph/fhir/StructureDefinition/PH_Immunization
 expand: 2
 ---
 
