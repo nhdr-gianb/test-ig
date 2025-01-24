@@ -1,7 +1,7 @@
 Profile: PH_Appointment
 Parent: Appointment
 Id: PH-Appointment
-* ^url = "https://example.org/fhir/StructureDefinition/PH_Appointment"
+* ^url = "https://philhealth.gov.ph/fhir/StructureDefinition/PH_Appointment"
 * ^status = #draft
 * identifier ..0
 * status from AppointmentStatusValueSet (required)

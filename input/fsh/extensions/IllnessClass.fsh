@@ -1,6 +1,6 @@
 Extension: IllnessClass
 Id: IllnessClass
 Context: Procedure
-* ^url = "https://example.org/fhir/StructureDefinition/IllnessClass"
+* ^url = "https://philhealth.gov.ph/fhir/StructureDefinition/IllnessClass"
 * ^status = #draft
 * value[x] only CodeableConcept

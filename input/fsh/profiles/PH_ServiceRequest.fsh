@@ -1,7 +1,7 @@
 Profile: PH_ServiceRequest
 Parent: ServiceRequest
 Id: PH-ServiceRequest
-* ^url = "https://example.org/fhir/StructureDefinition/PH_ServiceRequest"
+* ^url = "https://philhealth.gov.ph/fhir/StructureDefinition/PH_ServiceRequest"
 * ^status = #draft
 * identifier ..0
 * instantiatesCanonical ..0

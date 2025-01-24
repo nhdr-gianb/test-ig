@@ -1,7 +1,7 @@
 Profile: PH_CarePlan
 Parent: CarePlan
 Id: PH-CarePlan
-* ^url = "https://example.org/fhir/StructureDefinition/PH_CarePlan"
+* ^url = "https://philhealth.gov.ph/fhir/StructureDefinition/PH_CarePlan"
 * ^status = #draft
 * identifier ..0
 * instantiatesCanonical ..0

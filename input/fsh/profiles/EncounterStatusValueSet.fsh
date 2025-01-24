@@ -1,7 +1,7 @@
 Profile: EncounterStatusValueSet
 Parent: ValueSet
 Id: EncounterStatusValueSet
-* ^url = "https://example.org/fhir/StructureDefinition/EncounterStatusValueSet"
+* ^url = "https://philhealth.gov.ph/fhir/StructureDefinition/EncounterStatusValueSet"
 * ^status = #draft
 * compose.include.concept ^slicing.description = "Status of the encounter"
 * compose.include.concept ^slicing.rules = #open

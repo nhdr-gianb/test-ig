@@ -1,7 +1,7 @@
 Profile: PH_Immunization
 Parent: Immunization
 Id: PH-Immunization
-* ^url = "https://example.org/fhir/StructureDefinition/PH_Immunization"
+* ^url = "https://philhealth.gov.ph/fhir/StructureDefinition/PH_Immunization"
 * ^status = #draft
 * extension contains ExtOrganization named extOrganization 0..*
 * extension[extOrganization] ^short = "Organization where the immunization was conducted"

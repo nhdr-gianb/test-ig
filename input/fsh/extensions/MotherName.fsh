@@ -1,5 +1,5 @@
 Extension: MotherName
 Id: MotherName
 Context: Patient
-* ^url = "https://example.org/fhir/StructureDefinition/MotherName"
+* ^url = "https://philhealth.gov.ph/fhir/StructureDefinition/MotherName"
 * ^status = #draft

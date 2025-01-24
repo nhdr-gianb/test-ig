@@ -1,5 +1,5 @@
 Extension: Species
 Id: Species
 Context: Specimen
-* ^url = "https://example.org/fhir/StructureDefinition/Species"
+* ^url = "https://philhealth.gov.ph/fhir/StructureDefinition/Species"
 * ^status = #draft

@@ -1,6 +1,6 @@
 ValueSet: SexValueSet
 Id: SexValueSet
-* ^url = "https://example.org/fhir/ValueSet/SexValueSet"
+* ^url = "https://philhealth.gov.ph/fhir/ValueSet/SexValueSet"
 * ^status = #draft
 * $sex-codes#male "Male"
 * $sex-codes#female "Female"

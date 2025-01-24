@@ -1,7 +1,7 @@
 Profile: PH_Medication
 Parent: Medication
 Id: PH-Medication
-* ^url = "https://example.org/fhir/StructureDefinition/PH_Medication"
+* ^url = "https://philhealth.gov.ph/fhir/StructureDefinition/PH_Medication"
 * ^status = #draft
 * extension 1..
 * extension contains

@@ -1,7 +1,7 @@
 Profile: PH_Encounter
 Parent: Encounter
 Id: PH-Encounter
-* ^url = "https://example.org/fhir/StructureDefinition/PH_Encounter"
+* ^url = "https://philhealth.gov.ph/fhir/StructureDefinition/PH_Encounter"
 * ^status = #draft
 * extension contains
     AgeYears named ageYears 0..* and

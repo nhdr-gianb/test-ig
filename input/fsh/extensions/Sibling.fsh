@@ -1,6 +1,6 @@
 Extension: Sibling
 Id: Sibling
 Context: Patient
-* ^url = "https://example.org/fhir/StructureDefinition/Sibling"
+* ^url = "https://philhealth.gov.ph/fhir/StructureDefinition/Sibling"
 * ^status = #draft
 * value[x] only HumanName

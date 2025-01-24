@@ -1,7 +1,7 @@
 Profile: PH_Organization
 Parent: $Organization
 Id: PH-Organization
-* ^url = "https://example.org/fhir/StructureDefinition/PH_Organization"
+* ^url = "https://philhealth.gov.ph/fhir/StructureDefinition/PH_Organization"
 * ^status = #draft
 * . ^definition = "\"A formally or informally recognized grouping of people or organizations formed for the purpose of achieving some form of collective action. Includes companies, institutions, corporations, departments, community groups, healthcare practice groups, payer/insurer, etc.\n\nAlternate Name: Health Facility Registry\""
 * extension contains

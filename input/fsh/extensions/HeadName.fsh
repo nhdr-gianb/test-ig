@@ -1,6 +1,6 @@
 Extension: HeadName
 Id: HeadName
 Context: Organization
-* ^url = "https://example.org/fhir/StructureDefinition/HeadName"
+* ^url = "https://philhealth.gov.ph/fhir/StructureDefinition/HeadName"
 * ^status = #draft
 * value[x] only HumanName

@@ -1,7 +1,7 @@
 Profile: PH_Procedure
 Parent: Procedure
 Id: PH-Procedure
-* ^url = "https://example.org/fhir/StructureDefinition/PH_Procedure"
+* ^url = "https://philhealth.gov.ph/fhir/StructureDefinition/PH_Procedure"
 * ^status = #draft
 * extension contains
     Organization named organization 0..* and

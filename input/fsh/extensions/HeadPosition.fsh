@@ -1,6 +1,6 @@
 Extension: HeadPosition
 Id: HeadPosition
 Context: Organization
-* ^url = "https://example.org/fhir/StructureDefinition/HeadPosition"
+* ^url = "https://philhealth.gov.ph/fhir/StructureDefinition/HeadPosition"
 * ^status = #draft
 * value[x] only string

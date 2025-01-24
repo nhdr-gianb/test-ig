@@ -1,6 +1,6 @@
 Extension: IndigenousPeople
 Id: IndigenousPeople
 Context: Patient
-* ^url = "https://example.org/fhir/StructureDefinition/IndigenousPeople"
+* ^url = "https://philhealth.gov.ph/fhir/StructureDefinition/IndigenousPeople"
 * ^status = #draft
 * value[x] only boolean

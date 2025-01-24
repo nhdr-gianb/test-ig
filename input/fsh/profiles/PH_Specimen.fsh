@@ -1,7 +1,7 @@
 Profile: PH_Specimen
 Parent: Specimen
 Id: PH-Specimen
-* ^url = "https://example.org/fhir/StructureDefinition/PH_Specimen"
+* ^url = "https://philhealth.gov.ph/fhir/StructureDefinition/PH_Specimen"
 * ^status = #draft
 * extension contains
     RecordedDate named recordedDate 0..* and

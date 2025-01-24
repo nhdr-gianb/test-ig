@@ -1,7 +1,7 @@
 Profile: PH_Location
 Parent: Location
 Id: PH-Location
-* ^url = "https://example.org/fhir/StructureDefinition/PH_Location"
+* ^url = "https://philhealth.gov.ph/fhir/StructureDefinition/PH_Location"
 * ^status = #draft
 * meta ..0
 * extension ..0

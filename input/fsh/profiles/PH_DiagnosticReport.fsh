@@ -1,7 +1,7 @@
 Profile: PH_DiagnosticReport
 Parent: DiagnosticReport
 Id: PH-DiagnosticReport
-* ^url = "https://example.org/fhir/StructureDefinition/PH_DiagnosticReport"
+* ^url = "https://philhealth.gov.ph/fhir/StructureDefinition/PH_DiagnosticReport"
 * ^status = #draft
 * extension contains ExtOrganization named extOrganization 0..*
 * extension[extOrganization] ^short = "Health facility where the diagnosis was made"

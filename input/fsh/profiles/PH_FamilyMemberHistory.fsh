@@ -1,7 +1,7 @@
 Profile: PH_FamilyMemberHistory
 Parent: FamilyMemberHistory
 Id: PH-FamilyMemberHistory
-* ^url = "https://example.org/fhir/StructureDefinition/PH_FamilyMemberHistory"
+* ^url = "https://philhealth.gov.ph/fhir/StructureDefinition/PH_FamilyMemberHistory"
 * ^status = #draft
 * instantiatesCanonical ..0
 * instantiatesUri ..0

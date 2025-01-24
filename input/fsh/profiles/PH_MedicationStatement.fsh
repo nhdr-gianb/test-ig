@@ -1,7 +1,7 @@
 Profile: PH_MedicationStatement
 Parent: MedicationStatement
 Id: PH-MedicationStatement
-* ^url = "https://example.org/fhir/StructureDefinition/PH_MedicationStatement"
+* ^url = "https://philhealth.gov.ph/fhir/StructureDefinition/PH_MedicationStatement"
 * ^status = #draft
 * extension contains
     ExtOrganization named extOrganization 0..* and

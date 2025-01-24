@@ -1,7 +1,7 @@
 Profile: PH_Patient
 Parent: Patient
 Id: PH-Patient
-* ^url = "https://example.org/fhir/StructureDefinition/PH_Patient"
+* ^url = "https://philhealth.gov.ph/fhir/StructureDefinition/PH_Patient"
 * ^status = #draft
 * . ^short = "Information about an individua ql receiving health care services"
 * . ^definition = "Demographics and other administrative information about an individual receiving care or other health-related services. The data in the resource covers the \"who\" information about the patient. Its attributes are focused on the demgraphic information necessary to support the administrative, financial and logistical procedures."
