@@ -28,6 +28,10 @@ This is a temporary repository. The content within may be subject to frequent up
 
 This repository is intended for internal use and may not be suitable for public consumption at this time.
 
+
+https://github.com/hl7au/au-fhir-erequesting
+
+
 **Contact:**
 
 For any inquiries or concerns, please contact [Contact Information](jgsuess@gmail.com).
