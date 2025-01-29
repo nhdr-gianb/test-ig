@@ -3,23 +3,23 @@
 # │  used properties are included. For a list of all supported properties and their functions,     │
 # │  see: https://fshschool.org/docs/sushi/configuration/.                                         │
 # ╰────────────────────────────────────────────────────────────────────────────────────────────────╯
-id: implementation.guide.nhdr.revised-draft
+id: philhealth.gov.ph.nhdr
 canonical: https://philhealth.gov.ph/fhir/nhdr
-name: PhilHealth-NHDR
+name: PHNhdrImplementationGuide
 title: DRAFT REVISED Philippines National Health Data Repository Implementation Guide
 # description: Draft IG for Philippines National Health Data Repository
 status: draft # draft | active | retired | unknown
 version: 0.1.0
 fhirVersion: 4.0.1 # https://www.hl7.org/fhir/valueset-FHIR-version.html
+copyright: All rights reserved
 copyrightYear: 2025+
 releaseLabel: ci-build
-# license: CC0-1.0 # https://www.hl7.org/fhir/valueset-spdx-license.html
-# jurisdiction: urn:iso:std:iso:3166#US "United States of America" # https://www.hl7.org/fhir/valueset-jurisdiction.html
+license: CC0-1.0 # https://www.hl7.org/fhir/valueset-spdx-license.html
 publisher:
   name: PhilHealth
-  url: http://philhealth.gov.ph
+  url: https://philhealth.gov.ph
   # email: test@example.org
-
+jurisdiction: urn:iso:std:iso:3166#PH
 # The dependencies property corresponds to IG.dependsOn. The key is the
 # package id and the value is the version (or dev/current). For advanced
 # use cases, the value can be an object with keys for id, uri, and version.

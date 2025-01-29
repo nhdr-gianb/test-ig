@@ -45,4 +45,3 @@ Alias: $IndigenousPeopleValueSet = https://philhealth.gov.ph/fhir/StructureDefin
 Alias: $IndigenousGroupValueSet = https://philhealth.gov.ph/fhir/StructureDefinition/IndigenousGroupValueSet
 Alias: $psoc = http://psoc.gov.ph
 Alias: $psgc = http://psgc.psa.gov.ph
-Alias: $SexValueSet_1 = https://philhealth.gov.ph/fhir/StructureDefinition/SexValueSet
