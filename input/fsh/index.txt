@@ -36,7 +36,7 @@ ImmunizationRoute                                     ValueSet   valuesets\Immun
 ImmunizationStatus                                    ValueSet   valuesets\ImmunizationStatus.fsh
 ImmunizationStatusReason                              ValueSet   valuesets\ImmunizationStatusReason.fsh
 ImmunizationVaccineCode                               ValueSet   valuesets\ImmunizationVaccineCode.fsh
-IndigeneousGroup                                      Extension  extensions\IndigeneousGroup.fsh
+IndigenousGroup                                      Extension  extensions\IndigenousGroup.fsh
 IndigeneousPeople                                     Extension  extensions\IndigeneousPeople.fsh
 IndigenousGroupValueSet                               ValueSet   valuesets\IndigenousGroupValueSet.fsh
 IndigenousPeople                                      Extension  extensions\IndigenousPeople.fsh
