@@ -21,10 +21,10 @@ Id: ph-nhdr-observation
 * focus ..0
 * issued ..0
 * value[x] only Quantity or CodeableConcept or string or dateTime
-* value[x] from ObservationValue (required)
+* value[x] from ph-nhdr-observation-value (required)
 * dataAbsentReason ..0
 * bodySite ..0
-* method from ObservationMethod (example)
+* method from ph-nhdr-observation-method (example)
 * device ..0
 * referenceRange ..0
 * hasMember ..0

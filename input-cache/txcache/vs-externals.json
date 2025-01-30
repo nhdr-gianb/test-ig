@@ -29,6 +29,7 @@
   "http://example.org/fhir/CodeSystem/ImmunizationVaccineCodeSystem|null" : null,
   "http://example.org/fhir/marital-status-codes|null" : null,
   "http://example.org/fhir/CodeSystem/ProcedureBodySiteCodeSystem|null" : null,
+  "http://example.org/fhir/ValueSet/ClinicalStatusValueSet|null" : null,
   "http://example.org/fhir/CodeSystem/ObservationMethodCodeSystem|null" : null,
   "http://example.org/fhir/CodeSystem/SpecimenConditionCodeSystem|null" : null,
   "http://example.org/fhir/CodeSystem/ImmunizationStatusReasonCodeSystem|null" : null,

@@ -71,13 +71,13 @@ Id: ph-nhdr-encounter
 * statusHistory ..0
 * classHistory ..0
 * type ..1
-* type from EncounterTypeValueSet (example)
-* serviceType from EncounterServiceTypeValueSet (example)
+* type from ph-nhdr-encounter-type (example)
+* serviceType from ph-nhdr-encounter-service-type (example)
 * priority ..0
 * episodeOfCare ..0
 * basedOn ..0
 * participant ..0
-* hospitalization.dischargeDisposition from EncounterHospitalizationDischargeDispositionValueSet (extensible)
-* location.physicalType from EncounterLocationPhysicalTypeValueSet (extensible)
+* hospitalization.dischargeDisposition from ph-nhdr-encounter-hospitalization-discharge-disposition (extensible)
+* location.physicalType from ph-nhdr-encounter-location-physical-type (extensible)
 * serviceProvider ..0
 * partOf ..0

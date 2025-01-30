@@ -17,7 +17,7 @@ Id: ph-nhdr-organization
 * identifier[DOHfhudcode] ^definition = "Health Facility Code (HFC)"
 * identifier[otherID] ^short = "Use of other facility codes"
 * identifier[otherID] ^definition = "PhilHealth Accreditation Number (PAN)\nPhilHealth Employer Number (PEN)"
-* type from OrganizationTypeValueSet (example)
+* type from ph-nhdr-organization-type (example)
 * type.coding from $OrganizationTypeValueSet (extensible)
 * alias ..0
 * partOf ..0

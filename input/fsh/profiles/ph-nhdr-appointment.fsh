@@ -2,7 +2,7 @@ Profile: PHNhdrAppointment
 Parent: Appointment
 Id: ph-nhdr-appointment
 * identifier ..0
-* status from AppointmentStatusValueSet (required)
+* status from ph-nhdr-appointment-status (required)
 * cancelationReason ..0
 * serviceCategory ..0
 * serviceType ..0

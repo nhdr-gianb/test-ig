@@ -13,7 +13,7 @@ Id: ph-nhdr-medication-administration
 * extension[recordedDate] ^definition = "The recordedDate represents when this particular Medication Administration record was uploaded into the NHDR."
 * instantiates ..0
 * partOf ..0
-* status from MedicalAdministrationStatus (required)
+* status from ph-nhdr-medical-administration-status (required)
 * statusReason ..0
 * category ..0
 * context ..0

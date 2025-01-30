@@ -8,7 +8,7 @@ Id: ph-nhdr-patient
     $patient-nationality named nationality 0..* and
 */
     $patient-religion named religion 0..* and
-    IndigeneousGroup named indigeneousGroup 0..* and
+    ph-nhdr-indigenous-group named indigenousGroup 0..* and
     ph-nhdr-indigenous-people named indigenousPeople 0..* and
     ph-nhdr-spouse-name named spouseName 0..* and
     ph-nhdr-father-name named fatherName 0..* and
@@ -59,7 +59,7 @@ Id: ph-nhdr-patient
 */
 
 /*
-* extension[sex] from SexValueSet.valueCodeableConcept (extensible)
+* extension[sex] from ph-nhdr-sex.valueCodeableConcept (extensible)
 * extension[sex] ^short = "Patient's sex"
 * extension[sex] ^definition = "The sex assigned at birth, as documented on the birth registration"
 * extension[sex] ^binding.description = "Sex"
@@ -104,7 +104,7 @@ Id: ph-nhdr-patient
 * address.extension[pSGC] ^sliceName = "pSGC"
 * address.state ^definition = "Pertains to the provincial subdivision"
 */
-* maritalStatus from MaritalStatusValueSet (extensible)
+* maritalStatus from ph-nhdr-marital-status (extensible)
 * maritalStatus ^definition = "This field contains a patient's most recent marital (civil) status.\nRefers to the personal status of each individual with reference to the marriage laws or customs of the country.  It is the same as \"\"civil status\"\", the term usually used in official and private records, documents, transactions, and others, in the country. \n\nAlternate Name: Civil Status"
 * multipleBirth[x] ..0
 * multipleBirth[x] ^slicing.discriminator.type = #type
@@ -116,7 +116,7 @@ Id: ph-nhdr-patient
 * photo.size ..0
 * photo.hash ..0
 * photo.creation ..0
-* contact.relationship from ContactRelationshipValueSet (extensible)
+* contact.relationship from ph-nhdr-contact-relationship (extensible)
 * communication ..0
 * generalPractitioner ^definition = "Patient's nominated care provider. Pertains to the Konsulta Health Care Provider"
 * managingOrganization ..0

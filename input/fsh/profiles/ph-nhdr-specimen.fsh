@@ -14,12 +14,12 @@ Id: ph-nhdr-specimen
 * extension[extOrganization] ^definition = "Health facility where the specimen was collected"
 * extension[species] ^short = "Describes the type of species / organism [e.g. Malaria (Plasmodium falciparum, Plasmodium malariae, Plasmodium vivax, Plasmodium ovale, Plasmodium knowlesi)]"
 * extension[species] ^definition = "Describes the type of species / organism [e.g. Malaria (Plasmodium falciparum, Plasmodium malariae, Plasmodium vivax, Plasmodium ovale, Plasmodium knowlesi)]"
-* type from SpecimenType (example)
+* type from ph-nhdr-specimen-type (example)
 * collection.extension contains ph-nhdr-release-date named releaseDate 0..*
 * collection.extension[releaseDate] ^short = "Date the specimen was released"
 * collection.extension[releaseDate] ^definition = "Date the specimen was released"
-* collection.method from SpecimenCollectionMethod (example)
+* collection.method from ph-nhdr-specimen-collection-method (example)
 * collection.bodySite ..0
 * collection.fastingStatus[x] ..0
-* processing.procedure from SpecimenProcessingProcedure (example)
-* condition from SpecimenCondition (extensible)
+* processing.procedure from ph-nhdr-specimen-processing-procedure (example)
+* condition from ph-nhdr-specimen-condition (extensible)

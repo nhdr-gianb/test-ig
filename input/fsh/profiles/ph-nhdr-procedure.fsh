@@ -2,7 +2,7 @@ Profile: PHNhdrProcedure
 Parent: Procedure
 Id: ph-nhdr-procedure
 * extension contains
-    ph-nhdr-organization named organization 0..* and
+    ph-nhdr-ext-organization named organization 0..* and
     ph-nhdr-recorded-date named recordedDate 0..* and
     ph-nhdr-illness-class named illnessClass 0..*
 * extension[organization] ^short = "The facility where the procedure was done"
@@ -16,16 +16,16 @@ Id: ph-nhdr-procedure
 * basedOn ..0
 * partOf ..0
 * status = #http://example.org/fhir/ValueSet/ProcedureStatusValueSet (exactly)
-* status from ProcedureStatusValueSet (required)
+* status from ph-nhdr-procedure-status (required)
 * statusReason ..0
-* code from ProcedureCodeValueSet (example)
+* code from ph-nhdr-procedure-code (example)
 * recorder ..0
 * asserter ..0
 * performer ..0
 * location ..0
 * reasonCode ..0
 * reasonReference ..0
-* bodySite from ProcedureBodySiteValueSet (example)
+* bodySite from ph-nhdr-procedure-body-site (example)
 * report ..0
 * complication ..0
 * complicationDetail ..0
