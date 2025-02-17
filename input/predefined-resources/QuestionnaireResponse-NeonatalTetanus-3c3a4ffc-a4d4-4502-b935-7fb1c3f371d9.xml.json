@@ -1,0 +1,49 @@
+{
+  "resourceType": "QuestionnaireResponse",
+  "id": "NeonatalTetanus-3c3a4ffc-a4d4-4502-b935-7fb1c3f371d9",
+  "meta": {
+    "lastUpdated": "2024-12-12T04:24:46.088+00:00"
+  },
+  "status": "completed",
+  "subject": {
+    "reference": "Patient/b160ce3e-91f6-4ee5-bf72-248a49e2047f"
+  },
+  "item": [
+    {
+      "linkId": "1",
+      "text": "Has the specimen been sent to RITM?",
+      "answer": [
+        {
+          "valueBoolean": true
+        }
+      ]
+    },
+    {
+      "linkId": "2",
+      "text": "Was the mother immunized with tetanus toxoid during pregnancy?",
+      "answer": [
+        {
+          "valueBoolean": false
+        }
+      ]
+    },
+    {
+      "linkId": "3",
+      "text": "Was the delivery conducted under unhygienic conditions?",
+      "answer": [
+        {
+          "valueBoolean": true
+        }
+      ]
+    },
+    {
+      "linkId": "4",
+      "text": "Is the infant experiencing muscle stiffness or difficulty feeding?",
+      "answer": [
+        {
+          "valueBoolean": true
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,37 @@
+{
+  "resourceType": "Condition",
+  "id": "135e85e4-0364-4083-8873-4a99a94b076f",
+  "meta": {
+    "lastUpdated": "2024-12-10T14:28:43.82+00:00",
+    "profile": "https://nhdr.gov.ph/fhir/StructureDefinition/PH_Condition"
+  },
+  "clinicalStatus": {
+    "coding": [
+      {
+        "system": "http://example.org/fhir/ValueSet/ClinicalStatusValueSet",
+        "code": "active"
+      }
+    ]
+  },
+  "verificationStatus": {
+    "coding": [
+      {
+        "system": "http://example.org/fhir/ValueSet/ConditionVerificationStatusValueSet",
+        "code": "confirmed"
+      }
+    ]
+  },
+  "code": {
+    "coding": [
+      {
+        "system": "http://example.org/fhir/ValueSet/ConditionCodeValueSet",
+        "code": "D123",
+        "display": "Diabetes Mellitus"
+      }
+    ]
+  },
+  "subject": {
+    "reference": "Patient/b160ce3e-91f6-4ee5-bf72-248a49e2047f"
+  },
+  "onsetDateTime": "2024-12-01T12:00:00+08:00"
+}

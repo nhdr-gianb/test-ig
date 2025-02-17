@@ -1,0 +1,57 @@
+{
+  "resourceType": "Person",
+  "id": "Person-1",
+  "meta": {
+    "lastUpdated": "2024-07-18T07:21:35.241+00:00"
+  },
+  "extension": [
+    {
+      "url": "https://example.org/fhir/StructureDefinition/Sex",
+      "valueCode": "male"
+    }
+  ],
+  "name": [
+    {
+      "use": "official",
+      "family": "Garcia",
+      "given": [
+        "Juan"
+      ],
+      "prefix": [
+        "Mr."
+      ]
+    }
+  ],
+  "telecom": [
+    {
+      "system": "phone",
+      "value": "+1234567890",
+      "use": "mobile"
+    },
+    {
+      "system": "email",
+      "value": "juan.garcia@example.org",
+      "use": "home"
+    }
+  ],
+  "birthDate": "1990-01-01",
+  "address": [
+    {
+      "use": "home",
+      "line": [
+        "1234 Health St."
+      ],
+      "city": "Health City",
+      "state": "Health State",
+      "postalCode": "12345",
+      "country": "PH"
+    }
+  ],
+  "link": [
+    {
+      "target": {
+        "reference": "Patient/example"
+      }
+    }
+  ]
+}

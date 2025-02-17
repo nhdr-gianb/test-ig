@@ -1,0 +1,16 @@
+{
+  "resourceType": "Patient",
+  "id": "b160ce3e-91f6-4ee5-bf72-248a49e2047f",
+  "meta": {
+    "lastUpdated": "2024-12-12T04:30:08.681+00:00"
+  },
+  "active": true,
+  "name": [
+    {
+      "family": "Doe",
+      "given": [
+        "John"
+      ]
+    }
+  ]
+}

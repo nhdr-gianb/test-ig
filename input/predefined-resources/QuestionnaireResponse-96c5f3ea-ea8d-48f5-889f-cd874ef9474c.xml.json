@@ -1,0 +1,12 @@
+{
+  "resourceType": "QuestionnaireResponse",
+  "id": "96c5f3ea-ea8d-48f5-889f-cd874ef9474c",
+  "meta": {
+    "lastUpdated": "2024-12-10T21:44:28.939+00:00"
+  },
+  "questionnaire": "https://example.org/Questionnaire/Example4",
+  "status": "completed",
+  "subject": {
+    "reference": "Patient/b160ce3e-91f6-4ee5-bf72-248a49e2047f"
+  }
+}

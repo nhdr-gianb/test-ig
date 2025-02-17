@@ -1,0 +1,17 @@
+{
+  "resourceType": "Patient",
+  "id": "85607a95-696d-4a8e-9532-411720fd6897",
+  "meta": {
+    "lastUpdated": "2024-12-10T08:52:07.493+00:00"
+  },
+  "name": [
+    {
+      "use": "official",
+      "family": "Doe",
+      "given": [
+        "John"
+      ]
+    }
+  ],
+  "birthDate": "1990-01-01"
+}

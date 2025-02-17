@@ -1,0 +1,76 @@
+{
+  "resourceType": "Patient",
+  "id": "Patient-1",
+  "meta": {
+    "lastUpdated": "2024-07-12T14:07:16.25+00:00",
+    "profile": [
+      "https://fake-acme.org/fhir/StructureDefinition/ACME-base-patient"
+    ]
+  },
+  "implicitRules": "http://hl7.org/fhir/reference",
+  "language": "en-IN",
+  "text": {
+    "status": "extensions",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">Hello world!</div>"
+  },
+  "identifier": [
+    {
+      "use": "usual",
+      "system": "http://www.acme.com/identifiers/patient",
+      "value": "123456"
+    }
+  ],
+  "active": true,
+  "name": [
+    {
+      "use": "official",
+      "text": "Example Patient",
+      "family": "Patient",
+      "given": [
+        "Example"
+      ]
+    }
+  ],
+  "telecom": [
+    {
+      "system": "phone",
+      "value": "abc",
+      "use": "home"
+    }
+  ],
+  "gender": "other",
+  "deceasedBoolean": false,
+  "address": [
+    {
+      "use": "home",
+      "type": "both",
+      "text": "137 Nowhere Street, Erewhon 9132",
+      "line": [
+        "137 Nowhere Street"
+      ],
+      "city": "Erewhon",
+      "district": "Madison",
+      "state": "abc",
+      "postalCode": "9132",
+      "country": "abc"
+    }
+  ],
+  "maritalStatus": {
+    "text": "abc"
+  },
+  "multipleBirthBoolean": false,
+  "photo": [
+    {
+      "contentType": "text/plain; charset=UTF-8, image/png",
+      "language": "en-AU",
+      "url": "http://www.acme.com/logo-small.png",
+      "size": 1037423195,
+      "title": "Official Corporate Logo",
+      "creation": "1984-05-06T14:42:00+00:00"
+    }
+  ],
+  "managingOrganization": {
+    "reference": "abc",
+    "display": "abc"
+  }
+}

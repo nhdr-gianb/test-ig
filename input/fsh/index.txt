@@ -36,7 +36,7 @@ ImmunizationRoute                                     ValueSet   valuesets\Immun
 ImmunizationStatus                                    ValueSet   valuesets\ImmunizationStatus.fsh
 ImmunizationStatusReason                              ValueSet   valuesets\ImmunizationStatusReason.fsh
 ImmunizationVaccineCode                               ValueSet   valuesets\ImmunizationVaccineCode.fsh
-IndigenousGroup                                      Extension  extensions\IndigenousGroup.fsh
+IndigeneousGroup                                      Extension  extensions\IndigeneousGroup.fsh
 IndigeneousPeople                                     Extension  extensions\IndigeneousPeople.fsh
 IndigenousGroupValueSet                               ValueSet   valuesets\IndigenousGroupValueSet.fsh
 IndigenousPeople                                      Extension  extensions\IndigenousPeople.fsh
@@ -81,7 +81,6 @@ PH_Procedure                                          Profile    profiles\PH_Pro
 PH_QuestionnaireResponse                              Profile    profiles\PH_QuestionnaireResponse.fsh
 PH_ServiceRequest                                     Profile    profiles\PH_ServiceRequest.fsh
 PH_Specimen                                           Profile    profiles\PH_Specimen.fsh
-PSGC                                                  Extension  extensions\PSGC.fsh
 Packaging                                             Extension  extensions\Packaging.fsh
 PatientClassification                                 Extension  extensions\PatientClassification.fsh
 PractitionerRoleValueSet                              ValueSet   valuesets\PractitionerRoleValueSet.fsh
@@ -90,13 +89,14 @@ ProcedureCodeValueSet                                 ValueSet   valuesets\Proce
 ProcedureStatusValueSet                               ValueSet   valuesets\ProcedureStatusValueSet.fsh
 RecordedDate                                          Extension  extensions\RecordedDate.fsh
 Region                                                Extension  extensions\Region.fsh
+Province                                              Extension  extensions\Province.fsh
+City                                                  Extension  extensions\City.fsh
+Barangay                                              Extension  extensions\Barangay.fsh
 ReleaseDate                                           Extension  extensions\ReleaseDate.fsh
 ReporterName                                          Extension  extensions\ReporterName.fsh
 ResultDate                                            Extension  extensions\ResultDate.fsh
-SamplePatient                                         Profile    profiles\SamplePatient.fsh
 Sex                                                   Extension  extensions\Sex.fsh
 SexValueSet                                           ValueSet   valuesets\SexValueSet.fsh
-SexValueSet                                           Profile    profiles\SexValueSet.fsh
 Sibling                                               Extension  extensions\Sibling.fsh
 Signature                                             Extension  extensions\Signature.fsh
 Species                                               Extension  extensions\Species.fsh
@@ -105,4 +105,4 @@ SpecimenCondition                                     ValueSet   valuesets\Speci
 SpecimenProcessingProcedure                           ValueSet   valuesets\SpecimenProcessingProcedure.fsh
 SpecimenType                                          ValueSet   valuesets\SpecimenType.fsh
 SpouseName                                            Extension  extensions\SpouseName.fsh
-calculatedValue-copy                                  Extension  extensions\calculatedValue-copy.fsh
+CalculatedValue                                       Extension  extensions\CalculatedValue.fsh

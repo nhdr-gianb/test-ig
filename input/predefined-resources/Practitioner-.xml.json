@@ -1,0 +1,41 @@
+{
+  "resourceType": "Practitioner",
+  "id": "Practitioner-1",
+  "meta": {
+    "lastUpdated": "2024-07-18T06:13:47.993+00:00"
+  },
+  "identifier": [
+    {
+      "use": "PRC",
+      "value": "12345"
+    }
+  ],
+  "name": [
+    {
+      "extension": [
+        {
+          "url": "https://example.org/fhir/StructureDefinition/MiddleName",
+          "valueString": "Rizal"
+        }
+      ],
+      "use": "official",
+      "family": "Dela Cruz",
+      "given": [
+        "Juan",
+        "Pedro",
+        "Santos"
+      ]
+    }
+  ],
+  "telecom": [
+    {
+      "system": "phone",
+      "value": "(03) 5555 6473"
+    },
+    {
+      "system": "phone",
+      "value": "(0939) 929 3814",
+      "use": "mobile"
+    }
+  ]
+}

@@ -1,0 +1,34 @@
+{
+  "resourceType": "Patient",
+  "id": "Patient-10",
+  "meta": {
+    "lastUpdated": "2024-07-18T05:57:18.651+00:00"
+  },
+  "identifier": [
+    {
+      "use": "PhilhealthID",
+      "value": "12345"
+    },
+    {
+      "use": "PhilsysID",
+      "value": "678910"
+    }
+  ],
+  "name": [
+    {
+      "extension": [
+        {
+          "url": "https://example.org/fhir/StructureDefinition/MiddleName",
+          "valueString": "Rizal"
+        }
+      ],
+      "use": "official",
+      "family": "Dela Cruz",
+      "given": [
+        "Juan",
+        "Pedro",
+        "Santos"
+      ]
+    }
+  ]
+}

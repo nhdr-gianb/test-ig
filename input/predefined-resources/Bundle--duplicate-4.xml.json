@@ -1,0 +1,32 @@
+{
+  "resourceType": "Bundle",
+  "id": "Bundle-4",
+  "meta": {
+    "lastUpdated": "2024-07-14T12:13:11.969+00:00"
+  },
+  "type": "transaction",
+  "entry": [
+    {
+      "resource": {
+        "resourceType": "Patient",
+        "id": "deb73381811",
+        "active": true,
+        "name": [
+          {
+            "use": "official",
+            "family": "Wade",
+            "given": [
+              "Dwyane",
+              "James"
+            ]
+          }
+        ],
+        "birthDate": "1974-12-25"
+      },
+      "request": {
+        "method": "POST",
+        "url": "Patient"
+      }
+    }
+  ]
+}

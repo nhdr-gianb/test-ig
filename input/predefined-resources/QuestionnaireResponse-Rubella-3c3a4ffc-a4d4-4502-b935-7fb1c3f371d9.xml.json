@@ -1,0 +1,11 @@
+{
+  "resourceType": "QuestionnaireResponse",
+  "id": "Rubella-3c3a4ffc-a4d4-4502-b935-7fb1c3f371d9",
+  "meta": {
+    "lastUpdated": "2024-12-12T03:35:52.374+00:00"
+  },
+  "status": "completed",
+  "subject": {
+    "reference": "Patient/b160ce3e-91f6-4ee5-bf72-248a49e2047f"
+  }
+}
