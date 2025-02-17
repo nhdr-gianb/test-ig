@@ -87,7 +87,12 @@ pages:
 # ╰────────────────────────────────────────────────────────────────────────────────────────────────╯
 menu:
   Home: index.html
-  Artifacts: artifacts.html
+  Artifacts Index:
+    Base Profiles: artifacts.html#1
+    Clinical Profiles: artifacts.html#2
+    Data Types: artifacts.html#3
+    Extensions: artifacts.html#4
+    Value Sets: artifacts.html#5
   # Base: base.html
   # Clinical: clinical.html
   Extensions: extensions.html

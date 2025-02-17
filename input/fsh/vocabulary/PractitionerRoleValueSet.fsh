@@ -1,9 +1,6 @@
 ValueSet: PractitionerRoleValueSet
 Id: PractitionerRoleValueSet
+Description: "A value set representing the different roles a healthcare practitioner can perform within an organization or care setting."
 * ^status = #draft
-* $practitioner-role-codes#Physician "Physician"
-* $practitioner-role-codes#Nurse "Nurse"
-* $practitioner-role-codes#Midwife "Midwife"
-* $practitioner-role-codes#Hilot "Hilot"
-* $practitioner-role-codes#Unknown "Unknown"
-* $practitioner-role-codes#Other-Specify "Other-Specify"
+* include codes from system $PractitionerRole
+* include codes from system $SNOMED where concept is-a #223366009 // Healthcare professional

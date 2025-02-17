@@ -1,5 +1,5 @@
 ValueSet: EncounterLocationPhysicalTypeValueSet
 Id: EncounterLocationPhysicalTypeValueSet
+Description: "A value set defining the different types of physical locations where an encounter takes place."
 * ^status = #draft
-* $encounter-location-physical-type#Private "Private"
-* $encounter-location-physical-type#NonPrivate "Non-Private (Charity/Service)"
+* include codes from system $EncounterLocationPhysicalType

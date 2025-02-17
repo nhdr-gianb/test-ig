@@ -1,7 +1,7 @@
 CodeSystem: OrganizationTypeLocal
 Id: OrganizationTypeLocal
-Title: "OrganizationTypeLocal"
-Description: "Organization Type codes used locally."
+Title: "Local Organization Types"
+Description: "Organization type codes used locally."
 * ^experimental = false
 * ^caseSensitive = true
 * ^url = "https://nhdr.gov.ph/fhir/CodeSystem/OrganizationTypeLocal"
