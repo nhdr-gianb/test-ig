@@ -1,5 +1,5 @@
 Alias: $PH_Address = https://nhdr.gov.ph/fhir/StructureDefinition/PH-Address
-Alias: $YesNo = http://terminology.hl7.org/CodeSystem/v2-0532
+// Alias: $YesNo = http://terminology.hl7.org/CodeSystem/v2-0532
 Alias: $YesNoValueSet = http://terminology.hl7.org/ValueSet/v2-0136
 Alias: $ClinicalStatusValueSet = https://nhdr.gov.ph/fhir/ValueSet/ClinicalStatusValueSet
 Alias: $OrganizationType = https://nhdr.gov.ph/fhir/ValueSet/OrganizationType
@@ -14,6 +14,8 @@ Alias: $EncounterServiceType = http://terminology.hl7.org/CodeSystem/service-typ
 Alias: $EncounterLocationPhysicalType = http://terminology.hl7.org/CodeSystem/location-physical-type
 Alias: $PractitionerRole = http://terminology.hl7.org/CodeSystem/practitioner-role
 Alias: $SNOMED = http://snomed.info/sct
+Alias: $ClinicalStatus = http://terminology.hl7.org/CodeSystem/condition-clinical
+Alias: $sex = http://terminology.hl7.org/CodeSystem/v2-0001
 
 // These aliases below haven't been properly checked yet for any possible simplification, fixes or removal
 Alias: $ConditionBodySiteCodeSystem = https://nhdr.gov.ph/fhir/CodeSystem/ConditionBodySiteCodeSystem
@@ -32,7 +34,7 @@ Alias: $ImmunizationVaccineCodeSystem = https://nhdr.gov.ph/fhir/CodeSystem/Immu
 Alias: $ImmunizationReportOriginCodeSystem = https://nhdr.gov.ph/fhir/CodeSystem/ImmunizationReportOriginCodeSystem
 Alias: $ImmunizationRouteCodeSystem = https://nhdr.gov.ph/fhir/CodeSystem/ImmunizationRouteCodeSystem
 // Alias: $indigenous-group-codes = https://nhdr.gov.ph/fhir/indigenous-group-codes
-Alias: $marital-status-codes = https://nhdr.gov.ph/fhir/marital-status-codes
+// Alias: $marital-status-codes = https://nhdr.gov.ph/fhir/marital-status-codes
 Alias: $MedicalAdministrationStatusCodeSystem = https://nhdr.gov.ph/fhir/CodeSystem/MedicalAdministrationStatusCodeSystem
 Alias: $ObservationMethodCodeSystem = https://nhdr.gov.ph/fhir/CodeSystem/ObservationMethodCodeSystem
 Alias: $ObservationValueCodeSystem = https://nhdr.gov.ph/fhir/CodeSystem/ObservationValueCodeSystem

@@ -8,15 +8,4 @@ Description: "A value set representing clinical status options for patients in v
 * ^experimental = false
 * ^date = "2024-11-28"
 * ^publisher = "NHDR"
-* $ClinicalStatusValueSet#Improved "Improved"
-* $ClinicalStatusValueSet#Recovered "Recovered"
-* $ClinicalStatusValueSet#HAMA_DAMA "HAMA/DAMA"
-* $ClinicalStatusValueSet#Expired "Expired/Died/Death"
-* $ClinicalStatusValueSet#Absconded "Absconded"
-* $ClinicalStatusValueSet#TransferredReferred "Transferred/Referred To"
-* $ClinicalStatusValueSet#Alive "Alive"
-* $ClinicalStatusValueSet#ClinicallyWell "Clinically well"
-* $ClinicalStatusValueSet#Active "Active (currently admitted/isolation/quarantine)"
-* $ClinicalStatusValueSet#ILI "Influenza-like Illness (ILI)"
-* $ClinicalStatusValueSet#SARI "SARI"
-* $ClinicalStatusValueSet#Others "Others"
+* include codes from system $ClinicalStatus
