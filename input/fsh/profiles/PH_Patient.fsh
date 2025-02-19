@@ -72,9 +72,6 @@ Description: "Captures key demographic and administrative information about indi
 * identifier[otherID].period ..0
 * name only $PH_HumanName
 * name.id ..0
-// * name.extension contains MiddleName named middleName 0..*
-// * name.extension[middleName] ^sliceName = "middleName"
-// * name.extension[middleName] ^isModifier = false
 * name.use ..0
 * name.prefix ..0
 * gender ..0

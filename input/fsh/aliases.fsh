@@ -5,7 +5,7 @@ Alias: $ClinicalStatusValueSet = https://nhdr.gov.ph/fhir/ValueSet/ClinicalStatu
 Alias: $OrganizationType = https://nhdr.gov.ph/fhir/ValueSet/OrganizationType
 Alias: $MiddleName = https://nhdr.gov.ph/fhir/StructureDefinition/MiddleName
 Alias: $PH_HumanName = https://nhdr.gov.ph/fhir/StructureDefinition/PH-HumanName
-Alias: $IndigenousGroup = https://nhdr.gov.ph/fhir/CodeSystem/IndigenousGroup
+Alias: $IndigenousGroup = https://nhdr.gov.ph/fhir/CodeSystem/IndigenousGroupCS
 Alias: $MaritalStatusValueSet = http://hl7.org/fhir/ValueSet/marital-status
 Alias: $ContactRelationship-v20131 = http://terminology.hl7.org/CodeSystem/v2-0131
 Alias: $ContactRelationship-v3RoleCode = http://terminology.hl7.org/CodeSystem/v3-RoleCode
@@ -16,6 +16,7 @@ Alias: $PractitionerRole = http://terminology.hl7.org/CodeSystem/practitioner-ro
 Alias: $SNOMED = http://snomed.info/sct
 Alias: $ClinicalStatus = http://terminology.hl7.org/CodeSystem/condition-clinical
 Alias: $sex = http://terminology.hl7.org/CodeSystem/v2-0001
+Alias: $religion = http://terminology.hl7.org/ValueSet/v3-ReligiousAffiliation
 
 // These aliases below haven't been properly checked yet for any possible simplification, fixes or removal
 Alias: $ConditionBodySiteCodeSystem = https://nhdr.gov.ph/fhir/CodeSystem/ConditionBodySiteCodeSystem

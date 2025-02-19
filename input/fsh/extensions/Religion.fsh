@@ -1,5 +1,3 @@
-Alias: $religion = http://terminology.hl7.org/ValueSet/v3-ReligiousAffiliation
-
 Extension: Religion
 Id: Religion
 Context: Patient, Person

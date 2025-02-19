@@ -47,7 +47,7 @@ pages:
   index.md:
     title: PHCDI Implementation Guide
   artifacts:
-    title: PH Artifacts
+    title: PHCDI Artifacts
   # base.md:
   #   title: Base Resources
   extensions.md:
@@ -88,6 +88,7 @@ pages:
 menu:
   Home: index.html
   Artifacts Index:
+    PHCDI Artifacts: artifacts.html#phcdi-artifacts
     Base Profiles: artifacts.html#1
     Clinical Profiles: artifacts.html#2
     Data Types: artifacts.html#3

@@ -1,11 +1,11 @@
-CodeSystem: IndigenousGroup
-Id: IndigenousGroup
+CodeSystem: IndigenousGroupCS
+Id: IndigenousGroupCS
 Title: "Indigenous Groups in the Philippines"
 Description: "A value set representing the recognized Indigenous groups to which a person may belong."
 * ^experimental = false
 * ^status = #draft
 * ^caseSensitive = true
-* ^url = "https://nhdr.gov.ph/fhir/CodeSystem/IndigenousGroup"
+* ^url = "https://nhdr.gov.ph/fhir/CodeSystem/IndigenousGroupCS"
 * ^status = #active
 * ^content = #complete
 * #Aetas "Aetas"
