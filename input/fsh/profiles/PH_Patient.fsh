@@ -1,10 +1,12 @@
+Alias: $CodeSystem-v2-0203 = http://terminology.hl7.org/5.1.0/CodeSystem-v2-0203.html
+
 Profile: PH_Patient
 Parent: Patient
 Id: PH-Patient
 Description: "Captures key demographic and administrative information about individuals receiving care or other health-related services."
 * ^url = "https://nhdr.gov.ph/fhir/StructureDefinition/PH-Patient"
 * ^status = #draft
-* . ^short = "Information about an individua ql receiving health care services"
+* . ^short = "Information about an individual receiving health care services"
 * . ^definition = "Demographics and other administrative information about an individual receiving care or other health-related services. The data in the resource covers the \"who\" information about the patient. Its attributes are focused on the demgraphic information necessary to support the administrative, financial and logistical procedures."
 * extension contains
     PatNationality named nationality 0..* and
@@ -54,17 +56,18 @@ Description: "Captures key demographic and administrative information about indi
 * extension[sex] ^isModifier = false
 * extension[sex] ^binding.description = "Sex"
 * identifier ^slicing.discriminator.type = #value
-* identifier ^slicing.discriminator.path = "id"
-* identifier ^slicing.description = "PhilhealthID"
+* identifier ^slicing.discriminator.path = "use"
 * identifier ^slicing.rules = #open
 * identifier ^definition = "An identifier for this patient.\nA numeric or alphanumeric string that is associated with a single object or entity within a given system."
 * identifier contains
-    philhealthID 1..1 and
-    otherID 0..1
+    philhealthID 0..1 and
+    otherID 0..*
+* identifier[philhealthID].use = #official (exactly)
 * identifier[philhealthID] ^short = "Philhealth Number"
 * identifier[philhealthID] ^definition = "PIN - PhilHealth Identification Number"
 * identifier[philhealthID].system ..0
 * identifier[philhealthID].period ..0
+* identifier[otherID].use = #secondary (exactly)
 * identifier[otherID] ^short = "Other Identification aside from the Philhealth ID"
 * identifier[otherID] ^definition = "TIN, SSS, GSIS, Divers License, Passport no., National ID"
 * identifier[otherID] ^comment = "TIN, SSS, GSIS, Divers License, Passport no., National ID"

@@ -37,7 +37,7 @@ Usage: #example
 Instance: Appointment-1
 InstanceOf: PH_Appointment
 Usage: #example
-* status = #yes
+* status = #Y
 * start = "2024-07-20T09:00:00+08:00"
 * participant.actor.reference = "Patient/example"
 * participant.required = #required
@@ -139,11 +139,16 @@ InstanceOf: PH_Patient
 Usage: #example
 * meta.lastUpdated = "2024-07-12T14:07:16.25+00:00"
 * meta.profile = "https://nhdr.gov.ph/fhir/StructureDefinition/PH-Patient"
-* implicitRules = "http://hl7.org/fhir/reference"
 * language = #en-IN
-* identifier.use = #usual
-* identifier.system = "http://www.acme.com/identifiers/patient"
-* identifier.value = "123456"
+* identifier[0].use = #official
+* identifier[=].type.coding.code = #NIIP
+* identifier[=].value = "PH12345"
+* identifier[+].use = #secondary
+* identifier[=].type.coding.code = #DL
+* identifier[=].value = "DL12345"
+* identifier[+].use = #secondary
+* identifier[=].type.coding.code = #PPN
+* identifier[=].value = "PPN25"
 * active = true
 * name.text = "Example Patient"
 * name.family = "Patient"
@@ -162,6 +167,4 @@ Usage: #example
 * address.postalCode = "9132"
 * address.country = "abc"
 * maritalStatus.text = "abc"
-* photo.url = "http://www.acme.com/logo-small.png"
-* photo.title = "Official Corporate Logo"
 // * managingOrganization = Reference(12345) "12345"
