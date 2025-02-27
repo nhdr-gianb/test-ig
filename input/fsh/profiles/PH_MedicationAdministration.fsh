@@ -22,7 +22,8 @@ Description: "Describes the event of a patient consuming or otherwise being admi
 * extension[recordedDate] ^isModifier = false
 * instantiates ..0
 * partOf ..0
-* status from MedicalAdministrationStatus (required)
+// * status from MedicalAdministrationStatus (required)
+* status from $YesNoValueSet (required)
 * statusReason ..0
 * category ..0
 * context ..0

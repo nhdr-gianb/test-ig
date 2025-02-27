@@ -10,7 +10,7 @@ Description: "Describes the event of a patient being administered a vaccine or a
 * extension[extOrganization] ^comment = "This is an extension"
 * extension[extOrganization] ^isModifier = false
 * status from ImmunizationStatus (required)
-* vaccineCode from ImmunizationVaccineCode (example)
+* vaccineCode from ImmunizationVaccineCodeValueSet (example)
 * primarySource ..0
 * reportOrigin from ImmunizationReportOrigin (example)
 * location ..0
@@ -18,7 +18,7 @@ Description: "Describes the event of a patient being administered a vaccine or a
 * lotNumber ..0
 * expirationDate ..0
 * site ..0
-* route from ImmunizationRoute (example)
+* route from ImmunizationRouteValueSet (example)
 * performer ..0
 * reasonCode from ImmunizationStatusReason (example)
 * reasonReference ..0

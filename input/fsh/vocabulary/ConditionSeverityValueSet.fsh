@@ -8,6 +8,4 @@ Description: "A value set representing the severity levels of conditions, partic
 * ^experimental = false
 * ^date = "2024-11-28"
 * ^publisher = "NHDR"
-* $ConditionSeverityCodeSystem#NoWarningSigns "No warning signs"
-* $ConditionSeverityCodeSystem#WithWarningSigns "With warning signs"
-* $ConditionSeverityCodeSystem#SevereDengue "Severe Dengue"
+* include codes from system $ConditionSeverityCodeSystem

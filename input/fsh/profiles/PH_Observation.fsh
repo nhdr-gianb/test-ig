@@ -24,10 +24,10 @@ Description: "Measurements and simple assertions made about a patient, device or
 * focus ..0
 * issued ..0
 * value[x] only Quantity or CodeableConcept or string or dateTime
-* value[x] from ObservationValue (required)
+* value[x] from ObservationValue (extensible)
 * dataAbsentReason ..0
 * bodySite ..0
-* method from ObservationMethod (example)
+* method from $ObservationMethodValueSet (extensible)
 * device ..0
 * referenceRange ..0
 * hasMember ..0

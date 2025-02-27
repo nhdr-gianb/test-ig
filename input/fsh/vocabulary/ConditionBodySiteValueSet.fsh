@@ -8,10 +8,4 @@ Description: "A value set representing various body sites relevant to specific c
 * ^experimental = false
 * ^date = "2024-11-28"
 * ^publisher = "NHDR"
-* $ConditionBodySiteCodeSystem#RightArm "Right Arm"
-* $ConditionBodySiteCodeSystem#LeftArm "Left Arm"
-* $ConditionBodySiteCodeSystem#RightLeg "Right Leg"
-* $ConditionBodySiteCodeSystem#LeftLeg "Left Leg"
-* $ConditionBodySiteCodeSystem#BreathingMuscles "Breathing Muscles"
-* $ConditionBodySiteCodeSystem#NeckMuscles "Neck Muscles"
-* $ConditionBodySiteCodeSystem#FacialMuscles "Facial Muscles"
+* include codes from system $SNOMED where concept is-a #442083009

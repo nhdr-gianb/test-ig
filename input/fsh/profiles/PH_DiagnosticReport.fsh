@@ -10,7 +10,7 @@ Description: "The findings and interpretation of diagnostic tests performed on p
 * extension[extOrganization] ^comment = "This is an extension"
 * extension[extOrganization] ^isModifier = false
 * basedOn ..0
-* code from DiagnosticReportCode (preferred)
+* code from DiagnosticReportCodeValueSet (preferred)
 * performer ..0
 * resultsInterpreter ..0
 * imagingStudy ..0

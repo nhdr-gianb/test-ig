@@ -58,7 +58,7 @@ Instance: Condition-1
 InstanceOf: PH_Condition
 Usage: #example
 * meta.lastUpdated = "2024-07-18T07:25:23.888+00:00"
-* extension.url = "https://nhdr.gov.ph/fhir/StructureDefinition/Ext_Organization"
+* extension.url = "https://nhdr.gov.ph/fhir/StructureDefinition/Ext-Organization"
 * extension.valueReference = Reference(Organization/example)
 * clinicalStatus = $condition-clinical#active "Active"
 * verificationStatus = $condition-ver-status#confirmed "Confirmed"
@@ -74,7 +74,7 @@ Instance: 135e85e4-0364-4083-8873-4a99a94b076f
 InstanceOf: PH_Condition
 Usage: #example
 * meta.lastUpdated = "2024-12-10T14:28:43.82+00:00"
-* meta.profile = "https://nhdr.gov.ph/fhir/StructureDefinition/PH_Condition"
+* meta.profile = "https://nhdr.gov.ph/fhir/StructureDefinition/PH-Condition"
 // * clinicalStatus = $ClinicalStatusValueSet#active
 * verificationStatus = $ConditionVerificationStatusValueSet#confirmed
 * code = $ConditionCodeValueSet#D123 "Diabetes Mellitus"
@@ -85,7 +85,7 @@ Instance: c07ea517-f959-4c56-841e-c0b60e8d860e
 InstanceOf: DiagnosticReport
 Usage: #example
 * meta.lastUpdated = "2024-12-11T05:00:31.836+00:00"
-* meta.profile = "https://nhdr.gov.ph/fhir/StructureDefinition/PH_DiagnosticReport"
+* meta.profile = "https://nhdr.gov.ph/fhir/StructureDefinition/PH-DiagnosticReport"
 * status = #final
 * category = $v2-0074#LAB "Laboratory"
 * code = $loinc#29965-3 "Rabies virus antibody test"
@@ -94,7 +94,7 @@ Usage: #example
 * specimen = Reference(Specimen/7994709b-4350-4f91-b06f-4da782993a8b)
 * result = Reference(Observation/b8b94d0f-3461-4cb3-a7d9-365482f2e24a)
 * conclusion = "Positive for rabies virus antibodies"
-* conclusionCode = $sct#422080000 "Rabies virus infection"
+* conclusionCode = $sct#14168008 "Rabies"
 
 
 // Instance: Condition-1
@@ -167,4 +167,5 @@ Usage: #example
 * address.postalCode = "9132"
 * address.country = "abc"
 * maritalStatus.text = "abc"
+* birthDate = 2025-12-12
 // * managingOrganization = Reference(12345) "12345"
