@@ -6,6 +6,7 @@ Description: "A booking of a healthcare event among patient(s), practitioner(s),
 * ^status = #draft
 * identifier ..0
 * status from $YesNoValueSet (required)
+* status ^short = "Yes or No indicator if the patient have an appointment."
 * cancelationReason ..0
 * serviceCategory ..0
 * serviceType ..0

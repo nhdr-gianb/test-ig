@@ -8,5 +8,4 @@ Description: "A value set representing the status of a procedure, indicating whe
 * ^experimental = false
 * ^date = "2024-11-28"
 * ^publisher = "NHDR"
-* $ProcedureStatusCodeSystem#Done "Done"
-* $ProcedureStatusCodeSystem#NotDone "Not Done"
+* include codes from system $ProcedureStatusCodeSystem

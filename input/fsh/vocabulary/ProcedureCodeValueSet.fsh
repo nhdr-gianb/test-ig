@@ -8,8 +8,5 @@ Description: "A value set representing codes for various procedures, including i
 * ^experimental = false
 * ^date = "2024-11-28"
 * ^publisher = "NHDR"
-* $ProcedureCodeSystem#ChestRadiography "Chest radiography"
-* $ProcedureCodeSystem#ChestCT "Chest CT"
-* $ProcedureCodeSystem#CaseRateCode "Case Rate Code"
-* $ProcedureCodeSystem#LungUltrasound "Lung ultrasound"
-* $ProcedureCodeSystem#RVSCode "RVS Code"
+* include codes from system $SNOMED where concept is-a #71388002
+* exclude $SNOMED#71388002

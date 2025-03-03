@@ -1,4 +1,4 @@
-Alias: $CodeSystem-v2-0203 = http://terminology.hl7.org/5.1.0/CodeSystem-v2-0203.html
+// Alias: $CodeSystem-v2-0203 = http://terminology.hl7.org/5.1.0/CodeSystem-v2-0203.html
 
 Profile: PH_Patient
 Parent: Patient

@@ -8,7 +8,5 @@ Description: "A value set representing possible body site designations for proce
 * ^experimental = false
 * ^date = "2024-11-28"
 * ^publisher = "NHDR"
-* $ProcedureBodySiteCodeSystem#Left "Left"
-* $ProcedureBodySiteCodeSystem#Right "Right"
-* $ProcedureBodySiteCodeSystem#Both "Both"
-* $ProcedureBodySiteCodeSystem#NA "N/A"
+* include codes from system $SNOMED where concept is-a #442083009
+* exclude $SNOMED#442083009
