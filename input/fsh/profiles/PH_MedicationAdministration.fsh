@@ -23,7 +23,7 @@ Description: "Describes the event of a patient consuming or otherwise being admi
 * instantiates ..0
 * partOf ..0
 // * status from MedicalAdministrationStatus (required)
-* status from $YesNoValueSet (required)
+* status from $YesNoVS (required)
 * statusReason ..0
 * category ..0
 * context ..0

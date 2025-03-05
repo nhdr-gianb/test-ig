@@ -13,4 +13,4 @@ Description: "Demographics and administrative information about a person indepen
 * photo ..0
 * managingOrganization ..0
 * active ..0
-* name only $PH_HumanName
+* name only $SD_HumanName

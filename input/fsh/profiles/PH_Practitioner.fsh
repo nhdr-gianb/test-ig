@@ -16,4 +16,4 @@ Description: "A person who is directly or indirectly involved in the provisionin
 * photo ..0
 * qualification ..0
 * communication ..0
-* name only $PH_HumanName
+* name only $SD_HumanName

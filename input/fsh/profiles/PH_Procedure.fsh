@@ -24,17 +24,17 @@ Description: "An action that is or was performed on or for a patient, practition
 * instantiatesUri ..0
 * basedOn ..0
 * partOf ..0
-* status = #https://nhdr.gov.ph/fhir/ValueSet/ProcedureStatusValueSet (exactly)
-* status from ProcedureStatusValueSet (required)
+// * status = #https://nhdr.gov.ph/fhir/ValueSet/ProcedureStatusValueSet (exactly)
+* status from ProcedureStatusVS (required)
 * statusReason ..0
-* code from ProcedureCodeValueSet (example)
+* code from ProcedureCodeVS (example)
 * recorder ..0
 * asserter ..0
 * performer ..0
 * location ..0
 * reasonCode ..0
 * reasonReference ..0
-* bodySite from ProcedureBodySiteValueSet (example)
+* bodySite from ProcedureBodySiteVS (example)
 * report ..0
 * complication ..0
 * complicationDetail ..0

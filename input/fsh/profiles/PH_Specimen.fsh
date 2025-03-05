@@ -25,14 +25,14 @@ Description: "A sample to be used for analysis."
 * extension[species] ^definition = "Describes the type of species / organism [e.g. Malaria (Plasmodium falciparum, Plasmodium malariae, Plasmodium vivax, Plasmodium ovale, Plasmodium knowlesi)]"
 * extension[species] ^comment = "This is an extension"
 * extension[species] ^isModifier = false
-* type from SpecimenType (example)
+* type from SpecimenTypeVS (example)
 * collection.extension contains ReleaseDate named releaseDate 0..*
 * collection.extension[releaseDate] ^short = "Date the specimen was released"
 * collection.extension[releaseDate] ^definition = "Date the specimen was released"
 * collection.extension[releaseDate] ^comment = "This is an extension"
 * collection.extension[releaseDate] ^isModifier = false
-* collection.method from SpecimenCollectionMethod (example)
+* collection.method from SpecimenCollectionMethodVS (example)
 * collection.bodySite ..0
 * collection.fastingStatus[x] ..0
-* processing.procedure from SpecimenProcessingProcedure (example)
-* condition from SpecimenCondition (extensible)
+* processing.procedure from SpecimenProcessingProcedureVS (example)
+* condition from SpecimenConditionVS (extensible)

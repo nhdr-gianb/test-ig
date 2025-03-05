@@ -25,10 +25,10 @@ Description: "Refers to a formally or informally recognized grouping of people o
 * identifier[DOHfhudcode] ^definition = "Health Facility Code (HFC)"
 * identifier[otherID] ^short = "Use of other facility codes"
 * identifier[otherID] ^definition = "PhilHealth Accreditation Number (PAN)\nPhilHealth Employer Number (PEN)"
-* type from OrganizationType (extensible)
-* type.coding from OrganizationType (extensible)
+* type from OrganizationTypeVS (extensible)
+// * type.coding from OrganizationTypeVS (extensible)
 * alias ..0
 * partOf ..0
 * contact ..1
 * endpoint ..0
-* contact.name only $PH_HumanName
+* contact.name only $SD_HumanName

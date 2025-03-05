@@ -1,0 +1,10 @@
+ValueSet: EncounterServiceTypeVS
+Id: EncounterServiceTypeVS
+Description: "A value set specifying the various types of services provided during an encounter."
+* ^url = "https://nhdr.gov.ph/fhir/ValueSet/EncounterServiceTypeVS"
+* ^version = "1.0.0"
+* ^status = #draft
+* ^experimental = false
+* ^date = "2024-11-28"
+* ^publisher = "NHDR"
+* include codes from system $EncounterServiceTypeCS

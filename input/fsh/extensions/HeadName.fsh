@@ -4,4 +4,4 @@ Context: Organization
 Description: "Name of the head of the facility."
 * ^url = "https://nhdr.gov.ph/fhir/StructureDefinition/HeadName"
 * ^status = #draft
-* value[x] only $PH_HumanName
+* value[x] only $SD_HumanName

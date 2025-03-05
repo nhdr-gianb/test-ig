@@ -73,14 +73,14 @@ Description: "Captures key demographic and administrative information about indi
 * identifier[otherID] ^comment = "TIN, SSS, GSIS, Divers License, Passport no., National ID"
 * identifier[otherID].system ..0
 * identifier[otherID].period ..0
-* name only $PH_HumanName
+* name only $SD_HumanName
 * name.id ..0
 * name.use ..0
 * name.prefix ..0
 * gender ..0
 * deceased[x] ^definition = "Indicates if the individual is deceased or not.\nThe \"\"[x]\"\" is replaced with the title-cased name of the type that is actually used."
-* address only $PH_Address
-* maritalStatus from $MaritalStatusValueSet (extensible)
+* address only $SD_Address
+* maritalStatus from $MaritalStatusVS (extensible)
 * maritalStatus ^definition = "This field contains a patient's most recent marital (civil) status.\nRefers to the personal status of each individual with reference to the marriage laws or customs of the country.  It is the same as \"\"civil status\"\", the term usually used in official and private records, documents, transactions, and others, in the country. \n\nAlternate Name: Civil Status"
 * multipleBirth[x] ..0
 * multipleBirth[x] ^slicing.discriminator.type = #type
@@ -92,8 +92,8 @@ Description: "Captures key demographic and administrative information about indi
 * photo.size ..0
 * photo.hash ..0
 * photo.creation ..0
-* contact.name only $PH_HumanName
-* contact.relationship from ContactRelationshipValueSet (extensible)
+* contact.name only $SD_HumanName
+* contact.relationship from ContactRelationshipVS (extensible)
 * communication ..0
 * generalPractitioner ^definition = "Patient's nominated care provider. Pertains to the Konsulta Health Care Provider"
 * managingOrganization ..0

@@ -10,7 +10,7 @@ Description: "Measurements and simple assertions made about a patient, device or
     ExtOrganization named extOrganization 0..* and
     RecordedDate named recordedDate 0..*
 * extension[address] ^isModifier = false
-* extension[address].value[x] only $PH_Address
+* extension[address].value[x] only $SD_Address
 * extension[extOrganization] ^short = "Health facility where the observation was made"
 * extension[extOrganization] ^definition = "Health facility where the observation was made"
 * extension[extOrganization] ^comment = "This is an extension"
@@ -24,10 +24,10 @@ Description: "Measurements and simple assertions made about a patient, device or
 * focus ..0
 * issued ..0
 * value[x] only Quantity or CodeableConcept or string or dateTime
-* value[x] from ObservationValue (extensible)
+* value[x] from ObservationValueVS (extensible)
 * dataAbsentReason ..0
 * bodySite ..0
-* method from $ObservationMethodValueSet (extensible)
+* method from $ObservationMethodVS (extensible)
 * device ..0
 * referenceRange ..0
 * hasMember ..0

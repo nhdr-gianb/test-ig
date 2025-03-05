@@ -9,18 +9,18 @@ Description: "Describes the event of a patient being administered a vaccine or a
 * extension[extOrganization] ^definition = "Organization where the immunization was conducted."
 * extension[extOrganization] ^comment = "This is an extension"
 * extension[extOrganization] ^isModifier = false
-* status from ImmunizationStatus (required)
-* vaccineCode from ImmunizationVaccineCodeValueSet (example)
+* status from ImmunizationStatusVS (required)
+* vaccineCode from ImmunizationVaccineCodeVS (example)
 * primarySource ..0
-* reportOrigin from ImmunizationReportOrigin (example)
+* reportOrigin from ImmunizationReportOriginVS (example)
 * location ..0
 * manufacturer ..0
 * lotNumber ..0
 * expirationDate ..0
 * site ..0
-* route from ImmunizationRouteValueSet (example)
+* route from ImmunizationRouteVS (example)
 * performer ..0
-* reasonCode from ImmunizationStatusReason (example)
+* reasonCode from ImmunizationStatusReasonVS (example)
 * reasonReference ..0
 * isSubpotent ..0
 * subpotentReason ..0

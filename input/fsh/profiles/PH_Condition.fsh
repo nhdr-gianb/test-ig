@@ -9,12 +9,12 @@ Description: "A clinical condition, problem, diagnosis, or other event, situatio
 * extension[extOrganization] ^definition = "Health facility where the encounter was"
 * extension[extOrganization] ^comment = "This is an extension"
 * extension[extOrganization] ^isModifier = false
-* clinicalStatus.coding from ClinicalStatusValueSet (required)
-* verificationStatus from ConditionVerificationStatusValueSet (required)
-* category from ConditionCategoryValueSet (extensible)
-* severity from ConditionSeverityValueSet (preferred)
-* code from ConditionCodeValueSet (example)
-* bodySite from ConditionBodySiteValueSet (example)
+* clinicalStatus.coding from ClinicalStatusVS (required)
+* verificationStatus from ConditionVerificationStatusVS (required)
+* category from ConditionCategoryVS (extensible)
+* severity from ConditionSeverityVS (preferred)
+* code from ConditionCodeVS (example)
+* bodySite from ConditionBodySiteVS (example)
 * abatement[x] ..0
 * recorder ..0
 * asserter ..0

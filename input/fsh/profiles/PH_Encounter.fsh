@@ -68,13 +68,13 @@ Description: "An interaction between a patient and healthcare provider(s) for th
 * statusHistory ..0
 * classHistory ..0
 * type ..1
-* type from EncounterTypeValueSet (example)
-* serviceType from EncounterServiceTypeValueSet (example)
+* type from EncounterTypeVS (example)
+* serviceType from EncounterServiceTypeVS (example)
 * priority ..0
 * episodeOfCare ..0
 * basedOn ..0
 * participant ..0
-* hospitalization.dischargeDisposition from EncounterHospitalizationDischargeDispositionValueSet (extensible)
-* location.physicalType from EncounterLocationPhysicalTypeValueSet (extensible)
+* hospitalization.dischargeDisposition from EncounterHospitalizationDischargeDispositionVS (extensible)
+* location.physicalType from EncounterLocationPhysicalTypeVS (extensible)
 * serviceProvider ..0
 * partOf ..0

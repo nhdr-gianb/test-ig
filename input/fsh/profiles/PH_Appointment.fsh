@@ -5,7 +5,7 @@ Description: "A booking of a healthcare event among patient(s), practitioner(s),
 * ^url = "https://nhdr.gov.ph/fhir/StructureDefinition/PH-Appointment"
 * ^status = #draft
 * identifier ..0
-* status from $YesNoValueSet (required)
+* status from $YesNoVS (required)
 * status ^short = "Yes or No indicator if the patient have an appointment."
 * cancelationReason ..0
 * serviceCategory ..0
