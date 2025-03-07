@@ -1,0 +1,49 @@
+{
+  "resourceType": "QuestionnaireResponse",
+  "id": "NonNeonatalTetanus-3c3a4ffc-a4d4-4502-b935-7fb1c3f371d9",
+  "meta": {
+    "lastUpdated": "2024-12-12T04:27:08.414+00:00"
+  },
+  "status": "completed",
+  "subject": {
+    "reference": "Patient/b160ce3e-91f6-4ee5-bf72-248a49e2047f"
+  },
+  "item": [
+    {
+      "linkId": "1",
+      "text": "Has the specimen been sent to RITM?",
+      "answer": [
+        {
+          "valueBoolean": true
+        }
+      ]
+    },
+    {
+      "linkId": "2",
+      "text": "Was the patient injured recently with potential exposure to contaminated objects?",
+      "answer": [
+        {
+          "valueBoolean": true
+        }
+      ]
+    },
+    {
+      "linkId": "3",
+      "text": "Is the patient experiencing muscle stiffness or spasms?",
+      "answer": [
+        {
+          "valueBoolean": true
+        }
+      ]
+    },
+    {
+      "linkId": "4",
+      "text": "Has the patient been vaccinated against tetanus?",
+      "answer": [
+        {
+          "valueBoolean": false
+        }
+      ]
+    }
+  ]
+}

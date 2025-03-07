@@ -1,0 +1,22 @@
+{
+  "resourceType": "Observation",
+  "id": "Leptospirosis-b8b94d0f-3461-4cb3-a7d9-365482f2e24a",
+  "meta": {
+    "lastUpdated": "2024-12-12T04:19:32.074+00:00"
+  },
+  "status": "final",
+  "code": {
+    "coding": [
+      {
+        "system": "http://loinc.org",
+        "code": "80347-6",
+        "display": "Observation of Leptospirosis Symptoms"
+      }
+    ]
+  },
+  "subject": {
+    "reference": "Patient/b160ce3e-91f6-4ee5-bf72-248a49e2047f"
+  },
+  "effectiveDateTime": "2024-12-11T15:00:00Z",
+  "valueString": "Patient exhibits fever, muscle pain, and recent exposure to floodwaters."
+}

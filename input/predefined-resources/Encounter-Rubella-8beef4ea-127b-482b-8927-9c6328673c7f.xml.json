@@ -1,0 +1,8 @@
+{
+  "resourceType": "Encounter",
+  "id": "Rubella-8beef4ea-127b-482b-8927-9c6328673c7f",
+  "meta": {
+    "lastUpdated": "2024-12-12T03:35:52.488+00:00"
+  },
+  "status": "in-progress"
+}

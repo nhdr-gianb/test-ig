@@ -1,0 +1,12 @@
+{
+  "resourceType": "CarePlan",
+  "id": "3512b500-6b4e-47dd-9c28-0bdf01077a8a",
+  "meta": {
+    "lastUpdated": "2024-12-10T14:28:43.909+00:00"
+  },
+  "status": "active",
+  "intent": "plan",
+  "subject": {
+    "reference": "Patient/b160ce3e-91f6-4ee5-bf72-248a49e2047f"
+  }
+}

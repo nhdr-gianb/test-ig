@@ -1,0 +1,107 @@
+{
+  "resourceType": "Organization",
+  "id": "Organization-3",
+  "meta": {
+    "lastUpdated": "2024-07-18T06:49:53.946+00:00",
+    "profile": [
+      "https://example.org/fhir/StructureDefinition/PH_Organization"
+    ]
+  },
+  "extension": [
+    {
+      "url": "https://example.org/fhir/StructureDefinition/HeadName",
+      "valueHumanName": {
+        "use": "official",
+        "family": "Garcia",
+        "given": [
+          "Juan"
+        ],
+        "prefix": [
+          "Dr."
+        ]
+      }
+    },
+    {
+      "url": "https://example.org/fhir/StructureDefinition/HeadPosition",
+      "valueString": "Chief Medical Officer"
+    }
+  ],
+  "identifier": [
+    {
+      "use": "official",
+      "type": {
+        "coding": [
+          {
+            "system": "http://terminology.hl7.org/CodeSystem/v2-0203",
+            "code": "XX",
+            "display": "Health Facility Code"
+          }
+        ]
+      },
+      "system": "http://example.org/fhir/DOHfhudcode",
+      "value": "HFC123456"
+    },
+    {
+      "use": "secondary",
+      "type": {
+        "coding": [
+          {
+            "system": "http://terminology.hl7.org/CodeSystem/v2-0203",
+            "code": "PRN",
+            "display": "Provider number"
+          }
+        ]
+      },
+      "system": "http://example.org/fhir/otherID",
+      "value": "PAN654321"
+    }
+  ],
+  "name": "Sample Health Facility",
+  "telecom": [
+    {
+      "system": "phone",
+      "value": "+1234567890",
+      "use": "work"
+    },
+    {
+      "system": "email",
+      "value": "info@example.org",
+      "use": "work"
+    }
+  ],
+  "contact": [
+    {
+      "purpose": {
+        "coding": [
+          {
+            "system": "http://terminology.hl7.org/CodeSystem/contactentity-type",
+            "code": "ADMIN",
+            "display": "Administrative"
+          }
+        ]
+      },
+      "name": {
+        "use": "official",
+        "family": "Santos",
+        "given": [
+          "Maria"
+        ],
+        "prefix": [
+          "Ms."
+        ]
+      },
+      "telecom": [
+        {
+          "system": "phone",
+          "value": "+0987654321",
+          "use": "work"
+        },
+        {
+          "system": "email",
+          "value": "admin@example.org",
+          "use": "work"
+        }
+      ]
+    }
+  ]
+}

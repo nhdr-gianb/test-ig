@@ -1,0 +1,55 @@
+{
+  "resourceType": "DiagnosticReport",
+  "id": "c07ea517-f959-4c56-841e-c0b60e8d860e",
+  "meta": {
+    "lastUpdated": "2024-12-11T05:00:31.836+00:00",
+    "profile": "https://nhdr.gov.ph/fhir/StructureDefinition/PH_DiagnosticReport"
+  },
+  "status": "final",
+  "category": [
+    {
+      "coding": [
+        {
+          "system": "http://terminology.hl7.org/CodeSystem/v2-0074",
+          "code": "LAB",
+          "display": "Laboratory"
+        }
+      ]
+    }
+  ],
+  "code": {
+    "coding": [
+      {
+        "system": "http://loinc.org",
+        "code": "29965-3",
+        "display": "Rabies virus antibody test"
+      }
+    ],
+    "text": "Rabies Virus Antibody Test"
+  },
+  "subject": {
+    "reference": "Patient/b160ce3e-91f6-4ee5-bf72-248a49e2047f"
+  },
+  "specimen": [
+    {
+      "reference": "Specimen/7994709b-4350-4f91-b06f-4da782993a8b"
+    }
+  ],
+  "result": [
+    {
+      "reference": "Observation/b8b94d0f-3461-4cb3-a7d9-365482f2e24a"
+    }
+  ],
+  "conclusion": "Positive for rabies virus antibodies",
+  "conclusionCode": [
+    {
+      "coding": [
+        {
+          "system": "http://snomed.info/sct",
+          "code": "422080000",
+          "display": "Rabies virus infection"
+        }
+      ]
+    }
+  ]
+}

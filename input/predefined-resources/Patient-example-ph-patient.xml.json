@@ -1,0 +1,118 @@
+{
+  "resourceType": "Patient",
+  "id": "example-ph-patient",
+  "meta": {
+    "lastUpdated": "2024-12-09T12:31:34.236+00:00",
+    "profile": [
+      "https://example.org/fhir/StructureDefinition/PH_Patient"
+    ]
+  },
+  "extension": [
+    {
+      "url": "https://example.org/fhir/StructureDefinition/nationality",
+      "valueCodeableConcept": {
+        "coding": [
+          {
+            "system": "http://example.org/nationality-codes",
+            "code": "PH",
+            "display": "Filipino"
+          }
+        ]
+      }
+    },
+    {
+      "url": "https://example.org/fhir/StructureDefinition/indigenousGroup",
+      "valueCodeableConcept": {
+        "coding": [
+          {
+            "system": "http://example.org/indigenous-group-codes",
+            "code": "Aetas",
+            "display": "Aetas"
+          }
+        ]
+      }
+    },
+    {
+      "url": "https://example.org/fhir/StructureDefinition/spouseName",
+      "valueString": "Maria Clara"
+    },
+    {
+      "url": "https://example.org/fhir/StructureDefinition/occupation",
+      "valueString": "Farmer"
+    },
+    {
+      "url": "https://example.org/fhir/StructureDefinition/sex",
+      "valueCodeableConcept": {
+        "coding": [
+          {
+            "system": "http://example.org/sex-codes",
+            "code": "M",
+            "display": "Male"
+          }
+        ]
+      }
+    }
+  ],
+  "identifier": [
+    {
+      "system": "http://example.org/philhealth",
+      "value": "1234567890"
+    },
+    {
+      "type": {
+        "text": "Other ID (e.g., National ID)"
+      },
+      "value": "9876543210"
+    }
+  ],
+  "name": [
+    {
+      "use": "official",
+      "family": "Dela Cruz",
+      "given": [
+        "Juan"
+      ]
+    },
+    {
+      "use": "nickname",
+      "given": [
+        "Johnny"
+      ]
+    }
+  ],
+  "gender": "male",
+  "birthDate": "1985-06-15",
+  "address": [
+    {
+      "extension": [
+        {
+          "url": "http://hl7.org/fhir/StructureDefinition/originalText",
+          "valueString": "Barangay"
+        }
+      ],
+      "use": "home",
+      "line": [
+        "123 Barangay Street"
+      ],
+      "city": "Quezon City",
+      "state": "Metro Manila",
+      "postalCode": "1100",
+      "country": "Philippines"
+    }
+  ],
+  "maritalStatus": {
+    "coding": [
+      {
+        "system": "http://example.org/marital-status",
+        "code": "M",
+        "display": "Married"
+      }
+    ]
+  },
+  "generalPractitioner": [
+    {
+      "reference": "Practitioner/1234",
+      "display": "Dr. Jose Rizal"
+    }
+  ]
+}

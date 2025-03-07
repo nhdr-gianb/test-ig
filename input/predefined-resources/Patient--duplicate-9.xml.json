@@ -1,0 +1,46 @@
+{
+  "resourceType": "Patient",
+  "id": "Patient-9",
+  "meta": {
+    "lastUpdated": "2024-07-18T04:48:00.401+00:00"
+  },
+  "identifier": [
+    {
+      "use": "PhilhealthID",
+      "value": "12345"
+    },
+    {
+      "use": "PhilsysID",
+      "value": "678910"
+    }
+  ],
+  "active": true,
+  "name": [
+    {
+      "extension": [
+        {
+          "url": "https://example.org/fhir/StructureDefinition/MiddleName",
+          "valueString": "Rizal"
+        }
+      ],
+      "use": "official",
+      "family": "Dela Cruz",
+      "given": [
+        "Juan",
+        "Pedro",
+        "Santos"
+      ]
+    }
+  ],
+  "telecom": [
+    {
+      "system": "phone",
+      "value": "(03) 5555 6473"
+    },
+    {
+      "system": "phone",
+      "value": "(0939) 929 3814",
+      "use": "mobile"
+    }
+  ]
+}

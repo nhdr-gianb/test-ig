@@ -1,0 +1,49 @@
+{
+  "resourceType": "QuestionnaireResponse",
+  "id": "COVID-3c3a4ffc-a4d4-4502-b935-7fb1c3f371d9",
+  "meta": {
+    "lastUpdated": "2024-12-12T04:30:08.519+00:00"
+  },
+  "status": "completed",
+  "subject": {
+    "reference": "Patient/b160ce3e-91f6-4ee5-bf72-248a49e2047f"
+  },
+  "item": [
+    {
+      "linkId": "1",
+      "text": "Has the specimen been sent to RITM?",
+      "answer": [
+        {
+          "valueBoolean": true
+        }
+      ]
+    },
+    {
+      "linkId": "2",
+      "text": "Does the patient have a fever, cough, or difficulty breathing?",
+      "answer": [
+        {
+          "valueBoolean": true
+        }
+      ]
+    },
+    {
+      "linkId": "3",
+      "text": "Has the patient been in close contact with a confirmed COVID-19 case?",
+      "answer": [
+        {
+          "valueBoolean": true
+        }
+      ]
+    },
+    {
+      "linkId": "4",
+      "text": "Has the patient experienced loss of taste or smell?",
+      "answer": [
+        {
+          "valueBoolean": true
+        }
+      ]
+    }
+  ]
+}

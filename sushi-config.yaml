@@ -3,23 +3,24 @@
 # │  used properties are included. For a list of all supported properties and their functions,     │
 # │  see: https://fshschool.org/docs/sushi/configuration/.                                         │
 # ╰────────────────────────────────────────────────────────────────────────────────────────────────╯
-id: philhealth.gov.ph.nhdr
-canonical: https://philhealth.gov.ph/fhir/nhdr
-name: PHNhdrImplementationGuide
-title: DRAFT REVISED Philippines National Health Data Repository Implementation Guide
-# description: Draft IG for Philippines National Health Data Repository
+id: PHCDI
+canonical: https://nhdr.gov.ph/fhir
+name: Philippine Core Data for Interoperability
+title: NHDR PHCDI Release 1.0
+description: Draft Implementation Guide for the National Health Data Repository's Philippine Core Data for Interoperability
 status: draft # draft | active | retired | unknown
 version: 0.1.0
 fhirVersion: 4.0.1 # https://www.hl7.org/fhir/valueset-FHIR-version.html
-copyright: All rights reserved
 copyrightYear: 2025+
 releaseLabel: ci-build
+language: en-US
 license: CC0-1.0 # https://www.hl7.org/fhir/valueset-spdx-license.html
+# jurisdiction: urn:iso:std:iso:3166#US "United States of America" # https://www.hl7.org/fhir/valueset-jurisdiction.html
 publisher:
-  name: PhilHealth
-  url: https://philhealth.gov.ph
+  name: NHDR
+  url: https://nhdr.gov.ph
   # email: test@example.org
-jurisdiction: urn:iso:std:iso:3166#PH
+
 # The dependencies property corresponds to IG.dependsOn. The key is the
 # package id and the value is the version (or dev/current). For advanced
 # use cases, the value can be an object with keys for id, uri, and version.
@@ -43,9 +44,17 @@ jurisdiction: urn:iso:std:iso:3166#PH
 # with supported extensions (e.g., .md/.xml) will be treated as
 # sub-pages.
 #
-# pages:
-#   index.md:
-#     title: Example Home
+pages:
+  index.md:
+    title: PHCDI Implementation Guide
+  artifacts:
+    title: PHCDI Artifacts
+  # base.md:
+  #   title: Base Resources
+  extensions.md:
+    title: Custom Extensions
+  search-parameters.md:
+    title: Search Parameters
 #   implementation.xml:
 #   examples.xml:
 #     title: Examples Overview
@@ -63,6 +72,9 @@ jurisdiction: urn:iso:std:iso:3166#PH
 # http://build.fhir.org/ig/FHIR/fhir-tools-ig/branches/master/CodeSystem-ig-parameters.html
 #
 # parameters:
+#   path-resource:
+#     # - input/predefined-resources
+#     - input/predefined-jsons
 #   excludettl: true
 #   validation: [allow-any-extensions, no-broken-links]
 #
@@ -76,7 +88,17 @@ jurisdiction: urn:iso:std:iso:3166#PH
 # ╰────────────────────────────────────────────────────────────────────────────────────────────────╯
 menu:
   Home: index.html
-  Artifacts: artifacts.html
+  Artifacts Index:
+    PHCDI Artifacts: artifacts.html#phcdi-artifacts
+    Base Profiles: artifacts.html#1
+    Clinical Profiles: artifacts.html#2
+    Data Types: artifacts.html#3
+    Extensions: artifacts.html#4
+    Value Sets: artifacts.html#5
+  # Base: base.html
+  # Clinical: clinical.html
+  Extensions: extensions.html
+  Search Parameters: search-parameters.html
 
 # ╭───────────────────────────Less Common Implementation Guide Properties──────────────────────────╮
 # │  Uncomment the properties below to configure additional properties on the ImplementationGuide  │
@@ -90,9 +112,10 @@ menu:
 # contact:
 #   - name: Bob Smith
 #     telecom:
-#       - system: email # phone | fax | email | pager | url | sms | other
-#         value: bobsmith@example.org
+#       - system: url # phone | fax | email | pager | url | sms | other
+#         value: http://www.hl7.org/Special/committees/
 #         use: work
+
 #
 #
 # The global property corresponds to the IG.global property, but it
@@ -145,19 +168,48 @@ menu:
 # is specified by id or name, SUSHI will replace it with the correct
 # URL when generating the IG JSON.
 #
-# groups:
-#   GroupA:
-#     name: Group A
-#     description: The Alpha Group
-#     resources:
-#     - StructureDefinition/animal-patient
-#     - StructureDefinition/arm-procedure
-#   GroupB:
-#     name: Group B
-#     description: The Beta Group
-#     resources:
-#     - StructureDefinition/bark-control
-#     - StructureDefinition/bee-sting
+groups:
+  GroupA:
+    name: Base Profiles
+    # description: Testing for Groups
+    resources:
+    - StructureDefinition/PH-Appointment
+    - StructureDefinition/PH-Encounter
+    - StructureDefinition/PH-Location
+    - StructureDefinition/PH-Organization
+    - StructureDefinition/PH-Patient
+    - StructureDefinition/PH-Person
+    - StructureDefinition/PH-Practitioner
+    - StructureDefinition/PH-PractitionerRole
+
+  GroupB:
+    name: Clinical Profiles
+    # description: Testing for Groups
+    resources:
+    - StructureDefinition/PH-AllergyIntolerance
+    - StructureDefinition/PH-CarePlan
+    - StructureDefinition/PH-Condition
+    - StructureDefinition/PH-DiagnosticReport
+    - StructureDefinition/PH-FamilyMemberHistory
+    - StructureDefinition/PH-Immunization
+    - StructureDefinition/PH-Medication
+    - StructureDefinition/PH-MedicationAdministration
+    - StructureDefinition/PH-MedicationDispense
+    - StructureDefinition/PH-MedicationStatement
+    - StructureDefinition/PH-Observation
+    - StructureDefinition/PH-Procedure
+    - StructureDefinition/PH-QuestionnaireResponse
+    - StructureDefinition/PH-ServiceRequest
+    - StructureDefinition/PH-Specimen
+
+  GroupC:
+    name: Data Types
+    # description: Testing for Groups
+    resources:
+    - StructureDefinition/PH-Address
+    - StructureDefinition/PH-HumanName
+    - StructureDefinition/PH-Period
+
 #
 #
 # The ImplementationGuide resource defines several other properties

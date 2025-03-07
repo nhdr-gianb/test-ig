@@ -1,0 +1,49 @@
+{
+  "resourceType": "QuestionnaireResponse",
+  "id": "Malaria-3c3a4ffc-a4d4-4502-b935-7fb1c3f371d9",
+  "meta": {
+    "lastUpdated": "2024-12-12T04:20:59.925+00:00"
+  },
+  "status": "completed",
+  "subject": {
+    "reference": "Patient/b160ce3e-91f6-4ee5-bf72-248a49e2047f"
+  },
+  "item": [
+    {
+      "linkId": "1",
+      "text": "Has the specimen been sent to RITM?",
+      "answer": [
+        {
+          "valueBoolean": true
+        }
+      ]
+    },
+    {
+      "linkId": "2",
+      "text": "Has the patient traveled to malaria-endemic areas recently?",
+      "answer": [
+        {
+          "valueBoolean": true
+        }
+      ]
+    },
+    {
+      "linkId": "3",
+      "text": "Has the patient experienced fever, chills, or night sweats?",
+      "answer": [
+        {
+          "valueBoolean": true
+        }
+      ]
+    },
+    {
+      "linkId": "4",
+      "text": "Has the patient experienced any symptoms like vomiting, diarrhea, or headaches?",
+      "answer": [
+        {
+          "valueBoolean": false
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,46 @@
+{
+  "resourceType": "QuestionnaireResponse",
+  "id": "de86f0cb-58c9-41d9-a89d-86a3f8e03926",
+  "meta": {
+    "lastUpdated": "2024-12-11T05:00:31.793+00:00"
+  },
+  "status": "completed",
+  "item": [
+    {
+      "linkId": "1",
+      "text": "Consulted?",
+      "answer": [
+        {
+          "valueBoolean": true
+        }
+      ]
+    },
+    {
+      "linkId": "2",
+      "text": "Admitted?",
+      "answer": [
+        {
+          "valueBoolean": true
+        }
+      ]
+    },
+    {
+      "linkId": "3",
+      "text": "History of animal bite exposure (Y/N)?",
+      "answer": [
+        {
+          "valueBoolean": true
+        }
+      ]
+    },
+    {
+      "linkId": "4",
+      "text": "Specimen sent for rabies testing (Y/N)?",
+      "answer": [
+        {
+          "valueBoolean": true
+        }
+      ]
+    }
+  ]
+}

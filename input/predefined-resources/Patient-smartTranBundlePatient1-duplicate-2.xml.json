@@ -1,0 +1,24 @@
+{
+  "resourceType": "Patient",
+  "id": "smartTranBundlePatient1",
+  "meta": {
+    "lastUpdated": "2024-12-10T07:45:14.917+00:00"
+  },
+  "text": {
+    "status": "generated",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">Some narrative</div>"
+  },
+  "active": true,
+  "name": [
+    {
+      "use": "official",
+      "family": "Chalmecxxxxxxrs",
+      "given": [
+        "Peter",
+        "James"
+      ]
+    }
+  ],
+  "gender": "male",
+  "birthDate": "1974-12-25"
+}

@@ -1,0 +1,19 @@
+{
+  "resourceType": "QuestionnaireResponse",
+  "id": "8245f125-c299-4bec-89d7-3381843189e8",
+  "meta": {
+    "lastUpdated": "2024-12-10T14:28:44.132+00:00"
+  },
+  "status": "completed",
+  "item": [
+    {
+      "linkId": "referral",
+      "text": "Was the patient referred by another HCI?",
+      "answer": [
+        {
+          "valueBoolean": true
+        }
+      ]
+    }
+  ]
+}

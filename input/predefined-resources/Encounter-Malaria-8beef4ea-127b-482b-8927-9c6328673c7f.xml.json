@@ -1,0 +1,22 @@
+{
+  "resourceType": "Encounter",
+  "id": "Malaria-8beef4ea-127b-482b-8927-9c6328673c7f",
+  "meta": {
+    "lastUpdated": "2024-12-12T04:21:00.067+00:00"
+  },
+  "status": "in-progress",
+  "type": [
+    {
+      "coding": [
+        {
+          "system": "http://terminology.hl7.org/CodeSystem/v3-ActCode",
+          "code": "MALENC",
+          "display": "Malaria Encounter"
+        }
+      ]
+    }
+  ],
+  "subject": {
+    "reference": "Patient/b160ce3e-91f6-4ee5-bf72-248a49e2047f"
+  }
+}

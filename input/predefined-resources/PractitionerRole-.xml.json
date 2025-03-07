@@ -1,0 +1,17 @@
+{
+  "resourceType": "PractitionerRole",
+  "id": "PractitionerRole",
+  "meta": {
+    "lastUpdated": "2024-07-18T06:26:14.058+00:00"
+  },
+  "code": [
+    {
+      "coding": [
+        {
+          "system": "http://terminology.hl7.org/CodeSystem/v2-0286",
+          "code": "Physician"
+        }
+      ]
+    }
+  ]
+}
