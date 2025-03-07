@@ -7,7 +7,7 @@ Description: "Method of Travel"
 * ^url = "https://nhdr.gov.ph/fhir/CodeSystem/ObservationMethodCS"
 * ^status = #active
 * ^content = #complete
-* #Airline "Airline"
-* #SeaVessel "Sea vessel"
-* #BusLine "Bus line"
-* #Train "Train"
+* #Airline "Airline" "Airline"
+* #SeaVessel "Sea vessel" "Sea vessel"
+* #BusLine "Bus line" "Bus line"
+* #Train "Train" "Train" 
