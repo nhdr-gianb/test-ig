@@ -8,8 +8,10 @@ Description: "A value set representing various condition codes for classificatio
 * ^experimental = false
 * ^date = "2024-11-28"
 * ^publisher = "NHDR"
-* include codes from system $SNOMED where concept is-a #404684003
-* include $SNOMED#160245001
+* include codes from system $ICD-10CS 
+
+// * include codes from system $SNOMED where concept is-a #404684003
+// * include $SNOMED#160245001
 
 //  These are codes for PhilHealth forms (ICD10)
 // * include codes from system $ConditionCode
