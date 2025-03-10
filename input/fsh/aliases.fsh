@@ -4,6 +4,8 @@ Alias: $SD_Address = https://nhdr.gov.ph/fhir/StructureDefinition/PH-Address
 Alias: $SD_HumanName = https://nhdr.gov.ph/fhir/StructureDefinition/PH-HumanName
 
 // CodeSystems
+Alias: $RVSCodeCS = https://nhdr.gov.ph/fhir/CodeSystem/RVSCodeCS
+Alias: $ICD-10CS = https://nhdr.gov.ph/fhir/CodeSystem/ICD-10CS
 Alias: $ClinicalStatusCS = http://terminology.hl7.org/CodeSystem/condition-clinical
 Alias: $ConditionCategoryCS = http://terminology.hl7.org/CodeSystem/condition-category
 // Alias: $ConditionCodeCS = https://nhdr.gov.ph/fhir/CodeSystem/ConditionCodeCS (placeholder for ICD10 codes)
