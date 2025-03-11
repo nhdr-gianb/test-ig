@@ -1,6 +1,6 @@
 ValueSet: ProcedureCodeVS
 Id: ProcedureCodeVS
-Title: "Procedure Code Value Set"
+Title: "Procedure Code"
 Description: "A value set representing codes for various procedures, including imaging and classification codes."
 * ^url = "https://nhdr.gov.ph/fhir/ValueSet/ProcedureCodeVS"
 * ^version = "1.0.0"

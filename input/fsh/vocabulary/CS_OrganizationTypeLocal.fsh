@@ -1,6 +1,6 @@
 CodeSystem: OrganizationTypeLocalCS
 Id: OrganizationTypeLocalCS
-Title: "Local Organization Types"
+Title: "Organization Types - Local"
 Description: "Organization type codes used locally."
 * ^experimental = false
 * ^caseSensitive = true

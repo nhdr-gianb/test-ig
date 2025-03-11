@@ -1,7 +1,7 @@
 CodeSystem: IndigenousGroupCS
 Id: IndigenousGroupCS
-Title: "Indigenous Groups in the Philippines"
-Description: "A code system representing the recognized Indigenous groups to which a person may belong."
+Title: "Indigenous Groups"
+Description: "A list of codes representing the recognized indigenous groups in the Philippines to which a person may belong."
 * ^experimental = false
 * ^status = #draft
 * ^caseSensitive = true

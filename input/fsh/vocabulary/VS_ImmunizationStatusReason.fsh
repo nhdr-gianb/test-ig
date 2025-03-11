@@ -1,6 +1,6 @@
 ValueSet: ImmunizationStatusReasonVS
 Id: ImmunizationStatusReasonVS
-Title: "Immunization Status Reason Value Set"
+Title: "Immunization Status Reason"
 Description: "A value set representing reasons for immunization status."
 * ^url = "https://nhdr.gov.ph/fhir/ValueSet/ImmunizationStatusReasonVS"
 * ^version = "1.0.0"

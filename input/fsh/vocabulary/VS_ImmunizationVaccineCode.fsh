@@ -1,6 +1,6 @@
 ValueSet: ImmunizationVaccineCodeVS
 Id: ImmunizationVaccineCodeVS
-Title: "Immunization Vaccine Code Value Set"
+Title: "Immunization Vaccine Code"
 Description: "A value set representing codes for different vaccines used in immunization."
 * ^url = "https://nhdr.gov.ph/fhir/ValueSet/ImmunizationVaccineCodeVS"
 * ^version = "1.0.0"

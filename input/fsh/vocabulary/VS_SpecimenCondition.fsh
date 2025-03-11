@@ -1,6 +1,6 @@
 ValueSet: SpecimenConditionVS
 Id: SpecimenConditionVS
-Title: "Specimen Condition Value Set"
+Title: "Specimen Condition"
 Description: "A value set representing the condition of a specimen."
 * ^url = "https://nhdr.gov.ph/fhir/ValueSet/SpecimenConditionVS"
 * ^version = "1.0.0"

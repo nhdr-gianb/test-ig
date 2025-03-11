@@ -1,6 +1,6 @@
 ValueSet: DiagnosticReportCodeVS
 Id: DiagnosticReportCodeVS
-Title: "Diagnostic Report Code Value Set"
+Title: "Diagnostic Report Code"
 Description: "A value set representing codes for types of diagnostic reports."
 * ^url = "https://nhdr.gov.ph/fhir/ValueSet/DiagnosticReportCodeVS"
 * ^version = "1.0.0"

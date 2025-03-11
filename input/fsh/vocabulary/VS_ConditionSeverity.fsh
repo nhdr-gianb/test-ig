@@ -1,6 +1,6 @@
 ValueSet: ConditionSeverityVS
 Id: ConditionSeverityVS
-Title: "Condition Severity Value Set"
+Title: "Condition Severity"
 Description: "A value set representing the severity levels of conditions, particularly focused on dengue."
 * ^url = "https://nhdr.gov.ph/fhir/ValueSet/ConditionSeverityVS"
 * ^version = "1.0.0"

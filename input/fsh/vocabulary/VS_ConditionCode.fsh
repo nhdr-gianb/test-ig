@@ -1,6 +1,6 @@
 ValueSet: ConditionCodeVS
 Id: ConditionCodeVS
-Title: "Condition Code Value Set"
+Title: "Condition Code"
 Description: "A value set representing various condition codes for classification."
 * ^url = "https://nhdr.gov.ph/fhir/ValueSet/ConditionCodeVS"
 * ^version = "1.0.0"

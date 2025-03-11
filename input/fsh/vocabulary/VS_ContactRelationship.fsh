@@ -1,5 +1,6 @@
 ValueSet: ContactRelationshipVS
 Id: ContactRelationshipVS
+Title: "Contact Relationship"
 Description: "A value set representing various types of relationships to the patient."
 * ^url = "https://nhdr.gov.ph/fhir/ValueSet/ContactRelationshipVS"
 * ^version = "1.0.0"

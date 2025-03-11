@@ -1,7 +1,7 @@
 CodeSystem: ObservationMethodCS
 Id: ObservationMethodCS
 Title: "Method of Travel"
-Description: "Method of Travel"
+Description: "Mode of transportation for contact tracing."
 * ^experimental = false
 * ^caseSensitive = true
 * ^url = "https://nhdr.gov.ph/fhir/CodeSystem/ObservationMethodCS"

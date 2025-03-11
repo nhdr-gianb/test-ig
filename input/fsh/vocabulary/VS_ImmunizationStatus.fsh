@@ -1,6 +1,6 @@
 ValueSet: ImmunizationStatusVS
 Id: ImmunizationStatusVS
-Title: "Immunization Status Value Set"
+Title: "Immunization Status"
 Description: "A value set representing the status of immunization."
 * ^url = "https://nhdr.gov.ph/fhir/ValueSet/ImmunizationStatusVS"
 * ^version = "1.0.0"

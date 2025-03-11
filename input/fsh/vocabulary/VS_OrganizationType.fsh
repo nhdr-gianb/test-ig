@@ -1,6 +1,6 @@
 ValueSet: OrganizationTypeVS
 Id: OrganizationTypeVS
-Title: "OrganizationType"
+Title: "Organization Type"
 Description: "A value set defining the different types of organizations involved in healthcare, such as hospitals, clinics, insurance providers, and regulatory bodies."
 * ^url = "https://nhdr.gov.ph/fhir/ValueSet/OrganizationTypeVS"
 * ^version = "1.0.0"

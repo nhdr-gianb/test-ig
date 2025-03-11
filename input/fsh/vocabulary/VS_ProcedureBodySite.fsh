@@ -1,6 +1,6 @@
 ValueSet: ProcedureBodySiteVS
 Id: ProcedureBodySiteVS
-Title: "Procedure Body Site Value Set"
+Title: "Procedure Body Site"
 Description: "A value set representing possible body site designations for procedures."
 * ^url = "https://nhdr.gov.ph/fhir/ValueSet/ProcedureBodySiteVS"
 * ^version = "1.0.0"

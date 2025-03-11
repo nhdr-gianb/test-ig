@@ -1,7 +1,7 @@
 ValueSet: SexVS
 Id: SexVS
 Title: "Sex"
-Description: "Person's sex at birth"
+Description: "A person's sex at birth"
 * ^url = "https://nhdr.gov.ph/fhir/ValueSet/SexVS"
 * ^version = "1.0.0"
 * ^status = #draft

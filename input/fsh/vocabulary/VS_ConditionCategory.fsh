@@ -1,6 +1,6 @@
 ValueSet: ConditionCategoryVS
 Id: ConditionCategoryVS
-Title: "Condition Category Value Set"
+Title: "Condition Category"
 Description: "A value set representing various condition categories for classification."
 * ^url = "https://nhdr.gov.ph/fhir/ValueSet/ConditionCategoryVS"
 * ^version = "1.0.0"

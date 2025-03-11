@@ -1,6 +1,6 @@
 ValueSet: SpecimenProcessingProcedureVS
 Id: SpecimenProcessingProcedureVS
-Title: "Specimen Processing Procedure Value Set"
+Title: "Specimen Processing Procedure"
 Description: "A value set representing various specimen processing procedures."
 * ^url = "https://nhdr.gov.ph/fhir/ValueSet/SpecimenProcessingProcedureVS"
 * ^version = "1.0.0"

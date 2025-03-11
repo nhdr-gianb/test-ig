@@ -1,6 +1,6 @@
 ValueSet: ConditionBodySiteVS
 Id: ConditionBodySiteVS
-Title: "Condition Body Site Value Set"
+Title: "Condition Body Site"
 Description: "A value set representing various body sites relevant to specific conditions."
 * ^url = "https://nhdr.gov.ph/fhir/ValueSet/ConditionBodySiteVS"
 * ^version = "1.0.0"

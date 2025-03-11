@@ -1,7 +1,7 @@
 ValueSet: ObservationValueVS
 Id: ObservationValueVS
-Title: "Observation Value Set"
-Description: "A comprehensive value set for various observation values, including medical history, symptoms, clinical signs, and diagnostic outcomes."
+Title: "Observation Value"
+Description: "A value set for various observation values, including medical history, symptoms, clinical signs, and diagnostic outcomes."
 * ^url = "https://nhdr.gov.ph/fhir/ValueSet/ObservationValueVS"
 * ^version = "1.0.0"
 * ^status = #draft

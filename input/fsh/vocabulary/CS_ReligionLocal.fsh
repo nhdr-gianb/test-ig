@@ -1,7 +1,7 @@
 //  Currently unused until the team finishes mapping local CodeSystems/ValueSets with existing HL7 codes.
 CodeSystem: ReligionLocalCS
 Id: ReligionLocalCS
-Title: "Local Religion Codes"
+Title: "Religion - Local"
 Description: "Religion codes used by the local government."
 * ^experimental = false
 * ^caseSensitive = true

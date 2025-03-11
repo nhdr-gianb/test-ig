@@ -1,7 +1,7 @@
 CodeSystem: ConditionSeverityCS
 Id: ConditionSeverityCS
 Title: "Condition Severity Types"
-Description: "Representing the severity levels of conditions"
+Description: "Representing the severity levels of the condition."
 * ^url = "https://nhdr.gov.ph/fhir/CodeSystem/ConditionSeverityCS"
 * ^status = #active
 * ^content = #complete

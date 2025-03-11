@@ -1,7 +1,7 @@
 ValueSet: EncounterHospitalizationDischargeDispositionVS
 Id: EncounterHospitalizationDischargeDispositionVS
-Title: "Encounter Hospitalization Discharge Disposition Value Set"
-Description: "This valueset contains a set of discharge disposition codes used to document the status or disposition of a patient after hospitalization."
+Title: "Encounter Hospitalization Discharge Disposition"
+Description: "A value set containing a set of discharge disposition codes used to document the status or disposition of a patient after hospitalization."
 * ^url = "https://nhdr.gov.ph/fhir/ValueSet/EncounterHospitalizationDischargeDispositionVS"
 * ^version = "4.0.1"
 * ^status = #active

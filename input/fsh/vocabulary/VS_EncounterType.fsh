@@ -1,5 +1,6 @@
 ValueSet: EncounterTypeVS
 Id: EncounterTypeVS
+Title: "Encounter Type"
 Description: "A value set categorizing different types of encounters based on their purpose or setting."
 * ^url = "https://nhdr.gov.ph/fhir/ValueSet/EncounterTypeVS"
 * ^version = "1.0.0"

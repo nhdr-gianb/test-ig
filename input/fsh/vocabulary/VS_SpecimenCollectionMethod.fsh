@@ -1,6 +1,6 @@
 ValueSet: SpecimenCollectionMethodVS
 Id: SpecimenCollectionMethodVS
-Title: "Specimen Collection Method Value Set"
+Title: "Specimen Collection Method"
 Description: "A value set representing methods of specimen collection."
 * ^url = "https://nhdr.gov.ph/fhir/ValueSet/SpecimenCollectionMethodVS"
 * ^version = "1.0.0"
