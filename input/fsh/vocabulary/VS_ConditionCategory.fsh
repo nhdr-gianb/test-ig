@@ -8,4 +8,5 @@ Description: "A value set representing various condition categories for classifi
 * ^experimental = false
 * ^date = "2024-11-28"
 * ^publisher = "NHDR"
+* ^language = #en-US
 * include codes from system $ConditionCategoryCS

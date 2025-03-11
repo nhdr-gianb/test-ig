@@ -6,9 +6,10 @@ Description: "Contains codes for diseases, signs and symptoms, abnormal findings
 * ^status = #active
 * ^version = "1.0.0"
 * ^caseSensitive = true
+* ^language = #en-US
 * #99461 "Hospitalization due to Serious Adverse Effects (SAEx) following COVID-19 immunization"
 * #99462 "Death or permanent disability due to Serious Adverse Effects (SAEx) following COVID-19 immunization"
-* #A00 "Cholera"
+* #A00 "Cholera" 
 * #A00.0 "Cholera due to Vibrio cholerae 01, biovar cholera \r\n(CLASSIC CHOLERA)"
 * #A00.1 "Cholera due to Vibrio cholerae 01, biovar eltor \r\n(CHOLERA ELTOR)"
 * #A00.9 "Cholera, unspecified"

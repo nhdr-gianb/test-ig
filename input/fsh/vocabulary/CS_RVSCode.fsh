@@ -6,6 +6,7 @@ Description: "Standard benefits provided for various medical procedures."
 * ^status = #active
 * ^version = "1.0.0"
 * ^caseSensitive = true
+* ^language = #en-US
 * #10060 "INCISION AND DRAINAGE OF ABSCESS (E.G., CARBUNCLE, SUPPURATIVE HIDRADENITIS, CUTANEOUS OR SUBCUTANEOUS ABSCESS, CYST, FURUNCLE, OR PARONYCHIA)"
 * #10080 "INCISION AND DRAINAGE OF PILONIDAL CYST"
 * #10120 "INCISION AND REMOVAL OF FOREIGN BODY, SUBCUTANEOUS TISSUES"

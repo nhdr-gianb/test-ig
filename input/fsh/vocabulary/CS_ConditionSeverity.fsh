@@ -8,6 +8,7 @@ Description: "Representing the severity levels of conditions"
 * ^version = "1.0.0"
 * ^caseSensitive = true
 * ^count = 3
-* #N "No warning signs" "No warning signs"
-* #W "With warning signs" "With warning signs"
-* #S "Severe Dengue" "Severe Dengue"
+* ^language = #en-US
+* #N "No warning signs" 
+* #W "With warning signs" 
+* #S "Severe Dengue" 

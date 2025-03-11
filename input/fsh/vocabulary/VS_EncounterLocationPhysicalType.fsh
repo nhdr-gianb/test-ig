@@ -7,4 +7,5 @@ Description: "A value set defining the different types of physical locations whe
 * ^experimental = false
 * ^date = "2024-11-28"
 * ^publisher = "NHDR"
+* ^language = #en-US
 * include codes from system $EncounterLocationPhysicalTypeCS

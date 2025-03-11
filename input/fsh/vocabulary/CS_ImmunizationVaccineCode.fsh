@@ -11,6 +11,7 @@ Description: "A list of codes for different vaccines used in immunization."
 * ^content = #complete
 * ^caseSensitive = true
 * ^count = 183
+* ^language = #en-US
 * #BR-1084 "Quadrivalent Seasonal Influenza Vaccine (Split) Virion, Inactivated) 2024 Southern Hemisphere Strain." 
 * #BR-1133	"Pneumococcal Conjugate Vaccine, 13-Valent (adsorbed) [See formulation on reverse side]"
 * #BR-1148	"Combined Diphtheria, Tetanus, Acellular Pertussis Vaccine, Adsorbed"

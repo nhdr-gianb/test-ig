@@ -7,4 +7,5 @@ Description: "A value set specifying the various types of services provided duri
 * ^experimental = false
 * ^date = "2024-11-28"
 * ^publisher = "NHDR"
+* ^language = #en-US
 * include codes from system $EncounterServiceTypeCS

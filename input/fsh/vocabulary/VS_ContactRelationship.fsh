@@ -7,6 +7,6 @@ Description: "A value set representing various types of relationships to the pat
 * ^experimental = false
 * ^date = "2024-11-28"
 * ^publisher = "NHDR"
-* ^status = #draft
+* ^language = #en-US
 * include codes from system $ContactRelationshipCS1
 * include codes from system $ContactRelationshipCS2 where concept is-a #_PersonalRelationshipRoleType

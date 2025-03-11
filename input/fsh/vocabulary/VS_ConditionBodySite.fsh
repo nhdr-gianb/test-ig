@@ -8,4 +8,5 @@ Description: "A value set representing various body sites relevant to specific c
 * ^experimental = false
 * ^date = "2024-11-28"
 * ^publisher = "NHDR"
+* ^language = #en-US
 * include codes from system $SNOMED where concept is-a #442083009

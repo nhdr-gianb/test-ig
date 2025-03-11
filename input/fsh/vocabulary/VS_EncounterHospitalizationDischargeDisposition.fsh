@@ -5,6 +5,7 @@ Description: "This valueset contains a set of discharge disposition codes used t
 * ^url = "https://nhdr.gov.ph/fhir/ValueSet/EncounterHospitalizationDischargeDispositionVS"
 * ^version = "4.0.1"
 * ^status = #active
+* ^language = #en-US
 * ^experimental = false
 * ^date = "2024-11-26"
 * ^publisher = "NHDR"

@@ -8,5 +8,6 @@ Description: "A value set representing the condition of a specimen."
 * ^experimental = false
 * ^date = "2024-11-28"
 * ^publisher = "NHDR"
+* ^language = #en-US
 * include codes from system $SpecimenConditionCS
 

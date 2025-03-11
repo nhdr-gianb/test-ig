@@ -8,6 +8,7 @@ Description: "A value set representing observation methods such as modes of tran
 * ^experimental = false
 * ^date = "2024-11-28"
 * ^publisher = "NHDR"
+* ^language = #en-US
 // These are codes used in CIF
 * include codes from system $ObservationMethodCS
 

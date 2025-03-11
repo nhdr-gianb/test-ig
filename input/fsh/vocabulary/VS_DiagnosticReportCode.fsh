@@ -8,4 +8,5 @@ Description: "A value set representing codes for types of diagnostic reports."
 * ^experimental = false
 * ^date = "2024-11-28"
 * ^publisher = "NHDR"
+* ^language = #en-US
 * include codes from system $LOINC

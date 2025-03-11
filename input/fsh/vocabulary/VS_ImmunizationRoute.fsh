@@ -8,6 +8,7 @@ Description: "A value set representing routes of immunization administration."
 * ^experimental = false
 * ^date = "2024-11-28"
 * ^publisher = "NHDR"
+* ^language = #en-US
 * include $ImmunizationRouteCS#IDINJ "Injection, intradermal"
 * include $ImmunizationRouteCS#IM "Injection, intramuscular"
 * include $ImmunizationRouteCS#NASINHLC "Inhalation, nasal"

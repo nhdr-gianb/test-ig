@@ -8,6 +8,7 @@ Description: "Religion codes used by the local government."
 * ^url = "https://nhdr.gov.ph/fhir/CodeSystem/ReligionLocalCS"
 * ^status = #active
 * ^content = #complete
+* ^language = #en-US
 * #00 "None"
 * #01 "Aglipay"
 * #02 "Alliance of Bible Christian Communities of the Philippines"

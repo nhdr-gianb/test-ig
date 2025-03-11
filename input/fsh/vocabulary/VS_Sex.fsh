@@ -8,6 +8,7 @@ Description: "Person's sex at birth"
 * ^experimental = false
 * ^date = "2024-11-28"
 * ^publisher = "NHDR"
+* ^language = #en-US
 * include codes from system $SexCS
 * exclude $SexCS#O
 * exclude $SexCS#A

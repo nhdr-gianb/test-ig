@@ -8,6 +8,7 @@ Description: "A value set representing methods of specimen collection."
 * ^experimental = false
 * ^date = "2024-11-28"
 * ^publisher = "NHDR"
+* ^language = #en-US
 * $SNOMED#129316008 "Aspiration - action"
 * $SNOMED#129314006 "Biopsy - action"
 * $SNOMED#129300006 "Puncture - action"

@@ -8,6 +8,7 @@ Description: "A value set representing reasons for immunization status."
 * ^experimental = false
 * ^date = "2024-11-28"
 * ^publisher = "NHDR"
+* ^language = #en-US
 * $ImmunizationStatusReasonCS#IMMUNE "immunity"
 * $ImmunizationStatusReasonCS#MEDPREC "medical precaution"
 * $ImmunizationStatusReasonCS#OSTOCK "product out of stock"

@@ -8,6 +8,7 @@ Description: "A value set representing various condition codes for classificatio
 * ^experimental = false
 * ^date = "2024-11-28"
 * ^publisher = "NHDR"
+* ^language = #en-US
 * include codes from system $ICD-10CS 
 
 // * include codes from system $SNOMED where concept is-a #404684003

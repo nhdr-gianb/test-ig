@@ -8,4 +8,5 @@ Description: "A comprehensive value set for various observation values, includin
 * ^experimental = false
 * ^date = "2024-11-28"
 * ^publisher = "NHDR"
+* ^language = #en-US
 * include codes from system $ObservationValueCS
