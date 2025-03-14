@@ -1,6 +1,6 @@
 ValueSet: ConditionCodeVS
 Id: ConditionCodeVS
-Title: "Condition Code Value Set"
+Title: "Condition Code"
 Description: "A value set representing various condition codes for classification."
 * ^url = "https://nhdr.gov.ph/fhir/ValueSet/ConditionCodeVS"
 * ^version = "1.0.0"
@@ -8,8 +8,11 @@ Description: "A value set representing various condition codes for classificatio
 * ^experimental = false
 * ^date = "2024-11-28"
 * ^publisher = "NHDR"
-* include codes from system $SNOMED where concept is-a #404684003
-* include $SNOMED#160245001
+* ^language = #en-US
+* include codes from system $ICD-10CS 
+
+// * include codes from system $SNOMED where concept is-a #404684003
+// * include $SNOMED#160245001
 
 //  These are codes for PhilHealth forms (ICD10)
 // * include codes from system $ConditionCode

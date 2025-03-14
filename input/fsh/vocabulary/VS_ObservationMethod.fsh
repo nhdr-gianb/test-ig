@@ -1,6 +1,6 @@
 ValueSet: ObservationMethodVS
 Id: ObservationMethodVS
-Title: "Observation Method Value Set"
+Title: "Observation Method"
 Description: "A value set representing observation methods such as modes of transportation."
 * ^url = "https://nhdr.gov.ph/fhir/ValueSet/ObservationMethodVS"
 * ^version = "1.0.0"
@@ -8,6 +8,7 @@ Description: "A value set representing observation methods such as modes of tran
 * ^experimental = false
 * ^date = "2024-11-28"
 * ^publisher = "NHDR"
+* ^language = #en-US
 // These are codes used in CIF
 * include codes from system $ObservationMethodCS
 

@@ -1,6 +1,6 @@
 ValueSet: ProcedureStatusVS
 Id: ProcedureStatusVS
-Title: "Procedure Status Value Set"
+Title: "Procedure Status"
 Description: "A value set representing the status of a procedure, indicating whether it has been done or not done."
 * ^url = "https://nhdr.gov.ph/fhir/ValueSet/ProcedureStatusVS"
 * ^version = "1.0.0"
@@ -8,4 +8,5 @@ Description: "A value set representing the status of a procedure, indicating whe
 * ^experimental = false
 * ^date = "2024-11-28"
 * ^publisher = "NHDR"
+* ^language = #en-US
 * include codes from system $ProcedureStatusCS

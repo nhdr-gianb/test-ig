@@ -1,5 +1,6 @@
 ValueSet: EncounterLocationPhysicalTypeVS
 Id: EncounterLocationPhysicalTypeVS
+Title: "Encounter Physical Location"
 Description: "A value set defining the different types of physical locations where an encounter takes place."
 * ^url = "https://nhdr.gov.ph/fhir/ValueSet/EncounterLocationPhysicalTypeVS"
 * ^version = "1.0.0"
@@ -7,4 +8,5 @@ Description: "A value set defining the different types of physical locations whe
 * ^experimental = false
 * ^date = "2024-11-28"
 * ^publisher = "NHDR"
+* ^language = #en-US
 * include codes from system $EncounterLocationPhysicalTypeCS

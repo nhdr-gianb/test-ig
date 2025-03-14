@@ -1,13 +1,14 @@
 //  Currently unused until the team finishes mapping local CodeSystems/ValueSets with existing HL7 codes.
 CodeSystem: ReligionLocalCS
 Id: ReligionLocalCS
-Title: "Local Religion Codes"
+Title: "Religion - Local"
 Description: "Religion codes used by the local government."
 * ^experimental = false
 * ^caseSensitive = true
 * ^url = "https://nhdr.gov.ph/fhir/CodeSystem/ReligionLocalCS"
 * ^status = #active
 * ^content = #complete
+* ^language = #en-US
 * #00 "None"
 * #01 "Aglipay"
 * #02 "Alliance of Bible Christian Communities of the Philippines"
