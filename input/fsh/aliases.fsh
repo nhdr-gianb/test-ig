@@ -4,12 +4,23 @@ Alias: $SD_Address = https://nhdr.gov.ph/fhir/StructureDefinition/PH-Address
 Alias: $SD_HumanName = https://nhdr.gov.ph/fhir/StructureDefinition/PH-HumanName
 
 // CodeSystems
+Alias: $EncounterClassificationCS =  http://terminology.hl7.org/CodeSystem/v3-ActCode
+Alias: $ContactEntityTypeCS = http://terminology.hl7.org/CodeSystem/contactentity-type
+Alias: $OwnershipMajorClassificationCS = https://nhdr.gov.ph/fhir/CodeSystem/OwnershipMajorClassificationCS
+Alias: $FacilityMajorTypeCS = https://nhdr.gov.ph/fhir/CodeSystem/FacilityMajorTypeCS
+Alias: $LhioCS = https://nhdr.gov.ph/fhir/CodeSystem/LhioCS
+Alias: $ProCS = https://nhdr.gov.ph/fhir/CodeSystem/ProCS
+Alias: $PatientTypeCS = https://nhdr.gov.ph/fhir/CodeSystem/PatientTypeCS
+Alias: $MemberTypeCS = https://nhdr.gov.ph/fhir/CodeSystem/MemberTypeCS
+Alias: $RoleCodeCS = http://terminology.hl7.org/CodeSystem/v3-RoleCode
+Alias: $NullFlavorCS =  http://terminology.hl7.org/CodeSystem/v3-NullFlavor
+Alias: $PSGCProvinceCS = https://nhdr.gov.ph/fhir/CodeSystem/PSGCProvinceCS
 Alias: $ClinicalStatusCS = http://terminology.hl7.org/CodeSystem/condition-clinical
 Alias: $ConditionCategoryCS = http://terminology.hl7.org/CodeSystem/condition-category
 Alias: $ConditionSeverityCS = https://nhdr.gov.ph/fhir/CodeSystem/ConditionSeverityCS
 Alias: $ConditionVerificationStatusCS = https://nhdr.gov.ph/fhir/CodeSystem/ConditionVerificationStatusCS
-Alias: $ContactRelationshipCS1 = http://terminology.hl7.org/CodeSystem/v2-0131
-Alias: $ContactRelationshipCS2 = http://terminology.hl7.org/CodeSystem/v3-RoleCode
+Alias: $ContactRelationshipCS = http://terminology.hl7.org/CodeSystem/v2-0131
+Alias: $RelationshipTypeCS = http://terminology.hl7.org/CodeSystem/v3-RoleCode
 Alias: $EncounterHospitalizationDischargeDispositionCS = http://terminology.hl7.org/CodeSystem/discharge-disposition
 Alias: $EncounterLocationPhysicalTypeCS = http://terminology.hl7.org/CodeSystem/location-physical-type
 Alias: $EncounterServiceTypeCS = http://terminology.hl7.org/CodeSystem/service-type
@@ -36,6 +47,7 @@ Alias: $SpecimenProcessingProcedureCS = http://terminology.hl7.org/CodeSystem/v2
 Alias: $SpecimenTypeCS = http://terminology.hl7.org/CodeSystem/v2-0487
 
 // ValueSets
+Alias: $EncounterStatus = http://hl7.org/fhir/encounter-status
 Alias: $ClinicalStatusVS = https://nhdr.gov.ph/fhir/ValueSet/ClinicalStatusVS
 Alias: $MaritalStatusVS = http://hl7.org/fhir/ValueSet/marital-status
 Alias: $ObservationMethodVS = https://nhdr.gov.ph/fhir/ValueSet/ObservationMethodVS
