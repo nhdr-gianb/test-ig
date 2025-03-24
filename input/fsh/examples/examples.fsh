@@ -1,36 +1,47 @@
 //  It's been a while since I last continued converting the exported example files from the Simplifier version of the PHCDI to FSH.
 //  Will need to double check the alias list here (much later), as the list from the aliases.fsh file haven't been completely cleaned up yet.
+Alias: $allergyintolerance-clinical = http://terminology.hl7.org/CodeSystem/allergyintolerance-clinical
+Alias: $allergyintolerance-verification = http://terminology.hl7.org/CodeSystem/allergyintolerance-verification
+Alias: $condition-category = http://terminology.hl7.org/CodeSystem/condition-category
 Alias: $condition-clinical = http://terminology.hl7.org/CodeSystem/condition-clinical
 Alias: $condition-ver-status = http://terminology.hl7.org/CodeSystem/condition-ver-status
-Alias: $condition-category = http://terminology.hl7.org/CodeSystem/condition-category
 Alias: $ClinicalStatusValueSet = https://nhdr.gov.ph/fhir/ValueSet/ClinicalStatusValueSet
 Alias: $ConditionVerificationStatusValueSet = http://nhdr.gov.ph/fhir/ValueSet/ConditionVerificationStatusValueSet
 Alias: $ConditionCodeValueSet = http://nhdr.gov.ph/fhir/ValueSet/ConditionCodeValueSet
-Alias: $allergyintolerance-clinical = http://terminology.hl7.org/CodeSystem/allergyintolerance-clinical
-Alias: $allergyintolerance-verification = http://terminology.hl7.org/CodeSystem/allergyintolerance-verification
-Alias: $v2-0074 = http://terminology.hl7.org/CodeSystem/v2-0074
-Alias: $loinc = http://loinc.org
-Alias: $sct = http://snomed.info/sct
-Alias: $v2-0203 = http://terminology.hl7.org/CodeSystem/v2-0203
-Alias: $v3-ActCode = http://terminology.hl7.org/CodeSystem/v3-ActCode
 Alias: $cvx = http://hl7.org/fhir/sid/cvx
+Alias: $location-physical-type = http://terminology.hl7.org/CodeSystem/location-physical-type
+Alias: $loinc = http://loinc.org
+Alias: $organization-type = http://terminology.hl7.org/CodeSystem/organization-type
+Alias: $ProcedureCodeValueSet = http://nhdr.gov.ph/fhir/ValueSet/ProcedureCodeValueSet
+Alias: $rxnorm = http://www.nlm.nih.gov/research/umls/rxnorm
+Alias: $sct = http://snomed.info/sct
+Alias: $v2-0074 = http://terminology.hl7.org/CodeSystem/v2-0074
+Alias: $v2-0203 = http://terminology.hl7.org/CodeSystem/v2-0203
+Alias: $v2-0286 = http://terminology.hl7.org/CodeSystem/v2-0286
+Alias: $v3-ActCode = http://terminology.hl7.org/CodeSystem/v3-ActCode
+Alias: $v3-MaritalStatus = http://terminology.hl7.org/CodeSystem/v3-MaritalStatus
+Alias: $v3-ObservationInterpretation = http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation
+
+
+
+
 
 Instance: Allergy-Intolerance-1
 InstanceOf: PH_AllergyIntolerance
 Usage: #example
 * meta.lastUpdated = "2024-07-18T08:23:58.665+00:00"
 * extension.url = "https://nhdr.gov.ph/fhir/StructureDefinition/ExtOrganization"
-* extension.valueReference = Reference(Organization/1)
+* extension.valueReference = Reference(Organization/Organization-Lucena-General-Hospital)
 * clinicalStatus = $allergyintolerance-clinical#active "Active"
 * verificationStatus = $allergyintolerance-verification#confirmed "Confirmed"
 * type = #allergy
 * category = #medication
-* code = $sct#7980 "Penicillin"
+* code = $sct#764146007 "Penicillin"
 * code.text = "Penicillin"
-* patient = Reference(Patient/1)
+* patient = Reference(Patient/Patient-1)
 * onsetDateTime = "2024-07-01T10:00:00+08:00"
-* reaction.substance = $sct#7980 "Penicillin"
-* reaction.substance.text = "Penicillin"
+* reaction.substance = $sct#91936005 "Allergy to Penicillin"
+* reaction.substance.text = "Allergy to Penicillin"
 * reaction.manifestation = $sct#271807003 "Rash"
 * reaction.manifestation.text = "Rash"
 * reaction.description = "Patient developed a rash after taking penicillin."
@@ -42,7 +53,8 @@ InstanceOf: PH_Appointment
 Usage: #example
 * status = #Y
 * start = "2024-07-20T09:00:00+08:00"
-* participant.actor.reference = "Patient/example"
+* end = "2024-07-20T09:30:00+08:00"
+* participant.actor.reference = "Patient/Patient-1"
 * participant.required = #required
 * participant.status = #accepted
 * requestedPeriod.start = "2024-07-20T09:00:00+08:00"
@@ -55,21 +67,21 @@ Usage: #example
 * meta.lastUpdated = "2024-12-10T14:28:43.909+00:00"
 * status = #active
 * intent = #plan
-* subject.reference = "Patient/b160ce3e-91f6-4ee5-bf72-248a49e2047f"
+* subject.reference = "Patient/Patient-2"
 
 Instance: Condition-1
 InstanceOf: PH_Condition
 Usage: #example
 * meta.lastUpdated = "2024-07-18T07:25:23.888+00:00"
 * extension.url = "https://nhdr.gov.ph/fhir/StructureDefinition/ExtOrganization"
-* extension.valueReference = Reference(Organization/example)
+* extension.valueReference = Reference(Organization/Organization-Lucena-General-Hospital)
 * clinicalStatus = $condition-clinical#active "Active"
-* verificationStatus = $condition-ver-status#confirmed "Confirmed"
+* verificationStatus = $ConditionVerificationStatusCS#ClinicallyCompatible "Clinically compatible"
 * category = $condition-category#problem-list-item "Problem List Item"
 * severity = $sct#24484000 "Severe"
 * code = $sct#44054006 "Diabetes mellitus type 2 (disorder)"
 * code.text = "Diabetes mellitus type 2"
-* subject = Reference(Patient/example)
+* subject = Reference(Patient/Patient-2)
 * onsetDateTime = "2024-07-18T08:00:00+08:00"
 * recordedDate = "2024-07-18T08:00:00+08:00"
 
@@ -79,9 +91,9 @@ Usage: #example
 * meta.lastUpdated = "2024-12-10T14:28:43.82+00:00"
 * meta.profile = "https://nhdr.gov.ph/fhir/StructureDefinition/PH-Condition"
 // * clinicalStatus = $ClinicalStatusValueSet#active
-* verificationStatus = $ConditionVerificationStatusValueSet#confirmed
+* verificationStatus = $ConditionVerificationStatusCS#Confirmed "Confirmed"
 * code = $ConditionCodeValueSet#D123 "Diabetes Mellitus"
-* subject = Reference(Patient/b160ce3e-91f6-4ee5-bf72-248a49e2047f)
+* subject = Reference(Patient/Patient-3)
 * onsetDateTime = "2024-12-01T12:00:00+08:00"
 
 Instance: Diagnostic-Report-1
@@ -91,11 +103,11 @@ Usage: #example
 * meta.profile = "https://nhdr.gov.ph/fhir/StructureDefinition/PH-DiagnosticReport"
 * status = #final
 * category = $v2-0074#LAB "Laboratory"
-* code = $loinc#29965-3 "Rabies virus antibody test"
-* code.text = "Rabies Virus Antibody Test"
-* subject = Reference(Patient/b160ce3e-91f6-4ee5-bf72-248a49e2047f)
-* specimen = Reference(Specimen/7994709b-4350-4f91-b06f-4da782993a8b)
-* result = Reference(Observation/b8b94d0f-3461-4cb3-a7d9-365482f2e24a)
+* code = $loinc#LP16737-6 "Rabies virus"
+* code.text = "Rabies Virus"
+* subject = Reference(Patient/Patient-3)
+* specimen = Reference(Specimen/Specimen-Saliva)
+* result = Reference(Observation/Observation-Rabies-Antibody-Test)
 * conclusion = "Positive for rabies virus antibodies"
 * conclusionCode = $sct#14168008 "Rabies"
 
@@ -164,10 +176,10 @@ Usage: #example
 * status = #finished
 * class = $v3-ActCode#AMB "ambulatory"
 * type = $sct#183452005 "General examination of patient (procedure)"
-* subject = Reference(Patient/1)
+* subject = Reference(Patient/Patient-1)
 * period.start = "2024-07-18T08:00:00+08:00"
 * period.end = "2024-07-18T10:00:00+08:00"
-* location.location = Reference(Location/example) "General Hospital Room"
+* location.location = Reference(Location/Location-General-Hospital-Room-101) "General Hospital Room"
 * location.status = #completed
 
 Instance: Encounter-2
@@ -185,7 +197,7 @@ Usage: #example
 * meta.profile = "https://nhdr.gov.ph/fhir/StructureDefinition/PH-Encounter"
 * status = #in-progress
 * type = $v3-ActCode#FLACCIDPARALYSIS "Flaccid Paralysis Encounter"
-* subject = Reference(Patient/b160ce3e-91f6-4ee5-bf72-248a49e2047f)
+* subject = Reference(Patient/Patient-1)
 * class = $v3-ActCode#AMB "ambulatory"
 
 Instance: Encounter-COVID
@@ -195,7 +207,7 @@ Usage: #example
 * meta.profile = "https://nhdr.gov.ph/fhir/StructureDefinition/PH-Encounter"
 * status = #in-progress
 * type = $v3-ActCode#COVIDENC "COVID-19 Encounter"
-* subject = Reference(Patient/b160ce3e-91f6-4ee5-bf72-248a49e2047f)
+* subject = Reference(Patient/Patient-2)
 * class = $v3-ActCode#AMB "ambulatory"
 
 Instance: Encounter-Diphteria
@@ -205,7 +217,7 @@ Usage: #example
 * meta.profile = "https://nhdr.gov.ph/fhir/StructureDefinition/PH-Encounter"
 * status = #in-progress
 * type = $v3-ActCode#DIPENC "Diphtheria Encounter"
-* subject = Reference(Patient/b160ce3e-91f6-4ee5-bf72-248a49e2047f)
+* subject = Reference(Patient/Patient-3)
 * class = $v3-ActCode#AMB "ambulatory"
 
 Instance: Encounter-HFMD
@@ -215,7 +227,7 @@ Usage: #example
 * meta.profile = "https://nhdr.gov.ph/fhir/StructureDefinition/PH-Encounter"
 * status = #in-progress
 * type = $v3-ActCode#HFMDENC "Hand, Foot, and Mouth Disease Encounter"
-* subject = Reference(Patient/b160ce3e-91f6-4ee5-bf72-248a49e2047f)
+* subject = Reference(Patient/Patient-1)
 * class = $v3-ActCode#AMB "ambulatory"
 
 Instance: Encounter-Influenza
@@ -225,7 +237,7 @@ Usage: #example
 * meta.profile = "https://nhdr.gov.ph/fhir/StructureDefinition/PH-Encounter"
 * status = #in-progress
 * type = $v3-ActCode#FLUENC "Influenza Encounter"
-* subject = Reference(Patient/b160ce3e-91f6-4ee5-bf72-248a49e2047f)
+* subject = Reference(Patient/Patient-2)
 * class = $v3-ActCode#AMB "ambulatory"
 
 Instance: Encounter-Leptospirosis
@@ -235,7 +247,7 @@ Usage: #example
 * meta.profile = "https://nhdr.gov.ph/fhir/StructureDefinition/PH-Encounter"
 * status = #in-progress
 * type = $v3-ActCode#LEPTENC "Leptospirosis Encounter"
-* subject = Reference(Patient/b160ce3e-91f6-4ee5-bf72-248a49e2047f)
+* subject = Reference(Patient/Patient-3)
 * class = $v3-ActCode#AMB "ambulatory"
 
 Instance: Encounter-Malaria
@@ -245,7 +257,7 @@ Usage: #example
 * meta.profile = "https://nhdr.gov.ph/fhir/StructureDefinition/PH-Encounter"
 * status = #in-progress
 * type = $v3-ActCode#MALENC "Malaria Encounter"
-* subject = Reference(Patient/b160ce3e-91f6-4ee5-bf72-248a49e2047f)
+* subject = Reference(Patient/Patient-1)
 * class = $v3-ActCode#AMB "ambulatory"
 
 Instance: Encounter-Meningococcal
@@ -255,7 +267,7 @@ Usage: #example
 * meta.profile = "https://nhdr.gov.ph/fhir/StructureDefinition/PH-Encounter"
 * status = #in-progress
 * type = $v3-ActCode#MENINGENC "Meningococcal Encounter"
-* subject = Reference(Patient/b160ce3e-91f6-4ee5-bf72-248a49e2047f)
+* subject = Reference(Patient/Patient-2)
 * class = $v3-ActCode#AMB "ambulatory"
 
 Instance: Encounter-Neonatal-Tetanus
@@ -265,7 +277,7 @@ Usage: #example
 * meta.profile = "https://nhdr.gov.ph/fhir/StructureDefinition/PH-Encounter"
 * status = #in-progress
 * type = $v3-ActCode#TETNEOENC "Neonatal Tetanus Encounter"
-* subject = Reference(Patient/b160ce3e-91f6-4ee5-bf72-248a49e2047f)
+* subject = Reference(Patient/Patient-3)
 * class = $v3-ActCode#AMB "ambulatory"
 
 Instance: Encounter-Non-Neonatal-Tetanus
@@ -275,7 +287,7 @@ Usage: #example
 * meta.profile = "https://nhdr.gov.ph/fhir/StructureDefinition/PH-Encounter"
 * status = #in-progress
 * type = $v3-ActCode#TETNNENC "Non-Neonatal Tetanus Encounter"
-* subject = Reference(Patient/b160ce3e-91f6-4ee5-bf72-248a49e2047f)
+* subject = Reference(Patient/Patient-1)
 * class = $v3-ActCode#AMB "ambulatory"
 
 Instance: Encounter-Pertussis
@@ -285,7 +297,7 @@ Usage: #example
 * meta.profile = "https://nhdr.gov.ph/fhir/StructureDefinition/PH-Encounter"
 * status = #in-progress
 * type = $v3-ActCode#PERTENC "Pertussis Encounter"
-* subject = Reference(Patient/b160ce3e-91f6-4ee5-bf72-248a49e2047f)
+* subject = Reference(Patient/Patient-2)
 * class = $v3-ActCode#AMB "ambulatory"
 
 Instance: Encounter-Rotavirus
@@ -295,7 +307,7 @@ Usage: #example
 * meta.profile = "https://nhdr.gov.ph/fhir/StructureDefinition/PH-Encounter"
 * status = #in-progress
 * type = $v3-ActCode#ROTAENC "Rotavirus Encounter"
-* subject = Reference(Patient/b160ce3e-91f6-4ee5-bf72-248a49e2047f)
+* subject = Reference(Patient/Patient-3)
 * class = $v3-ActCode#AMB "ambulatory"
 
 Instance: Immunization-Rabies
@@ -306,9 +318,235 @@ Usage: #example
 * status = #completed
 * vaccineCode = $cvx#40 "Rabies vaccine, for intramuscular injection"
 * vaccineCode.text = "Rabies Vaccine"
-* patient = Reference(Patient/b160ce3e-91f6-4ee5-bf72-248a49e2047f)
+* patient = Reference(Patient/Patient-1)
 * occurrenceDateTime = "2024-12-10"
 * note.text = "Rabies vaccine administered as post-exposure prophylaxis."
+
+Instance: Location-General-Hospital-Room-101
+InstanceOf: PH_Location
+Usage: #example
+// * meta.lastUpdated = "2024-07-18T06:57:37.403+00:00"
+* name = "General Hospital Room 101"
+// * physicalType = $location-physical-type#ro "Room"
+* address.use = #work
+* address.line = "1234 Health St."
+* address.city = "Health City"
+* address.state = "Health State"
+* address.postalCode = "12345"
+* address.country = "PH"
+
+Instance: Medication-Amoxicillin
+InstanceOf: PH_Medication
+Usage: #example
+* meta.lastUpdated = "2024-12-10T21:44:29.157+00:00"
+* extension[0].url = "https://nhdr.gov.ph/fhir/StructureDefinition/DateUpdated"
+* extension[=].valueDateTime = "2024-12-10T20:00:00.157+00:00"
+* code.text = "Amoxicillin 500mg Capsule"
+
+Instance: MedicationAdministration-Amoxicillin
+InstanceOf: PH_MedicationAdministration
+Usage: #example
+* meta.lastUpdated = "2024-07-18T07:54:59.254+00:00"
+* extension[0].url = "https://nhdr.gov.ph/fhir/StructureDefinition/ExtOrganization"
+* extension[=].valueReference = Reference(Organization/Organization-Lucena-General-Hospital)
+* extension[+].url = "https://nhdr.gov.ph/fhir/StructureDefinition/ExtEncounter"
+* extension[=].valueReference = Reference(Encounter/Encounter-Pertussis)
+* extension[+].url = "https://nhdr.gov.ph/fhir/StructureDefinition/RecordedDate"
+* extension[=].valueDateTime = "2024-07-18T10:00:00+08:00"
+* status = #completed
+* medicationCodeableConcept = $rxnorm#860975 "Amoxicillin 250mg/5ml Suspension"
+* medicationCodeableConcept.text = "Amoxicillin 250mg/5ml Suspension"
+* subject = Reference(Patient/Patient-1)
+* effectiveDateTime = "2024-07-18T09:00:00+08:00"
+* reasonCode = $sct#65363002 "Infection"
+* reasonCode.text = "Infection"
+* dosage.text = "5 mL orally three times a day"
+* dosage.site = $sct#181220002 "Oral cavity"
+* dosage.site.text = "Oral cavity"
+* dosage.route = $sct#26643006 "Oral route"
+* dosage.route.text = "Oral route"
+* dosage.method = $sct#421521009 "Swallow"
+* dosage.method.text = "Swallow"
+* dosage.dose = 5 'mL' "mL"
+* dosage.rateRatio.numerator = 5 'mL' "mL"
+* dosage.rateRatio.denominator = 1 'd' "d"
+
+Instance: MedicationDispense-Completed
+InstanceOf: PH_MedicationDispense
+Usage: #example
+* meta.lastUpdated = "2024-12-10T21:44:29.21+00:00"
+* status = #completed
+* medicationReference = Reference(Medication-Amoxicillin)
+
+Instance: Observation-Glucose-in-Blood
+InstanceOf: PH_Observation
+Usage: #example
+* meta.lastUpdated = "2024-07-14T08:14:50.38+00:00"
+* identifier.use = #official
+* identifier.system = "http://www.bmc.nl/zorgportal/identifiers/observations"
+* identifier.value = "6323"
+* status = #final
+* code = $loinc#15074-8 "Glucose [Moles/volume] in Blood"
+* subject = Reference(Patient/Patient-1) "P. van de Heuvel"
+* effectiveDateTime = "2013-04-02T09:30:10+01:00"
+// * issued = "2013-04-03T15:30:10+01:00"
+* performer = Reference(Practitioner/Practitioner-1) "A. Langeveld"
+* valueQuantity = 6.3 'mmol/L' "mmol/l"
+* interpretation = $v3-ObservationInterpretation#H "High"
+// * referenceRange.low = 3.1 'mmol/L' "mmol/l"
+// * referenceRange.high = 6.2 'mmol/L' "mmol/l"
+
+Instance: Observation-AFP
+InstanceOf: PH_Observation
+Usage: #example
+* meta.lastUpdated = "2024-12-12T03:38:57.453+00:00"
+* status = #final
+* code = $loinc#80358-3 "Observation of Acute Flaccid Paralysis"
+* subject = Reference(Patient/Patient-1)
+* effectiveDateTime = "2024-12-11T15:00:00Z"
+* valueString = "Patient exhibits sudden onset of flaccid paralysis in one limb."
+
+Instance: Observation-Rabies-Antibody-Test
+InstanceOf: PH_Observation
+Usage: #example
+* meta.lastUpdated = "2024-12-11T05:00:32.041+00:00"
+* status = #final
+* code = $loinc#29965-3 "Rabies virus antibody test"
+* code.text = "Rabies Virus Antibody Test Result"
+* valueString = "Positive for rabies virus antibodies"
+
+Instance: Observation-COVID
+InstanceOf: PH_Observation
+Usage: #example
+* meta.lastUpdated = "2024-12-12T04:30:08.578+00:00"
+* status = #final
+* code = $loinc#94500-6 "Observation of COVID-19 Symptoms"
+* subject = Reference(Patient/Patient-2)
+* effectiveDateTime = "2024-12-11T15:00:00Z"
+* valueString = "Patient exhibits fever, cough, difficulty breathing, and loss of taste or smell."
+
+Instance: Observation-Diphtheria
+InstanceOf: PH_Observation
+Usage: #example
+* meta.lastUpdated = "2024-12-12T04:23:03.986+00:00"
+* status = #final
+* code = $loinc#1234-5 "Observation of Diphtheria Symptoms"
+* subject = Reference(Patient/Patient-3)
+* effectiveDateTime = "2024-12-11T15:00:00Z"
+* valueString = "Patient exhibits sore throat, swollen neck, and hoarseness of voice."
+
+Instance: Observation-HFMD
+InstanceOf: PH_Observation
+Usage: #example
+* meta.lastUpdated = "2024-12-12T04:29:16.418+00:00"
+* status = #final
+* code = $loinc#80386-9 "Observation of Hand, Foot, and Mouth Disease Symptoms"
+* subject = Reference(Patient/Patient-1)
+* effectiveDateTime = "2024-12-11T15:00:00Z"
+* valueString = "Patient exhibits fever, mouth sores, and rashes on hands and feet."
+
+Instance: Observation-Influenza
+InstanceOf: PH_Observation
+Usage: #example
+* meta.lastUpdated = "2024-12-12T04:18:19.385+00:00"
+* status = #final
+* code = $loinc#LA6576-8 "Observation of Influenza Symptoms"
+* subject = Reference(Patient/Patient-2)
+* effectiveDateTime = "2024-12-11T15:00:00Z"
+* valueString = "Patient exhibits high fever, persistent cough, and difficulty breathing."
+
+Instance: Observation-Leptospirosis
+InstanceOf: PH_Observation
+Usage: #example
+* meta.lastUpdated = "2024-12-12T04:19:32.074+00:00"
+* status = #final
+* code = $loinc#80347-6 "Observation of Leptospirosis Symptoms"
+* subject = Reference(Patient/Patient-1)
+* effectiveDateTime = "2024-12-11T15:00:00Z"
+* valueString = "Patient exhibits fever, muscle pain, and recent exposure to floodwaters."
+
+Instance: Observation-Malaria
+InstanceOf: PH_Observation
+Usage: #example
+* meta.lastUpdated = "2024-12-12T04:20:59.977+00:00"
+* status = #final
+* code = $loinc#80375-2 "Observation of Malaria Symptoms"
+* subject = Reference(Patient/Patient-3)
+* effectiveDateTime = "2024-12-11T15:00:00Z"
+* valueString = "Patient exhibits fever, chills, and recent travel to malaria-endemic areas."
+
+Instance: Observation-Measles
+InstanceOf: PH_Observation
+Usage: #example
+* meta.lastUpdated = "2024-12-12T03:35:52.056+00:00"
+* status = #final
+* subject = Reference(Patient/Patient-2)
+* code = #10582-5
+
+Instance: Observation-Meningococcal
+InstanceOf: PH_Observation
+Usage: #example
+* meta.lastUpdated = "2024-12-12T04:28:20.722+00:00"
+* status = #final
+* code = $loinc#80385-1 "Observation of Meningococcal Symptoms"
+* subject = Reference(Patient/Patient-1)
+* effectiveDateTime = "2024-12-11T15:00:00Z"
+* valueString = "Patient exhibits sudden fever, headache, stiff neck, and purpuric rash."
+
+Instance: Observation-Neonatal-Tetanus
+InstanceOf: PH_Observation
+Usage: #example
+* meta.lastUpdated = "2024-12-12T04:24:46.146+00:00"
+* status = #final
+* code = $loinc#80380-2 "Observation of Neonatal Tetanus Symptoms"
+* subject = Reference(Patient/Patient-1)
+* effectiveDateTime = "2024-12-11T15:00:00Z"
+* valueString = "Infant exhibits muscle stiffness, difficulty feeding, and history of unhygienic delivery."
+
+Instance: Observation-Non-Neonatal-Tetanus
+InstanceOf: PH_Observation
+Usage: #example
+* meta.lastUpdated = "2024-12-12T04:27:08.457+00:00"
+* status = #final
+* code = $loinc#80384-4 "Observation of Tetanus Symptoms"
+* subject = Reference(Patient/Patient-3)
+* effectiveDateTime = "2024-12-11T15:00:00Z"
+* valueString = "Patient exhibits muscle stiffness and spasms following a recent injury with exposure to potentially contaminated objects."
+
+Instance: Observation-Pertussis
+InstanceOf: PH_Observation
+Usage: #example
+* meta.lastUpdated = "2024-12-12T04:25:50.028+00:00"
+* status = #final
+* code = $loinc#12345-6 "Observation of Pertussis Symptoms"
+* subject = Reference(Patient/Patient-3)
+* effectiveDateTime = "2024-12-11T15:00:00Z"
+* valueString = "Patient exhibits prolonged coughing spells and vomiting after coughing."
+
+Instance: Observation-Rotavirus
+InstanceOf: PH_Observation
+Usage: #example
+* meta.lastUpdated = "2024-12-12T04:17:08.505+00:00"
+* status = #final
+* code = $loinc#80360-9 "Observation of Rotavirus Symptoms"
+* subject = Reference(Patient/Patient-1)
+* effectiveDateTime = "2024-12-11T15:00:00Z"
+* valueString = "Patient exhibits acute gastroenteritis with frequent loose stools."
+
+Instance: Observation-Rubella
+InstanceOf: PH_Observation
+Usage: #example
+* meta.lastUpdated = "2024-12-12T03:35:52.428+00:00"
+* status = #final
+* code = $loinc#20458-6 "Rubella virus IgG Ab [Interpretation] in Serum"
+* subject = Reference(Patient/Patient-2)
+
+// Instance: Observation-SARI
+// InstanceOf: PH_Observation
+// Usage: #example
+// * meta.lastUpdated = "2024-12-12T03:37:36.595+00:00"
+// * status = #final
+// * subject = Reference(Patient/b160ce3e-91f6-4ee5-bf72-248a49e2047f)
 
 Instance: Organization-1
 InstanceOf: PH_Organization
@@ -321,6 +559,28 @@ Usage: #example
 * telecom[=].value = "(+1) 734-677-6622"
 * telecom[+].system = #email
 * telecom[=].value = "organization@org.com"
+
+Instance: Organization-2
+InstanceOf: PH_Organization
+Usage: #example
+* meta.lastUpdated = "2024-07-18T06:47:13.861+00:00"
+* extension.url = "https://example.org/fhir/StructureDefinition/HeadName"
+* extension.valueHumanName.family = "Quezon"
+* extension.valueHumanName.given[0] = "Mark"
+* extension.valueHumanName.given[+] = "John"
+* telecom[0].system = #phone
+* telecom[=].value = "(+1) 734-677-7777"
+* telecom[+].system = #fax
+* telecom[=].value = "(+1) 734-677-6622"
+* telecom[+].system = #email
+* telecom[=].value = "organization@org.com"
+
+Instance: Organization-Lucena-General-Hospital
+InstanceOf: PH_Organization
+Usage: #example
+* meta.lastUpdated = "2024-12-11T05:00:32.005+00:00"
+* type = $organization-type#prov "Healthcare Provider"
+* name = "Lucena General Hospital"
 
 Instance: Patient-1
 InstanceOf: PH_Patient
@@ -357,3 +617,339 @@ Usage: #example
 * maritalStatus.text = "abc"
 * birthDate = 2025-12-12
 // * managingOrganization = Reference(12345) "12345"
+
+Instance: Patient-2
+InstanceOf: PH_Patient
+Usage: #example
+* meta.lastUpdated = "2024-07-18T04:48:00.401+00:00"
+* identifier[0].use = #PhilhealthID
+* identifier[=].value = "12345"
+* identifier[+].use = #PhilsysID
+* identifier[=].value = "678910"
+* active = true
+* name.extension.url = "https://nhdr.gov.ph/fhir/StructureDefinition/MiddleName"
+* name.extension.valueString = "Rizal"
+// * name.use = #official
+* name.family = "Dela Cruz"
+* name.given[0] = "Juan"
+* name.given[+] = "Pedro"
+* name.given[+] = "Santos"
+* telecom[0].system = #phone
+* telecom[=].value = "(03) 5555 6473"
+* telecom[+].system = #phone
+* telecom[=].value = "(0939) 929 3814"
+* telecom[=].use = #mobile
+
+Instance: Patient-3
+InstanceOf: PH_Patient
+Usage: #example
+* meta.lastUpdated = "2024-12-10T01:35:07.723+00:00"
+* meta.profile = "http://hl7.org.ph/fhir/StructureDefinition/PH_Patient"
+* identifier[0].system = "http://philsys.gov.ph/national-id"
+* identifier[=].value = "PH1234567890"
+* identifier[+].system = "http://hl7.org.ph/fhir/StructureDefinition/PhilHealthID"
+* identifier[=].value = "123456789012"
+// * name.use = #official
+* name.family = "Doe"
+* name.given[0] = "John"
+* name.given[+] = "A."
+* telecom[0].system = #phone
+* telecom[=].value = "+639171234567"
+* telecom[=].use = #mobile
+* telecom[+].system = #email
+* telecom[=].value = "john.doe@example.com"
+* telecom[=].use = #home
+// * gender = #male
+* birthDate = "1990-01-01"
+* address.use = #home
+* address.line = "123 Barangay Street"
+* address.city = "Quezon City"
+* address.district = "District 1"
+* address.state = "Metro Manila"
+* address.postalCode = "1100"
+* address.country = "PH"
+* maritalStatus = $v3-MaritalStatus#M "Married"
+// * contact.relationship = ContactRelationshipVS#C "Emergency Contact"
+* contact.name.family = "Doe"
+* contact.name.given = "Jane"
+* contact.telecom.system = #phone
+* contact.telecom.value = "+639181234567"
+* contact.telecom.use = #mobile
+* contact.address.line = "456 Barangay Lane"
+* contact.address.city = "Pasig City"
+* contact.address.state = "Metro Manila"
+* contact.address.postalCode = "1600"
+* contact.address.country = "PH"
+// * communication[0].language = urn:ietf:bcp:47#en "English"
+// * communication[=].preferred = true
+// * communication[+].language = urn:ietf:bcp:47#tl "Tagalog"
+// * communication[=].preferred = false
+
+Instance: Person-1
+InstanceOf: PH_Person
+Usage: #example
+* meta.lastUpdated = "2024-07-18T07:21:35.241+00:00"
+* extension.url = "https://nhdr.gov.ph/fhir/StructureDefinition/Sex"
+* extension.valueCode = #male
+* name.use = #official
+* name.family = "Garcia"
+* name.given = "Juan"
+* name.prefix = "Mr."
+* telecom[0].system = #phone
+* telecom[=].value = "+1234567890"
+* telecom[=].use = #mobile
+* telecom[+].system = #email
+* telecom[=].value = "juan.garcia@example.org"
+* telecom[=].use = #home
+* birthDate = "1990-01-01"
+* address.use = #home
+* address.line = "1234 Health St."
+* address.city = "Health City"
+* address.state = "Health State"
+* address.postalCode = "12345"
+* address.country = "PH"
+* link.target = Reference(Patient/Patient-3)
+
+Instance: Person-2
+InstanceOf: PH_Person
+Usage: #example
+* meta.lastUpdated = "2024-12-10T08:52:07.402+00:00"
+* name.use = #official
+* name.family = "Doe"
+* name.given = "Jane"
+* birthDate = "1995-05-15"
+
+Instance: Practitioner-1
+InstanceOf: PH_Practitioner
+Usage: #example
+* meta.lastUpdated = "2024-07-18T06:13:47.993+00:00"
+* identifier.use = #PRC
+* identifier.value = "12345"
+* name.extension.url = "https://nhdr.gov.ph/fhir/StructureDefinition/MiddleName"
+* name.extension.valueString = "Rizal"
+* name.use = #official
+* name.family = "Dela Cruz"
+* name.given[0] = "Juan"
+* name.given[+] = "Pedro"
+* name.given[+] = "Santos"
+* telecom[0].system = #phone
+* telecom[=].value = "(03) 5555 6473"
+* telecom[+].system = #phone
+* telecom[=].value = "(0939) 929 3814"
+* telecom[=].use = #mobile
+
+Instance: Practitioner-2
+InstanceOf: PH_Practitioner
+Usage: #example
+* meta.lastUpdated = "2024-12-09T23:18:00.365+00:00"
+* extension.url = "https://nhdr.gov.ph/fhir/StructureDefinition/Sex"
+* extension.valueCode = #Male
+* identifier.use = #PRC
+* identifier.value = "12345"
+* name.extension.url = "https://nhdr.gov.ph/fhir/StructureDefinition/MiddleName"
+* name.extension.valueString = "Rizal"
+* name.use = #official
+* name.family = "Dela Cruz"
+* name.given[0] = "Juan"
+* name.given[+] = "Pedro"
+* name.given[+] = "Santos"
+* telecom[0].system = #phone
+* telecom[=].value = "(03) 5555 6473"
+* telecom[+].system = #phone
+* telecom[=].value = "(0939) 929 3814"
+* telecom[=].use = #mobile
+
+Instance: PractitionerRole-Physician
+InstanceOf: PH_PractitionerRole
+Usage: #example
+* meta.lastUpdated = "2024-07-18T06:26:14.058+00:00"
+* code = $v2-0286#Physician
+
+Instance: Procedure-Surgical
+InstanceOf: PH_Procedure
+Usage: #example
+* meta.lastUpdated = "2024-07-18T07:30:27.458+00:00"
+* extension[0].url = "https://nhdr.gov.ph/fhir/StructureDefinition/Organization"
+* extension[=].valueReference = Reference(Organization/Organization-Lucena-General-Hospital)
+* extension[+].url = "https://nhdr.gov.ph/fhir/StructureDefinition/RecordedDate"
+* extension[=].valueDateTime = "2024-07-18T10:00:00+08:00"
+// * extension[+].url = "https://nhdr.gov.ph/fhir/StructureDefinition/IllnessClass"
+// * extension[=].valueCodeableConcept = $illness-class-codes#D123 "Diabetes mellitus type 2"
+// * extension[=].valueCodeableConcept.text = "Diabetes mellitus type 2"
+* status = #completed
+* category = $sct#387713003 "Surgical procedure"
+* code = $sct#80146002 "Appendectomy"
+* code.text = "Appendectomy"
+* subject = Reference(Patient/Patient-3)
+* performedDateTime = "2024-07-18T09:00:00+08:00"
+
+Instance: Procedure-Appendectomy
+InstanceOf: PH_Procedure
+Usage: #example
+* meta.lastUpdated = "2024-12-10T14:28:43.739+00:00"
+* status = #completed
+* code = $ProcedureCodeValueSet#12345 "Appendectomy"
+* subject = Reference(Patient/Patient-1)
+* performedPeriod.start = "2024-12-05T08:00:00+08:00"
+
+Instance: Service-Request-Fluid-Analysis
+InstanceOf: PH_ServiceRequest
+Usage: #example
+* meta.lastUpdated = "2024-12-11T04:44:42.475+00:00"
+* status = #active
+* intent = #order
+// * code = $loinc#90381-3 "CSF culture for pathogens"
+// * code.text = "Cerebrospinal Fluid Analysis for AMES"
+* subject = Reference(Patient/Patient-2)
+// * requester = Reference(Practitioner/Dr-Maria-Reyes) "Dr. Maria Reyes"
+// * specimen = Reference(Specimen/7994709b-4350-4f91-b06f-4da782993a8b)
+
+Instance: Service-Request-AFP
+InstanceOf: PH_ServiceRequest
+Usage: #example
+* meta.lastUpdated = "2024-12-12T03:38:57.353+00:00"
+* status = #active
+* intent = #order
+* subject = Reference(Patient/Patient-3)
+// * authoredOn = "2024-12-11T15:00:00Z"
+// * requester = Reference(Practitioner/4140bf45-3fc0-49b7-87da-34ab57f4bbd7)
+// * reasonCode = $sct#441861000000107 "Acute Flaccid Paralysis"
+
+Instance: Service-Request-COVID
+InstanceOf: PH_ServiceRequest
+Usage: #example
+* meta.lastUpdated = "2024-12-12T04:30:08.472+00:00"
+* status = #active
+* intent = #order
+* subject = Reference(Patient/Patient-1)
+// * authoredOn = "2024-12-11T15:00:00Z"
+// * requester = Reference(Practitioner/4140bf45-3fc0-49b7-87da-34ab57f4bbd7)
+// * reasonCode = $sct#840539006 "COVID-19"
+
+Instance: Service-Request-Diphtheria
+InstanceOf: PH_ServiceRequest
+Usage: #example
+* meta.lastUpdated = "2024-12-12T04:23:03.891+00:00"
+* status = #active
+* intent = #order
+* subject = Reference(Patient/Patient-1)
+// * authoredOn = "2024-12-11T15:00:00Z"
+// * requester = Reference(Practitioner/4140bf45-3fc0-49b7-87da-34ab57f4bbd7)
+// * reasonCode = $sct#302830006 "Diphtheria"
+
+Instance: Service-Request-HFMD
+InstanceOf: PH_ServiceRequest
+Usage: #example
+* meta.lastUpdated = "2024-12-12T04:29:16.329+00:00"
+* status = #active
+* intent = #order
+* subject = Reference(Patient/Patient-2)
+// * authoredOn = "2024-12-11T15:00:00Z"
+// * requester = Reference(Practitioner/4140bf45-3fc0-49b7-87da-34ab57f4bbd7)
+// * reasonCode = $sct#703937007 "Hand, foot and mouth disease"
+
+Instance: Service-Request-Influenza
+InstanceOf: PH_ServiceRequest
+Usage: #example
+* meta.lastUpdated = "2024-12-12T04:18:19.254+00:00"
+* status = #active
+* intent = #order
+* subject = Reference(Patient/Patient-3)
+// * authoredOn = "2024-12-11T15:00:00Z"
+// * requester = Reference(Practitioner/4140bf45-3fc0-49b7-87da-34ab57f4bbd7)
+// * reasonCode = $sct#6142004 "Influenza"
+
+Instance: Service-Request-Leptospirosis
+InstanceOf: PH_ServiceRequest
+Usage: #example
+* meta.lastUpdated = "2024-12-12T04:19:31.966+00:00"
+* status = #active
+* intent = #order
+* subject = Reference(Patient/Patient-1)
+// * authoredOn = "2024-12-11T15:00:00Z"
+// * requester = Reference(Practitioner/4140bf45-3fc0-49b7-87da-34ab57f4bbd7)
+// * reasonCode = $sct#3212001 "Leptospirosis"
+
+Instance: Service-Request-Malaria
+InstanceOf: PH_ServiceRequest
+Usage: #example
+* meta.lastUpdated = "2024-12-12T04:20:59.856+00:00"
+* status = #active
+* intent = #order
+* subject = Reference(Patient/Patient-2)
+// * authoredOn = "2024-12-11T15:00:00Z"
+// * requester = Reference(Practitioner/4140bf45-3fc0-49b7-87da-34ab57f4bbd7)
+// * reasonCode = $sct#386661006 "Malaria"
+
+Instance: Service-Request-Measles
+InstanceOf: PH_ServiceRequest
+Usage: #example
+* meta.lastUpdated = "2024-12-12T03:35:51.436+00:00"
+* status = #active
+* intent = #order
+* subject = Reference(Patient/Patient-3)
+
+Instance: Service-Request-Meningococcal
+InstanceOf: PH_ServiceRequest
+Usage: #example
+* meta.lastUpdated = "2024-12-12T04:28:20.579+00:00"
+* status = #active
+* intent = #order
+* subject = Reference(Patient/Patient-1)
+// * authoredOn = "2024-12-11T15:00:00Z"
+// * requester = Reference(Practitioner/4140bf45-3fc0-49b7-87da-34ab57f4bbd7)
+// * reasonCode = $sct#19039008 "Meningococcal infection"
+
+Instance: Service-Request-Neonatal-Tetanus
+InstanceOf: PH_ServiceRequest
+Usage: #example
+* meta.lastUpdated = "2024-12-12T04:24:46.022+00:00"
+* status = #active
+* intent = #order
+* subject = Reference(Patient/Patient-2)
+// * authoredOn = "2024-12-11T15:00:00Z"
+// * requester = Reference(Practitioner/4140bf45-3fc0-49b7-87da-34ab57f4bbd7)
+// * reasonCode = $sct#103279000 "Neonatal tetanus"
+
+Instance: Service-Request-Non-Neonatal-Tetanus
+InstanceOf: PH_ServiceRequest
+Usage: #example
+* meta.lastUpdated = "2024-12-12T04:27:08.352+00:00"
+* status = #active
+* intent = #order
+* subject = Reference(Patient/Patient-3)
+// * authoredOn = "2024-12-11T15:00:00Z"
+// * requester = Reference(Practitioner/4140bf45-3fc0-49b7-87da-34ab57f4bbd7)
+// * reasonCode = $sct#76902006 "Tetanus (non-neonatal)"
+
+Instance: Service-Request-Pertussis
+InstanceOf: PH_ServiceRequest
+Usage: #example
+* meta.lastUpdated = "2024-12-12T04:25:49.922+00:00"
+* status = #active
+* intent = #order
+* subject = Reference(Patient/Patient-1)
+// * authoredOn = "2024-12-11T15:00:00Z"
+// * requester = Reference(Practitioner/4140bf45-3fc0-49b7-87da-34ab57f4bbd7)
+// * reasonCode = $sct#27836007 "Pertussis"
+
+Instance: Service-Request-Rotavirus
+InstanceOf: PH_ServiceRequest
+Usage: #example
+* meta.lastUpdated = "2024-12-12T04:17:07.569+00:00"
+* status = #active
+* intent = #order
+* subject = Reference(Patient/Patient-2)
+// * authoredOn = "2024-12-11T15:00:00Z"
+// * requester = Reference(Practitioner/4140bf45-3fc0-49b7-87da-34ab57f4bbd7)
+// * reasonCode = $sct#123456000 "Rotavirus Infection"
+
+Instance: Specimen-Saliva
+InstanceOf: PH_Specimen
+Usage: #example
+* meta.lastUpdated = "2024-12-11T05:00:31.874+00:00"
+* status = #available
+* type = $sct#122555007 "Saliva specimen"
+* type.text = "Saliva specimen"
+* subject = Reference(Patient/Patient-3)
+* note.text = "Saliva specimen collected for rabies virus testing."

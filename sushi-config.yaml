@@ -6,7 +6,7 @@
 id: PHCDI
 canonical: https://nhdr.gov.ph/fhir
 name: Philippine Core Data for Interoperability
-title: NHDR PHCDI Release 1.0
+title: NHDR Implementation Guide Release 1.0
 description: Draft Implementation Guide for the National Health Data Repository's Philippine Core Data for Interoperability
 status: draft # draft | active | retired | unknown
 version: 0.1.0
@@ -52,7 +52,7 @@ pages:
   # base.md:
   #   title: Base Resources
   extensions.md:
-    title: Custom Extensions
+    title: Extensions
   search-parameters.md:
     title: Search Parameters
 #   implementation.xml:
@@ -88,6 +88,7 @@ pages:
 # ╰────────────────────────────────────────────────────────────────────────────────────────────────╯
 menu:
   Home: index.html
+  # National Health Data Repository: https://nhdr.gov.ph
   Artifacts Index:
     PHCDI Artifacts: artifacts.html#phcdi-artifacts
     Base Profiles: artifacts.html#1
@@ -98,7 +99,8 @@ menu:
   # Base: base.html
   # Clinical: clinical.html
   Extensions: extensions.html
-  Search Parameters: search-parameters.html
+  # Search Parameters: search-parameters.html
+
 
 # ╭───────────────────────────Less Common Implementation Guide Properties──────────────────────────╮
 # │  Uncomment the properties below to configure additional properties on the ImplementationGuide  │
