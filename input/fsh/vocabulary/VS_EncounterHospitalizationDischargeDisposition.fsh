@@ -15,6 +15,6 @@ Description: "A value set containing a set of discharge disposition codes used t
 * ^jurisdiction = urn:iso:std:iso:3166#PH "Philippines"
 * ^immutable = false
 * include codes from system $EncounterHospitalizationDischargeDispositionCS
-* include $EncounterHospitalizationDischargeDispositionCS#R "Recovered"
-* include $EncounterHospitalizationDischargeDispositionCS#I "Improved"
-* include $EncounterHospitalizationDischargeDispositionCS#A "Absconded"
+// * include $EncounterHospitalizationDischargeDispositionCS#R "Recovered"
+// * include $EncounterHospitalizationDischargeDispositionCS#I "Improved"
+// * include $EncounterHospitalizationDischargeDispositionCS#A "Absconded"

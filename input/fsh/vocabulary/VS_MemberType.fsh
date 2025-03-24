@@ -1,7 +1,7 @@
 ValueSet: MemberTypeVS
 Id: MemberTypeVS
 Title: "Member Type"
-Description: "A value set representing different member types."
+Description: ""
 * ^url = "https://nhdr.gov.ph/fhir/ValueSet/MemberTypeVS"
 * ^version = "1.0.0"
 * ^status = #draft

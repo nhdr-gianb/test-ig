@@ -4,7 +4,7 @@ Alias: $SD_Address = https://nhdr.gov.ph/fhir/StructureDefinition/PH-Address
 Alias: $SD_HumanName = https://nhdr.gov.ph/fhir/StructureDefinition/PH-HumanName
 
 // CodeSystems
-Alias: $ClinicalStatusCS = http://terminology.hl7.org/CodeSystem/condition-clinical
+Alias: $ConditionClinicalStatusCS = http://terminology.hl7.org/CodeSystem/condition-clinical
 Alias: $ConditionCategoryCS = http://terminology.hl7.org/CodeSystem/condition-category
 Alias: $ConditionSeverityCS = https://nhdr.gov.ph/fhir/CodeSystem/ConditionSeverityCS
 Alias: $ConditionVerificationStatusCS = https://nhdr.gov.ph/fhir/CodeSystem/ConditionVerificationStatusCS
@@ -44,6 +44,11 @@ Alias: $SNOMED = http://snomed.info/sct
 Alias: $SpecimenConditionCS = http://terminology.hl7.org/CodeSystem/v2-0493
 Alias: $SpecimenProcessingProcedureCS = http://terminology.hl7.org/CodeSystem/v2-0373
 Alias: $SpecimenTypeCS = http://terminology.hl7.org/CodeSystem/v2-0487
+Alias: $ObservationInterpretationCS = http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation
+Alias: $ObservationCategoryCS = http://terminology.hl7.org/CodeSystem/observation-category
+Alias: $DiagnosticServiceSectionCS = http://terminology.hl7.org/CodeSystem/v2-0074
+
+
 
 // ValueSets
 Alias: $ClinicalStatusVS = https://nhdr.gov.ph/fhir/ValueSet/ClinicalStatusVS
@@ -56,3 +61,6 @@ Alias: $ReligionVS = http://terminology.hl7.org/ValueSet/v3-ReligiousAffiliation
 Alias: $SexVS = https://nhdr.gov.ph/fhir/ValueSet/SexVS
 Alias: $SpecimenCollectionMethodVS = https://nhdr.gov.ph/fhir/ValueSet/SpecimenCollectionMethodVS
 Alias: $YesNoVS = http://terminology.hl7.org/ValueSet/v2-0136
+Alias: $ObservationStatusVS = http://hl7.org/fhir/observation-status
+Alias: $AppointmentStatusVS = http://hl7.org/fhir/appointmentstatus
+Alias: $DiagnosticReportStatusVS = http://hl7.org/fhir/diagnostic-report-status
