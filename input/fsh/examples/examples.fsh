@@ -792,6 +792,324 @@ Usage: #example
 * subject = Reference(Patient/Patient-1)
 * performedPeriod.start = "2024-12-05T08:00:00+08:00"
 
+// Instance: QuestionnareResponse-1
+// InstanceOf: PH_QuestionnaireResponse
+// Usage: #example
+// * meta.lastUpdated = "2024-12-10T08:38:43.941+00:00"
+// // * questionnaire = "http://example.org/fhir/Questionnaire/MemberCheck"
+// * status = #completed
+// * subject = Reference(Person/Person-1)
+// * authored = "2024-12-10T12:00:00Z"
+// * item.linkId = "1"
+// * item.text = "Person is the member?"
+// * item.answer.valueBoolean = true
+
+// Instance: QuestionnareResponse-2
+// InstanceOf: PH_QuestionnaireResponse
+// Usage: #example
+// * meta.lastUpdated = "2024-12-10T13:41:21.79+00:00"
+// * status = #completed
+// * subject = Reference(Person/Person-2)
+// * item.linkId = "philhealth-member"
+// * item.text = "Is a PhilHealth member?"
+// * item.answer.valueBoolean = true
+
+// Instance: QuestionnaireResponse-3
+// InstanceOf: PH_QuestionnaireResponse
+// Usage: #example
+// * meta.lastUpdated = "2024-12-10T21:58:33.912+00:00"
+// * status = #completed
+// * subject = Reference(Patient/Patient-1)
+
+// Instance: QuestionnaireResponse-4
+// InstanceOf: PH_QuestionnaireResponse
+// Usage: #example
+// * meta.lastUpdated = "2024-12-10T08:52:07.638+00:00"
+// // * questionnaire = "http://example.org/fhir/Questionnaire/MemberCheck"
+// * status = #completed
+// * subject = Reference(Patient/Patient-2)
+// * authored = "2024-12-10T12:00:00Z"
+// * author = Reference(Organization/Organization-2)
+// * item.linkId = "1"
+// * item.text = "Patient is the member?"
+// * item.answer.valueBoolean = true
+
+// Instance: QuestionnaireResponse-5
+// InstanceOf: PH_QuestionnaireResponse
+// Usage: #example
+// * meta.lastUpdated = "2024-12-10T13:48:50.596+00:00"
+// * status = #completed
+// * subject = Reference(Person/Person-1)
+// * item.linkId = "philhealth-member"
+// * item.text = "Is a PhilHealth member?"
+// * item.answer.valueBoolean = true
+
+// Instance: QuestionnaireResponse-6
+// InstanceOf: PH_QuestionnaireResponse
+// Usage: #example
+// * meta.lastUpdated = "2024-12-10T21:44:28.939+00:00"
+// // * questionnaire = "https://example.org/Questionnaire/Example4"
+// * status = #completed
+// * subject = Reference(Patient/Patient-3)
+
+// Instance: QuestionnaireResponse-7
+// InstanceOf: PH_QuestionnaireResponse
+// Usage: #example
+// * meta.lastUpdated = "2024-12-10T21:32:57.562+00:00"
+// // * questionnaire = "https://example.org/Questionnaire/Example2"
+// * status = #completed
+// * subject = Reference(Patient/Patient-1)
+// * authored = "2024-12-11T12:00:00Z"
+// * author = Reference(Practitioner/Practitioner-1)
+
+// Instance: QuestionnaireResponse-8
+// InstanceOf: PH_QuestionnaireResponse
+// Usage: #example
+// * meta.lastUpdated = "2024-12-10T14:28:44.132+00:00"
+// * status = #completed
+// * item.linkId = "referral"
+// * item.text = "Was the patient referred by another HCI?"
+// * item.answer.valueBoolean = true
+
+// Instance: QuestionnaireResponse-9
+// InstanceOf: PH_QuestionnaireResponse
+// Usage: #example
+// * meta.lastUpdated = "2024-12-10T21:32:57.497+00:00"
+// // * questionnaire = "https://example.org/Questionnaire/Example1"
+// * status = #completed
+// * subject = Reference(Patient/Patient-1)
+// * authored = "2024-12-11T12:00:00Z"
+// * author = Reference(Practitioner/Practitioner-2)
+
+// Instance: QuestionnaireResponse-AFP
+// InstanceOf: PH_QuestionnaireResponse
+// Usage: #example
+// * meta.lastUpdated = "2024-12-12T03:38:57.406+00:00"
+// * status = #completed
+// * subject = Reference(Patient/Patient-1)
+// * item[0].linkId = "1"
+// * item[=].text = "Has the specimen been sent to RITM?"
+// * item[=].answer.valueBoolean = true
+// * item[+].linkId = "2"
+// * item[=].text = "Has the patient received recent vaccinations?"
+// * item[=].answer.valueBoolean = true
+// * item[+].linkId = "3"
+// * item[=].text = "Was the patient recently exposed to any infectious diseases?"
+// * item[=].answer.valueBoolean = false
+
+// Instance: QuestionnaireResponse-COVID
+// InstanceOf: PH_QuestionnaireResponse
+// Usage: #example
+// * meta.lastUpdated = "2024-12-12T04:30:08.519+00:00"
+// * status = #completed
+// * subject = Reference(Patient/Patient-2)
+// * item[0].linkId = "1"
+// * item[=].text = "Has the specimen been sent to RITM?"
+// * item[=].answer.valueBoolean = true
+// * item[+].linkId = "2"
+// * item[=].text = "Does the patient have a fever, cough, or difficulty breathing?"
+// * item[=].answer.valueBoolean = true
+// * item[+].linkId = "3"
+// * item[=].text = "Has the patient been in close contact with a confirmed COVID-19 case?"
+// * item[=].answer.valueBoolean = true
+// * item[+].linkId = "4"
+// * item[=].text = "Has the patient experienced loss of taste or smell?"
+// * item[=].answer.valueBoolean = true
+
+// Instance: QuestionnaireResponse-Diphtheria
+// InstanceOf: PH_QuestionnaireResponse
+// Usage: #example
+// * meta.lastUpdated = "2024-12-12T04:23:03.938+00:00"
+// * status = #completed
+// * subject = Reference(Patient/Patient-3)
+// * item[0].linkId = "1"
+// * item[=].text = "Has the specimen been sent to RITM?"
+// * item[=].answer.valueBoolean = true
+// * item[+].linkId = "2"
+// * item[=].text = "Has the patient reported symptoms of sore throat or difficulty breathing?"
+// * item[=].answer.valueBoolean = true
+// * item[+].linkId = "3"
+// * item[=].text = "Has the patient experienced swelling in the neck or hoarseness of voice?"
+// * item[=].answer.valueBoolean = true
+// * item[+].linkId = "4"
+// * item[=].text = "Was the patient exposed to anyone diagnosed with diphtheria?"
+// * item[=].answer.valueBoolean = false
+
+// Instance: QuestionnaireResponse-HFMD
+// InstanceOf: PH_QuestionnaireResponse
+// Usage: #example
+// * meta.lastUpdated = "2024-12-12T04:29:16.375+00:00"
+// * status = #completed
+// * subject = Reference(Patient/Patient-1)
+// * item[0].linkId = "1"
+// * item[=].text = "Has the specimen been sent to RITM?"
+// * item[=].answer.valueBoolean = true
+// * item[+].linkId = "2"
+// * item[=].text = "Does the patient have a fever and sores in the mouth?"
+// * item[=].answer.valueBoolean = true
+// * item[+].linkId = "3"
+// * item[=].text = "Are there rashes or blisters on the hands, feet, or buttocks?"
+// * item[=].answer.valueBoolean = true
+// * item[+].linkId = "4"
+// * item[=].text = "Has the patient been in close contact with another case of HFMD?"
+// * item[=].answer.valueBoolean = false
+
+// Instance: QuestionnaireResponse-Influenza
+// InstanceOf: PH_QuestionnaireResponse
+// Usage: #example
+// * meta.lastUpdated = "2024-12-12T04:18:19.319+00:00"
+// * status = #completed
+// * subject = Reference(Patient/Patient-2)
+// * item[0].linkId = "1"
+// * item[=].text = "Has the specimen been sent to RITM?"
+// * item[=].answer.valueBoolean = true
+// * item[+].linkId = "2"
+// * item[=].text = "Does the patient have a history of recent travel to high-risk areas?"
+// * item[=].answer.valueBoolean = true
+// * item[+].linkId = "3"
+// * item[=].text = "Has the patient experienced fever, cough, or difficulty in breathing?"
+// * item[=].answer.valueBoolean = true
+
+// Instance: QuestionnaireResponse-Leptospirosis
+// InstanceOf: PH_QuestionnaireResponse
+// Usage: #example
+// * meta.lastUpdated = "2024-12-12T04:19:32.026+00:00"
+// * status = #completed
+// * subject = Reference(Patient/Patient-3)
+// * item[0].linkId = "1"
+// * item[=].text = "Has the specimen been sent to RITM?"
+// * item[=].answer.valueBoolean = true
+// * item[+].linkId = "2"
+// * item[=].text = "Has the patient been exposed to floodwaters or contaminated water sources?"
+// * item[=].answer.valueBoolean = true
+// * item[+].linkId = "3"
+// * item[=].text = "Has the patient experienced symptoms like fever, muscle pain, or headache?"
+// * item[=].answer.valueBoolean = true
+// * item[+].linkId = "4"
+// * item[=].text = "Has the patient reported jaundice, reduced urine output, or respiratory distress?"
+// * item[=].answer.valueBoolean = false
+
+// Instance: QuestionnaireResponse-Malaria
+// InstanceOf: PH_QuestionnaireResponse
+// Usage: #example
+// * meta.lastUpdated = "2024-12-12T04:20:59.925+00:00"
+// * status = #completed
+// * subject = Reference(Patient/Patient-1)
+// * item[0].linkId = "1"
+// * item[=].text = "Has the specimen been sent to RITM?"
+// * item[=].answer.valueBoolean = true
+// * item[+].linkId = "2"
+// * item[=].text = "Has the patient traveled to malaria-endemic areas recently?"
+// * item[=].answer.valueBoolean = true
+// * item[+].linkId = "3"
+// * item[=].text = "Has the patient experienced fever, chills, or night sweats?"
+// * item[=].answer.valueBoolean = true
+// * item[+].linkId = "4"
+// * item[=].text = "Has the patient experienced any symptoms like vomiting, diarrhea, or headaches?"
+// * item[=].answer.valueBoolean = false
+
+// Instance: QuestionnaireResponse-Meningococcal
+// InstanceOf: PH_QuestionnaireResponse
+// Usage: #example
+// * meta.lastUpdated = "2024-12-12T04:28:20.669+00:00"
+// * status = #completed
+// * subject = Reference(Patient/Patient-2)
+// * item[0].linkId = "1"
+// * item[=].text = "Has the specimen been sent to RITM?"
+// * item[=].answer.valueBoolean = true
+// * item[+].linkId = "2"
+// * item[=].text = "Is the patient experiencing sudden fever, headache, or stiff neck?"
+// * item[=].answer.valueBoolean = true
+// * item[+].linkId = "3"
+// * item[=].text = "Has the patient been in close contact with a confirmed meningococcal case?"
+// * item[=].answer.valueBoolean = false
+// * item[+].linkId = "4"
+// * item[=].text = "Are there signs of rash or purpura on the patient?"
+// * item[=].answer.valueBoolean = true
+
+// Instance: QuestionnaireResponse-NeonatalTetanus
+// InstanceOf: PH_QuestionnaireResponse
+// Usage: #example
+// * meta.lastUpdated = "2024-12-12T04:24:46.088+00:00"
+// * status = #completed
+// * subject = Reference(Patient/Patient-3)
+// * item[0].linkId = "1"
+// * item[=].text = "Has the specimen been sent to RITM?"
+// * item[=].answer.valueBoolean = true
+// * item[+].linkId = "2"
+// * item[=].text = "Was the mother immunized with tetanus toxoid during pregnancy?"
+// * item[=].answer.valueBoolean = false
+// * item[+].linkId = "3"
+// * item[=].text = "Was the delivery conducted under unhygienic conditions?"
+// * item[=].answer.valueBoolean = true
+// * item[+].linkId = "4"
+// * item[=].text = "Is the infant experiencing muscle stiffness or difficulty feeding?"
+// * item[=].answer.valueBoolean = true
+
+// Instance: QuestionnaireResponse-NonNeonatalTetanus
+// InstanceOf: PH_QuestionnaireResponse
+// Usage: #example
+// * meta.lastUpdated = "2024-12-12T04:27:08.414+00:00"
+// * status = #completed
+// * subject = Reference(Patient/Patient-1)
+// * item[0].linkId = "1"
+// * item[=].text = "Has the specimen been sent to RITM?"
+// * item[=].answer.valueBoolean = true
+// * item[+].linkId = "2"
+// * item[=].text = "Was the patient injured recently with potential exposure to contaminated objects?"
+// * item[=].answer.valueBoolean = true
+// * item[+].linkId = "3"
+// * item[=].text = "Is the patient experiencing muscle stiffness or spasms?"
+// * item[=].answer.valueBoolean = true
+// * item[+].linkId = "4"
+// * item[=].text = "Has the patient been vaccinated against tetanus?"
+// * item[=].answer.valueBoolean = false
+
+// Instance: QuestionnaireResponse-Pertussis
+// InstanceOf: PH_QuestionnaireResponse
+// Usage: #example
+// * meta.lastUpdated = "2024-12-12T04:25:49.978+00:00"
+// * status = #completed
+// * subject = Reference(Patient/Patient-2)
+// * item[0].linkId = "1"
+// * item[=].text = "Has the specimen been sent to RITM?"
+// * item[=].answer.valueBoolean = true
+// * item[+].linkId = "2"
+// * item[=].text = "Has the patient reported prolonged coughing spells?"
+// * item[=].answer.valueBoolean = true
+// * item[+].linkId = "3"
+// * item[=].text = "Does the patient have a history of recent exposure to someone diagnosed with pertussis?"
+// * item[=].answer.valueBoolean = false
+// * item[+].linkId = "4"
+// * item[=].text = "Is the patient experiencing symptoms like vomiting after coughing or difficulty breathing?"
+// * item[=].answer.valueBoolean = true
+
+// Instance: QuestionnaireResponse-Rotavirus
+// InstanceOf: PH_QuestionnaireResponse
+// Usage: #example
+// * meta.lastUpdated = "2024-12-12T04:17:08.437+00:00"
+// * status = #completed
+// * subject = Reference(Patient/Patient-3)
+// * item[0].linkId = "1"
+// * item[=].text = "Has the specimen been sent to RITM?"
+// * item[=].answer.valueBoolean = true
+// * item[+].linkId = "2"
+// * item[=].text = "Has the patient experienced diarrhea or vomiting?"
+// * item[=].answer.valueBoolean = true
+// * item[+].linkId = "3"
+// * item[=].text = "Is the patient currently dehydrated?"
+// * item[=].answer.valueBoolean = false
+
+// Instance: QuestionnaireResponse-SARI
+// InstanceOf: PH_QuestionnaireResponse
+// Usage: #example
+// * meta.lastUpdated = "2024-12-12T03:37:36.545+00:00"
+// * status = #completed
+// * subject = Reference(Patient/Patient-1)
+// * item.linkId = "1"
+// * item.text = "Has the specimen been sent to RITM?"
+// * item.answer.valueBoolean = true
+
 Instance: Service-Request-Fluid-Analysis
 InstanceOf: PH_ServiceRequest
 Usage: #example
@@ -832,7 +1150,7 @@ Usage: #example
 * meta.lastUpdated = "2024-12-12T04:23:03.891+00:00"
 * status = #active
 * intent = #order
-* subject = Reference(Patient/Patient-1)
+* subject = Reference(Patient/Patient-3)
 // * authoredOn = "2024-12-11T15:00:00Z"
 // * requester = Reference(Practitioner/4140bf45-3fc0-49b7-87da-34ab57f4bbd7)
 // * reasonCode = $sct#302830006 "Diphtheria"

@@ -10,7 +10,7 @@ Description: "A value set representing various types of relationships to the pat
 * ^publisher = "NHDR"
 * ^language = #en-US
 * include codes from system $ContactRelationshipCS
-* include codes from system $RelationshipTypeCS where concept is-a #_PersonalRelationshipRoleType
+* include codes from system $RoleCodeCS where concept is-a #_PersonalRelationshipRoleType
 * exclude $ContactRelationshipCS#BP
 * exclude $ContactRelationshipCS#CP
 * exclude $ContactRelationshipCS#EP
