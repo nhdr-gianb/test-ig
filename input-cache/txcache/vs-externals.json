@@ -25,6 +25,7 @@
   "http://example.org/fhir/CodeSystem/ImmunizationRouteCodeSystem|null" : null,
   "http://example.org/fhir/organization-type-codes|null" : null,
   "https://philhealth.gov.ph/fhir/StructureDefinition/OrganizationTypeValueSet" : null,
+  "https://verification.fda.gov.ph/drug_productslist.php|null" : null,
   "http://example.org/fhir/indigenous-group-codes|null" : null,
   "http://example.org/fhir/CodeSystem/ImmunizationVaccineCodeSystem|null" : null,
   "http://example.org/fhir/marital-status-codes|null" : null,
