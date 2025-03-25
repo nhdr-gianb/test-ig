@@ -1,7 +1,7 @@
 ValueSet: ObservationInterpretationVS
 Id: ObservationInterpretationVS
 Title: "Observation Interpretation"
-Description: ""
+Description: "A valueset used to indicate the clinical meaning or significance of an observation result."
 * ^url = "https://nhdr.gov.ph/fhir/ValueSet/ObservationInterpretationVS"
 * ^version = "1.0.0"
 * ^status = #draft

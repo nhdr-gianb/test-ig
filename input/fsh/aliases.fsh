@@ -17,7 +17,7 @@ Alias: $EncounterServiceTypeCS = http://terminology.hl7.org/CodeSystem/service-t
 Alias: $EncounterTypeCS = http://terminology.hl7.org/CodeSystem/encounter-type
 Alias: $FacilityMajorTypeCS = https://nhdr.gov.ph/fhir/CodeSystem/FacilityMajorTypeCS
 Alias: $ICD10CS = https://nhdr.gov.ph/fhir/CodeSystem/ICD10CS
-Alias: $ImmunizationReportOriginCS = http://terminology.hl7.org/CodeSystem/immunization-origin
+Alias: $ImmunizationOriginCS = http://terminology.hl7.org/CodeSystem/immunization-origin
 Alias: $ImmunizationRouteCS = http://terminology.hl7.org/CodeSystem/v3-RouteOfAdministration
 Alias: $ImmunizationStatusCS = http://hl7.org/fhir/event-status
 Alias: $ImmunizationStatusReasonCS = http://terminology.hl7.org/CodeSystem/v3-ActReason
@@ -47,8 +47,12 @@ Alias: $SpecimenTypeCS = http://terminology.hl7.org/CodeSystem/v2-0487
 Alias: $ObservationInterpretationCS = http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation
 Alias: $ObservationCategoryCS = http://terminology.hl7.org/CodeSystem/observation-category
 Alias: $DiagnosticServiceSectionCS = http://terminology.hl7.org/CodeSystem/v2-0074
-
-
+Alias: $MedicationAdministrationStatusCS = http://terminology.hl7.org/CodeSystem/medication-admin-status
+Alias: $ReasonMedicationGivenCS = http://terminology.hl7.org/CodeSystem/reason-medication-given
+Alias: $MedicationStatusCS = http://hl7.org/fhir/CodeSystem/medication-statement-status
+Alias: $AllergyIntoleranceClinicalStatusCS = http://terminology.hl7.org/CodeSystem/allergyintolerance-clinical
+Alias: $CoverageClassCS = http://terminology.hl7.org/CodeSystem/coverage-class
+Alias: $CoverageCopayTypeCS = http://terminology.hl7.org/CodeSystem/coverage-copay-type
 
 // ValueSets
 Alias: $ClinicalStatusVS = https://nhdr.gov.ph/fhir/ValueSet/ClinicalStatusVS
@@ -64,3 +68,6 @@ Alias: $YesNoVS = http://terminology.hl7.org/ValueSet/v2-0136
 Alias: $ObservationStatusVS = http://hl7.org/fhir/observation-status
 Alias: $AppointmentStatusVS = http://hl7.org/fhir/appointmentstatus
 Alias: $DiagnosticReportStatusVS = http://hl7.org/fhir/diagnostic-report-status
+Alias: $ServiceRequestStatusVS = http://hl7.org/fhir/request-status
+Alias: $AllergyIntoleranceCategoryVS = http://hl7.org/fhir/allergy-intolerance-category
+Alias: $AllergyIntoleranceReactionSeverity = http://hl7.org/fhir/reaction-event-severity
