@@ -1,0 +1,12 @@
+ValueSet: RegionVS
+Id: RegionVS
+Title: "Region Codes"
+Description: "Region codes from the Philippine Standard Geographic Codes."
+* ^url = "https://nhdr.gov.ph/fhir/ValueSet/RegionVS"
+* ^version = "1.0.0"
+* ^status = #draft
+* ^experimental = false
+* ^date = "2025-03-20"
+* ^publisher = "NHDR"
+* ^language = #en-US
+* include codes from system $PSGCCS where concept is-a #_Region
