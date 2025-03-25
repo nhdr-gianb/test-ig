@@ -1,7 +1,7 @@
 ValueSet: DiagnosticServiceSectionVS
 Id: DiagnosticServiceSectionVS
 Title: "Diagnostic Service Section"
-Description: ""
+Description: "A valueset representing different sections or categories of diagnostic services within a healthcare setting."
 * ^url = "https://nhdr.gov.ph/fhir/ValueSet/DiagnosticServiceSectionVS"
 * ^version = "1.0.0"
 * ^status = #draft

@@ -12,7 +12,7 @@ Description: "Describes the event of a patient being administered a vaccine or a
 * status from ImmunizationStatusVS (required)
 * vaccineCode from ImmunizationVaccineCodeVS (example)
 * primarySource ..0
-* reportOrigin from ImmunizationReportOriginVS (example)
+* reportOrigin from ImmunizationOriginVS (example)
 * location ..0
 * manufacturer ..0
 * lotNumber ..0

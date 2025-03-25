@@ -1,6 +1,6 @@
 CodeSystem: ICD-10CS
 Id: ICD-10CS
-Title: "Condition Verification Status Types"
+Title: "ICD-10"
 Description: "Contains codes for diseases, signs and symptoms, abnormal findings, complaints, social circumstances, and external causes of injury or diseases"
 * ^url = "https://nhdr.gov.ph/fhir/CodeSystem/ICD-10CS"
 * ^status = #active
