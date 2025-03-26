@@ -13,6 +13,7 @@ Alias: $ContactEntityTypeCS = http://terminology.hl7.org/CodeSystem/contactentit
 Alias: $ContactRelationshipCS = http://terminology.hl7.org/CodeSystem/v2-0131
 Alias: $CoverageClassCS = http://terminology.hl7.org/CodeSystem/coverage-class
 Alias: $CoverageCopayTypeCS = http://terminology.hl7.org/CodeSystem/coverage-copay-type
+Alias: $DiagnosticServiceSectionCS = http://terminology.hl7.org/CodeSystem/v2-0074
 Alias: $EncounterClassificationCS =  http://terminology.hl7.org/CodeSystem/v3-ActCode
 Alias: $EncounterHospitalizationDischargeDispositionCS = http://terminology.hl7.org/CodeSystem/discharge-disposition
 Alias: $EncounterLocationPhysicalTypeCS = http://terminology.hl7.org/CodeSystem/location-physical-type
@@ -28,6 +29,8 @@ Alias: $ImmunizationVaccineCodeCS = https://nhdr.gov.ph/fhir/CodeSystem/Immuniza
 Alias: $IndigenousGroupCS = https://nhdr.gov.ph/fhir/CodeSystem/IndigenousGroupCS
 Alias: $LhioCS = https://nhdr.gov.ph/fhir/CodeSystem/LhioCS
 Alias: $LOINC = http://loinc.org
+Alias: $MedicationAdministrationStatusCS = http://terminology.hl7.org/CodeSystem/medication-admin-status
+Alias: $MedicationStatusCS = http://hl7.org/fhir/CodeSystem/medication-statement-status
 Alias: $MemberTypeCS = https://nhdr.gov.ph/fhir/CodeSystem/MemberTypeCS
 Alias: $NullFlavorCS =  http://terminology.hl7.org/CodeSystem/v3-NullFlavor
 Alias: $ObservationMethodCS = https://nhdr.gov.ph/fhir/CodeSystem/ObservationMethodCS
@@ -40,6 +43,7 @@ Alias: $PractitionerRoleCS = http://terminology.hl7.org/CodeSystem/practitioner-
 Alias: $ProCS = https://nhdr.gov.ph/fhir/CodeSystem/ProCS
 Alias: $ProcedureStatusCS = http://hl7.org/fhir/event-status
 Alias: $PSGCCS = https://nhdr.gov.ph/fhir/CodeSystem/PSGCCS
+Alias: $ReasonMedicationGivenCS = http://terminology.hl7.org/CodeSystem/reason-medication-given
 Alias: $RoleCodeCS = http://terminology.hl7.org/CodeSystem/v3-RoleCode
 Alias: $RVSCodeCS = https://nhdr.gov.ph/fhir/CodeSystem/RVSCodeCS
 Alias: $SexCS = http://terminology.hl7.org/CodeSystem/v2-0001
@@ -49,10 +53,8 @@ Alias: $SpecimenProcessingProcedureCS = http://terminology.hl7.org/CodeSystem/v2
 Alias: $SpecimenTypeCS = http://terminology.hl7.org/CodeSystem/v2-0487
 Alias: $ObservationInterpretationCS = http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation
 Alias: $ObservationCategoryCS = http://terminology.hl7.org/CodeSystem/observation-category
-Alias: $DiagnosticServiceSectionCS = http://terminology.hl7.org/CodeSystem/v2-0074
-Alias: $MedicationAdministrationStatusCS = http://terminology.hl7.org/CodeSystem/medication-admin-status
-Alias: $ReasonMedicationGivenCS = http://terminology.hl7.org/CodeSystem/reason-medication-given
-Alias: $MedicationStatusCS = http://hl7.org/fhir/CodeSystem/medication-statement-status
+
+
 
 
 // ValueSets
@@ -62,7 +64,7 @@ Alias: $AppointmentStatusVS = http://hl7.org/fhir/appointmentstatus // check the
 Alias: $ClinicalStatusVS = https://nhdr.gov.ph/fhir/ValueSet/ClinicalStatusVS
 Alias: $DiagnosticReportStatusVS = http://hl7.org/fhir/diagnostic-report-status
 Alias: $EncounterStatus = http://hl7.org/fhir/encounter-status
-Alias: $ImmunizationOriginVS = https://hl7.org/fhir/R4/valueset-immunization-origin.html
+Alias: $ImmunizationOriginVS = http://hl7.org/fhir/ValueSet/immunization-origin
 Alias: $MaritalStatusVS = http://hl7.org/fhir/ValueSet/marital-status
 Alias: $ObservationMethodVS = https://nhdr.gov.ph/fhir/ValueSet/ObservationMethodVS
 Alias: $ObservationStatusVS = http://hl7.org/fhir/observation-status
