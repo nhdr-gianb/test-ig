@@ -4,12 +4,15 @@ Alias: $SD_Address = https://nhdr.gov.ph/fhir/StructureDefinition/PH-Address
 Alias: $SD_HumanName = https://nhdr.gov.ph/fhir/StructureDefinition/PH-HumanName
 
 // CodeSystems
-Alias: $ConditionClinicalStatusCS = http://terminology.hl7.org/CodeSystem/condition-clinical
+Alias: $AllergyIntoleranceClinicalStatusCS = http://terminology.hl7.org/CodeSystem/allergyintolerance-clinical
 Alias: $ConditionCategoryCS = http://terminology.hl7.org/CodeSystem/condition-category
+Alias: $ConditionClinicalStatusCS = http://terminology.hl7.org/CodeSystem/condition-clinical
 Alias: $ConditionSeverityCS = https://nhdr.gov.ph/fhir/CodeSystem/ConditionSeverityCS
 Alias: $ConditionVerificationStatusCS = https://nhdr.gov.ph/fhir/CodeSystem/ConditionVerificationStatusCS
 Alias: $ContactEntityTypeCS = http://terminology.hl7.org/CodeSystem/contactentity-type
 Alias: $ContactRelationshipCS = http://terminology.hl7.org/CodeSystem/v2-0131
+Alias: $CoverageClassCS = http://terminology.hl7.org/CodeSystem/coverage-class
+Alias: $CoverageCopayTypeCS = http://terminology.hl7.org/CodeSystem/coverage-copay-type
 Alias: $EncounterClassificationCS =  http://terminology.hl7.org/CodeSystem/v3-ActCode
 Alias: $EncounterHospitalizationDischargeDispositionCS = http://terminology.hl7.org/CodeSystem/discharge-disposition
 Alias: $EncounterLocationPhysicalTypeCS = http://terminology.hl7.org/CodeSystem/location-physical-type
@@ -17,7 +20,7 @@ Alias: $EncounterServiceTypeCS = http://terminology.hl7.org/CodeSystem/service-t
 Alias: $EncounterTypeCS = http://terminology.hl7.org/CodeSystem/encounter-type
 Alias: $FacilityMajorTypeCS = https://nhdr.gov.ph/fhir/CodeSystem/FacilityMajorTypeCS
 Alias: $ICD10CS = https://nhdr.gov.ph/fhir/CodeSystem/ICD10CS
-Alias: $ImmunizationOriginCS = http://terminology.hl7.org/CodeSystem/immunization-origin
+// Alias: $ImmunizationOriginCS = http://terminology.hl7.org/CodeSystem/immunization-origin
 Alias: $ImmunizationRouteCS = http://terminology.hl7.org/CodeSystem/v3-RouteOfAdministration
 Alias: $ImmunizationStatusCS = http://hl7.org/fhir/event-status
 Alias: $ImmunizationStatusReasonCS = http://terminology.hl7.org/CodeSystem/v3-ActReason
@@ -50,24 +53,24 @@ Alias: $DiagnosticServiceSectionCS = http://terminology.hl7.org/CodeSystem/v2-00
 Alias: $MedicationAdministrationStatusCS = http://terminology.hl7.org/CodeSystem/medication-admin-status
 Alias: $ReasonMedicationGivenCS = http://terminology.hl7.org/CodeSystem/reason-medication-given
 Alias: $MedicationStatusCS = http://hl7.org/fhir/CodeSystem/medication-statement-status
-Alias: $AllergyIntoleranceClinicalStatusCS = http://terminology.hl7.org/CodeSystem/allergyintolerance-clinical
-Alias: $CoverageClassCS = http://terminology.hl7.org/CodeSystem/coverage-class
-Alias: $CoverageCopayTypeCS = http://terminology.hl7.org/CodeSystem/coverage-copay-type
+
 
 // ValueSets
+Alias: $AllergyIntoleranceCategoryVS = http://hl7.org/fhir/allergy-intolerance-category
+Alias: $AllergyIntoleranceReactionSeverity = http://hl7.org/fhir/reaction-event-severity
+Alias: $AppointmentStatusVS = http://hl7.org/fhir/appointmentstatus // check the local references and the forms, as the forms only use Y or N
 Alias: $ClinicalStatusVS = https://nhdr.gov.ph/fhir/ValueSet/ClinicalStatusVS
+Alias: $DiagnosticReportStatusVS = http://hl7.org/fhir/diagnostic-report-status
 Alias: $EncounterStatus = http://hl7.org/fhir/encounter-status
+Alias: $ImmunizationOriginVS = https://hl7.org/fhir/R4/valueset-immunization-origin.html
 Alias: $MaritalStatusVS = http://hl7.org/fhir/ValueSet/marital-status
 Alias: $ObservationMethodVS = https://nhdr.gov.ph/fhir/ValueSet/ObservationMethodVS
+Alias: $ObservationStatusVS = http://hl7.org/fhir/observation-status
 Alias: $OrganizationTypeVS = https://nhdr.gov.ph/fhir/ValueSet/OrganizationTypeVS
 Alias: $ProvinceVS = https://nhdr.gov.ph/fhir/ValueSet/ProvinceVS
 Alias: $ReligionVS = http://terminology.hl7.org/ValueSet/v3-ReligiousAffiliation    // CS_Religion exists but not merged or used yet
+Alias: $ServiceRequestStatusVS = http://hl7.org/fhir/request-status
 Alias: $SexVS = https://nhdr.gov.ph/fhir/ValueSet/SexVS
 Alias: $SpecimenCollectionMethodVS = https://nhdr.gov.ph/fhir/ValueSet/SpecimenCollectionMethodVS
 Alias: $YesNoVS = http://terminology.hl7.org/ValueSet/v2-0136
-Alias: $ObservationStatusVS = http://hl7.org/fhir/observation-status
-Alias: $AppointmentStatusVS = http://hl7.org/fhir/appointmentstatus
-Alias: $DiagnosticReportStatusVS = http://hl7.org/fhir/diagnostic-report-status
-Alias: $ServiceRequestStatusVS = http://hl7.org/fhir/request-status
-Alias: $AllergyIntoleranceCategoryVS = http://hl7.org/fhir/allergy-intolerance-category
-Alias: $AllergyIntoleranceReactionSeverity = http://hl7.org/fhir/reaction-event-severity
+
