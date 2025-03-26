@@ -1,6 +1,6 @@
 CodeSystem: ObservationValueCS
 Id: ObservationValueCS
-Title: "Placeholder for Observation Value"
+Title: "Observation Value"
 Description: "Placeholder for Observation Value"
 * ^experimental = false
 * ^caseSensitive = true

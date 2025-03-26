@@ -1,7 +1,7 @@
 ValueSet: ObservationCategoryVS
 Id: ObservationCategoryVS
 Title: "Observation Category"
-Description: ""
+Description: "A valueset representing different categories of clinical observations."
 * ^url = "https://nhdr.gov.ph/fhir/ValueSet/ObservationCategoryVS"
 * ^version = "1.0.0"
 * ^status = #draft

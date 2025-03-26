@@ -13,4 +13,4 @@ Description: "A value set representing reasons for immunization status."
 * $ImmunizationStatusReasonCS#MEDPREC "medical precaution"
 * $ImmunizationStatusReasonCS#OSTOCK "product out of stock"
 * $ImmunizationStatusReasonCS#PATOBJ "patient objection"
-* include codes from system $SNOMED where concept is-a #310376006
+// * include codes from system $SNOMED where concept is-a #310376006

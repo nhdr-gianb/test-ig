@@ -1,8 +1,7 @@
-//  Currently unused until the team finishes mapping local CodeSystems/ValueSets with existing HL7 codes.
 CodeSystem: PSGCCS
 Id: PSGCCS
 Title: "PSGC Codes"
-Description: "Codes from the Philippine Standard Geographical Code (PSGC)."
+Description: "Placeholder version of PSGC codes to avoid long build times in local development."
 * insert HierarchyValues
 * ^experimental = false
 * ^caseSensitive = true
@@ -33,12 +32,9 @@ Description: "Codes from the Philippine Standard Geographical Code (PSGC)."
 
 * #1 "REGION I" "Region I"
 * insert ApplyRegion(1)
-
 * #1028 "ILOCOS NORTE" "Ilocos Norte"
 * insert ApplyProvince(1028)
-
 * #102801 "ADAMS" "Adams"
 * insert ApplyCity(102801)
-
 * #102801001 "ADAMS" "Adams"
 * insert ApplyBarangay(102801001)

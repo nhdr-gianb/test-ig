@@ -1,7 +1,7 @@
 ValueSet: LocationTypeVS
 Id: LocationTypeVS
 Title: "Location Type"
-Description: ""
+Description: "A valueset representing different types of healthcare-related locations."
 * ^url = "https://nhdr.gov.ph/fhir/ValueSet/LocationTypeVS"
 * ^version = "1.0.0"
 * ^status = #draft

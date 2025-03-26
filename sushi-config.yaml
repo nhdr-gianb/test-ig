@@ -91,11 +91,13 @@ menu:
   # National Health Data Repository: https://nhdr.gov.ph
   Artifacts Index:
     PHCDI Artifacts: artifacts.html#phcdi-artifacts
-    Base Profiles: artifacts.html#1
-    Clinical Profiles: artifacts.html#2
-    Data Types: artifacts.html#3
-    Extensions: artifacts.html#4
-    Value Sets: artifacts.html#5
+    Base Profiles: artifacts.html#base-profiles
+    Clinical Profiles: artifacts.html#clinical-profiles
+    Data Types: artifacts.html#data-types
+    Extensions: artifacts.html#structures-extension-definitions
+    Value Sets: artifacts.html#terminology-value-sets
+    Code Systems: artifacts.html#terminology-code-systems
+    Instances: artifacts.html#example-example-instances
   # Base: base.html
   # Clinical: clinical.html
   Extensions: extensions.html
@@ -128,8 +130,8 @@ menu:
 # it with the correct canonical when generating the IG JSON.
 #
 # global:
-#   Patient: http://example.org/fhir/StructureDefinition/my-patient-profile
-#   Encounter: http://example.org/fhir/StructureDefinition/my-encounter-profile
+#   Patient: https://nhdr.gov.ph/fhir/StructureDefinition/PH-Patient
+#   Encounter: https://nhdr.gov.ph/fhir/StructureDefinition/PH-Encounter
 #
 #
 # The resources property corresponds to IG.definition.resource.
@@ -154,11 +156,12 @@ menu:
 # look like:
 #
 # resources:
-#   Patient/my-example-patient:
-#     name: My Example Patient
-#     description: An example Patient
-#     exampleBoolean: true
-#   Patient/bad-example: omit
+  # Patient/Patient-1:
+  #   name: My Example Patient
+  #   description: An example Patient
+  #   exampleBoolean: false
+  # Patient/Patient-2: omit
+  # Patient: omit
 #
 #
 # Groups can control certain aspects of the IG generation.  The IG
