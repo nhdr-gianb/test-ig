@@ -57,7 +57,7 @@ Alias: $MedicationStatusCS = http://hl7.org/fhir/CodeSystem/medication-statement
 
 // ValueSets
 Alias: $AllergyIntoleranceCategoryVS = http://hl7.org/fhir/allergy-intolerance-category
-Alias: $AllergyIntoleranceReactionSeverity = http://hl7.org/fhir/reaction-event-severity
+Alias: $AllergyIntoleranceReactionSeverityVS = http://hl7.org/fhir/reaction-event-severity
 Alias: $AppointmentStatusVS = http://hl7.org/fhir/appointmentstatus // check the local references and the forms, as the forms only use Y or N
 Alias: $ClinicalStatusVS = https://nhdr.gov.ph/fhir/ValueSet/ClinicalStatusVS
 Alias: $DiagnosticReportStatusVS = http://hl7.org/fhir/diagnostic-report-status
