@@ -9,4 +9,5 @@ Description: "Region codes from the Philippine Standard Geographic Codes."
 * ^date = "2025-03-20"
 * ^publisher = "NHDR"
 * ^language = #en-US
-* include codes from system $PSGCCS where concept is-a #_Region
+* include codes from system $PSGCVS
+// * include codes from system $PSGCCS where concept is-a #_Region

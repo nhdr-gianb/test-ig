@@ -1,6 +1,6 @@
 CodeSystem: PatientTypeCS
 Id: PatientTypeCS
-Title: "Member Type"
+Title: "Patient Type"
 Description: "A code system representing different types of Patient"
 * ^experimental = false
 * ^status = #active
