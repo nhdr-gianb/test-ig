@@ -1,40 +1,14 @@
 CodeSystem: PSGCCS
 Id: PSGCCS
 Title: "PSGC Codes"
-Description: "Placeholder version of PSGC codes to avoid long build times in local development."
-* insert HierarchyValues
-* ^experimental = false
-* ^caseSensitive = true
-* ^url = "https://nhdr.gov.ph/fhir/CodeSystem/PSGCCS"
+Description: "This CodeSystem resource represents the Philippine Standard Geographic Code. This is not the canonical publication of this code system nor it is intended to be publication on behalf of the Philippine Statistic Authority. For the complete content of the code system contact the publisher. For more details, visit: [PSA Website](https://psa.gov.ph/classification/psgc)."
+* ^url = "https://psa.gov.ph/classification/psgc"
 * ^status = #active
-* ^content = #complete
+* ^version = "1.0.0"
+* ^caseSensitive = true
 * ^language = #en-US
-* #_Region "Region"
-* #_Region ^property[0].code = #notSelectable
-* #_Region ^property[=].valueBoolean = true
-* #_Region ^property[+].code = #status
-* #_Region ^property[=].valueCode = #active
-* #_Province "Province"
-* #_Province ^property[0].code = #notSelectable
-* #_Province ^property[=].valueBoolean = true
-* #_Province ^property[+].code = #status
-* #_Province ^property[=].valueCode = #active
-* #_City "City"
-* #_City ^property[0].code = #notSelectable
-* #_City ^property[=].valueBoolean = true
-* #_City ^property[+].code = #status
-* #_City ^property[=].valueCode = #active
-* #_Barangay "Barangay"
-* #_Barangay ^property[0].code = #notSelectable
-* #_Barangay ^property[=].valueBoolean = true
-* #_Barangay ^property[+].code = #status
-* #_Barangay ^property[=].valueCode = #active
-
-* #1 "REGION I" "Region I"
-* insert ApplyRegion(1)
-* #1028 "ILOCOS NORTE" "Ilocos Norte"
-* insert ApplyProvince(1028)
-* #102801 "ADAMS" "Adams"
-* insert ApplyCity(102801)
-* #102801001 "ADAMS" "Adams"
-* insert ApplyBarangay(102801001)
+* ^experimental = false
+* ^property[0].code = #source
+* ^property[0].description = "Official PSGC URL"
+* ^property[0].type = #string
+* ^property[0].uri = "https://psa.gov.ph/classification/psgc"

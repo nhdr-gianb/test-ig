@@ -1,7 +1,7 @@
 ValueSet: ConditionCodeVS
 Id: ConditionCodeVS
 Title: "Condition Code"
-Description: "A value set representing various condition codes for classification."
+Description: "The ICD-10 codes valueset includes values from the International Classification of Diseases (ICD), 10th Revision published by the World Health Organization (WHO) (WHO)."
 * ^url = "https://nhdr.gov.ph/fhir/ValueSet/ConditionCodeVS"
 * ^version = "1.0.0"
 * ^status = #draft
@@ -9,7 +9,7 @@ Description: "A value set representing various condition codes for classificatio
 * ^date = "2024-11-28"
 * ^publisher = "NHDR"
 * ^language = #en-US
-* include codes from system $ICD10VS
+* include codes from system $ICD10CS
 // * include codes from system https://icd.who.int/en/ - WHO Website
 // * include codes from system $ICD10CS 
 
