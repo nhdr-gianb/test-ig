@@ -55,8 +55,6 @@ Alias: $ObservationInterpretationCS = http://terminology.hl7.org/CodeSystem/v3-O
 Alias: $ObservationCategoryCS = http://terminology.hl7.org/CodeSystem/observation-category
 
 
-
-
 // ValueSets
 Alias: $AllergyIntoleranceCategoryVS = http://hl7.org/fhir/allergy-intolerance-category
 Alias: $AllergyIntoleranceReactionSeverityVS = http://hl7.org/fhir/reaction-event-severity
