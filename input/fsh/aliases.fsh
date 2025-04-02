@@ -20,7 +20,9 @@ Alias: $EncounterLocationPhysicalTypeCS = http://terminology.hl7.org/CodeSystem/
 Alias: $EncounterServiceTypeCS = http://terminology.hl7.org/CodeSystem/service-type
 Alias: $EncounterTypeCS = http://terminology.hl7.org/CodeSystem/encounter-type
 Alias: $FacilityMajorTypeCS = https://nhdr.gov.ph/fhir/CodeSystem/FacilityMajorTypeCS
-Alias: $ICD10CS = https://nhdr.gov.ph/fhir/CodeSystem/ICD10CS
+Alias: $FDACS = https://verification.fda.gov.ph //FDA Website
+// Alias: $ICD10CS = https://nhdr.gov.ph/fhir/CodeSystem/ICD10CS
+Alias: $ICD10CS = https://icdcdn.who.int/icd10/index.html //ICD Downloadable Link
 // Alias: $ImmunizationOriginCS = http://terminology.hl7.org/CodeSystem/immunization-origin
 Alias: $ImmunizationRouteCS = http://terminology.hl7.org/CodeSystem/v3-RouteOfAdministration
 Alias: $ImmunizationStatusCS = http://hl7.org/fhir/event-status
@@ -42,7 +44,8 @@ Alias: $PatientTypeCS = https://nhdr.gov.ph/fhir/CodeSystem/PatientTypeCS
 Alias: $PractitionerRoleCS = http://terminology.hl7.org/CodeSystem/practitioner-role
 Alias: $ProCS = https://nhdr.gov.ph/fhir/CodeSystem/ProCS
 Alias: $ProcedureStatusCS = http://hl7.org/fhir/event-status
-Alias: $PSGCCS = https://nhdr.gov.ph/fhir/CodeSystem/PSGCCS
+// Alias: $PSGCCS = https://nhdr.gov.ph/fhir/CodeSystem/PSGCCS
+Alias: $PSGCCS = https://psa.gov.ph/classification/psgc //PSA Website
 Alias: $ReasonMedicationGivenCS = http://terminology.hl7.org/CodeSystem/reason-medication-given
 Alias: $RoleCodeCS = http://terminology.hl7.org/CodeSystem/v3-RoleCode
 Alias: $RVSCodeCS = https://nhdr.gov.ph/fhir/CodeSystem/RVSCodeCS
@@ -53,8 +56,6 @@ Alias: $SpecimenProcessingProcedureCS = http://terminology.hl7.org/CodeSystem/v2
 Alias: $SpecimenTypeCS = http://terminology.hl7.org/CodeSystem/v2-0487
 Alias: $ObservationInterpretationCS = http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation
 Alias: $ObservationCategoryCS = http://terminology.hl7.org/CodeSystem/observation-category
-
-
 
 
 // ValueSets
@@ -75,4 +76,3 @@ Alias: $ServiceRequestStatusVS = http://hl7.org/fhir/request-status
 Alias: $SexVS = https://nhdr.gov.ph/fhir/ValueSet/SexVS
 Alias: $SpecimenCollectionMethodVS = https://nhdr.gov.ph/fhir/ValueSet/SpecimenCollectionMethodVS
 Alias: $YesNoVS = http://terminology.hl7.org/ValueSet/v2-0136
-
