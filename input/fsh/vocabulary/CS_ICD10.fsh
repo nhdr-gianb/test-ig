@@ -8,6 +8,7 @@ Description: "This CodeSystem resource represents the International Classificati
 * ^caseSensitive = true
 * ^language = #en-US
 * ^experimental = false
+* ^content = #not-present
 * ^property[0].code = #source
 * ^property[0].description = "Official ICD-10 URL"
 * ^property[0].type = #string
