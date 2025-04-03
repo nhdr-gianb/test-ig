@@ -8,6 +8,7 @@ Description: "This CodeSystem resource represents the list of Establishments and
 * ^caseSensitive = true
 * ^language = #en-US
 * ^experimental = false
+* ^content = #not-present
 * ^property[0].code = #source
 * ^property[0].description = "Official FDA Website URL"
 * ^property[0].type = #string
