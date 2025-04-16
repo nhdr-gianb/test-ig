@@ -1,6 +1,6 @@
 Extension: ExtSignature
 Id: ExtSignature
-Context: "Patient", "Practitioner"
+Context: Patient, Practitioner
 Title: "Signature (Extension)"
 Description: "Signature"
 * ^url = "https://nhdr.gov.ph/fhir/StructureDefinition/ExtSignature"

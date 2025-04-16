@@ -90,6 +90,7 @@ Alias: $ImmunizationOriginVS = http://hl7.org/fhir/ValueSet/immunization-origin
 Alias: $MaritalStatusVS = http://hl7.org/fhir/ValueSet/marital-status
 Alias: $MemberCategoryVS = https://nhdr.gov.ph/fhir/ValueSet/MemberCategoryVS
 Alias: $MemberTypeVS = https://nhdr.gov.ph/fhir/ValueSet/MemberTypeVS
+Alias: $Nationality = http://hl7.org/fhir/StructureDefinition/patient-nationality|5.2.0
 Alias: $ObservationMethodVS = https://nhdr.gov.ph/fhir/ValueSet/ObservationMethodVS
 Alias: $ObservationStatusVS = http://hl7.org/fhir/observation-status
 Alias: $OrganizationTypeVS = https://nhdr.gov.ph/fhir/ValueSet/OrganizationTypeVS

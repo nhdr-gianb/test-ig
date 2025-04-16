@@ -13,7 +13,7 @@ Description: "This resource is primarily used for the identification and definit
 * contained ..0
 * extension contains
     DosageInstruction named dosageInstruction 0..* and
-    Packaging named packaging 1..* and
+    Packaging named packaging 0..* and
     DateUpdated named dateUpdated 0..*
 * extension[dosageInstruction] ^short = "instruction on the medication dosage"
 * extension[dosageInstruction] ^definition = "instruction on the medication dosage"

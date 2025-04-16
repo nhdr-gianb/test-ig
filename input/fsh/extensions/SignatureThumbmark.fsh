@@ -1,6 +1,6 @@
 Extension: SignatureThumbmark
 Id: SignatureThumbmark
-Context: "Signature"
+Context: Signature
 * ^url = "https://nhdr.gov.ph/fhir/StructureDefinition/SignatureThumbmark"
 * ^status = #draft
 * extension ..0

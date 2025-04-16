@@ -2,7 +2,7 @@ ValueSet: ContactEntityTypeVS
 Id: ContactEntityTypeVS
 Title: "Contact Entity Type"
 Description: "A code system representing different entity type of contacts"
-* ^url = "https://nhdr.gov.ph/fhir/CodeSystem/ContactEntityTypeVS"
+* ^url = "https://nhdr.gov.ph/fhir/ValueSet/ContactEntityTypeVS"
 * ^version = "1.0.0"
 * ^status = #draft
 * ^experimental = false

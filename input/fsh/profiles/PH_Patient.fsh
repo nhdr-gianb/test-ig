@@ -14,7 +14,7 @@ Description: "Captures key demographic and administrative information about indi
 * text ..0
 * contained ..0
 * extension contains
-    PatNationality named nationality 0..* and
+    $Nationality named nationality 0..* and
     Religion named religion 0..* and
     IndigenousGroup named indigenousGroup 0..* and
     IndigenousPeople named indigenousPeople 0..* and

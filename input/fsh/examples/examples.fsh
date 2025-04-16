@@ -140,7 +140,7 @@ Usage: #example
 * extension[=].valueHumanName.given = "Luis"
 * extension[=].valueHumanName.prefix = "Mr."
 * identifier.use = #official
-* identifier.type = $v2-0203#FI "Philhealth code"
+* identifier.type = $v2-0203#NIIP "PhilHealth ID"
 * identifier.system = "https://nhdr.gov.ph/fhir/philHealthID"
 * identifier.value = "PH123456"
 * status = #finished
@@ -765,10 +765,10 @@ Instance: Procedure-Surgical
 InstanceOf: PH_Procedure
 Usage: #example
 * meta.lastUpdated = "2024-07-18T07:30:27.458+00:00"
-* extension[0].url = "https://nhdr.gov.ph/fhir/StructureDefinition/Organization"
+* extension[0].url = "https://nhdr.gov.ph/fhir/StructureDefinition/ExtOrganization"
 * extension[=].valueReference = Reference(Organization/Organization-Lucena-General-Hospital)
-* extension[+].url = "https://nhdr.gov.ph/fhir/StructureDefinition/RecordedDate"
-* extension[=].valueDateTime = "2024-07-18T10:00:00+08:00"
+// * extension[+].url = "https://nhdr.gov.ph/fhir/StructureDefinition/RecordedDate"
+// * extension[=].valueDateTime = "2024-07-18T10:00:00+08:00"
 // * extension[+].url = "https://nhdr.gov.ph/fhir/StructureDefinition/IllnessClass"
 // * extension[=].valueCodeableConcept = $illness-class-codes#D123 "Diabetes mellitus type 2"
 // * extension[=].valueCodeableConcept.text = "Diabetes mellitus type 2"
