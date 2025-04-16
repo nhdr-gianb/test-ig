@@ -12,8 +12,8 @@ Description: "Indicates that a medication product is to be or has been dispensed
 * text ..0
 * contained ..0
 * extension contains Cost named cost 0..*
-* extension[cost] ^short = "Cost of the medication"
-* extension[cost] ^definition = "Cost of the medication"
+* extension[cost] ^short = "Cost of the medication."
+* extension[cost] ^definition = "Cost of the medication."
 * extension[cost] ^comment = "This is an extension"
 * extension[cost] ^isModifier = false
 * modifierExtension ..0

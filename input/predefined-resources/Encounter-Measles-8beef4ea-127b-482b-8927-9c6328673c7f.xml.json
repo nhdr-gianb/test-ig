@@ -1,8 +1,0 @@
-{
-  "resourceType": "Encounter",
-  "id": "Measles-8beef4ea-127b-482b-8927-9c6328673c7f",
-  "meta": {
-    "lastUpdated": "2024-12-12T03:35:52.106+00:00"
-  },
-  "status": "in-progress"
-}

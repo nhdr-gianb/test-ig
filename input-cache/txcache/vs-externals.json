@@ -4,6 +4,7 @@
   "http://example.org/fhir/CodeSystem/ConditionBodySiteCodeSystem|null" : null,
   "http://example.org/fhir/practitioner-role-codes|null" : null,
   "http://example.org/fhir/CodeSystem/ProcedureCodeSystem|null" : null,
+  "http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113762.1.4.1267.24" : null,
   "https://hl7.org/fhir/R4/valueset-immunization-origin.html" : null,
   "http://example.org/fhir/CodeSystem/DiagnosticReportCodeSystem|null" : null,
   "http://example.org/fhir/encounter-service-type-codes|null" : null,

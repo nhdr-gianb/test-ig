@@ -1,6 +1,6 @@
 Extension: SignatureSubType
 Id: SignatureSubType
-Context: "Signature"
+Context: Signature
 * ^url = "https://nhdr.gov.ph/fhir/StructureDefinition/SignatureSubType"
 * ^status = #draft
 * extension ..0

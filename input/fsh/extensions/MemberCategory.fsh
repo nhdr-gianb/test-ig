@@ -1,7 +1,7 @@
 Extension: MemberCategory
 Id: MemberCategory
 Title: "Membership Category"
-Context: "Patient"
+Context: Patient
 Description: "Membership Category"
 * ^url = "https://nhdr.gov.ph/fhir/StructureDefinition/MemberCategory"
 * ^status = #draft

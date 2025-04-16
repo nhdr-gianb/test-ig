@@ -1,6 +1,6 @@
 Extension: MemberType
 Id: MemberType
-Context: "Patient"
+Context: Patient
 Title: "Membership Type"
 Description: "Membership Type"
 * ^url = "https://nhdr.gov.ph/fhir/StructureDefinition/MemberType"
