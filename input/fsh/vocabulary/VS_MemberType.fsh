@@ -1,6 +1,6 @@
 ValueSet: MemberTypeVS
 Id: MemberTypeVS
-Title: "Member Category"
+Title: "Member Type"
 Description: "A valueset representing different type of membership within a healthcare coverage plan or insurance policy."
 * ^url = "https://nhdr.gov.ph/fhir/ValueSet/MemberTypeVS"
 * ^version = "1.0.0"
