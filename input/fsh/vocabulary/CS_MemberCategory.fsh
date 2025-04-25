@@ -1,7 +1,7 @@
 CodeSystem: MemberCategoryCS
 Id: MemberCategoryCS
 Title: "Member Category"
-Description: "A code system representing different categories of membership."
+Description: "A code system representing different type of membership."
 * ^experimental = false
 * ^status = #active
 * ^caseSensitive = true

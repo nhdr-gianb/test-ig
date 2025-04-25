@@ -13,6 +13,6 @@ Description: "A value set representing observation methods such as modes of tran
 * include codes from system $ObservationMethodCS
 
 //  These are codes from the Master & Reference data (used in HBCR Form 3)
-* include codes from system $SNOMED where concept is-a #272394005
-* include codes from system $SNOMED where concept is-a #129264002
-* include codes from system $SNOMED where concept is-a #386053000
+// * include codes from system $SNOMED where concept is-a #272394005
+// * include codes from system $SNOMED where concept is-a #129264002
+// * include codes from system $SNOMED where concept is-a #386053000

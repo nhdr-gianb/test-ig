@@ -1,7 +1,7 @@
 ValueSet: ProcedureCodeVS
 Id: ProcedureCodeVS
 Title: "Procedure Code"
-Description: "A value set representing codes for various procedures, including imaging and classification codes."
+Description: "A value set representing Relative Value Scale (RVS) codes for various procedures"
 * ^url = "https://nhdr.gov.ph/fhir/ValueSet/ProcedureCodeVS"
 * ^version = "1.0.0"
 * ^status = #draft
@@ -10,5 +10,3 @@ Description: "A value set representing codes for various procedures, including i
 * ^publisher = "NHDR"
 * ^language = #en-US
 * include codes from system $RVSCodeCS
-// * include codes from system $SNOMED where concept is-a #71388002
-// * exclude $SNOMED#71388002

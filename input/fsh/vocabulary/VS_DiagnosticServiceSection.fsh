@@ -8,5 +8,4 @@ Description: "A valueset representing different sections or categories of diagno
 * ^experimental = false
 * ^date = "2024-11-28"
 * ^publisher = "NHDR"
-* ^language = #en-US
 * include codes from system $DiagnosticServiceSectionCS

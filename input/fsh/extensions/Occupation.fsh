@@ -9,7 +9,7 @@ Description: "Patient's occupation."
 // * value[x] from $psoc (required)
 * value[x] only integer or CodeableConcept
 * valueCodeableConcept only CodeableConcept
-* valueCodeableConcept from https://psa.gov.ph/classification/psoc/unit (extensible)
+* valueCodeableConcept from $OccupationVS (extensible)
 * valueCodeableConcept ^sliceName = "valueCodeableConcept"
 * valueCodeableConcept ^short = "Occupation Type"
 * valueInteger only integer
