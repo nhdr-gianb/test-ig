@@ -66,7 +66,7 @@ Description: "An interaction between a patient and healthcare provider(s) for th
 * classHistory ..0
 * type ..1
 * type from EncounterTypeVS (required)
-* serviceType from EncounterServiceTypeVS (required)
+* serviceType from ServiceTypeVS (required)
 * priority ..0
 // * subject ..0
 * episodeOfCare ..0

@@ -9,9 +9,9 @@ Description: "Patient's occupation."
 // * value[x] from $psoc (required)
 * value[x] only integer or CodeableConcept
 * valueCodeableConcept only CodeableConcept
-* valueCodeableConcept from $OccupationVS (extensible)
+* valueCodeableConcept from $OccupationClassificationVS (extensible)
 * valueCodeableConcept ^sliceName = "valueCodeableConcept"
-* valueCodeableConcept ^short = "Occupation Type"
+* valueCodeableConcept ^short = "Occupation Classification"
 * valueInteger only integer
 * valueInteger ^sliceName = "valueInteger"
 * valueInteger ^short = "Length in Years"
