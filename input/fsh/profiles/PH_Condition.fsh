@@ -16,7 +16,7 @@ Description: "A clinical condition, problem, diagnosis, or other event, situatio
 * extension[extOrganization] ^isModifier = false
 * modifierExtension ..0
 // * identifier ..0
-* clinicalStatus.coding from ConditionClinicalStatusVS (required)
+// * clinicalStatus.coding from ConditionClinicalStatusVS (required)
 * verificationStatus from ConditionVerificationStatusVS (required)
 * category from ConditionCategoryVS (required)
 * severity from ConditionSeverityVS (required)

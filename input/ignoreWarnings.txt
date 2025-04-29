@@ -19,15 +19,6 @@ TERMINOLOGY_TX_SYSTEM_NO_CODE
 Terminology_TX_Confirm_4a
 Validation_VAL_Profile_Maximum
 
-
-#   These CodeSystems are external and not in a terminology service, thus the sources are simply referenced.
-CODESYSTEM_PROPERTY_URI_UNKNOWN
-RESOURCE_CANONICAL_MISMATCH
-Terminology_TX_ValueSet_NotFound
-UNKNOWN_CODESYSTEM
-Error_validating_code_running_without_terminology_services
-Profile_VAL_MissingElement
-
 #   Errors/warnings are result of intentional design.
 SD_VALUE_COMPLEX_FIXED
 TYPE_SPECIFIC_CHECKS_DT_MARKDOWN_HTML
@@ -35,3 +26,6 @@ Type_Specific_Checks_DT_UUID_Valid
 
 #   Deprecated element.
 MSG_DEPENDS_ON_DEPRECATED
+
+#   Code will be added to the ValueSet
+fsh-generated\resources\StructureDefinition-COVIDPatientID.json

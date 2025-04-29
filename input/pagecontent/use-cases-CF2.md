@@ -1,3 +1,16 @@
+### Implementation Rules
+
+* name.given is an array that captures the first name and middle name.
+    1. name.`given[0]` is used to capture a person's **first name**.
+    1. name.`given[1]` is used to capture a person's **middle name**.
+
+* Encounter.reasonCode <span style="color:red">**SHALL**</span> be supported if `Patient Disposition` is *Transferred/Referred*.
+
+* **ICD 10 or RVS Code** field will either be `Condition.code` or `Procedure.code` respectively. If the data fits in `Procedure.code`, you <span style="color:red">**SHOULD**</span> use a separate resource as `Procedure.code` has a maximum cardinality of 1.
+
+---
+
+
 <html><style>table, thead, td{border:2px solid #ccc; border-collapse:collapse}</style>
 
 <ul class="nav nav-tabs">
@@ -18,32 +31,9 @@
 
 </html>
 
-This is a sample representation of the **Use Case** implementation guide for **Claims Form 1**
+This is a sample representation of the **Use Case** implementation guide for **Claims Form 2**
 
-This can be viewed as an instance [CF1 Bundle](Bundle-ClaimsForm1.html) to also see downloadable XML, JSON, and TTL formats.
-
----
-
-### Implementation Rules
-
-* name.given is an array that captures the first name and middle name.
-    1. name.`given[0]` is used to capture a person's **first name**.
-    1. name.`given[1]` is used to capture a person's **middle name**.
-
-* For fields under **Part I - Member Information**, if `Patient is the member?` is true, all `Person` resources <span style="color:red">**SHOULD**</span> be changed to `Patient`. For example:
-    
-    ```
-        Patient is the member:
-            QuestionnaireResponse.item = true
-        Name of Member (Last Name):
-            Patient.name.family = "Smith"
-    ```
-
-    ```
-        Patient is the member:
-            QuestionnaireResponse.item = false
-        Name of Member (Last Name):
-            Person.name.family = "Smith"
-    ```
+This can be viewed as an instance [CF2 Bundle](Bundle-ClaimsForm2.html) to also see downloadable XML, JSON, and TTL formats.
 
 ---
+

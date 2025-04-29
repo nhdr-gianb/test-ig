@@ -22,7 +22,7 @@ Alias: $SignatureThumbmark = https://nhdr.gov.ph/fhir/StructureDefinition/Signat
 // CodeSystems
 Alias: $AllergyIntoleranceClinicalStatusCS = http://terminology.hl7.org/CodeSystem/allergyintolerance-clinical
 Alias: $ConditionCategoryCS = http://terminology.hl7.org/CodeSystem/condition-category
-Alias: $ConditionClinicalStatusCS = http://terminology.hl7.org/CodeSystem/condition-clinical
+// Alias: $ConditionClinicalStatusCS = http://terminology.hl7.org/CodeSystem/condition-clinical
 Alias: $ConditionSeverityCS = https://nhdr.gov.ph/fhir/CodeSystem/ConditionSeverityCS
 Alias: $ConditionVerificationStatusCS = https://nhdr.gov.ph/fhir/CodeSystem/ConditionVerificationStatusCS
 Alias: $ContactEntityTypeCS = http://terminology.hl7.org/CodeSystem/contactentity-type
@@ -39,7 +39,7 @@ Alias: $FacilityMajorTypeCS = https://nhdr.gov.ph/fhir/CodeSystem/FacilityMajorT
 Alias: $FDACS = https://verification.fda.gov.ph //FDA Website
 // Alias: $ICD10CS = https://nhdr.gov.ph/fhir/CodeSystem/ICD10CS
 Alias: $ICD10CS = https://icdcdn.who.int/icd10/index.html //ICD Downloadable Link
-Alias: $IdentifierType = https://terminology.hl7.org/5.1.0/CodeSystem-v2-0203.html
+Alias: $IdentifierType = http://terminology.hl7.org/CodeSystem/v2-0203
 Alias: $ImmunizationRouteCS = http://terminology.hl7.org/CodeSystem/v3-RouteOfAdministration
 Alias: $ImmunizationStatusCS = http://hl7.org/fhir/event-status
 Alias: $ImmunizationStatusReasonCS = http://terminology.hl7.org/CodeSystem/v3-ActReason

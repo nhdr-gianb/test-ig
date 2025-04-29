@@ -57,7 +57,7 @@ Description: "An interaction between a patient and healthcare provider(s) for th
 // * id ..0
 * implicitRules ..0
 * language ..0
-* text ..0
+// * text ..0
 * contained ..0
 * identifier only $PhilHealthID or $COVIDDataID or $COVIDPatientID
 * status ^short = "NHDR will only use \"triaged\", \"in-progress\", \"cancelled\", and \"finished\"."
