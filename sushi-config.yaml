@@ -44,25 +44,29 @@ publisher:
 # with supported extensions (e.g., .md/.xml) will be treated as
 # sub-pages.
 #
-# pages:
-#   index.md:
-#     title: PHCDI Implementation Guide
-#   # artifacts:
-#   #   title: Artifacts Summary
-#   extensions.md:
-#     title: Extensions
-#   search-parameters.md:
-#     title: Search Parameters
-#   use-cases.md:
-#     title: Use Cases
-#   use-cases-CF1.md:
-#     title: Claims Form 1
-#   use-cases-CF2.md:
-#     title: Claims Form 2
-#     CF2-json.md:
-#       title: CF2-json
-#     CF2.md:
-#       title: CF2
+pages:
+  index.md:
+    title: PHCDI Implementation Guide
+  artifacts:
+  #   title: Artifacts Summary
+  extensions.md:
+    title: Extensions
+  search-parameters.md:
+    title: Search Parameters
+  use-cases.md:
+    title: Use Cases
+  use-cases-CF1.md:
+    title: Claims Form 1
+    CF1-mapping.md:
+      title: Mapping of Claims Form 1 to FHIR
+    CF1-json.md:
+      title: Sample CF1 Bundle
+  use-cases-CF2.md:
+    title: Claims Form 2
+    CF2-mapping.md:
+      title: Mapping of Claims Form 2 to FHIR
+    CF2-json.md:
+      title: Sample CF2 Bundle
 #   implementation.xml:
 #   examples.xml:
 #     title: Examples Overview
@@ -100,6 +104,8 @@ menu:
     PHCDI Artifacts: artifacts.html
     Base Profiles: artifacts.html#base-profiles
     Clinical Profiles: artifacts.html#clinical-profiles
+    Financial Profiles: artifacts.html#financial-profiles
+    Specialized Profiles: artifacts.html#specialized-profiles
     Data Types: artifacts.html#data-types
     Identifiers: artifacts.html#identifiers
     Extensions: artifacts.html#structures-extension-definitions

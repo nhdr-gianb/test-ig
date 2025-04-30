@@ -29,7 +29,7 @@ Description: "This resource is primarily used for the identification and definit
 * extension[dateUpdated] ^isModifier = false
 * modifierExtension ..0
 // * identifier ..0
-* code ..0
+// * code ..0
 * status ..0
 * manufacturer ..0
 // * form ..0
