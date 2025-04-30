@@ -66,7 +66,7 @@ Description: "An interaction between a patient and healthcare provider(s) for th
 * classHistory ..0
 * type ..1
 * type from EncounterTypeVS (required)
-* serviceType from EncounterServiceTypeVS (required)
+* serviceType from ServiceTypeVS (required)
 * priority ..0
 // * subject ..0
 * episodeOfCare ..0
@@ -92,11 +92,11 @@ Description: "An interaction between a patient and healthcare provider(s) for th
 * hospitalization.dietPreference ..0
 * hospitalization.specialCourtesy ..0
 * hospitalization.specialArrangement ..0
-* hospitalization.dischargeDisposition from EncounterHospitalizationDischargeDispositionVS (required)
+* hospitalization.dischargeDisposition from DischargeDispositionVS (required)
 * location.extension ..0
 * location.modifierExtension ..0
 * location.id ..0
 * location.status ..0
 * location.period ..0
-* location.physicalType from EncounterLocationPhysicalTypeVS (required)
+* location.physicalType from LocationPhysicalTypeVS (required)
 * partOf ..0

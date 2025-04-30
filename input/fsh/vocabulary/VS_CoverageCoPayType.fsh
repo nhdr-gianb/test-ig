@@ -10,3 +10,9 @@ Description: "A valueset representing different types of copayments associated w
 * ^publisher = "NHDR"
 * ^language = #en-US
 * include codes from system $CoverageCopayTypeCS
+* include codes from system $CoverageCopayTypeLocalCS
+
+// * include $CoverageCopayTypeCS#nobalbill "No Balance Billing"
+// * include $CoverageCopayTypeCS#nocopay "No Co-pay"
+
+
