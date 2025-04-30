@@ -9,8 +9,8 @@ Description: "A value set representing reasons for immunization status."
 * ^date = "2024-11-28"
 * ^publisher = "NHDR"
 * ^language = #en-US
-* $ImmunizationStatusReasonCS#IMMUNE "immunity"
-* $ImmunizationStatusReasonCS#MEDPREC "medical precaution"
-* $ImmunizationStatusReasonCS#OSTOCK "product out of stock"
-* $ImmunizationStatusReasonCS#PATOBJ "patient objection"
-// * include codes from system $SNOMED where concept is-a #310376006
+* include codes from system $ImmunizationStatusReasonCS where concept is-a #_ActNoImmunizationReason
+// * $ImmunizationStatusReasonCS#IMMUNE "immunity"
+// * $ImmunizationStatusReasonCS#MEDPREC "medical precaution"
+// * $ImmunizationStatusReasonCS#OSTOCK "product out of stock"
+// * $ImmunizationStatusReasonCS#PATOBJ "patient objection"

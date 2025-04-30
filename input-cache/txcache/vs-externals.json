@@ -35,6 +35,7 @@
   "http://example.org/fhir/ValueSet/ClinicalStatusValueSet|null" : null,
   "http://example.org/fhir/CodeSystem/ObservationMethodCodeSystem|null" : null,
   "http://example.org/fhir/CodeSystem/SpecimenConditionCodeSystem|null" : null,
+  "http://terminology.hl7.org/CodeSystem/v2-0074|4.0.1" : null,
   "http://example.org/fhir/CodeSystem/ImmunizationStatusReasonCodeSystem|null" : null,
   "http://psgc.psa.gov.ph" : null,
   "http://example.org/fhir/CodeSystem/SpecimenProcessingProcedureCodeSystem|null" : null,
