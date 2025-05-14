@@ -31,7 +31,7 @@ Description: "Describes the event of a patient consuming or otherwise being admi
 // * identifier ..0
 * instantiates ..0
 * partOf ..0
-* status from $YesNoVS (required)
+* status from $MedicationAdministrationStatusVS (required)
 * statusReason ..0
 * category ..0
 * medication[x] only Reference(PH_Medication)
@@ -46,6 +46,7 @@ Description: "Describes the event of a patient consuming or otherwise being admi
 * device ..0
 * note ..0
 * dosage ^definition = "Indicates how the medication is/was or should be taken by the patient."
+* dosage.route from $MedicationRouteVS (required)
 * dosage.extension ..0
 * dosage.id ..0
 * eventHistory ..0

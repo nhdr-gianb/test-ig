@@ -21,7 +21,7 @@ Description: "Significant health conditions for a person related to the patient 
 * patient only Reference(PH_Patient)
 // * date ..0
 // * name ..0
-// * relationship ..0
+* relationship from $FamilyMemberRelationshipVS (required)
 * sex ..0
 * born[x] ..0
 * age[x] ..0
@@ -31,6 +31,7 @@ Description: "Significant health conditions for a person related to the patient 
 * reasonReference ..0
 * note ..0
 * condition.id ..0
+* condition.code from $ICD10VS (required)
 * condition.extension ..0
 * condition.modifierExtension ..0
 * condition.outcome ..0

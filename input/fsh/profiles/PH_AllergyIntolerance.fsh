@@ -29,6 +29,7 @@ Description: "Risk of harmful or undesirable physiological response which is spe
 * asserter ..0
 * lastOccurrence ..0
 // * note ..0
+* reaction.manifestation from $ICD10VS (required)
 * reaction.id ..0
 * reaction.modifierExtension ..0
 * reaction.extension ..0

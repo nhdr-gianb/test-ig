@@ -26,7 +26,7 @@ Description: "A record of a medication that is being consumed by a patient."
 // * identifier ..0
 * basedOn ..0
 * partOf ..0
-// * status ..0
+* status from $MedicationStatusVS (required)
 // * statusReason ..0
 * category ..0
 * medication[x] only CodeableConcept or Reference(PH_Medication)
@@ -36,7 +36,7 @@ Description: "A record of a medication that is being consumed by a patient."
 * dateAsserted ..0
 * informationSource ..0
 * derivedFrom ..0
-// * reasonCode ..0
+* reasonCode from $ICD10VS (required) 
 * reasonReference ..0
 // * note ..0
 // * dosage ..0
