@@ -29,10 +29,10 @@ Description: "This resource is primarily used for the identification and definit
 * extension[dateUpdated] ^isModifier = false
 * modifierExtension ..0
 // * identifier ..0
-// * code ..0
+* code from $DrugCodesVS (required)  
 * status ..0
 * manufacturer ..0
-// * form ..0
+* form from $MedicationFormVS (required)  
 * amount ..0
 * ingredient.id ..0
 * ingredient.extension ..0

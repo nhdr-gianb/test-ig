@@ -18,8 +18,8 @@ Description: "Describes the event of a patient being administered a vaccine or a
 * extension[extOrganization] ^isModifier = false
 * modifierExtension ..0
 // * identifier ..0
-* status from ImmunizationStatusVS (required)
-// * statusReason ..0
+* status from $ImmunizationStatusVS (required)
+* statusReason from $ImmunizationStatusReasonVS (required)
 * vaccineCode from ImmunizationVaccineCodeVS (required)
 * patient only Reference(PH_Patient)
 * encounter only Reference(PH_Encounter)
@@ -32,11 +32,11 @@ Description: "Describes the event of a patient being administered a vaccine or a
 * lotNumber ..0
 * expirationDate ..0
 * site ..0
-* route from ImmunizationRouteVS (required)
+* route from $ImmunizationRouteVS (required)
 // * doseQuantity ..0
 * performer ..0
 // * note ..0
-* reasonCode from ImmunizationStatusReasonVS (required)
+* reasonCode from $ImmunizationStatusReasonVS (required)
 * reasonReference ..0
 * isSubpotent ..0
 * subpotentReason ..0

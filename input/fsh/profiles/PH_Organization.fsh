@@ -28,7 +28,7 @@ Description: "Refers to a formally or informally recognized grouping of people o
 * modifierExtension ..0
 * identifier only $FHUDCode or $OtherID
 // * active ..0
-* type from OrganizationTypeVS (required)
+* type from $OrganizationTypeVS (required)
 // * name ..0
 * alias ..0
 * telecom.extension ..0

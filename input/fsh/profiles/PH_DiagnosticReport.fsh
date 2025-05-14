@@ -21,7 +21,7 @@ Description: "The findings and interpretation of diagnostic tests performed on p
 * basedOn ..0
 // * status ..0
 // * category ..0
-* code from DiagnosticReportCodeVS (required)
+* code from $ICD10VS (required)
 * subject only Reference(PH_Patient)
 * encounter only Reference(PH_Encounter)
 // * effective[x] ..0

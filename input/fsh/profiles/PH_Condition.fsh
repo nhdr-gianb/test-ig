@@ -16,10 +16,10 @@ Description: "A clinical condition, problem, diagnosis, or other event, situatio
 * extension[extOrganization] ^isModifier = false
 * modifierExtension ..0
 // * identifier ..0
-* verificationStatus from ConditionVerificationStatusVS (required)
-* category from ConditionCategoryVS (required)
-* severity from ConditionSeverityVS (required)
-* code from ConditionCodeVS (required)
+* verificationStatus from $ConditionVerificationStatusVS (required)
+* category from $ConditionCategoryVS (required)
+* severity from $ConditionSeverityVS (required)
+* code from $ICD10VS (required)
 * bodySite from ConditionBodySiteVS (required)
 * subject only Reference(PH_Patient)
 * encounter only Reference(PH_Encounter)
