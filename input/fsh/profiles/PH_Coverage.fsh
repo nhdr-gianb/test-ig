@@ -35,6 +35,7 @@ Description: "Financial instrument which may be used to reimburse or pay for hea
 * costToBeneficiary.modifierExtension ..0
 * costToBeneficiary.id ..0
 * costToBeneficiary.exception ..0
+* costToBeneficiary.type from $CoverageCoPayTypeVS (required)
 * costToBeneficiary.value[x] only Money
 * subrogation ..0
 * contract ..0

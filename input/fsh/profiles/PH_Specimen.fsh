@@ -36,7 +36,7 @@ Description: "A sample to be used for analysis."
 // * identifier ..0
 // * accessionIdentifier ..0
 * status ..0
-* type from SpecimenTypeVS (required)
+* type from $SpecimenTypeVS (required)
 * subject only Reference(PH_Patient)
 // * receivedTime ..0
 * parent ..0
@@ -66,5 +66,5 @@ Description: "A sample to be used for analysis."
 * container.description ..0
 * container.capacity ..0
 * container.additive[x] ..0
-* condition from SpecimenConditionVS (required)
+* condition from $SpecimenConditionVS (required)
 // * note ..0

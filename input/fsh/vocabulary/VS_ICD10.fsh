@@ -9,6 +9,4 @@ Description: "This value set represents the International Classification of Dise
 * ^date = "2024-11-28"
 * ^publisher = "NHDR"
 * ^language = #en-US
-* ^expansion.parameter[0].name = "count"
-* ^expansion.parameter[0].valueInteger = 500
 * include codes from system $ICD10CS

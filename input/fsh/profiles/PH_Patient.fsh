@@ -25,7 +25,7 @@ Description: "Captures key demographic and administrative information about indi
     Occupation named occupation 0..* and
     Sex named sex 0..* and
     Race named race 0..1 and
-    MemberCategory named memberCategory 0..1 and
+    // MemberCategory named memberCategory 0..1 and
     MemberType named memberType 0..1 and
     EducationalAttainment named educationalAttainment 0..1 and
     $Signature named signature 0..*
@@ -69,10 +69,10 @@ Description: "Captures key demographic and administrative information about indi
 * extension[race] ^short = "Patient's race."
 * extension[race] ^definition = "Patient's race."
 * extension[race] ^isModifier = false
-* extension[memberCategory] ^short = "Patient's membership category."
-* extension[memberCategory] ^definition = "Patient's membership category."
-* extension[memberCategory] ^isModifier = false
-* extension[memberCategory] ^binding.description = "Membership category"
+// * extension[memberCategory] ^short = "Patient's membership category."
+// * extension[memberCategory] ^definition = "Patient's membership category."
+// * extension[memberCategory] ^isModifier = false
+// * extension[memberCategory] ^binding.description = "Membership category"
 * extension[memberType] ^short = "Patient's membership type."
 * extension[memberType] ^definition = "Patient's membership type."
 * extension[memberType] ^isModifier = false
@@ -94,7 +94,7 @@ Description: "Captures key demographic and administrative information about indi
 * telecom.use ..0
 * telecom.rank ..0
 * telecom.period ..0
-// * gender ..0
+* gender from $GenderVS (required)
 // * birthDate ..0
 * deceased[x] ^definition = "Indicates if the individual is deceased or not.\nThe \"\"[x]\"\" is replaced with the title-cased name of the type that is actually used."
 * address only $SD_Address
@@ -105,7 +105,7 @@ Description: "Captures key demographic and administrative information about indi
 // * photo ..0
 * contact.modifierExtension ..0
 * contact.name only $SD_HumanName
-* contact.relationship from ContactRelationshipVS (required)
+* contact.relationship from $RelationshipTypeVS (required)
 * contact.address only $SD_Address
 * contact.extension contains $Signature named signature 0..*
 * contact.extension[signature] ^isModifier = false

@@ -6,3 +6,4 @@ Description: "Instruction on the medication dosage."
 * ^url = "https://nhdr.gov.ph/fhir/StructureDefinition/DosageInstruction"
 * ^status = #draft
 * value[x] only Dosage
+* valueDosage.route from $MedicationRouteVS (required)
