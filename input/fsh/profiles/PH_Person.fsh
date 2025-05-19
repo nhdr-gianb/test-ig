@@ -18,7 +18,7 @@ Description: "Demographics and administrative information about a person indepen
 * extension[sex] ^isModifier = false
 * modifierExtension ..0
 // * identifier ..0
-* name only $SD_HumanName
+* name
 * telecom.extension ..0
 * telecom.use ..0
 * telecom.rank ..0

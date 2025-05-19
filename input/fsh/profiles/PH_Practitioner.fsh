@@ -23,7 +23,7 @@ Description: "A person who is directly or indirectly involved in the provisionin
 * modifierExtension ..0
 * identifier ..1
 // * active ..0
-* name only $SD_HumanName
+* name
 * telecom.extension ..0
 * telecom.use ..0
 * telecom.rank ..0

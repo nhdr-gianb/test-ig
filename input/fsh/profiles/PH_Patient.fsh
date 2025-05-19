@@ -85,7 +85,7 @@ Description: "Captures key demographic and administrative information about indi
 * identifier only $PhilHealthID or $RegistrationNo or $OtherID 
 * identifier ^definition = "An identifier for this patient.\nA numeric or alphanumeric string that is associated with a single object or entity within a given system."
 // * active ..0
-* name only $SD_HumanName
+* name
 * name.id ..0
 * name.use ..0
 * name.prefix ..0
@@ -104,7 +104,7 @@ Description: "Captures key demographic and administrative information about indi
 * multipleBirth[x] ..0
 // * photo ..0
 * contact.modifierExtension ..0
-* contact.name only $SD_HumanName
+* contact.name
 * contact.relationship from $RelationshipTypeVS (required)
 * contact.address only $SD_Address
 * contact.extension contains $Signature named signature 0..*

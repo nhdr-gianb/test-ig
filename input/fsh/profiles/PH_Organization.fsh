@@ -38,7 +38,7 @@ Description: "Refers to a formally or informally recognized grouping of people o
 * address only $SD_Address
 * partOf ..0
 // * contact ..0
-* contact.name only $SD_HumanName
+* contact.name
 * contact.address only $SD_Address
 * endpoint ..0
 
