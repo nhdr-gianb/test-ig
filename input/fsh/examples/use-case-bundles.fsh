@@ -1,9 +1,3 @@
-// TOC(search to jump):
-//  1.   Claims Form 1
-//  2.   Claims Form 2
-
-// ========== Claims Form 1 ==========
-
 Instance: ClaimsForm1
 InstanceOf: Bundle
 Usage: #example
@@ -28,7 +22,7 @@ Usage: #example
 * entry[=].request.url = "QuestionnaireResponse"
 
 Instance: CF1-Patient
-InstanceOf: PH_Patient
+InstanceOf: Patient
 Usage: #inline
 * meta.profile = "https://nhdr.gov.ph/fhir/StructureDefinition/PH-Patient"
 * identifier.type.coding.code = #NIIP
@@ -46,7 +40,7 @@ Usage: #inline
 * contact.relationship = #E "Employer"
 
 Instance: CF1-Person
-InstanceOf: PH_Person
+InstanceOf: Person
 Usage: #inline
 * meta.profile = "https://nhdr.gov.ph/fhir/StructureDefinition/PH-Person"
 * identifier.type.coding.code = #NIIP
@@ -75,7 +69,7 @@ Usage: #inline
 * telecom[+].value = "johndoe@gmail.com"
 
 Instance: CF1-Organization
-InstanceOf: PH_Organization
+InstanceOf: Organization
 Usage: #inline
 * meta.profile = "https://nhdr.gov.ph/fhir/StructureDefinition/PH-Organization"
 * identifier.type.coding.code = #EN
@@ -85,7 +79,7 @@ Usage: #inline
 * name = "PhilHealth"
 
 Instance: CF1-QuestionnaireResponse
-InstanceOf: PH_QuestionnaireResponse
+InstanceOf: QuestionnaireResponse
 Usage: #inline
 * meta.profile = "https://nhdr.gov.ph/fhir/StructureDefinition/PH-QuestionnaireResponse"
 * item.answer.valueBoolean = false
@@ -98,7 +92,7 @@ Alias: $sct = http://snomed.info/sct
 Alias: $v3-ActCode = http://terminology.hl7.org/CodeSystem/v3-ActCode
 Alias: $condition-clinical = http://terminology.hl7.org/CodeSystem/condition-clinical
 Alias: $RVSCodeCS = https://nhdr.gov.ph/fhir/CodeSystem/RVSCodeCS
-Alias: $CodeSystem-location-physical-type.html = http://terminology.hl7.org/6.2.0/CodeSystem-location-physical-type.html
+Alias: $CodeSystem-location-physical-type.html = http://terminology.hl7.org/CodeSystem/location-physical-type
 Alias: $ICD = http://hl7.org/fhir/sid/icd-10
 
 Instance: ClaimsForm2
@@ -201,7 +195,7 @@ Usage: #inline
 * meta.profile = "https://nhdr.gov.ph/fhir/StructureDefinition/PH-Condition"
 * clinicalStatus = $condition-clinical#0 "Active"
 * clinicalStatus.text = "Active"
-* code = $ICD#A00 "A00"
+* code = $ICD#A00 "Cholera"
 * subject = Reference(CF2-Patient) "CF2 Patient"
 //  Condition.subject is not captured, but is mandatory
 
@@ -213,7 +207,7 @@ Usage: #inline
 * performedDateTime = "2025-04-15T10:00:00.000Z"
 * bodySite = $sct#108003 "Entire condylar emissary vein"
 * extension.url = "https://nhdr.gov.ph/fhir/StructureDefinition/IllnessClass"
-* extension.valueCodeableConcept = $sct#108003 "Abscess"
+* extension.valueCodeableConcept = $sct#108003 "Entire condylar emissary vein"
 * status = #preparation
 * subject = Reference(CF2-Patient) "CF2 Patient"
 //  Procedure.subject is not captured, but is mandatory

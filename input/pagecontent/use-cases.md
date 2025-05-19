@@ -31,4 +31,7 @@
 
 ### Hospital Based Cancer Registry Forms
 
-- HBCR
+- Form 1 - Baseline Patient Information
+- Form 2 - Patient Follow-Up Form while on Anti-Cancer Drug Treatment/Radiotherapy
+- Form 3 - Patient Follow-Up Form after Completion of Therapy
+- Form 4 - Supportive-Palliative Care Form (Initial and Follow-Ups)

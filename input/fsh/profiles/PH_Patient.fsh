@@ -118,5 +118,5 @@ Description: "Captures key demographic and administrative information about indi
 
 //  Notes:
 //      Patient.religion valueset to be discussed
-//      Patient.memberType      -> patient.type in release 02
-//      Patient.memberCategory  -> membertype in release 02
+//      Move extensions' metadatas to the extensions themselves.
+//      Create Patient.type extension
