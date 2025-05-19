@@ -22,7 +22,7 @@ Usage: #example
 * entry[=].request.url = "QuestionnaireResponse"
 
 Instance: CF1-Patient
-InstanceOf: Patient
+InstanceOf: PH_Patient
 Usage: #inline
 * meta.profile = "https://nhdr.gov.ph/fhir/StructureDefinition/PH-Patient"
 * identifier.type.coding.code = #NIIP
@@ -40,7 +40,7 @@ Usage: #inline
 * contact.relationship = #E "Employer"
 
 Instance: CF1-Person
-InstanceOf: Person
+InstanceOf: PH_Person
 Usage: #inline
 * meta.profile = "https://nhdr.gov.ph/fhir/StructureDefinition/PH-Person"
 * identifier.type.coding.code = #NIIP
@@ -69,7 +69,7 @@ Usage: #inline
 * telecom[+].value = "johndoe@gmail.com"
 
 Instance: CF1-Organization
-InstanceOf: Organization
+InstanceOf: PH_Organization
 Usage: #inline
 * meta.profile = "https://nhdr.gov.ph/fhir/StructureDefinition/PH-Organization"
 * identifier.type.coding.code = #EN
@@ -79,7 +79,7 @@ Usage: #inline
 * name = "PhilHealth"
 
 Instance: CF1-QuestionnaireResponse
-InstanceOf: QuestionnaireResponse
+InstanceOf: PH_QuestionnaireResponse
 Usage: #inline
 * meta.profile = "https://nhdr.gov.ph/fhir/StructureDefinition/PH-QuestionnaireResponse"
 * item.answer.valueBoolean = false

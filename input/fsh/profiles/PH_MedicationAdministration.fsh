@@ -7,6 +7,8 @@ Description: "Describes the event of a patient consuming or otherwise being admi
 * insert MetaData
 // * id ..0
 // * meta ..0
+* meta.extension contains $RecordedDate named recordedDate 0..*
+* meta.extension[recordedDate] only $RecordedDate
 * implicitRules ..0
 * language ..0
 * text ..0
@@ -23,10 +25,6 @@ Description: "Describes the event of a patient consuming or otherwise being admi
 * extension[extEncounter] ^definition = "The encounter when the medicine was consumed or administered."
 * extension[extEncounter] ^comment = "This is an extension"
 * extension[extEncounter] ^isModifier = false
-* extension[recordedDate] ^short = "The recordedDate represents when this particular Medication Administration record was uploaded into the NHDR."
-* extension[recordedDate] ^definition = "The recordedDate represents when this particular Medication Administration record was uploaded into the NHDR."
-* extension[recordedDate] ^comment = "This is an extension"
-* extension[recordedDate] ^isModifier = false
 * modifierExtension ..0
 // * identifier ..0
 * instantiates ..0

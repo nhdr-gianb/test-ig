@@ -51,7 +51,7 @@
 | Name of Member (Last Name) | Person.name.family | String | 0..* | 60 | --- |
 | Name of Member (First Name) | Person.name.given[0] | String | 0..* | 60 | --- |
 | Name of Member (Name Extension) | Person.name.suffix | String | 0..* | 5 | --- |
-| Name of Member (Middle Name) | Person.name.extension:middleName  Person.name.given[1]  | String | 0..* | 60 | --- |
+| Name of Member (Middle Name) | Person.name.given[1]  | String | 0..* | 60 | --- |
 | Date of Birth | Person.birthDate | date | 0..1 | 10 | --- |
 | Mailing Address (Unit/Room No./Floor) | Person.address.line | String | 0..* | 150 | --- |
 | Mailing Address (Building Name) | Person.address.line | String | 0..* | 150 | --- |
@@ -73,7 +73,7 @@
 | Name of Patient (Last Name) | Patient.name.family | String | 0..* | 60 | --- |
 | Name of Patient (First Name) | Patient.name.given[0] | String | 0..* | 60 | --- |
 | Name of Patient (Name Extension) | Patient.name.suffix | String | 0..* | 5 | --- |
-| Name of Patient (Middle Name) | Patient.name.extension:middleName  Patient.name.given[1] | String | 0..* | 60 | --- |
+| Name of Patient (Middle Name) | Patient.name.given[1] | String | 0..* | 60 | --- |
 | Date of Birth | Patient.birthDate | date | 0..1 | 10 | --- |
 | Relationship to Member | Patient.contact.relationship | CodeableConcept | 0..* | --- | [Contact Relationship](ValueSet-ContactRelationshipVS.html) |
 | Sex | Patient.extension:sex | CodeableConcept | 0..1 | 1 | [Sex](ValueSet-SexVS.html) |

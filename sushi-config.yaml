@@ -241,7 +241,6 @@ groups:
     name: Data Types
     resources:
     - StructureDefinition/PH-Address
-    - StructureDefinition/PH-HumanName
     - StructureDefinition/PH-Signature
 
   GroupF:

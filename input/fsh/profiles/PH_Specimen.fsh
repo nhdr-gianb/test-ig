@@ -7,19 +7,16 @@ Description: "A sample to be used for analysis."
 * insert MetaData
 // * id ..0
 // * meta ..0
+* meta.extension contains $RecordedDate named recordedDate 0..*
+* meta.extension[recordedDate] only $RecordedDate
 * implicitRules ..0
 * language ..0
 * text ..0
 * contained ..0
 * extension contains
-    RecordedDate named recordedDate 0..* and
     ResultDate named resultDate 0..* and
     ExtOrganization named extOrganization 0..* and
     Species named species 0..*
-* extension[recordedDate] ^short = "The recordedDate represents when this particular Specimen record was uploaded into the NHDR."
-* extension[recordedDate] ^definition = "The recordedDate represents when this particular Specimen record was uploaded into the NHDR."
-* extension[recordedDate] ^comment = "This is an extension"
-* extension[recordedDate] ^isModifier = false
 * extension[resultDate] ^short = "The resultDate represents the date on which the outcome of the particular specimen was recorded."
 * extension[resultDate] ^definition = "The resultDate represents the date on which the outcome of the particular specimen was recorded.."
 * extension[resultDate] ^comment = "This is an extension"

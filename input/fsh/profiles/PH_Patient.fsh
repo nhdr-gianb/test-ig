@@ -9,6 +9,8 @@ Description: "Captures key demographic and administrative information about indi
 * . ^definition = "Demographics and other administrative information about an individual receiving care or other health-related services. The data in the resource covers the \"who\" information about the patient. Its attributes are focused on the demgraphic information necessary to support the administrative, financial and logistical procedures."
 // * id ..0
 // * meta ..0
+* meta.extension contains $RecordedDate named recordedDate 0..*
+* meta.extension[recordedDate] only $RecordedDate
 * implicitRules ..0
 * language ..0
 * text ..0
@@ -21,7 +23,6 @@ Description: "Captures key demographic and administrative information about indi
     SpouseName named spouseName 0..* and
     FatherName named fatherName 0..* and
     MotherName named motherName 0..* and
-    RecordedDate named recordedDate 0..* and
     Occupation named occupation 0..* and
     Sex named sex 0..* and
     Race named race 0..1 and
@@ -57,10 +58,6 @@ Description: "Captures key demographic and administrative information about indi
 * extension[motherName] ^definition = "Name of the Mother"
 * extension[motherName] ^comment = "This is an extension"
 * extension[motherName] ^isModifier = false
-* extension[recordedDate] ^short = "Date information was recorded"
-* extension[recordedDate] ^definition = "The recordedDate represents when this particular Patient record was created in the system, which is often a system-generated date."
-* extension[recordedDate] ^comment = "This is an extension"
-* extension[recordedDate] ^isModifier = false
 * extension[occupation] ^isModifier = false
 * extension[sex] ^short = "Patient's sex at birth."
 * extension[sex] ^definition = "The sex assigned at birth, as documented on the birth registration."
