@@ -16,14 +16,9 @@ Description: "Measurements and simple assertions made about a patient, device or
 * contained ..0
 * extension contains
     ExtAddress named address 0..* and
-    ExtOrganization named extOrganization 0..* and
     RecordedDate named recordedDate 0..*
 * extension[address] ^isModifier = false
 * extension[address].value[x] only $SD_Address
-* extension[extOrganization] ^short = "Health facility where the observation was made"
-* extension[extOrganization] ^definition = "Health facility where the observation was made"
-* extension[extOrganization] ^comment = "This is an extension"
-* extension[extOrganization] ^isModifier = false
 * modifierExtension ..0
 // * identifier ..0
 * basedOn ..0

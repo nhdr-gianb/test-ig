@@ -11,11 +11,6 @@ Description: "Describes the event of a patient being administered a vaccine or a
 * language ..0
 * text ..0
 * contained ..0
-* extension contains ExtOrganization named extOrganization 0..*
-* extension[extOrganization] ^short = "Organization where the immunization was conducted"
-* extension[extOrganization] ^definition = "Organization where the immunization was conducted."
-* extension[extOrganization] ^comment = "This is an extension"
-* extension[extOrganization] ^isModifier = false
 * modifierExtension ..0
 // * identifier ..0
 * status from $ImmunizationStatusVS (required)

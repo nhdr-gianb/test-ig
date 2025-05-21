@@ -11,11 +11,6 @@ Description: "The findings and interpretation of diagnostic tests performed on p
 * language ..0
 * text ..0
 * contained ..0
-* extension contains ExtOrganization named extOrganization 0..*
-* extension[extOrganization] ^short = "Health facility where the diagnosis was made"
-* extension[extOrganization] ^definition = "Health facility where the diagnosis was made"
-* extension[extOrganization] ^comment = "This is an extension"
-* extension[extOrganization] ^isModifier = false
 * modifierExtension ..0
 // * identifier ..0
 * basedOn ..0
