@@ -34,8 +34,6 @@ Usage: #inline
 * name.given[0] = "Avery"
 * name.given[+] = "Adams"
 * name.suffix = "Mr."
-* name.extension.url = "https://nhdr.gov.ph/fhir/StructureDefinition/MiddleName"
-* name.extension.valueString = "Adams"
 * birthDate = "1990-12-15"
 * contact.relationship = #E "Employer"
 
@@ -50,8 +48,6 @@ Usage: #inline
 * name.given[0] = "John"
 * name.given[+] = "Cena"
 * name.suffix = "Mr."
-* name.extension.url = "https://nhdr.gov.ph/fhir/StructureDefinition/MiddleName"
-* name.extension.valueString = "Cena"
 * birthDate = "1994-06-25"
 * address.line = "Wayward Road"
 * address.extension[0].url = "https://nhdr.gov.ph/fhir/StructureDefinition/Barangay"
@@ -134,8 +130,6 @@ Usage: #inline
 * name.given[0] = "John"
 * name.given[+] = "Harris"
 * name.suffix = "Mr."
-* name.extension.url = "https://nhdr.gov.ph/fhir/StructureDefinition/MiddleName"
-* name.extension.valueString = "Harris"
 
 Instance: CF2-Org
 InstanceOf: PH_Organization
@@ -220,8 +214,6 @@ Usage: #inline
 * name.family = "Dela Cruz"
 * name.given[0] = "Sheena"
 * name.given[+] = "Abesamis"
-* name.extension.url = "https://nhdr.gov.ph/fhir/StructureDefinition/MiddleName"
-* name.extension.valueString = "Abesamis"
 * extension.url = "https://nhdr.gov.ph/fhir/StructureDefinition/ExtSignature"
 * extension.valueSignature.when = "2025-04-15T10:30:00Z"
 * extension.valueSignature.data = "dGVzdFNpZ25hdHVyZQ=="

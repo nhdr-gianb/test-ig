@@ -11,6 +11,7 @@ Description: "A clinical condition, problem, diagnosis, or other event, situatio
 * language ..0
 * text ..0
 * contained ..0
+* extension ..0
 * modifierExtension ..0
 // * identifier ..0
 * verificationStatus from $ConditionVerificationStatusVS (required)
@@ -25,6 +26,7 @@ Description: "A clinical condition, problem, diagnosis, or other event, situatio
 // * recordedDate ..0
 * recorder ..0
 * asserter ..0
-* stage ..0
+// * stage ..0
+* stage.assessment ..0
 * evidence ..0
 // * note ..0

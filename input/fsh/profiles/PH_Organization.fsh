@@ -31,6 +31,7 @@ Description: "Refers to a formally or informally recognized grouping of people o
 * type from $OrganizationTypeVS (required)
 // * name ..0
 * alias ..0
+* telecom.id ..0
 * telecom.extension ..0
 * telecom.use ..0
 * telecom.rank ..0
@@ -38,6 +39,10 @@ Description: "Refers to a formally or informally recognized grouping of people o
 * address only $SD_Address
 * partOf ..0
 // * contact ..0
+* contact.id ..0
+* contact.extension ..0
+* contact.modifierExtension ..0
+* contact.purpose ..0
 * contact.name
 * contact.address only $SD_Address
 * endpoint ..0

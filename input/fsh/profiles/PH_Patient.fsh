@@ -10,7 +10,7 @@ Description: "Captures key demographic and administrative information about indi
 // * id ..0
 // * meta ..0
 * meta.extension contains $RecordedDate named recordedDate 0..*
-* meta.extension[recordedDate] only $RecordedDate
+// * meta.extension[recordedDate] only $RecordedDate
 * implicitRules ..0
 * language ..0
 * text ..0
@@ -80,32 +80,40 @@ Description: "Captures key demographic and administrative information about indi
 * extension[educationalAttainment] ^binding.description = "Educational attainment."
 * modifierExtension ..0
 * identifier only $PhilHealthID or $RegistrationNo or $OtherID 
-* identifier ^definition = "An identifier for this patient.\nA numeric or alphanumeric string that is associated with a single object or entity within a given system."
+* identifier
 // * active ..0
 * name
+* name.extension ..0
 * name.id ..0
 * name.use ..0
 * name.prefix ..0
 * name.period ..0
 * name.text ..0
+* telecom.id ..0
+* telecom.extension ..0
 * telecom.use ..0
 * telecom.rank ..0
 * telecom.period ..0
 * gender from $GenderVS (required)
 // * birthDate ..0
-* deceased[x] ^definition = "Indicates if the individual is deceased or not.\nThe \"\"[x]\"\" is replaced with the title-cased name of the type that is actually used."
+* deceased[x]
 * address only $SD_Address
 * maritalStatus from $MaritalStatusVS (required)
-* maritalStatus ^short = "This field contains a patient's most recent marital (civil) status."
-* maritalStatus ^definition = "Refers to the personal status of each individual with reference to the marriage laws or customs of the country.  It is the same as \"\"civil status\"\", the term usually used in official and private records, documents, transactions, and others, in the country. \n\nAlternate Name: Civil Status"
 * multipleBirth[x] ..0
 // * photo ..0
 * contact.modifierExtension ..0
-* contact.name
 * contact.relationship from $RelationshipTypeVS (required)
+* contact.name.id ..0
+* contact.name.use ..0
+* contact.name.prefix ..0
+* contact.name.period ..0
+* contact.name.text ..0
+* contact.telecom.id ..0
+* contact.telecom.use ..0
+* contact.telecom.rank ..0
+* contact.telecom.period ..0
 * contact.address only $SD_Address
 * contact.extension contains $Signature named signature 0..*
-* contact.extension[signature] ^isModifier = false
 * communication ..0
 * generalPractitioner ^definition = "Patient's nominated care provider. Pertains to the Konsulta Health Care Provider"
 * managingOrganization ..0
@@ -116,4 +124,3 @@ Description: "Captures key demographic and administrative information about indi
 //  Notes:
 //      Patient.religion valueset to be discussed
 //      Move extensions' metadatas to the extensions themselves.
-//      Create Patient.type extension

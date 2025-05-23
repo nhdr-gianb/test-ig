@@ -24,11 +24,19 @@ Description: "A person who is directly or indirectly involved in the provisionin
 * identifier ..1
 // * active ..0
 * name
+* name.extension ..0
+* name.id ..0
+* name.use ..0
+* name.prefix ..0
+* name.period ..0
+* name.text ..0
+* telecom.id ..0
 * telecom.extension ..0
 * telecom.use ..0
 * telecom.rank ..0
 * telecom.period ..0
 * address only $SD_Address
+* address.id ..0
 * address.country ..0
 * gender ..0
 * birthDate ..0

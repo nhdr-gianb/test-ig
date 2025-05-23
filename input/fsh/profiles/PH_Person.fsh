@@ -19,6 +19,13 @@ Description: "Demographics and administrative information about a person indepen
 * modifierExtension ..0
 // * identifier ..0
 * name
+* name.extension ..0
+* name.id ..0
+* name.use ..0
+* name.prefix ..0
+* name.period ..0
+* name.text ..0
+* telecom.id ..0
 * telecom.extension ..0
 * telecom.use ..0
 * telecom.rank ..0
