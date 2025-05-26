@@ -33,11 +33,11 @@ Description: "A sample to be used for analysis."
 // * receivedTime ..0
 * parent ..0
 * request ..0
-* collection.extension contains ReleaseDate named releaseDate 0..*
-* collection.extension[releaseDate] ^short = "Date the specimen was released"
-* collection.extension[releaseDate] ^definition = "Date the specimen was released"
-* collection.extension[releaseDate] ^comment = "This is an extension"
-* collection.extension[releaseDate] ^isModifier = false
+* collection.extension contains DateReleased named dateReleased 0..*
+* collection.extension[dateReleased] ^short = "Date the specimen was released"
+* collection.extension[dateReleased] ^definition = "Date the specimen was released"
+* collection.extension[dateReleased] ^comment = "This is an extension"
+* collection.extension[dateReleased] ^isModifier = false
 * collection.modifierExtension ..0
 * collection.method from SpecimenCollectionMethodVS (required)
 * collection.bodySite ..0

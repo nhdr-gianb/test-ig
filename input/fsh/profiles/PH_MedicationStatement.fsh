@@ -29,7 +29,7 @@ Description: "A record of a medication that is being consumed by a patient."
 * context ..0
 * effective[x] ..0
 * dateAsserted ..0
-* informationSource ..0
+// * informationSource ..0
 * derivedFrom ..0
 * reasonCode from $ICD10VS (required) 
 * reasonReference ..0

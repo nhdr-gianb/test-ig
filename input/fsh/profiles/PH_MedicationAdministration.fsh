@@ -37,9 +37,10 @@ Description: "Describes the event of a patient consuming or otherwise being admi
 * reasonReference only Reference(PH_Condition or PH_Observation or PH_DiagnosticReport)
 * request ..0
 * device ..0
-* note ..0
+// * note ..0
 * dosage ^definition = "Indicates how the medication is/was or should be taken by the patient."
 * dosage.route from $MedicationRouteVS (required)
 * dosage.extension ..0
+* dosage.modifierExtension ..0
 * dosage.id ..0
 * eventHistory ..0

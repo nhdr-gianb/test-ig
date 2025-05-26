@@ -15,8 +15,7 @@ Description: "Measurements and simple assertions made about a patient, device or
 * text ..0
 * contained ..0
 * extension contains
-    ExtAddress named address 0..* and
-    RecordedDate named recordedDate 0..*
+    ExtAddress named address 0..*
 * extension[address] ^isModifier = false
 * extension[address].value[x] only $SD_Address
 * modifierExtension ..0
@@ -37,7 +36,7 @@ Description: "Measurements and simple assertions made about a patient, device or
 * dataAbsentReason ..0
 // * interpretation ..0
 // * note ..0
-* bodySite ..0
+// * bodySite ..0
 * method from $ObservationMethodVS (required)
 * specimen only Reference(PH_Specimen)
 * device ..0

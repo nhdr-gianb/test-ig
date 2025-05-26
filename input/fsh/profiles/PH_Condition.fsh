@@ -5,8 +5,6 @@ Title: "PH Condition"
 Description: "A clinical condition, problem, diagnosis, or other event, situation, issue, or clinical concept that has risen to a level of concern."
 * ^url = "https://nhdr.gov.ph/fhir/StructureDefinition/PH-Condition"
 * insert MetaData
-* meta.extension contains $RecordedDate named recordedDate 0..*
-* meta.extension[recordedDate] only $RecordedDate
 * implicitRules ..0
 * language ..0
 * text ..0
@@ -27,6 +25,8 @@ Description: "A clinical condition, problem, diagnosis, or other event, situatio
 * recorder ..0
 * asserter ..0
 // * stage ..0
+* stage.extension ..0
+* stage.modifierExtension ..0
 * stage.assessment ..0
 * evidence ..0
 // * note ..0
