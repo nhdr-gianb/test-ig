@@ -14,7 +14,8 @@ Description: "This resource is primarily used for the identification and definit
 * extension contains
     DosageInstruction named dosageInstruction 0..* and
     Packaging named packaging 0..* and
-    DateUpdated named dateUpdated 0..*
+    DateUpdated named dateUpdated 0..* and
+    MedicationType named medicationType 0..1
 * extension[dosageInstruction] ^short = "instruction on the medication dosage"
 * extension[dosageInstruction] ^definition = "instruction on the medication dosage"
 * extension[dosageInstruction] ^comment = "This is an extension"
