@@ -102,6 +102,7 @@ menu:
   Home: index.html
   Artifacts Index:
     PHCDI Artifacts: artifacts.html
+    Foundation Profiles: artifacts.html#foundation-profiles
     Base Profiles: artifacts.html#base-profiles
     Clinical Profiles: artifacts.html#clinical-profiles
     Financial Profiles: artifacts.html#financial-profiles
@@ -192,62 +193,61 @@ menu:
 # URL when generating the IG JSON.
 #
 groups:
-  # GroupA:
-  #   name: Foundation Profiles
-  #   resources:
-  #   - StructureDefinition/PH-Provenance
+  GroupA:
+    name: Foundation Profiles
+    resources:
+    - StructureDefinition/PH-Provenance
 
-  # GroupB:
-  #   name: Base Profiles
-  #   resources:
-  #   - StructureDefinition/PH-Appointment
-  #   - StructureDefinition/PH-Encounter
-  #   - StructureDefinition/PH-Location
-  #   - StructureDefinition/PH-Organization
-  #   - StructureDefinition/PH-Patient
-  #   - StructureDefinition/PH-Person
-  #   - StructureDefinition/PH-Practitioner
-  #   - StructureDefinition/PH-PractitionerRole
+  GroupB:
+    name: Base Profiles
+    resources:
+    - StructureDefinition/PH-Appointment
+    - StructureDefinition/PH-Encounter
+    - StructureDefinition/PH-Location
+    - StructureDefinition/PH-Organization
+    - StructureDefinition/PH-Patient
+    - StructureDefinition/PH-Person
+    - StructureDefinition/PH-Practitioner
+    - StructureDefinition/PH-PractitionerRole
 
-  # GroupC:
-  #   name: Clinical Profiles
-  #   resources:
-  #   - StructureDefinition/PH-AllergyIntolerance
-  #   - StructureDefinition/PH-CarePlan
-  #   - StructureDefinition/PH-ClinicalImpression
-  #   - StructureDefinition/PH-Condition
-  #   - StructureDefinition/PH-DiagnosticReport
-  #   - StructureDefinition/PH-FamilyMemberHistory
-  #   - StructureDefinition/PH-Goal
-  #   - StructureDefinition/PH-Immunization
-  #   - StructureDefinition/PH-Medication
-  #   - StructureDefinition/PH-MedicationAdministration
-  #   - StructureDefinition/PH-MedicationDispense
-  #   - StructureDefinition/PH-MedicationStatement
-  #   - StructureDefinition/PH-Observation
-  #   - StructureDefinition/PH-Procedure
-  #   - StructureDefinition/PH-QuestionnaireResponse
-  #   - StructureDefinition/PH-ServiceRequest
-  #   - StructureDefinition/PH-Specimen
+  GroupC:
+    name: Clinical Profiles
+    resources:
+    - StructureDefinition/PH-AllergyIntolerance
+    - StructureDefinition/PH-CarePlan
+    - StructureDefinition/PH-ClinicalImpression
+    - StructureDefinition/PH-Condition
+    - StructureDefinition/PH-DiagnosticReport
+    - StructureDefinition/PH-FamilyMemberHistory
+    - StructureDefinition/PH-Goal
+    - StructureDefinition/PH-Immunization
+    - StructureDefinition/PH-Medication
+    - StructureDefinition/PH-MedicationAdministration
+    - StructureDefinition/PH-MedicationDispense
+    - StructureDefinition/PH-MedicationStatement
+    - StructureDefinition/PH-Observation
+    - StructureDefinition/PH-Procedure
+    - StructureDefinition/PH-QuestionnaireResponse
+    - StructureDefinition/PH-ServiceRequest
+    - StructureDefinition/PH-Specimen
 
-  # GroupD:
-  #   name: Financial Profiles
-  #   resources:
-  #   - StructureDefinition/PH-Claim
-  #   - StructureDefinition/PH-Coverage
-  #   - StructureDefinition/PH-CoverageEligibilityRequest
-  #   - StructureDefinition/PH-EnrollmentRequest
+  GroupD:
+    name: Financial Profiles
+    resources:
+    - StructureDefinition/PH-Claim
+    - StructureDefinition/PH-Coverage
+    - StructureDefinition/PH-EnrollmentRequest
 
-  # GroupE:
-  #   name: Specialized Profiles
-  #   resources:
-  #   - StructureDefinition/PH-Questionnaire
+  GroupE:
+    name: Specialized Profiles
+    resources:
+    - StructureDefinition/PH-Questionnaire
 
-  # GroupF:
-  #   name: Data Types
-  #   resources:
-  #   - StructureDefinition/PH-Address
-  #   - StructureDefinition/PH-Signature
+  GroupF:
+    name: Data Types
+    resources:
+    - StructureDefinition/PH-Address
+    - StructureDefinition/PH-Signature
 
   GroupG:
     name: Identifiers

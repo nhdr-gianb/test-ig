@@ -29,6 +29,7 @@ Description: "A record of a clinical assessment performed to determine what prob
 * protocol ..0
 * summary ..0
 // * finding ..0
+* finding.id ..0
 * finding.extension ..0
 * finding.modifierExtension ..0
 // * finding.itemCodeableConcept ..0
