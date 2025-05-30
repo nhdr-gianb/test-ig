@@ -12,24 +12,24 @@ Description: "Demographics and administrative information about a person indepen
 * text ..0
 * contained ..0
 * extension contains 
-  Sex named sex 0..* and
-  $MaritalStatus named maritalStatus 0..*  and
-  MemberType named memberType 0..1 and 
-  Occupation named occupation 0..* 
+  Sex named sex 0..* 
+  // $MaritalStatus named maritalStatus 0..*  and //For Release02
+  // MemberType named memberType 0..1 and //For Release02
+  // Occupation named occupation 0..* //For Release02
 
 * extension[sex] ^short = "Sex assigned at birth"
 * extension[sex] ^definition = "The sex assigned at birth, as documented on the birth registration"
 * extension[sex] ^comment = "This is an extension"
 * extension[sex] ^isModifier = false
-* extension[maritalStatus] ^short = "Person's Marital Status"
-* extension[maritalStatus] ^definition = "This field contains a Person's most recent marital (civil) status."
-* extension[maritalStatus] ^isModifier = false
-* extension[maritalStatus] ^binding.description = "Marital Status"
-* extension[memberType] ^short = "Person's membership type."
-* extension[memberType] ^definition = "Person's membership type."
-* extension[memberType] ^isModifier = false
-* extension[memberType] ^binding.description = "Membership type."
-* extension[occupation] ^isModifier = false
+// * extension[maritalStatus] ^short = "Person's Marital Status"
+// * extension[maritalStatus] ^definition = "This field contains a Person's most recent marital (civil) status."
+// * extension[maritalStatus] ^isModifier = false
+// * extension[maritalStatus] ^binding.description = "Marital Status"
+// * extension[memberType] ^short = "Person's membership type."
+// * extension[memberType] ^definition = "Person's membership type."
+// * extension[memberType] ^isModifier = false
+// * extension[memberType] ^binding.description = "Membership type."
+// * extension[occupation] ^isModifier = false
 * modifierExtension ..0
 // * identifier ..0
 // * name only $SD_HumanName
