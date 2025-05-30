@@ -27,6 +27,7 @@ Description: "Captures key demographic and administrative information about indi
     Sex named sex 0..* and
     Race named race 0..1 and
     // MemberCategory named memberCategory 0..1 and
+    PatientType named patientType 0..1 and
     MemberType named memberType 0..1 and
     EducationalAttainment named educationalAttainment 0..1 and
     $Signature named signature 0..*
@@ -112,6 +113,9 @@ Description: "Captures key demographic and administrative information about indi
 * contact.telecom.use ..0
 * contact.telecom.rank ..0
 * contact.telecom.period ..0
+* contact.gender ..0
+* contact.organization ..0
+* contact.period ..0
 * contact.address only $SD_Address
 * contact.extension contains $Signature named signature 0..*
 * communication ..0

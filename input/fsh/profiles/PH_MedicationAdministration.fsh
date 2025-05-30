@@ -14,8 +14,7 @@ Description: "Describes the event of a patient consuming or otherwise being admi
 * text ..0
 * contained ..0
 * extension contains
-    ExtEncounter named extEncounter 0..* and
-    RecordedDate named recordedDate 0..*
+    ExtEncounter named extEncounter 0..*
 * extension[extEncounter] ^short = "The encounter when the medicine was consumed or administered."
 * extension[extEncounter] ^definition = "The encounter when the medicine was consumed or administered."
 * extension[extEncounter] ^comment = "This is an extension"
@@ -26,12 +25,12 @@ Description: "Describes the event of a patient consuming or otherwise being admi
 * partOf ..0
 * status from $MedicationAdministrationStatusVS (required)
 * statusReason ..0
-* category ..0
+// * category ..0
 * medication[x] only Reference(PH_Medication)
 * subject only Reference(PH_Patient)
 * context ..0
 * supportingInformation ..0
-* performer ..0
+// * performer ..0
 * reasonCode ..1
 * reasonReference ..1
 * reasonReference only Reference(PH_Condition or PH_Observation or PH_DiagnosticReport)
@@ -44,3 +43,6 @@ Description: "Describes the event of a patient consuming or otherwise being admi
 * dosage.modifierExtension ..0
 * dosage.id ..0
 * eventHistory ..0
+
+
+//  Possible change in category and performer. Awaiting confirmation on PHCDI.

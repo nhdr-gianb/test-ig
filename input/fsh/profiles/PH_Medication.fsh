@@ -31,3 +31,5 @@ Description: "This resource is primarily used for the identification and definit
 // * ingredient.item[x] 0..0    Can't disable elements that are mandatory by default
 * ingredient.isActive ..0
 * batch ..0
+
+//  Waiting for suggestion to consider ingredient.item[x]

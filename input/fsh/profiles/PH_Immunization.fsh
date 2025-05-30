@@ -31,6 +31,8 @@ Description: "Describes the event of a patient being administered a vaccine or a
 * route from $ImmunizationRouteVS (required)
 // * doseQuantity ..0
 // * performer ..0
+* performer.extension ..0
+* performer.modifierExtension ..0
 * performer.function ..0
 // * note ..0
 * reasonCode from $ImmunizationStatusReasonVS (required)
@@ -44,5 +46,4 @@ Description: "Describes the event of a patient being administered a vaccine or a
 * reaction.extension ..0
 * reaction.modifierExtension ..0
 * protocolApplied ..0
-
 
