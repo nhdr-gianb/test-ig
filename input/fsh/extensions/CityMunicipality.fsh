@@ -7,4 +7,4 @@ Description: "Code of the city/municipality from the standard geographic code."
 * ^status = #draft
 * url = "https://nhdr.gov.ph/fhir/StructureDefinition/CityMunicipality" (exactly)
 * value[x] only Coding
-* value[x] from CityVS (extensible)
+* value[x] from CityVS (required)

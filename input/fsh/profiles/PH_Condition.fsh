@@ -20,7 +20,7 @@ Description: "A clinical condition, problem, diagnosis, or other event, situatio
 * category from $ConditionCategoryVS (required)
 * severity from $ConditionSeverityVS (required)
 * code from $ICD10VS (required)
-* bodySite from ConditionBodySiteVS (required)
+// * bodySite from ConditionBodySiteVS (required) //Reference still on hold
 * subject only Reference(PH_Patient)
 * encounter only Reference(PH_Encounter)
 * onset[x] only dateTime

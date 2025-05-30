@@ -7,4 +7,4 @@ Description: "Code of the barangay from the standard geographic code."
 * ^status = #draft
 * url = "https://nhdr.gov.ph/fhir/StructureDefinition/Barangay" (exactly)
 * value[x] only Coding
-* value[x] from BarangayVS (extensible)
+* value[x] from BarangayVS (required)
