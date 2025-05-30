@@ -39,7 +39,7 @@ Description: "A sample to be used for analysis."
 * collection.extension[dateReleased] ^comment = "This is an extension"
 * collection.extension[dateReleased] ^isModifier = false
 * collection.modifierExtension ..0
-* collection.method from SpecimenCollectionMethodVS (required)
+// * collection.method from SpecimenCollectionMethodVS (required) //Reference still on hold
 * collection.bodySite ..0
 * collection.fastingStatus[x] ..0
 * collection.collected[x] only dateTime
@@ -50,7 +50,7 @@ Description: "A sample to be used for analysis."
 * processing.modifierExtension ..0
 * processing.description ..0
 * processing.additive ..0
-* processing.procedure from SpecimenProcessingProcedureVS (required)
+// * processing.procedure from SpecimenProcessingProcedureVS (required) //Reference still on hold
 * container.id ..0
 * container.extension ..0
 * container.modifierExtension ..0
@@ -60,3 +60,5 @@ Description: "A sample to be used for analysis."
 * container.additive[x] ..0
 * condition from $SpecimenConditionVS (required)
 // * note ..0
+
+

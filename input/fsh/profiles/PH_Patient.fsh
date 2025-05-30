@@ -29,6 +29,7 @@ Description: "Captures key demographic and administrative information about indi
     // MemberCategory named memberCategory 0..1 and
     PatientType named patientType 0..1 and
     MemberType named memberType 0..1 and
+    PatientType named patientType 0..1 and
     EducationalAttainment named educationalAttainment 0..1 and
     $Signature named signature 0..*
 * extension[signature] ^isModifier = false
@@ -75,6 +76,10 @@ Description: "Captures key demographic and administrative information about indi
 * extension[memberType] ^definition = "Patient's membership type."
 * extension[memberType] ^isModifier = false
 * extension[memberType] ^binding.description = "Membership type."
+* extension[patientType] ^short = "Type of Patient"
+* extension[patientType] ^definition = "Type of Patient"
+* extension[patientType] ^isModifier = false
+* extension[patientType] ^binding.description = "Patient Type"
 * extension[educationalAttainment] ^short = "Patient's educational attainment."
 * extension[educationalAttainment] ^definition = "Patient's educational attainment."
 * extension[educationalAttainment] ^isModifier = false

@@ -25,7 +25,7 @@ Description: "An action that is or was performed on or for a patient, practition
 * instantiatesUri ..0
 * basedOn ..0
 * partOf ..0
-* status from ProcedureStatusVS (required)
+// * status from ProcedureStatusVS (required) //Reference still on hold
 * statusReason ..0
 // * category ..0
 * code from ProcedureCodeVS (required)
@@ -43,8 +43,8 @@ Description: "An action that is or was performed on or for a patient, practition
 * location ..0
 // * reasonCode ..0
 * reasonReference ..0
-* bodySite from ProcedureBodySiteVS (required)
-// * outcome ..0
+// * bodySite from ProcedureBodySiteVS (required) //Reference still on hold
+* outcome from $ProcedureOutcomeVS (required)
 * report ..0
 * complication ..0
 * complicationDetail ..0
