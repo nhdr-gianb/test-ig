@@ -17,8 +17,8 @@ This can be viewed as instances ["Member is not the Patient"](Bundle-ClaimsForm1
 ### Implementation Rules
 
 * name.given is an array that captures the first name and middle name.
-    1. name.`given[0]` is used to capture a person's **first name**.
-    1. name.`given[1]` is used to capture a person's **middle name**.
+    1. name.given**[0]** is used to capture a person's **first name**.
+    1. name.given**[1]** is used to capture a person's **middle name**.
 
 * For the field under **Part I - Member Information**, if `Patient is the member?` is true, you <span style="color:red">**must**</span> add a `Patient` resource to the bundle and use `Patient.link` to reference this `RelatedPerson` resource. For example:
 
