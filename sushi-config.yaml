@@ -59,8 +59,10 @@ pages:
     title: Claims Form 1
     CF1-mapping.md:
       title: Mapping of Claims Form 1 to FHIR
-    CF1-json.md:
-      title: Sample CF1 Bundle
+    CF1-1-json.md:
+      title: Sample CF1 Bundle - Member is not the Patient
+    CF1-2-json.md:
+      title: Sample CF1 Bundle - Member is the Patient
   use-cases-CF2.md:
     title: Claims Form 2
     CF2-mapping.md:
@@ -203,7 +205,6 @@ groups:
     resources:
     - StructureDefinition/PH-Appointment
     - StructureDefinition/PH-Encounter
-    - StructureDefinition/PH-Location
     - StructureDefinition/PH-Organization
     - StructureDefinition/PH-Patient
     - StructureDefinition/PH-Person

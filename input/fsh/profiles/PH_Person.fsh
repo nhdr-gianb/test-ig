@@ -11,16 +11,15 @@ Description: "Demographics and administrative information about a person indepen
 * language ..0
 * text ..0
 * contained ..0
-* extension contains 
-  Sex named sex 0..* 
+// * extension contains 
+  // Sex named sex 0..* 
   // $MaritalStatus named maritalStatus 0..*  and //For Release02
   // MemberType named memberType 0..1 and //For Release02
   // Occupation named occupation 0..* //For Release02
-
-* extension[sex] ^short = "Sex assigned at birth"
-* extension[sex] ^definition = "The sex assigned at birth, as documented on the birth registration"
-* extension[sex] ^comment = "This is an extension"
-* extension[sex] ^isModifier = false
+// * extension[sex] ^short = "Sex assigned at birth"
+// * extension[sex] ^definition = "The sex assigned at birth, as documented on the birth registration"
+// * extension[sex] ^comment = "This is an extension"
+// * extension[sex] ^isModifier = false
 // * extension[maritalStatus] ^short = "Person's Marital Status"
 // * extension[maritalStatus] ^definition = "This field contains a Person's most recent marital (civil) status."
 // * extension[maritalStatus] ^isModifier = false
@@ -30,8 +29,9 @@ Description: "Demographics and administrative information about a person indepen
 // * extension[memberType] ^isModifier = false
 // * extension[memberType] ^binding.description = "Membership type."
 // * extension[occupation] ^isModifier = false
+* extension ..0
 * modifierExtension ..0
-// * identifier ..0
+* identifier ..0
 * name
 * name.extension ..0
 * name.id ..0
@@ -45,8 +45,9 @@ Description: "Demographics and administrative information about a person indepen
 * telecom.rank ..0
 * telecom.period ..0
 * gender ..0
-// * birthDate ..0
-* address only $SD_Address
+* birthDate ..0
+* address ..0
+// * address only $SD_Address
 * photo ..0
 * managingOrganization ..0
 * active ..0
@@ -54,3 +55,4 @@ Description: "Demographics and administrative information about a person indepen
 * link.modifierExtension ..0
 * link.id ..0
 * link.assurance ..0
+* link.target only Reference(PH_Patient or PH_Practitioner or PH_RelatedPerson or PH_Person)

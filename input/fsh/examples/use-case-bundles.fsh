@@ -1,55 +1,52 @@
-Instance: ClaimsForm1
+// ========== Claims Form 1-1 ========
+Instance: ClaimsForm1-1
 InstanceOf: Bundle
 Usage: #example
 * type = #transaction
 * identifier.system = "http://nhdr.gov.ph/fhir/ValueSet-form-type"
 * identifier.value = "CF1"
-* entry[0].fullUrl = "urn:uuid:patient"
-* entry[=].resource = CF1-Patient
+* entry[0].fullUrl = "urn:uuid:patient-1"
+* entry[=].resource = Patient-1
 * entry[=].request.method = #POST
 * entry[=].request.url = "Patient"
-* entry[+].fullUrl = "urn:uuid:person"
-* entry[=].resource = CF1-Person
+* entry[+].fullUrl = "urn:uuid:relatedperson-1"
+* entry[=].resource = RelatedPerson-1
 * entry[=].request.method = #POST
-* entry[=].request.url = "Person"
-* entry[+].fullUrl = "urn:uuid:organization"
-* entry[=].resource = CF1-Organization
+* entry[=].request.url = "RelatedPerson"
+* entry[+].fullUrl = "urn:uuid:organization-1"
+* entry[=].resource = Org-1
 * entry[=].request.method = #POST
 * entry[=].request.url = "Organization"
-* entry[+].fullUrl = "urn:uuid:questionnaireresponse"
-* entry[=].resource = CF1-QuestionnaireResponse
+* entry[+].fullUrl = "urn:uuid:questionnaire-1"
+* entry[=].resource = Questionnaire-1
+* entry[=].request.method = #POST
+* entry[=].request.url = "Questionnaire"
+* entry[+].fullUrl = "urn:uuid:questionnaireresponse-1"
+* entry[=].resource = QuestionnaireResponse-1
 * entry[=].request.method = #POST
 * entry[=].request.url = "QuestionnaireResponse"
 
-Instance: CF1-Patient
-InstanceOf: PH_Patient
+Instance: Patient-1
+InstanceOf: Patient
 Usage: #inline
 * meta.profile = "https://nhdr.gov.ph/fhir/StructureDefinition/PH-Patient"
-* identifier.type.coding.code = #NIIP
-* identifier.type.text = "PhilHealth Identification Number"
-* identifier.value = "PH12345"
-* extension.url = "https://nhdr.gov.ph/fhir/StructureDefinition/Sex"
-* extension.valueCode = #M
-* name.family = "Smith"
-* name.given[0] = "Avery"
-* name.given[+] = "Adams"
-* name.suffix = "Mr."
-* birthDate = "1990-12-15"
-* contact.relationship = #E "Employer"
+* link.other = Reference(RelatedPerson-1)
+* link.type = #refer
 
-Instance: CF1-Person
-InstanceOf: PH_Person
+Instance: RelatedPerson-1
+InstanceOf: RelatedPerson
 Usage: #inline
-* meta.profile = "https://nhdr.gov.ph/fhir/StructureDefinition/PH-Person"
+* meta.profile = "https://nhdr.gov.ph/fhir/StructureDefinition/PH-RelatedPerson"
 * identifier.type.coding.code = #NIIP
 * identifier.type.text = "PhilHealth Identification Number"
 * identifier.value = "PH54321"
-* name.family = "Doe"
-* name.given[0] = "John"
-* name.given[+] = "Cena"
-* name.suffix = "Mr."
-* birthDate = "1994-06-25"
-* address.line = "Wayward Road"
+* patient = Reference(Patient-1)
+* name.family = "Razal"
+* name.given[0] = "Emily Frances Lourdes"
+* name.given[+] = "Aberin"
+* name.suffix = "Mrs."
+* birthDate = "1971-02-11"
+* address.line = "Fordham Road"
 * address.extension[0].url = "https://nhdr.gov.ph/fhir/StructureDefinition/Barangay"
 * address.extension[=].valueCoding = #0123456789 "Blue Ridge"
 * address.extension[+].url = "https://nhdr.gov.ph/fhir/StructureDefinition/CityMunicipality"
@@ -62,10 +59,10 @@ Usage: #inline
 * extension.valueCode = #M
 * telecom[0].value = "912-00-00"
 * telecom[+].value = "0927-000-0000"
-* telecom[+].value = "johndoe@gmail.com"
+* telecom[+].value = "earazal@email.com"
 
-Instance: CF1-Organization
-InstanceOf: PH_Organization
+Instance: Org-1
+InstanceOf: Organization
 Usage: #inline
 * meta.profile = "https://nhdr.gov.ph/fhir/StructureDefinition/PH-Organization"
 * identifier.type.coding.code = #EN
@@ -74,13 +71,116 @@ Usage: #inline
 * telecom.value = "080-00-00"
 * name = "PhilHealth"
 
-Instance: CF1-QuestionnaireResponse
-InstanceOf: PH_QuestionnaireResponse
+Instance: Questionnaire-1
+InstanceOf: Questionnaire
+Usage: #inline
+* meta.profile = "https://nhdr.gov.ph/fhir/StructureDefinition/PH-Questionnaire"
+* item.linkId = "1"
+* item.text = "Patient is the member?"
+* item.type = #boolean
+* status = #active
+
+Instance: QuestionnaireResponse-1
+InstanceOf: QuestionnaireResponse
 Usage: #inline
 * meta.profile = "https://nhdr.gov.ph/fhir/StructureDefinition/PH-QuestionnaireResponse"
-* item.answer.valueBoolean = false
-* item.linkId = "Patient is the member?"
+* questionnaire = "Questionnaire/Questionnaire-1"
+* item.linkId = "1"
+* item.answer.valueBoolean = true
 * status = #in-progress
+
+// ========== Claims Form 1-2 ========
+Instance: ClaimsForm1-2
+InstanceOf: Bundle
+Usage: #example
+* type = #transaction
+* identifier.system = "http://nhdr.gov.ph/fhir/ValueSet-form-type"
+* identifier.value = "CF1"
+* entry[0].fullUrl = "urn:uuid:patient-2"
+* entry[=].resource = Patient-2
+* entry[=].request.method = #POST
+* entry[=].request.url = "Patient"
+* entry[+].fullUrl = "urn:uuid:relatedperson-2"
+* entry[=].resource = RelatedPerson-2
+* entry[=].request.method = #POST
+* entry[=].request.url = "RelatedPerson"
+* entry[+].fullUrl = "urn:uuid:organization-2"
+* entry[=].resource = Org-2
+* entry[=].request.method = #POST
+* entry[=].request.url = "Organization"
+* entry[+].fullUrl = "urn:uuid:questionnaire-2"
+* entry[=].resource = Questionnaire-2
+* entry[=].request.method = #POST
+* entry[=].request.url = "Questionnaire"
+* entry[+].fullUrl = "urn:uuid:questionnaireresponse-2"
+* entry[=].resource = QuestionnaireResponse-2
+* entry[=].request.method = #POST
+* entry[=].request.url = "QuestionnaireResponse"
+
+Instance: Patient-2
+InstanceOf: Patient
+Usage: #inline
+* meta.profile = "https://nhdr.gov.ph/fhir/StructureDefinition/PH-Patient"
+* link.other = Reference(RelatedPerson/RelatedPerson-2)
+* link.type = #refer
+
+Instance: RelatedPerson-2
+InstanceOf: RelatedPerson
+Usage: #inline
+* meta.profile = "https://nhdr.gov.ph/fhir/StructureDefinition/PH-RelatedPerson"
+* identifier.type.coding.code = #NIIP
+* identifier.type.text = "PhilHealth Identification Number"
+* identifier.value = "PH54321"
+* patient = Reference(Patient/Patient-2)
+* name.family = "Razal"
+* name.given[0] = "Emily Frances Lourdes"
+* name.given[+] = "Aberin"
+* name.suffix = "Mrs."
+* birthDate = "1971-02-11"
+* address.line = "Fordham Road"
+* address.extension[0].url = "https://nhdr.gov.ph/fhir/StructureDefinition/Barangay"
+* address.extension[=].valueCoding = #0123456789 "Blue Ridge"
+* address.extension[+].url = "https://nhdr.gov.ph/fhir/StructureDefinition/CityMunicipality"
+* address.extension[=].valueCoding = #0123456 "Quezon City"
+* address.extension[+].url = "https://nhdr.gov.ph/fhir/StructureDefinition/Province"
+* address.extension[=].valueCoding = #01234 "Metro Manila"
+* address.country = "PH"
+* address.postalCode = "1110"
+* extension.url = "https://nhdr.gov.ph/fhir/StructureDefinition/Sex"
+* extension.valueCode = #M
+* telecom[0].value = "912-00-00"
+* telecom[+].value = "0927-000-0000"
+* telecom[+].value = "earazal@email.com"
+
+Instance: Org-2
+InstanceOf: Organization
+Usage: #inline
+* meta.profile = "https://nhdr.gov.ph/fhir/StructureDefinition/PH-Organization"
+* identifier.type.coding.code = #EN
+* identifier.type.text = "PhilHealth Employer Number (PEN)"
+* identifier.value = "EN15243"
+* telecom.value = "080-00-00"
+* name = "PhilHealth"
+
+Instance: Questionnaire-2
+InstanceOf: Questionnaire
+Usage: #inline
+* meta.profile = "https://nhdr.gov.ph/fhir/StructureDefinition/PH-Questionnaire"
+* item.linkId = "1"
+* item.text = "Patient is the member?"
+* item.type = #boolean
+* status = #active
+
+Instance: QuestionnaireResponse-2
+InstanceOf: QuestionnaireResponse
+Usage: #inline
+* meta.profile = "https://nhdr.gov.ph/fhir/StructureDefinition/PH-QuestionnaireResponse"
+* questionnaire = "Questionnaire/Questionnaire-2"
+* item.linkId = "1"
+* item.text = "Patient is the member?"
+* item.answer.valueBoolean = true
+* status = #in-progress
+
 
 // ========== Claims Form 2 ==========
 

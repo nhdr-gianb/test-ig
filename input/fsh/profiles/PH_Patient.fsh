@@ -24,10 +24,8 @@ Description: "Captures key demographic and administrative information about indi
     FatherName named fatherName 0..* and
     MotherName named motherName 0..* and
     Occupation named occupation 0..* and
-    Sex named sex 0..* and
+    Sex named sex 0..1 and
     Race named race 0..1 and
-    // MemberCategory named memberCategory 0..1 and
-    PatientType named patientType 0..1 and
     MemberType named memberType 0..1 and
     PatientType named patientType 0..1 and
     EducationalAttainment named educationalAttainment 0..1 and
