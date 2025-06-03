@@ -210,6 +210,7 @@ groups:
     - StructureDefinition/PH-Person
     - StructureDefinition/PH-Practitioner
     - StructureDefinition/PH-PractitionerRole
+    - StructureDefinition/PH-RelatedPerson
 
   GroupC:
     name: Clinical Profiles
