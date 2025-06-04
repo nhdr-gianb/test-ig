@@ -16,7 +16,7 @@ Resources To Do:
 ```json
     {
         "resourceType": "Bundle",
-        "id": "Bundle-ClaimsForm1-1",
+        "id": "ClaimsForm1-1",
         "type": "transaction",
         "identifier": {
             "system": "http://nhdr.gov.ph/fhir/ValueSet-form-type",
@@ -33,12 +33,50 @@ Resources To Do:
                             "https://nhdr.gov.ph/fhir/StructureDefinition/PH-Patient"
                         ]
                     },
-                    "link": [
+                    "identifier": [
                         {
-                            "other": {
-                                "reference": "RelatedPerson/RelatedPerson-1"
+                            "type": {
+                                "coding": [
+                                    {
+                                        "code": "NIIP"
+                                    }
+                                ],
+                                "text": "PhilHealth Identification Number"
                             },
-                            "type": "refer"
+                            "value": "PH12345"
+                        }
+                    ],
+                    "name": [
+                        {
+                            "family": "Pascua",
+                            "given": [
+                                "Antonio Jerome",
+                                "Morales"
+                            ],
+                            "suffix": [
+                                "Mr."
+                            ]
+                        }
+                    ],
+                    "birthDate": "1994-02-25",
+                    "contact": [
+                        {
+                            "relationship": [
+                                {
+                                    "coding": [
+                                        {
+                                            "code": "E",
+                                            "display": "Employer"
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ],
+                    "extension": [
+                        {
+                            "url": "https://nhdr.gov.ph/fhir/StructureDefinition/Sex",
+                            "valueCode": "M"
                         }
                     ]
                 },
@@ -121,7 +159,7 @@ Resources To Do:
                     "extension": [
                         {
                             "url": "https://nhdr.gov.ph/fhir/StructureDefinition/Sex",
-                            "valueCode": "M"
+                            "valueCode": "F"
                         }
                     ],
                     "telecom": [
@@ -216,7 +254,7 @@ Resources To Do:
                             "linkId": "1",
                             "answer": [
                                 {
-                                    "valueBoolean": true
+                                    "valueBoolean": false
                                 }
                             ]
                         }

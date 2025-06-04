@@ -30,8 +30,17 @@ Instance: Patient-1
 InstanceOf: Patient
 Usage: #inline
 * meta.profile = "https://nhdr.gov.ph/fhir/StructureDefinition/PH-Patient"
-* link.other = Reference(RelatedPerson-1)
-* link.type = #refer
+* identifier.type.coding.code = #NIIP
+* identifier.type.text = "PhilHealth Identification Number"
+* identifier.value = "PH12345"
+* name.family = "Pascua"
+* name.given[0] = "Antonio Jerome"
+* name.given[+] = "Morales"
+* name.suffix = "Mr."
+* birthDate = "1994-02-25"
+* contact.relationship = #E "Employer"
+* extension.url = "https://nhdr.gov.ph/fhir/StructureDefinition/Sex"
+* extension.valueCode = #M
 
 Instance: RelatedPerson-1
 InstanceOf: RelatedPerson
@@ -56,7 +65,7 @@ Usage: #inline
 * address.country = "PH"
 * address.postalCode = "1110"
 * extension.url = "https://nhdr.gov.ph/fhir/StructureDefinition/Sex"
-* extension.valueCode = #M
+* extension.valueCode = #F
 * telecom[0].value = "912-00-00"
 * telecom[+].value = "0927-000-0000"
 * telecom[+].value = "earazal@email.com"
@@ -86,7 +95,7 @@ Usage: #inline
 * meta.profile = "https://nhdr.gov.ph/fhir/StructureDefinition/PH-QuestionnaireResponse"
 * questionnaire = "Questionnaire/Questionnaire-1"
 * item.linkId = "1"
-* item.answer.valueBoolean = true
+* item.answer.valueBoolean = false
 * status = #in-progress
 
 // ========== Claims Form 1-2 ========
@@ -147,7 +156,7 @@ Usage: #inline
 * address.country = "PH"
 * address.postalCode = "1110"
 * extension.url = "https://nhdr.gov.ph/fhir/StructureDefinition/Sex"
-* extension.valueCode = #M
+* extension.valueCode = #F
 * telecom[0].value = "912-00-00"
 * telecom[+].value = "0927-000-0000"
 * telecom[+].value = "earazal@email.com"

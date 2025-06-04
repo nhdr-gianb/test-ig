@@ -149,7 +149,9 @@
         "patient": {
             "reference": "Patient/Patient-2"
         }
-        ...
+        
+        <!-- Rest of the resource -->
+        
     }
 
 ---

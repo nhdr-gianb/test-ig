@@ -96,7 +96,9 @@ This can be viewed as instances ["Member is not the Patient"](Bundle-ClaimsForm1
         "patient": {
             "reference": "Patient/Patient-2"
         }
-        ...
+        
+        <!-- Rest of the resource -->
+
     }
 
 ---
