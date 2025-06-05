@@ -11,6 +11,7 @@ description: Draft Implementation Guide for the National Health Data Repository'
 status: draft # draft | active | retired | unknown
 version: 0.1.0
 fhirVersion: 4.0.1 # https://www.hl7.org/fhir/valueset-FHIR-version.html
+copyright: Used by permission of HL7 International, all rights reserved Creative Commons License. Licensed Under Creative Commons. No Rights Reserved.
 copyrightYear: 2025+
 releaseLabel: ci-build
 language: en-US
@@ -18,6 +19,7 @@ license: CC0-1.0 # https://www.hl7.org/fhir/valueset-spdx-license.html
 # jurisdiction: urn:iso:std:iso:3166#US "United States of America" # https://www.hl7.org/fhir/valueset-jurisdiction.html
 publisher:
   name: NHDR
+  # url: http://www.hl7.org/Special/committees/
   url: https://nhdr.gov.ph
   # email: test@example.org
 

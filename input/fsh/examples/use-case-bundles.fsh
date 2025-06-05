@@ -84,9 +84,9 @@ Instance: Questionnaire-1
 InstanceOf: Questionnaire
 Usage: #inline
 * meta.profile = "https://nhdr.gov.ph/fhir/StructureDefinition/PH-Questionnaire"
-* item.linkId = "1"
-* item.text = "Patient is the member?"
-* item.type = #boolean
+* item[0].linkId = "1"
+* item[=].text = "Patient is the member?"
+* item[=].type = #boolean
 * status = #active
 
 Instance: QuestionnaireResponse-1
@@ -94,8 +94,9 @@ InstanceOf: QuestionnaireResponse
 Usage: #inline
 * meta.profile = "https://nhdr.gov.ph/fhir/StructureDefinition/PH-QuestionnaireResponse"
 * questionnaire = "Questionnaire/Questionnaire-1"
-* item.linkId = "1"
-* item.answer.valueBoolean = false
+* item[0].linkId = "1"
+* item[=].text = "Patient is the member?"
+* item[=].answer.valueBoolean = false
 * status = #in-progress
 
 // ========== Claims Form 1-2 ========
@@ -175,9 +176,9 @@ Instance: Questionnaire-2
 InstanceOf: Questionnaire
 Usage: #inline
 * meta.profile = "https://nhdr.gov.ph/fhir/StructureDefinition/PH-Questionnaire"
-* item.linkId = "1"
-* item.text = "Patient is the member?"
-* item.type = #boolean
+* item[0].linkId = "1"
+* item[=].text = "Patient is the member?"
+* item[=].type = #boolean
 * status = #active
 
 Instance: QuestionnaireResponse-2
@@ -185,9 +186,9 @@ InstanceOf: QuestionnaireResponse
 Usage: #inline
 * meta.profile = "https://nhdr.gov.ph/fhir/StructureDefinition/PH-QuestionnaireResponse"
 * questionnaire = "Questionnaire/Questionnaire-2"
-* item.linkId = "1"
-* item.text = "Patient is the member?"
-* item.answer.valueBoolean = true
+* item[0].linkId = "1"
+* item[=].text = "Patient is the member?"
+* item[=].answer.valueBoolean = true
 * status = #in-progress
 
 
