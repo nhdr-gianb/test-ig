@@ -4,5 +4,5 @@ Context: Encounter
 Title: "Illness Class"
 Description: "Classification of illness."
 * ^url = "https://nhdr.gov.ph/fhir/StructureDefinition/Illness-Class"
-* ^status = #draft
+* insert MetaData
 * value[x] only CodeableConcept

@@ -2,13 +2,11 @@ CodeSystem: IndigenousGroupCS
 Id: IndigenousGroupCS
 Title: "Indigenous Groups"
 Description: "A list of codes representing the recognized indigenous groups in the Philippines to which a person may belong."
-* ^experimental = false
-* ^status = #draft
-* ^caseSensitive = true
 * ^url = "https://nhdr.gov.ph/fhir/CodeSystem/IndigenousGroupCS"
-* ^status = #active
+* insert MetaData
 * ^content = #complete
-* ^language = #en-US
+* ^caseSensitive = true
+* ^experimental = false
 * #Aetas "Aetas" 
 * #Ati "Ati" 
 * #Badjaos "Badjaos" 

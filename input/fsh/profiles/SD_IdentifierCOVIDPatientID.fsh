@@ -4,6 +4,7 @@ Id: COVIDPatientID
 Title: "COVID Patient Identification"
 Description: "COVID Patient Identification"
 * ^url = "https://nhdr.gov.ph/fhir/StructureDefinition/COVIDPatientID"
+* insert MetaData
 * type 1..
 * type = $IdentifierType#COVID "COVID Kaya issued number"
 * type.text = "COVID Kaya Issued ID" (exactly)

@@ -30,58 +30,6 @@ Description: "Captures key demographic and administrative information about indi
     PatientType named patientType 0..1 and
     EducationalAttainment named educationalAttainment 0..1 and
     $Signature named signature 0..*
-* extension[signature] ^isModifier = false
-* extension[nationality] ^definition = "Code representing nationality of patient."
-* extension[nationality] ^comment = "This is an extension"
-* extension[nationality] ^isModifier = false
-* extension[religion] ^comment = "This is an extension"
-* extension[religion] ^isModifier = false
-* extension[indigenousGroup] ^short = "Indigenous Group"
-* extension[indigenousGroup] ^definition = "The indigenerous/ethnic group where the person belongs"
-* extension[indigenousGroup] ^comment = "This is an extension"
-* extension[indigenousGroup] ^isModifier = false
-* extension[indigenousGroup] ^binding.description = "IndigenousGroup"
-* extension[indigenousPeople].value[x] only boolean
-* extension[indigenousPeople] ^short = "Indigenous People"
-* extension[indigenousPeople] ^definition = "Identify whether a person belongs to an indigenous/ethnic group"
-* extension[indigenousPeople] ^comment = "This is an extension"
-* extension[indigenousPeople] ^isModifier = false
-* extension[spouseName] ^short = "Name of Spouse"
-* extension[spouseName] ^definition = "Name of the spouse"
-* extension[spouseName] ^comment = "This is an extension"
-* extension[spouseName] ^isModifier = false
-* extension[fatherName] ^short = "Name of the Father"
-* extension[fatherName] ^definition = "Name of the Father"
-* extension[fatherName] ^comment = "This is an extension"
-* extension[fatherName] ^isModifier = false
-* extension[motherName] ^short = "Name of the Mother"
-* extension[motherName] ^definition = "Name of the Mother"
-* extension[motherName] ^comment = "This is an extension"
-* extension[motherName] ^isModifier = false
-* extension[occupation] ^isModifier = false
-* extension[sex] ^short = "Patient's sex at birth."
-* extension[sex] ^definition = "The sex assigned at birth, as documented on the birth registration."
-* extension[sex] ^isModifier = false
-* extension[sex] ^binding.description = "Sex"
-* extension[race] ^short = "Patient's race."
-* extension[race] ^definition = "Patient's race."
-* extension[race] ^isModifier = false
-// * extension[memberCategory] ^short = "Patient's membership category."
-// * extension[memberCategory] ^definition = "Patient's membership category."
-// * extension[memberCategory] ^isModifier = false
-// * extension[memberCategory] ^binding.description = "Membership category"
-* extension[memberType] ^short = "Patient's membership type."
-* extension[memberType] ^definition = "Patient's membership type."
-* extension[memberType] ^isModifier = false
-* extension[memberType] ^binding.description = "Membership type."
-* extension[patientType] ^short = "Type of Patient"
-* extension[patientType] ^definition = "Type of Patient"
-* extension[patientType] ^isModifier = false
-* extension[patientType] ^binding.description = "Patient Type"
-* extension[educationalAttainment] ^short = "Patient's educational attainment."
-* extension[educationalAttainment] ^definition = "Patient's educational attainment."
-* extension[educationalAttainment] ^isModifier = false
-* extension[educationalAttainment] ^binding.description = "Educational attainment."
 * modifierExtension ..0
 * identifier only $PhilHealthID or $RegistrationNo or $OtherID 
 * identifier
@@ -130,4 +78,3 @@ Description: "Captures key demographic and administrative information about indi
 
 //  Notes:
 //      Patient.religion valueset to be discussed
-//      Move extensions' metadatas to the extensions themselves.

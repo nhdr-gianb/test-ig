@@ -4,5 +4,5 @@ Context: Encounter
 Title: "Patient Classification"
 Description: "Classification of patient."
 * ^url = "https://nhdr.gov.ph/fhir/StructureDefinition/PatientClassification"
-* ^status = #draft
+* insert MetaData
 * value[x] only string

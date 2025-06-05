@@ -16,14 +16,6 @@ Description: "A sample to be used for analysis."
 * extension contains
     ResultDate named resultDate 0..* and
     Species named species 0..*
-* extension[resultDate] ^short = "The resultDate represents the date on which the outcome of the particular specimen was recorded."
-* extension[resultDate] ^definition = "The resultDate represents the date on which the outcome of the particular specimen was recorded.."
-* extension[resultDate] ^comment = "This is an extension"
-* extension[resultDate] ^isModifier = false
-* extension[species] ^short = "Describes the type of species / organism [e.g. Malaria (Plasmodium falciparum, Plasmodium malariae, Plasmodium vivax, Plasmodium ovale, Plasmodium knowlesi)]"
-* extension[species] ^definition = "Describes the type of species / organism [e.g. Malaria (Plasmodium falciparum, Plasmodium malariae, Plasmodium vivax, Plasmodium ovale, Plasmodium knowlesi)]"
-* extension[species] ^comment = "This is an extension"
-* extension[species] ^isModifier = false
 * modifierExtension ..0
 // * identifier ..0
 // * accessionIdentifier ..0

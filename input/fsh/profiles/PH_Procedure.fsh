@@ -15,10 +15,6 @@ Description: "An action that is or was performed on or for a patient, practition
 * contained ..0
 * extension contains
     IllnessClass named illnessClass 0..*
-* extension[illnessClass] ^short = "Illness code of the disease as listed in Philhealth"
-* extension[illnessClass] ^definition = "Illness code of the disease as listed in Philhealth"
-* extension[illnessClass] ^comment = "This is an extension"
-* extension[illnessClass] ^isModifier = false
 * modifierExtension ..0
 // * identifier ..0
 * instantiatesCanonical ..0

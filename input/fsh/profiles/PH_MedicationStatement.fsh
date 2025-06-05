@@ -13,10 +13,6 @@ Description: "A record of a medication that is being consumed by a patient."
 * contained ..0
 * extension contains
     ExtEncounter named extEncounter 0..*
-* extension[extEncounter] ^short = "The encounter when the medicine was consumed or administered."
-* extension[extEncounter] ^definition = "The encounter when the medicine was consumed or administered."
-* extension[extEncounter] ^comment = "This is an extension"
-* extension[extEncounter] ^isModifier = false
 * modifierExtension ..0
 // * identifier ..0
 * basedOn ..0

@@ -11,10 +11,6 @@ Description: "An address for the individual."
     Province named province 0..* and
     CityMunicipality named cityMunicipality 0..* and
     Barangay named barangay 0..*
-* extension[region] ^isModifier = false
-* extension[province] ^isModifier = false
-* extension[cityMunicipality] ^isModifier = false
-* extension[barangay] ^isModifier = false
 // * line ..0
 * use ..0
 * type ..0
