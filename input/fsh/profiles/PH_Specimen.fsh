@@ -8,7 +8,7 @@ Description: "A sample to be used for analysis."
 // * id ..0
 // * meta ..0
 * meta.extension contains $RecordedDate named recordedDate 0..*
-* meta.extension[recordedDate] only $RecordedDate
+// * meta.extension[recordedDate] only $RecordedDate
 * implicitRules ..0
 * language ..0
 * text ..0

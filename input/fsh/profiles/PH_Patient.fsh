@@ -10,7 +10,6 @@ Description: "Captures key demographic and administrative information about indi
 // * id ..0
 // * meta ..0
 * meta.extension contains $RecordedDate named recordedDate 0..*
-// * meta.extension[recordedDate] only $RecordedDate
 * implicitRules ..0
 * language ..0
 * text ..0
@@ -70,11 +69,7 @@ Description: "Captures key demographic and administrative information about indi
 * contact.address only $SD_Address
 * contact.extension contains $Signature named signature 0..*
 * communication ..0
+* generalPractitioner only Reference(PH_Organization)
 * generalPractitioner ^definition = "Patient's nominated care provider. Pertains to the Konsulta Health Care Provider"
 * managingOrganization ..0
 * link ..0
-
-
-
-//  Notes:
-//      Patient.religion valueset to be discussed

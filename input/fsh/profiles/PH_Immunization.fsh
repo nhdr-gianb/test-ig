@@ -34,6 +34,7 @@ Description: "Describes the event of a patient being administered a vaccine or a
 * performer.extension ..0
 * performer.modifierExtension ..0
 * performer.function ..0
+* performer.actor only Reference(PH_Practitioner or PH_PractitionerRole or PH_Organization)
 // * note ..0
 * reasonCode from $ImmunizationStatusReasonVS (required)
 * reasonReference ..0
@@ -45,5 +46,6 @@ Description: "Describes the event of a patient being administered a vaccine or a
 * reaction.id ..0
 * reaction.extension ..0
 * reaction.modifierExtension ..0
+* reaction.detail only Reference(PH_Observation)
 * protocolApplied ..0
 

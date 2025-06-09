@@ -31,6 +31,7 @@ Description: "An interaction between a patient and healthcare provider(s) for th
 * serviceType from ServiceTypeVS (required)
 * priority ..0
 // * subject ..0
+* subject only Reference(PH_Patient)
 * episodeOfCare ..0
 * basedOn ..0
 * participant ..0
@@ -44,6 +45,7 @@ Description: "An interaction between a patient and healthcare provider(s) for th
 * diagnosis.use ..0
 * diagnosis.rank ..0
 * diagnosis.id ..0
+* diagnosis.condition only Reference(PH_Condition or PH_Procedure)
 * account ..0
 * hospitalization.extension ..0
 * hospitalization.modifierExtension ..0
@@ -55,6 +57,7 @@ Description: "An interaction between a patient and healthcare provider(s) for th
 * hospitalization.specialCourtesy ..0
 * hospitalization.specialArrangement ..0
 * hospitalization.dischargeDisposition from $DischargeDispositionVS (required)
+* hospitalization.destination only Reference(Location or PH_Organization)
 * location.extension ..0
 * location.modifierExtension ..0
 * location.id ..0
@@ -62,3 +65,4 @@ Description: "An interaction between a patient and healthcare provider(s) for th
 * location.period ..0
 * location.physicalType from $LocationPhysicalTypeVS (required)
 * partOf ..0
+* serviceProvider only Reference(PH_Organization)

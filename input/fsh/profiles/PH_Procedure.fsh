@@ -8,7 +8,7 @@ Description: "An action that is or was performed on or for a patient, practition
 // * id ..0
 // * meta ..0
 * meta.extension contains $RecordedDate named recordedDate 0..*
-* meta.extension[recordedDate] only $RecordedDate
+// * meta.extension[recordedDate] only $RecordedDate
 * implicitRules ..0
 * language ..0
 * text ..0
@@ -49,3 +49,4 @@ Description: "An action that is or was performed on or for a patient, practition
 * usedReference ..0
 * usedCode ..0
 
+//  PHCDI uses performer.onBehalfOf instead of performer.actor, which seems more proper
