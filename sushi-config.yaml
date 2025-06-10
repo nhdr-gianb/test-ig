@@ -57,15 +57,15 @@ pages:
     title: Search Parameters
   use-cases.md:
     title: Use Cases
-  use-cases-CF1.md:
+  CF1.md:
     title: Claims Form 1
     CF1-mapping.md:
       title: Mapping of Claims Form 1 to FHIR
-    CF1-1-json.md:
-      title: Sample CF1 Bundle - Member is not the Patient
-    CF1-2-json.md:
-      title: Sample CF1 Bundle - Member is the Patient
-  use-cases-CF2.md:
+    CF1-1.md:
+      title: CF1 Sample JSON Bundle - Member is not the Patient
+    CF1-2.md:
+      title: CF1 Sample JSON Bundle - Member is the Patient
+  CF2.md:
     title: Claims Form 2
     CF2-mapping.md:
       title: Mapping of Claims Form 2 to FHIR

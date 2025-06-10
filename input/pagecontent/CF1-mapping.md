@@ -1,10 +1,10 @@
 <html>
     <style>table, thead, td{border:2px solid #ccc; border-collapse:collapse}</style>
     <ul class="nav nav-tabs">
-        <li><a href="use-cases-CF1.html">Content</a></li>
-        <li class="active"><a href="CF1-mapping.html">Mappings</a></li>
-        <li><a href="CF1-1-json.html">JSON 1</a></li>
-        <li><a href="CF1-2-json.html">JSON 2</a></li>
+        <li><a href="CF1.html">Content</a></li>
+        <li class="active"><a href="#">Mappings</a></li>
+        <li><a href="CF1-1.html">Sample JSON Bundles</a></li>
+        <!-- <li><a href="CF1-2-json.html">JSON 2</a></li> -->
     </ul>
 </html>
 
@@ -14,9 +14,9 @@
 | **Part I - Member Information** | | | | | |
 | PhilHealth Identification Number (PIN) of Member | RelatedPerson.identifier | Identifier([PhilHealthID](StructureDefinition-PhilHealthID.html)) | 0..* | 12 | --- |
 | Name of Member (Last Name) | RelatedPerson.name.family | String | 0..* | 60 | --- |
-| Name of Member (First Name) | RelatedPerson.name.given**[0]** | String | 0..* | 60 | --- |
+| Name of Member (First Name) | RelatedPerson.name.given[**0**] | String | 0..* | 60 | --- |
 | Name of Member (Name Extension) | RelatedPerson.name.suffix | String | 0..* | 5 | --- |
-| Name of Member (Middle Name) | RelatedPerson.name.given**[1]**  | String | 0..* | 60 | --- |
+| Name of Member (Middle Name) | RelatedPerson.name.given[**1**]  | String | 0..* | 60 | --- |
 | Date of Birth | RelatedPerson.birthDate | date | 0..1 | 10 | --- |
 | Mailing Address (Unit/Room No./Floor) | RelatedPerson.address.line | String | 0..* | 150 | --- |
 | Mailing Address (Building Name) | RelatedPerson.address.line | String | 0..* | 150 | --- |
@@ -36,9 +36,9 @@
 | **Part II - Patient Information** | | | | | |
 | PhilHealth Identification Number (PIN) of Patient | Patient.identifier | Identifier([PhilHealthID](StructureDefinition-PhilHealthID.html)) | 0..1 | 12 | --- |
 | Name of Patient (Last Name) | Patient.name.family | String | 0..* | 60 | --- |
-| Name of Patient (First Name) | Patient.name.given**[0]** | String | 0..* | 60 | --- |
+| Name of Patient (First Name) | Patient.name.given[**0**] | String | 0..* | 60 | --- |
 | Name of Patient (Name Extension) | Patient.name.suffix | String | 0..* | 5 | --- |
-| Name of Patient (Middle Name) | Patient.name.given**[1]** | String | 0..* | 60 | --- |
+| Name of Patient (Middle Name) | Patient.name.given[**1**] | String | 0..* | 60 | --- |
 | Date of Birth | Patient.birthDate | date | 0..1 | 10 | --- |
 | Relationship to Member | Patient.contact.relationship | CodeableConcept | 0..* | --- | [Contact Relationship](ValueSet-ContactRelationshipVS.html) |
 | Sex | Patient.extension:sex | CodeableConcept | 0..1 | 1 | [Sex](ValueSet-SexVS.html) |
@@ -66,94 +66,3 @@
 | Signature Name | Provenance.signature.who | Reference([PH_Patient](StructureDefinition-PH-Patient.html) or [PH_Organization](StructureDefinition-PH-Organization.html) or [PH_Practitioner](StructureDefinition-PH-Practitioner.html) or [PH_PractitionerRole](StructureDefinition-PH-PractitionerRole.html) or [PH_RelatedPerson](StructureDefinition-PH-RelatedPerson.html) or Device) | 1..1 | --- | --- |
 
 ---
-
-### Implementation Rules
-
-* name.given is an array that captures the first name and middle name.
-    1. name.given[**0**] is used to capture a person's **first name**.
-    1. name.given[**1**] is used to capture a person's **middle name**.
-
-* For the field under **Part I - Member Information**, if `Patient is the member?` is true, you <span style="color:red">**must**</span> add a `Patient` resource to the bundle and use `Patient.link` to reference this `RelatedPerson` resource. For example:
-
-**QuestionnaireResponse:**
-
-    "resource": {
-        "resourceType": "QuestionnaireResponse",
-        "id": "QuestionnaireResponse-2",
-        "meta": {
-            "profile": [
-                "https://nhdr.gov.ph/fhir/StructureDefinition/PH-QuestionnaireResponse"
-            ]
-        },
-        "questionnaire": "Questionnaire/Questionnaire-2",
-        "item": [
-            {
-                "linkId": "1",
-                "answer": [
-                    {
-                        "valueBoolean": true
-                    }
-                ]
-            }
-        ],
-        "status": "in-progress"
-    }
-
----
-
-**Patient:**
-
-    "resource": {
-        "resourceType": "Patient",
-        "id": "Patient-2",
-        "meta": {
-            "profile": [
-                "https://nhdr.gov.ph/fhir/StructureDefinition/PH-Patient"
-            ]
-        },
-        "link": [
-            {
-                "other": {
-                    "reference": "RelatedPerson/RelatedPerson-2"
-                },
-                "type": "refer"
-            }
-        ]
-    }
-
----  
-
-**RelatedPerson:**
-
-    "resource": {
-        "resourceType": "RelatedPerson",
-        "id": "RelatedPerson-2",
-        "meta": {
-            "profile": [
-                "https://nhdr.gov.ph/fhir/StructureDefinition/PH-RelatedPerson"
-            ]
-        },
-        "identifier": [
-            {
-                "type": {
-                    "coding": [
-                        {
-                            "code": "NIIP"
-                        }
-                    ],
-                    "text": "PhilHealth Identification Number"
-                },
-                "value": "PH54321"
-            }
-        ],
-        "patient": {
-            "reference": "Patient/Patient-2"
-        }
-        
-        <!-- Rest of the resource -->
-        
-    }
-
----
-
-
