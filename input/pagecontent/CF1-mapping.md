@@ -29,9 +29,9 @@
 | Mailing Address (Country) | RelatedPerson.address.country | **Coding** | 0..* | 150 | ~~Country~~ |
 | Mailing Address (Zip Code) | RelatedPerson.address.postalCode | **Coding** | 0..* | 4 | ~~PostalCode~~ |
 | Sex | RelatedPerson.extension:sex | CodeableConcept | 0..1 | 1 | [Sex](ValueSet-SexVS.html) |
-| Contact Information Landline # (Area Code + Tel. No.) | RelatedPerson.telecom.value | ContactPoint | 0..1 | 20 | --- |
-| Contact Information (Mobile #) | RelatedPerson.telecom.value | ContactPoint | 0..* | 20 | --- |
-| Contact Information (Email Address) | RelatedPerson.telecom.value | ContactPoint | 0..* | 156 | --- |
+| Contact Information Landline # (Area Code + Tel. No.) | RelatedPerson.telecom.value | string | 0..1 | 20 | --- |
+| Contact Information (Mobile #) | RelatedPerson.telecom.value | string | 0..* | 20 | --- |
+| Contact Information (Email Address) | RelatedPerson.telecom.value | string | 0..* | 156 | --- |
 | Patient is the member? [Yes, Proceed to Part III] | Questionnaire.item.text | string | 0..1 | 1 | --- |
 | **Part II - Patient Information** | | | | | |
 | PhilHealth Identification Number (PIN) of Patient | Patient.identifier | Identifier([PhilHealthID](StructureDefinition-PhilHealthID.html)) | 0..1 | 12 | --- |

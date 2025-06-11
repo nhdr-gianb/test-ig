@@ -35,6 +35,7 @@ This can be viewed as instances ["Member is not the Patient"](Bundle-ClaimsForm1
         "item": [
             {
                 "linkId": "1",
+                "text": "Patient is the member?",
                 "answer": [
                     {
                         "valueBoolean": true
