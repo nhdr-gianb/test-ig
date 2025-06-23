@@ -1,9 +1,12 @@
 {
   "http://terminology.hl7.org/CodeSystem/designation-usage|null" : null,
+  "http://nhdr.gov.ph/fhir/Identifier/philhealth-id" : null,
   "https://nhdr.gov.ph/fhir/CodeSystem/MemberCategoryCS|null" : null,
   "http://terminology.hl7.org/6.2.0/CodeSystem-location-physical-type.html|null" : null,
   "http://nhdr.gov.ph/fhir/ValueSet-form-type" : null,
+  "http://nhdr.gov.ph/fhir/Identifier/pdd-id" : null,
   "https://terminology.hl7.org/5.1.0/CodeSystem-v2-0203.html|null" : null,
+  "http://philhealth.gov.ph/fhir/Identifier/pdd-id" : null,
   "http://terminology.hl7.org/6.2.0/CodeSystem-location-physical-type.html" : null,
   "http://nhdr.gov.ph/fhir/ValueSet/ConditionCodeValueSet|null" : null,
   "http://nhdr.gov.ph/fhir/ValueSet/ProcedureCodeValueSet|null" : null,
@@ -16,6 +19,7 @@
     "server" : "http://tx.fhir.org/r4",
     "filename" : "cs-0a884d92-469a-4aa2-9613-b01e0edfd043.json"
   },
+  "http://philhealth.gov.ph/fhir/Identifier/philhealth-id" : null,
   "https://psa.gov.ph/classification/psoc/unit|null" : null,
   "http://terminology.hl7.org/CodeSystem/organization-type|4.0.1" : {
     "server" : "http://tx.fhir.org/r4",

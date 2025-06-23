@@ -30,8 +30,16 @@ Description: "Captures key demographic and administrative information about indi
     EducationalAttainment named educationalAttainment 0..1 and
     $Signature named signature 0..*
 * modifierExtension ..0
-* identifier only $PhilHealthID or $RegistrationNo or $OtherID 
-* identifier
+* identifier ^slicing.discriminator.type = #value
+* identifier ^slicing.discriminator.path = "system"
+* identifier ^slicing.rules = #open
+* identifier contains
+    PhilHealthID 0..* and
+    PDD 0..*
+* identifier[PhilHealthID].system = "http://nhdr.gov.ph/fhir/Identifier/philhealth-id"
+* identifier[PhilHealthID].type.coding = #NIIP
+* identifier[PDD].system = "http://nhdr.gov.ph/fhir/Identifier/pdd-id"
+* identifier[PDD].type.coding = #PDD
 // * active ..0
 * name
 * name.extension ..0
