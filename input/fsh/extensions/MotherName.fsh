@@ -3,7 +3,6 @@ Id: MotherName
 Description: "Name of the patient's mother."
 Title: "Mother's name"
 Context: Patient
-* ^version = "1.0.0"
-* ^status = #draft
-* . ^definition = "Name of the patient's mother."
+* ^url = "https://nhdr.gov.ph/fhir/StructureDefinition/MotherName"
+* insert MetaData
 * value[x] only HumanName

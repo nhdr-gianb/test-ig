@@ -8,17 +8,13 @@ Description: "Describes the event of a patient consuming or otherwise being admi
 // * id ..0
 // * meta ..0
 * meta.extension contains $RecordedDate named recordedDate 0..*
-* meta.extension[recordedDate] only $RecordedDate
+// * meta.extension[recordedDate] only $RecordedDate
 * implicitRules ..0
 * language ..0
 * text ..0
 * contained ..0
 * extension contains
     ExtEncounter named extEncounter 0..*
-* extension[extEncounter] ^short = "The encounter when the medicine was consumed or administered."
-* extension[extEncounter] ^definition = "The encounter when the medicine was consumed or administered."
-* extension[extEncounter] ^comment = "This is an extension"
-* extension[extEncounter] ^isModifier = false
 * modifierExtension ..0
 // * identifier ..0
 * instantiates ..0
@@ -26,11 +22,16 @@ Description: "Describes the event of a patient consuming or otherwise being admi
 * status from $MedicationAdministrationStatusVS (required)
 * statusReason ..0
 // * category ..0
-* medication[x] from $DrugCodesVS (required)
+* medication[x] only Reference(PH_Medication)
+// * medication[x] from $DrugCodesVS (required)
 * subject only Reference(PH_Patient)
 * context ..0
 * supportingInformation ..0
 // * performer ..0
+* performer.extension ..0
+* performer.modifierExtension ..0
+* performer.function ..0
+* performer.actor only Reference(PH_Practitioner or PH_PractitionerRole or PH_Patient or PH_RelatedPerson or Device)
 * reasonCode ..1
 * reasonReference ..1
 * reasonReference only Reference(PH_Condition or PH_Observation or PH_DiagnosticReport)

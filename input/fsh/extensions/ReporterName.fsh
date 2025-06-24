@@ -4,7 +4,7 @@ Context: Encounter
 Title: "Reporter"
 Description: "Name of the reporter of the encounter."
 * ^url = "https://nhdr.gov.ph/fhir/StructureDefinition/ReporterName"
-* ^status = #draft
+* insert MetaData
 * value[x] only HumanName
 * value[x].extension ..0
 * value[x].id ..0

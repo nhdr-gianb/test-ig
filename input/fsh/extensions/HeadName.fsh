@@ -4,5 +4,5 @@ Context: Organization
 Title: "Organization's Head - Name"
 Description: "Name of the head of the facility."
 * ^url = "https://nhdr.gov.ph/fhir/StructureDefinition/HeadName"
-* ^status = #draft
+* insert MetaData
 * value[x] only HumanName

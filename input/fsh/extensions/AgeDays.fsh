@@ -4,5 +4,5 @@ Context: Encounter
 Title: "Age in Days"
 Description: "Age of the patient in days."
 * ^url = "https://nhdr.gov.ph/fhir/StructureDefinition/AgeDays"
-* ^status = #draft
+* insert MetaData
 * value[x] only integer

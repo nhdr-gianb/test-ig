@@ -23,6 +23,7 @@ Description: "The findings and interpretation of diagnostic tests performed on p
 // * effective[x] ..0
 // * issued ..0
 // * performer ..0
+* performer only Reference(PH_Practitioner or PH_PractitionerRole or PH_Organization or CareTeam)
 * resultsInterpreter ..0
 * specimen only Reference(PH_Specimen)
 * result only Reference(PH_Observation)

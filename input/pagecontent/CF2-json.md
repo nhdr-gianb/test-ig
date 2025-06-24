@@ -11,7 +11,7 @@ Resources To Do:
 <ul class="nav nav-tabs">
 
 <li>
-    <a href="use-cases-CF2.html">Content</a>
+    <a href="CF2.html">Content</a>
 </li>
 
 <li>

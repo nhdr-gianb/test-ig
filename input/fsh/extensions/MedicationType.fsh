@@ -4,5 +4,5 @@ Title: "Medication Type"
 Context: Medication
 Description: "Medication Type"
 * ^url = "https://nhdr.gov.ph/fhir/StructureDefinition/MedicationType"
-* ^status = #draft
+* insert MetaData
 * value[x] only CodeableConcept

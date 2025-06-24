@@ -4,6 +4,6 @@ Context: Observation
 Title: "Address (Extension)"
 Description: "Address where the observation was made."
 * ^url = "https://nhdr.gov.ph/fhir/StructureDefinition/ExtAddress"
-* ^status = #draft
+* insert MetaData
 * url = "https://nhdr.gov.ph/fhir/StructureDefinition/ExtAddress" (exactly)
 * value[x] only $SD_Address

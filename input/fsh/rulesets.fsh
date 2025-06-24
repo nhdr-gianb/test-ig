@@ -5,7 +5,7 @@ RuleSet: MetaData
 * ^language = #en-US
 * ^extension[0].url = "http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status"
 * ^extension[=].valueCode = #draft
-// * ^copyright = "Used by permission of HL7 International, all rights reserved Creative Commons License"
+* ^copyright = "Used by permission of HL7 International, all rights reserved Creative Commons License"
 
 //  Used for testing RuleSet in CS_RuleSetTest. Used on PSGC codes for easier filtering of ValueSets
 RuleSet: HierarchyValues

@@ -4,7 +4,7 @@ Context: Encounter
 Title: "Interviewer"
 Description: "Name of the interviewer at first point of contact."
 * ^url = "https://nhdr.gov.ph/fhir/StructureDefinition/Interviewer"
-* ^status = #draft
+* insert MetaData
 * value[x] only HumanName
 * value[x].extension ..0
 * value[x].id ..0
