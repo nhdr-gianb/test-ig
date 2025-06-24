@@ -14,5 +14,6 @@ Description: "The signature of an individual."
 * extension[signatureReason] ^isModifier = false
 // * extension[signatureSubType] ^isModifier = false
 // * extension[signatureThumbmark] ^isModifier = false
+* type from $SignatureTypeVS (required)
 * who only Reference(PH_Patient or PH_Organization or PH_Practitioner or PH_PractitionerRole or RelatedPerson or Device)
 * onBehalfOf only Reference(PH_Patient or PH_Organization or PH_Practitioner or PH_PractitionerRole or RelatedPerson or Device)
