@@ -4,7 +4,7 @@ Context: Encounter
 Title: "Investigator"
 Description: "Name of the investigator/assessor."
 * ^url = "https://nhdr.gov.ph/fhir/StructureDefinition/InvestigatorName"
-* ^status = #draft
+* insert MetaData
 * value[x] only HumanName
 * value[x].extension ..0
 * value[x].id ..0

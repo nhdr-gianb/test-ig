@@ -1,9 +1,9 @@
 ### Claims Forms
 
-- [Claims Form 1](use-cases-CF1.html)
+- [Claims Form 1](CF1.html)
     * [CF1 Bundle 1](Bundle-ClaimsForm1-1.html)
     * [CF1 Bundle 2](Bundle-ClaimsForm1-2.html)
-- [Claims Form 2](use-cases-CF2.html)
+- [Claims Form 2](CF2.html)
     * [CF2 Bundle](Bundle-ClaimsForm2.html)
 - Claims Form 3
 - Claims Form 4

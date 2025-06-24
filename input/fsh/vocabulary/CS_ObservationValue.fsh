@@ -2,11 +2,11 @@ CodeSystem: ObservationValueCS
 Id: ObservationValueCS
 Title: "Observation Value"
 Description: "Placeholder for Observation Value"
-* ^experimental = false
-* ^caseSensitive = true
 * ^url = "https://nhdr.gov.ph/fhir/CodeSystem/ObservationValueCS"
-* ^status = #draft
-* ^language = #en-US
+* insert MetaData
+* ^content = #complete
+* ^caseSensitive = true
+* ^experimental = false
 * #MultiplePregnancy "Multiple pregnancy"  
 * #OvarianCyst "Ovarian cyst" 
 * #MyomaUteri "Myoma uteri" 

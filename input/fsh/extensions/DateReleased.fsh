@@ -4,5 +4,5 @@ Context: Specimen.collection
 Title: "Specimen release date"
 Description: "Date when the specimen was released."
 * ^url = "https://nhdr.gov.ph/fhir/StructureDefinition/DateReleased"
-* ^status = #draft
+* insert MetaData
 * value[x] only dateTime

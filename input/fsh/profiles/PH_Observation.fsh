@@ -9,7 +9,7 @@ Description: "Measurements and simple assertions made about a patient, device or
 // * id ..0
 // * meta ..0
 * meta.extension contains $RecordedDate named recordedDate 0..*
-* meta.extension[recordedDate] only $RecordedDate
+// * meta.extension[recordedDate] only $RecordedDate
 * implicitRules ..0
 * language ..0
 * text ..0

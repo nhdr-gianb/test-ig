@@ -2,12 +2,11 @@ CodeSystem: LHIOCS
 Id: LHIOCS
 Title: "Local Health Insurance Office"
 Description: "A code system representing Local Health Insurance Offices"
-* ^experimental = false
-* ^status = #active
-* ^caseSensitive = true
 * ^url = "https://nhdr.gov.ph/fhir/CodeSystem/LHIOCS"
+* insert MetaData
 * ^content = #complete
-* ^language = #en-US
+* ^caseSensitive = true
+* ^experimental = false
 * #0101 "LAS PINAS" "LAS PINAS"
 * #0102 "S.O PASIG" "S.O PASIG"
 * #0103 "S.O MAKATI" "S.O MAKATI"

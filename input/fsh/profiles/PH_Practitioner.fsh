@@ -16,15 +16,6 @@ Description: "A person who is directly or indirectly involved in the provisionin
     Sex named sex 0..* and
     $Signature named signature 0..*
     // $MaritalStatus named maritalStatus 0..* //For Release02
-* extension[signature] ^isModifier = false
-* extension[sex] ^short = "The sex assigned at birth, as documented on the birth registration"
-* extension[sex] ^definition = "The sex assigned at birth, as documented on the birth registration"
-* extension[sex] ^comment = "This is an extension"
-* extension[sex] ^isModifier = false
-// * extension[maritalStatus] ^short = "Practitioner Marital Status"
-// * extension[maritalStatus] ^definition = "This field contains a Practitioner's most recent marital (civil) status."
-// * extension[maritalStatus] ^isModifier = false
-// * extension[maritalStatus] ^binding.description = "Marital Status"
 * modifierExtension ..0
 * identifier ..1
 // * active ..0

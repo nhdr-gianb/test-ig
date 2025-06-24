@@ -4,5 +4,5 @@ Context: MedicationDispense
 Title: "Cost"
 Description: "Cost of the medication."
 * ^url = "https://nhdr.gov.ph/fhir/StructureDefinition/Cost"
-* ^status = #draft
+* insert MetaData
 * value[x] only string

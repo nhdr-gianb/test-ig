@@ -28,6 +28,7 @@ The **Architectural Components** of the NHDR are designed to create a robust inf
 
 1. **Data Storage Component**: This is the physical repository for health and health-related data, ensuring secure and reliable storage of information. It serves as the foundation for the NHDR, supporting other components with structured and unstructured data storage solutions.
 
+
 2. **Compute Services Component**: This layer is responsible for the computational functions required for data management, access, and analysis. It includes:
    - **Application Management**: Manages the lifecycle of systems, from development to implementation and maintenance.
    - **Business Intelligence and Analytics**: Provides tools for data analysis and decision-making by identifying trends and patterns from large datasets.
@@ -36,6 +37,8 @@ The **Architectural Components** of the NHDR are designed to create a robust inf
    - **Data Warehouse Management**: Houses historical data and transforms it into usable formats for decision-makers, using Online Analytical Processing (OLAP) to analyze large datasets.
    - **Operational Database Management**: Designed for real-time data submission and processing using Online Transactional Processing (OLTP) systems.
    - **Network/Connectivity Management**: Ensures that the system is well-connected to support data sharing and accessibility.
+
+
 
 3. **Client Services Component**: This is the user-facing layer, providing interfaces for data submission, retrieval, and analytics. Key features include:
    - **Dataset Submission**: Allows health entities to submit their data securely.

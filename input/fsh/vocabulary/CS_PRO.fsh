@@ -2,12 +2,11 @@ CodeSystem: ProCS
 Id: ProCS
 Title: "PhilHealth Regional Offices"
 Description: "A code system representing regional offices of PhilHealth"
-* ^experimental = false
-* ^status = #active
-* ^caseSensitive = true
 * ^url = "https://nhdr.gov.ph/fhir/CodeSystem/ProCS"
+* insert MetaData
 * ^content = #complete
-* ^language = #en-US
+* ^caseSensitive = true
+* ^experimental = false
 * #1 "NCR South Las Piñas" "NCR South Las Piñas"
 * #2 "PRO NCR North Manila" "PRO NCR North Manila"
 * #3 "NCR Central Quezon City" "NCR Central Quezon City"

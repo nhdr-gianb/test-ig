@@ -4,5 +4,5 @@ Context: Encounter
 Title: "Date of Interview"
 Description: "Date of interview."
 * ^url = "https://nhdr.gov.ph/fhir/StructureDefinition/DateInterview"
-* ^status = #draft
+* insert MetaData
 * value[x] only dateTime

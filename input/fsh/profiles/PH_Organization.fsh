@@ -16,15 +16,6 @@ Description: "Refers to a formally or informally recognized grouping of people o
     HeadName named headName 0..* and
     HeadPosition named headPosition 0..* and
     HeadTelecom named headTelecom 0..*
-* extension[headName] ^short = "Head of the organization."
-* extension[headName] ^definition = "Head of the organization."
-* extension[headName] ^isModifier = false
-* extension[headPosition] ^short = "Position of the head of the facility."
-* extension[headPosition] ^definition = "Position of the head of the facility."
-* extension[headPosition] ^isModifier = false
-* extension[headTelecom] ^short = "Contact information of the head of facility."
-* extension[headTelecom] ^definition = "Contact information of the head of facility."
-* extension[headTelecom] ^isModifier = false
 * modifierExtension ..0
 * identifier only $FHUDCode or $OtherID
 // * active ..0

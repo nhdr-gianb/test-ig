@@ -2,12 +2,11 @@ CodeSystem: OrganizationTypeLocalCS
 Id: OrganizationTypeLocalCS
 Title: "Organization Types - Local"
 Description: "Organization type codes used locally."
-* ^experimental = false
-* ^caseSensitive = true
 * ^url = "https://nhdr.gov.ph/fhir/CodeSystem/OrganizationTypeLocalCS"
-* ^status = #active
+* insert MetaData
 * ^content = #complete
-* ^language = #en-US
+* ^caseSensitive = true
+* ^experimental = false
 * #E "EMPLOYER" 
 * #K "ORGANIZED GROUPS" 
 * #S "SPONSOR" 

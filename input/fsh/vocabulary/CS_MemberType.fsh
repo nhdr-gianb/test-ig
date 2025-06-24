@@ -2,12 +2,11 @@ CodeSystem: MemberTypeCS
 Id: MemberTypeCS
 Title: "Member Type"
 Description: "A code system representing different type of membership."
-* ^experimental = false
-* ^status = #active
-* ^caseSensitive = true
 * ^url = "https://nhdr.gov.ph/fhir/CodeSystem/MemberTypeCS"
+* insert MetaData
 * ^content = #complete
-* ^language = #en-US
+* ^caseSensitive = true
+* ^experimental = false
 * #1 "FORMAL ECONOMY" "FORMAL ECONOMY"   
 * #2 "INFORMAL ECONOMY" "INFORMAL ECONOMY"
 * #3 "INDIGENT" "INDIGENT"

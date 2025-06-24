@@ -16,43 +16,6 @@ Description: "An interaction between a patient and healthcare provider(s) for th
     DateInvestigation named dateInvestigation 0..* and
     ReporterName named reporterName 0..* and
     Illness-Class named illnessClass 0..*
-* extension[ageYears] ^short = "Age in years."
-* extension[ageYears] ^definition = "Age in years."
-* extension[ageYears] ^comment = "This is an extension."
-* extension[ageYears] ^isModifier = false
-* extension[ageMonths] ^short = "Age in months."
-* extension[ageMonths] ^definition = "Age in months."
-* extension[ageMonths] ^comment = "This is an extension."
-* extension[ageMonths] ^isModifier = false
-* extension[ageDays] ^short = "Age in days."
-* extension[ageDays] ^definition = "Age in days."
-* extension[ageDays] ^comment = "This is an extension."
-* extension[ageDays] ^isModifier = false
-* extension[patientClassification] ^short = "Patient Classification."
-* extension[patientClassification] ^definition = "Patient Classification."
-* extension[patientClassification] ^comment = "This is an extension."
-* extension[patientClassification] ^isModifier = false
-* extension[interviewer] ^short = "Name of interviewer."
-* extension[interviewer] ^definition = "Name of Interviewer at first point of contact."
-* extension[interviewer] ^comment = "This is an extension."
-* extension[interviewer] ^isModifier = false
-* extension[investigatorName] ^short = "Name of Investigator / Assessor."
-* extension[investigatorName] ^definition = "Name of Investigator / Assessor."
-* extension[investigatorName] ^comment = "This is an extension."
-* extension[investigatorName] ^isModifier = false
-* extension[dateInterview] ^short = "Date of interview."
-* extension[dateInterview] ^definition = "Date of interview."
-* extension[dateInterview] ^comment = "This is an extension."
-* extension[dateInterview] ^isModifier = false
-* extension[dateInvestigation] ^short = "Date of investigation."
-* extension[dateInvestigation] ^definition = "Date of investigation."
-* extension[dateInvestigation] ^isModifier = false
-* extension[reporterName] ^short = "Name of reporter."
-* extension[reporterName] ^definition = "Name of reporter."
-* extension[reporterName] ^isModifier = false
-* extension[illnessClass] ^definition = "Class of illness."
-* extension[illnessClass] ^isModifier = false
-* extension[illnessClass] ^binding.description = "Valueset for case rates."
 * modifierExtension ..0
 // * id ..0
 * implicitRules ..0
@@ -68,6 +31,7 @@ Description: "An interaction between a patient and healthcare provider(s) for th
 * serviceType from ServiceTypeVS (required)
 * priority ..0
 // * subject ..0
+* subject only Reference(PH_Patient)
 * episodeOfCare ..0
 * basedOn ..0
 * participant ..0
@@ -81,6 +45,7 @@ Description: "An interaction between a patient and healthcare provider(s) for th
 * diagnosis.use ..0
 * diagnosis.rank ..0
 * diagnosis.id ..0
+* diagnosis.condition only Reference(PH_Condition or PH_Procedure)
 * account ..0
 * hospitalization.extension ..0
 * hospitalization.modifierExtension ..0
@@ -92,6 +57,7 @@ Description: "An interaction between a patient and healthcare provider(s) for th
 * hospitalization.specialCourtesy ..0
 * hospitalization.specialArrangement ..0
 * hospitalization.dischargeDisposition from $DischargeDispositionVS (required)
+* hospitalization.destination only Reference(Location or PH_Organization)
 * location.extension ..0
 * location.modifierExtension ..0
 * location.id ..0
@@ -99,3 +65,4 @@ Description: "An interaction between a patient and healthcare provider(s) for th
 * location.period ..0
 * location.physicalType from $LocationPhysicalTypeVS (required)
 * partOf ..0
+* serviceProvider only Reference(PH_Organization)
