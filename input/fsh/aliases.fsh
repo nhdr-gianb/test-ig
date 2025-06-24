@@ -80,6 +80,7 @@ Alias: $SpecimenProcessingProcedureCS = http://terminology.hl7.org/CodeSystem/v2
 // Alias: $SpecimenTypeCS = http://terminology.hl7.org/CodeSystem/v2-0487 //Deleted, created direct valueset 
 Alias: $ObservationInterpretationCS = http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation
 Alias: $ObservationCategoryCS = http://terminology.hl7.org/CodeSystem/observation-category
+Alias: $SignatureTypeCS = https://nhdr.gov.ph/fhir/CodeSystem/SignatureTypeCS
 
 
 // ValueSets
@@ -151,5 +152,4 @@ Alias: $ServiceTypeVS = https://nhdr.gov.ph/fhir/ValueSet/ServiceTypeVS
 Alias: $SexVS = https://nhdr.gov.ph/fhir/ValueSet/SexVS
 Alias: $SpecimenConditionVS = http://terminology.hl7.org/ValueSet/v2-0493 
 Alias: $SpecimenTypeVS = http://terminology.hl7.org/ValueSet/v2-0487 
-// Alias: $SpecimenConditionVS = https://hl7.org/fhir/R4/v2/0493/index.html
-// Alias: $SpecimenTypeVS = https://hl7.org/fhir/R4/v2/0487/index.html
+Alias: $SignatureTypeVS =  https://nhdr.gov.ph/fhir/ValueSet/SignatureTypeVS

@@ -1,5 +1,6 @@
 {
   "http://terminology.hl7.org/CodeSystem/designation-usage|null" : null,
+  "http://hl7.org/fhir/ValueSet/signature-type|null" : null,
   "http://nhdr.gov.ph/fhir/Identifier/philhealth-id" : null,
   "https://nhdr.gov.ph/fhir/CodeSystem/MemberCategoryCS|null" : null,
   "http://terminology.hl7.org/6.2.0/CodeSystem-location-physical-type.html|null" : null,
