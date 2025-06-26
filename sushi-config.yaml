@@ -3,11 +3,11 @@
 # │  used properties are included. For a list of all supported properties and their functions,     │
 # │  see: https://fshschool.org/docs/sushi/configuration/.                                         │
 # ╰────────────────────────────────────────────────────────────────────────────────────────────────╯
-id: PHCDI
-canonical: https://nhdr.gov.ph/fhir
-name: Philippine Core Data for Interoperability
-title: NHDR Implementation Guide Release 1.0
-description: Draft Implementation Guide for the National Health Data Repository's Philippine Core Data for Interoperability
+id: CDI-test
+canonical: https://test.ph/fhir
+name: CDI test
+title: CDI test
+description: CDI test
 status: draft # draft | active | retired | unknown
 version: 0.1.0
 fhirVersion: 4.0.1 # https://www.hl7.org/fhir/valueset-FHIR-version.html
@@ -18,9 +18,9 @@ language: en-US
 license: CC0-1.0 # https://www.hl7.org/fhir/valueset-spdx-license.html
 # jurisdiction: urn:iso:std:iso:3166#US "United States of America" # https://www.hl7.org/fhir/valueset-jurisdiction.html
 publisher:
-  name: NHDR
+  name: test
   # url: http://www.hl7.org/Special/committees/
-  url: https://nhdr.gov.ph
+  url: https://test.ph
   # email: test@example.org
 
 # The dependencies property corresponds to IG.dependsOn. The key is the
@@ -48,29 +48,29 @@ publisher:
 #
 pages:
   index.md:
-    title: PHCDI Implementation Guide
+    title: Test CDI Implementation Guide
   artifacts:
   #   title: Artifacts Summary
-  extensions.md:
-    title: Extensions
-  search-parameters.md:
-    title: Search Parameters
-  use-cases.md:
-    title: Use Cases
-  CF1.md:
-    title: Claims Form 1
-    CF1-mapping.md:
-      title: Mapping of Claims Form 1 to FHIR
-    CF1-1.md:
-      title: CF1 Sample JSON Bundle - Member is not the Patient
-    CF1-2.md:
-      title: CF1 Sample JSON Bundle - Member is the Patient
-  CF2.md:
-    title: Claims Form 2
-    CF2-mapping.md:
-      title: Mapping of Claims Form 2 to FHIR
-    CF2-json.md:
-      title: Sample CF2 Bundle
+  # extensions.md:
+  #   title: Extensions
+  # search-parameters.md:
+  #   title: Search Parameters
+  # use-cases.md:
+  #   title: Use Cases
+  # CF1.md:
+  #   title: Claims Form 1
+  #   CF1-mapping.md:
+  #     title: Mapping of Claims Form 1 to FHIR
+  #   CF1-1.md:
+  #     title: CF1 Sample JSON Bundle - Member is not the Patient
+  #   CF1-2.md:
+  #     title: CF1 Sample JSON Bundle - Member is the Patient
+  # CF2.md:
+  #   title: Claims Form 2
+  #   CF2-mapping.md:
+  #     title: Mapping of Claims Form 2 to FHIR
+  #   CF2-json.md:
+  #     title: Sample CF2 Bundle
 #   implementation.xml:
 #   examples.xml:
 #     title: Examples Overview
@@ -105,25 +105,25 @@ pages:
 menu:
   Home: index.html
   Artifacts Index:
-    PHCDI Artifacts: artifacts.html
-    Foundation Profiles: artifacts.html#foundation-profiles
+    Test CDI Artifacts: artifacts.html
+    # Foundation Profiles: artifacts.html#foundation-profiles
     Base Profiles: artifacts.html#base-profiles
-    Clinical Profiles: artifacts.html#clinical-profiles
-    Financial Profiles: artifacts.html#financial-profiles
-    Specialized Profiles: artifacts.html#specialized-profiles
-    Data Types: artifacts.html#data-types
-    Identifiers: artifacts.html#identifiers
-    Extensions: artifacts.html#structures-extension-definitions
-    Value Sets: artifacts.html#terminology-value-sets
-    Code Systems: artifacts.html#terminology-code-systems
-    Instances: artifacts.html#example-example-instances
-  Extensions: extensions.html
-  Use Cases: use-cases.html
-  Support:
-    Download IG: full-ig.zip
-    FHIR Spec: http://hl7.org/fhir/R4/index.html
-    Artifacts (Json): definitions.json.zip
-    Artifacts (Xml): definitions.xml.zip
+    # Clinical Profiles: artifacts.html#clinical-profiles
+    # Financial Profiles: artifacts.html#financial-profiles
+    # Specialized Profiles: artifacts.html#specialized-profiles
+    # Data Types: artifacts.html#data-types
+    # Identifiers: artifacts.html#identifiers
+    # Extensions: artifacts.html#structures-extension-definitions
+    # Value Sets: artifacts.html#terminology-value-sets
+    # Code Systems: artifacts.html#terminology-code-systems
+    # Instances: artifacts.html#example-example-instances
+  # Extensions: extensions.html
+  # Use Cases: use-cases.html
+  # Support:
+  #   Download IG: full-ig.zip
+  #   FHIR Spec: http://hl7.org/fhir/R4/index.html
+  #   Artifacts (Json): definitions.json.zip
+  #   Artifacts (Xml): definitions.xml.zip
   # Search Parameters: search-parameters.html
 
 
@@ -198,70 +198,21 @@ menu:
 #
 groups:
   GroupA:
-    name: Foundation Profiles
-    resources:
-    - StructureDefinition/PH-Provenance
-
-  GroupB:
     name: Base Profiles
     resources:
-    - StructureDefinition/PH-Appointment
-    - StructureDefinition/PH-Encounter
-    - StructureDefinition/PH-Organization
-    - StructureDefinition/PH-Patient
-    - StructureDefinition/PH-Person
-    - StructureDefinition/PH-Practitioner
-    - StructureDefinition/PH-PractitionerRole
-    - StructureDefinition/PH-RelatedPerson
+    # - StructureDefinition/PH-Appointment
+    - StructureDefinition/PH-Base-Encounter
+    - StructureDefinition/PH-Base-Organization
+    - StructureDefinition/PH-Base-Patient
+    # - StructureDefinition/PH-Person
+    # - StructureDefinition/PH-Practitioner
+    # - StructureDefinition/PH-PractitionerRole
+    # - StructureDefinition/PH-RelatedPerson
 
-  GroupC:
-    name: Clinical Profiles
+  GroupB:
+    name: Core Profiles
     resources:
-    - StructureDefinition/PH-AllergyIntolerance
-    - StructureDefinition/PH-CarePlan
-    - StructureDefinition/PH-ClinicalImpression
-    - StructureDefinition/PH-Condition
-    - StructureDefinition/PH-DiagnosticReport
-    - StructureDefinition/PH-FamilyMemberHistory
-    - StructureDefinition/PH-Goal
-    - StructureDefinition/PH-Immunization
-    - StructureDefinition/PH-Medication
-    - StructureDefinition/PH-MedicationAdministration
-    - StructureDefinition/PH-MedicationDispense
-    - StructureDefinition/PH-MedicationStatement
-    - StructureDefinition/PH-Observation
-    - StructureDefinition/PH-Procedure
-    - StructureDefinition/PH-QuestionnaireResponse
-    - StructureDefinition/PH-ServiceRequest
-    - StructureDefinition/PH-Specimen
-
-  GroupD:
-    name: Financial Profiles
-    resources:
-    - StructureDefinition/PH-Claim
-    - StructureDefinition/PH-Coverage
-    - StructureDefinition/PH-EnrollmentRequest
-
-  GroupE:
-    name: Specialized Profiles
-    resources:
-    - StructureDefinition/PH-Questionnaire
-
-  GroupF:
-    name: Data Types
-    resources:
-    - StructureDefinition/PH-Address
-    - StructureDefinition/PH-Signature
-
-  GroupG:
-    name: Identifiers
-    resources:
-    - StructureDefinition/COVIDDataID
-    - StructureDefinition/COVIDPatientID
-    - StructureDefinition/DOHfhudCode
-    - StructureDefinition/OtherID
-    - StructureDefinition/PhilHealthID
-    - StructureDefinition/RegistrationNo
+    - StructureDefinition/PH-Core-Patient-Claims
 
 #
 #
