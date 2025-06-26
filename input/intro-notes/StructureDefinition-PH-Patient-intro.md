@@ -1,1 +1,5 @@
-This is a sample use of **-intro.md**
+This is a sample use of **-intro.md**.
+
+---
+
+Test trigger.
