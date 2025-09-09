@@ -20,5 +20,8 @@ Description: "Flattened profile of a Claims Bundle"
     Encounter 0..1 and
     Organization 0..1
 * entry[Patient].fullUrl = "urn:uuid:patient" (exactly)
+* entry[Patient].resource.meta.profile = "https://test.ph/fhir/StructureDefinition/PH-Core-Patient-Claims" (exactly)
 * entry[Encounter].fullUrl = "urn:uuid:encounter" (exactly)
+* entry[Encounter].resource.meta.profile = "https://test.ph/fhir/StructureDefinition/PH-Base-Encounter" (exactly)
 * entry[Organization].fullUrl = "urn:uuid:organization" (exactly)
+* entry[Organization].resource.meta.profile = "https://test.ph/fhir/StructureDefinition/PH-Base-Organization" (exactly)
