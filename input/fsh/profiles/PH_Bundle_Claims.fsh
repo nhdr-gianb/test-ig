@@ -22,17 +22,7 @@ Description: "Flattened profile of a Claims Bundle"
     Claim 1..1
 * entry[Patient].fullUrl = "urn:uuid:patient" (exactly)
 * entry[Patient].resource.meta.profile = "https://test.ph/fhir/StructureDefinition/PH-Core-Patient-Claims" (exactly)
-* entry[Patient].request.url = "Patient"
-* entry[Patient].request.method = "POST"
 * entry[Encounter].fullUrl = "urn:uuid:encounter" (exactly)
 * entry[Encounter].resource.meta.profile = "https://test.ph/fhir/StructureDefinition/PH-Base-Encounter" (exactly)
-* entry[Encounter].request.url = "Encounter"
-* entry[Encounter].request.method = "POST"
 * entry[Organization].fullUrl = "urn:uuid:organization" (exactly)
 * entry[Organization].resource.meta.profile = "https://test.ph/fhir/StructureDefinition/PH-Base-Organization" (exactly)
-* entry[Organization].request.url = "Organization"
-* entry[Organization].request.method = "POST"
-* entry[Claim].fullUrl = "urn:uuid:claim" (exactly)
-* entry[Claim].resource = "Claim" (pattern)
-* entry[Claim].request.url = "Claim"
-* entry[Claim].request.method = "POST"
