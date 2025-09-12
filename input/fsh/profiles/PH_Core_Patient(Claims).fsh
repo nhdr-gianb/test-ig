@@ -7,6 +7,7 @@ Description: "Captures key demographic and administrative information about indi
 * insert MetaData
 * . ^short = "Information about an individual receiving health care services"
 * . ^definition = "Demographics and other administrative information about an individual receiving care or other health-related services. The data in the resource covers the \"who\" information about the patient. Its attributes are focused on the demgraphic information necessary to support the administrative, financial and logistical procedures."
+* extension contains Sex named sex 0..1
 * identifier[PhilHealthID] 0..1 MS
 * identifier[PDD] 0..1 
 * identifier[TIN] 0..0
