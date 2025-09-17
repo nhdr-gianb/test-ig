@@ -1,6 +1,6 @@
-Profile: PH-Base-Patient
+Profile: PH_Base_Patient
 Parent: Patient
-Id: PH-Base-Patient
+Id: PH_Base_Patient
 Title: "PH Base Patient"
 Description: "Captures key demographic and administrative information about individuals receiving care or other health-related services."
 * ^url = "https://test.ph/fhir/StructureDefinition/PH-Base-Patient"

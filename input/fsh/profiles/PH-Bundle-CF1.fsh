@@ -1,6 +1,6 @@
-Profile: PH-Bundle-CF1
+Profile: PH_Bundle_CF1
 Parent: Bundle
-Id: PH-Bundle-CF1
+Id: PH_Bundle_CF1
 Title: "PH Bundle CF1"
 Description: "Bundle for Claims Form 1"
 * ^url = "https://test.ph/fhir/StructureDefinition/PH-Bundle-CF1"

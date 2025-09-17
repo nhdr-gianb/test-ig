@@ -1,4 +1,4 @@
-Profile: PH-Address
+Profile: PH_Address
 Parent: Address
 Id: PH-Address
 Title: "PH Address"
