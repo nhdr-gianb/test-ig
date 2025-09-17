@@ -1,4 +1,4 @@
-Profile: PH_Base_Patient
+Profile: PH-Base-Patient
 Parent: Patient
 Id: PH-Base-Patient
 Title: "PH Base Patient"
@@ -7,6 +7,17 @@ Description: "Captures key demographic and administrative information about indi
 * insert MetaData
 * . ^short = "Information about an individual receiving health care services"
 * . ^definition = "Demographics and other administrative information about an individual receiving care or other health-related services. The data in the resource covers the \"who\" information about the patient. Its attributes are focused on the demgraphic information necessary to support the administrative, financial and logistical procedures."
+* extension contains
+    $Nationality named nationality 0..* and
+    Religion named religion 0..* and
+    IndigenousGroup named indigenousGroup 0..* and
+    IndigenousPeople named indigenousPeople 0..* and
+    Occupation named occupation 0..* and
+    Sex named sex 0..1 and
+    Race named race 0..1 and
+    MemberType named memberType 0..1 and
+    PatientType named type 0..1 and
+    EducationalAttainment named educationalAttainment 0..1
 * identifier ^slicing.discriminator.type = #value
 * identifier ^slicing.discriminator.path = "system"
 * identifier ^slicing.rules = #open

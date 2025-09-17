@@ -1,4 +1,4 @@
-Profile: PH_Core_Patient_Claims
+Profile: PH-Core-Patient-Claims
 Parent: PH-Base-Patient
 Id: PH-Core-Patient-Claims
 Title: "PH Core Patient (Claims)"

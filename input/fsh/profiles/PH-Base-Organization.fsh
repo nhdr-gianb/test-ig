@@ -1,4 +1,4 @@
-Profile: PH_Base_Organization
+Profile: PH-Base-Organization
 Parent: Organization
 Id: PH-Base-Organization
 Title: "PH Base Organization"
