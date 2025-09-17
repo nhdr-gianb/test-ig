@@ -1,6 +1,6 @@
 Profile: PH-Core-Patient-Claims
 Parent: PH-Base-Patient
-Id: PH_Core_Patient-Claims
+Id: PH-Core-Patient-Claims
 Title: "PH Core Patient (Claims)"
 Description: "Captures key demographic and administrative information about individuals receiving care or other health-related services."
 * ^url = "https://test.ph/fhir/StructureDefinition/PH-Core-Patient-Claims"

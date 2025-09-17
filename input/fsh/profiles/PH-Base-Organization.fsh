@@ -1,6 +1,6 @@
 Profile: PH_Base_Organization
 Parent: Organization
-Id: PH_Base_Organization
+Id: PH-Base-Organization
 Title: "PH Base Organization"
 Description: "Refers to a formally or informally recognized grouping of people or entities that are formed to achieve a common goal, particularly in healthcare."
 * ^url = "https://test.ph/fhir/StructureDefinition/PH-Base-Organization"
