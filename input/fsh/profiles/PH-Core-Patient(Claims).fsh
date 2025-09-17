@@ -19,3 +19,11 @@ Description: "Captures key demographic and administrative information about indi
 * birthDate 0..1 MS
 * contact.relationship 0..* MS
 * extension[sex] 0..1 MS
+* extension[nationality] ..0
+* extension[indigenousGroup] ..0
+* extension[indigenousPeople] ..0
+* extension[occupation] ..0
+* extension[race] ..0
+* extension[memberType] ..0
+* extension[type] ..0
+* extension[educationalAttainment] ..0
