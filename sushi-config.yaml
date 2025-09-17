@@ -108,6 +108,8 @@ menu:
     Test CDI Artifacts: artifacts.html
     # Foundation Profiles: artifacts.html#foundation-profiles
     Base Profiles: artifacts.html#base-profiles
+    Core Profiles: artifacts.html#core-profiles
+    Bundle Profiles: artifacts.html#use-case-bundles
     # Clinical Profiles: artifacts.html#clinical-profiles
     # Financial Profiles: artifacts.html#financial-profiles
     # Specialized Profiles: artifacts.html#specialized-profiles
@@ -207,12 +209,17 @@ groups:
     # - StructureDefinition/PH-Person
     # - StructureDefinition/PH-Practitioner
     # - StructureDefinition/PH-PractitionerRole
-    # - StructureDefinition/PH-RelatedPerson
+    - StructureDefinition/PH-Base-RelatedPerson
 
   GroupB:
     name: Core Profiles
     resources:
     - StructureDefinition/PH-Core-Patient-Claims
+    
+  GroupC:
+    name: Use Case Bundles
+    resources:
+    - StructureDefinition/PH-Bundle-CF1
 
 #
 #
