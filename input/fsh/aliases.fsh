@@ -7,16 +7,12 @@ Alias: $SD_Address = https://test.ph/fhir/StructureDefinition/PH-Address
 Alias: $Nationality = http://hl7.org/fhir/StructureDefinition/patient-nationality
 
 // CodeSystems
-Alias: $PSGCCS = https://psa.gov.ph/classification/psgc //PSA Website
-Alias: $SexCS = http://terminology.hl7.org/CodeSystem/v2-0001
+Alias: $PSGCCS = https://psa.gov.ph/classification/psgc             //  Used in VS_Region, VS_Province, VS_City, VS_Barangay
+Alias: $PSOCCS = https://psa.gov.ph/classification/psoc/unit        //  Used in VS_OccupationClassification
+Alias: $SexCS = http://terminology.hl7.org/CodeSystem/v2-0001       //  Used in VS_Sex
 
 // ValueSets
-Alias: $EducationalAttainmentVS = https://test.ph/fhir/ValueSet/EducationalAttainmentVS
 Alias: $IndigenousGroupVS = https://test.ph/fhir/ValueSet/IndigenousGroupVS
-Alias: $MemberTypeVS = https://test.ph/fhir/ValueSet/MemberTypeVS
-Alias: $OccupationClassificationVS = https://nhdr.gov.ph/fhir/ValueSet/OccupationClassificationVS
-Alias: $PatientTypeVS = https://test.ph/fhir/ValueSet/PatientTypeVS
-Alias: $ProvinceVS = https://nhdr.gov.ph/fhir/ValueSet/ProvinceVS
-Alias: $RaceVS = http://terminology.hl7.org/ValueSet/v3-Race
+Alias: $OccupationClassificationVS = https://test.ph/fhir/ValueSet/OccupationClassificationVS
 Alias: $ReligionVS = http://terminology.hl7.org/ValueSet/v3-ReligiousAffiliation
 Alias: $SexVS = https://test.ph/fhir/ValueSet/SexVS

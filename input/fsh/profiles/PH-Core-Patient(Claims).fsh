@@ -18,7 +18,8 @@ Description: "Captures key demographic and administrative information about indi
 * name.suffix 0..* MS
 * birthDate 0..1 MS
 * contact.relationship 0..* MS
-* extension[sex] 0..1 MS
+* extension[sex] 0..1
+* extension[religion] ..0
 * extension[nationality] ..0
 * extension[indigenousGroup] ..0
 * extension[indigenousPeople] ..0
