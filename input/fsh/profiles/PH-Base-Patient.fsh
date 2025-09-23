@@ -19,24 +19,24 @@ Description: "Captures key demographic and administrative information about indi
 * identifier ^slicing.discriminator.path = "system"
 * identifier ^slicing.rules = #open
 * identifier contains
-    PhilHealthID 0..1 and
-    PDD 0..1 and
-    TIN 0..1 and
-    SSS-GSIS 0..2 and
-    DriversLicense 0..1 and
-    PassportNumber 0..1
-* identifier[PhilHealthID].system = "http://test.ph/fhir/Identifier/philhealth-id"
-* identifier[PhilHealthID].type.coding = #NIIP
-* identifier[PDD].system = "http://test.ph/fhir/Identifier/pdd-id"
-* identifier[PDD].type.coding = #PDD
-* identifier[TIN].system = "http://test.ph/fhir/Identifier/tin-id"
-* identifier[TIN].type.coding = #TAX
-* identifier[SSS-GSIS].system = "http://test.ph/fhir/Identifier/sss-gsis-id"
-* identifier[SSS-GSIS].type.coding = #SB
-* identifier[DriversLicense].system = "http://test.ph/fhir/Identifier/driverslicense"
-* identifier[DriversLicense].type.coding = #DL
-* identifier[PassportNumber].system = "http://test.ph/fhir/Identifier/passportnumber"
-* identifier[PassportNumber].type.coding = #PPN
+    philhealthID 0..1 and
+    tinNo 0..1 and
+    sssNo 0..1 and
+    gsisNo 0..1 and
+    driverLicense 0..1 and
+    passportNo 0..1
+* identifier[philhealthID].system = "http://test.ph/fhir/Identifier/philhealth-id"
+* identifier[philhealthID].type.coding = #NIIP
+* identifier[tinNo].system = "http://test.ph/fhir/Identifier/pdd-id"
+* identifier[tinNo].type.coding = #TAX
+* identifier[sssNo].system = "http://test.ph/fhir/Identifier/tin-id"
+* identifier[sssNo].type.coding = #SB
+* identifier[gsisNo].system = "http://test.ph/fhir/Identifier/sss-gsis-id"
+* identifier[gsisNo].type.coding = #SB
+* identifier[driverLicense].system = "http://test.ph/fhir/Identifier/driverslicense"
+* identifier[driverLicense].type.coding = #DL
+* identifier[passportNo].system = "http://test.ph/fhir/Identifier/passportnumber"
+* identifier[passportNo].type.coding = #PPN
 * address only $SD_Address
 * contact.address only $SD_Address
 * generalPractitioner only Reference(PH_Base_Organization)

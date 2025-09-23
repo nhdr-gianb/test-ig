@@ -7,12 +7,12 @@ Description: "Captures key demographic and administrative information about indi
 * insert MetaData
 * . ^short = "Information about an individual receiving health care services"
 * . ^definition = "Demographics and other administrative information about an individual receiving care or other health-related services. The data in the resource covers the \"who\" information about the patient. Its attributes are focused on the demgraphic information necessary to support the administrative, financial and logistical procedures."
-* identifier[PhilHealthID] 0..1 MS
-* identifier[PDD] 0..1 
-* identifier[TIN] 0..0
-* identifier[SSS-GSIS] 0..0
-* identifier[DriversLicense] 0..0
-* identifier[PassportNumber] 0..0
+* identifier[philhealthID] 1..1 MS
+* identifier[tinNo] 0..0
+* identifier[sssNo] 0..0
+* identifier[gsisNo] 0..0
+* identifier[driverLicense] 0..0
+* identifier[passportNo] 0..0
 * name.family 0..1 MS
 * name.given 0..* MS
 * name.suffix 0..* MS
@@ -24,7 +24,3 @@ Description: "Captures key demographic and administrative information about indi
 * extension[indigenousGroup] ..0
 * extension[indigenousPeople] ..0
 * extension[occupation] ..0
-* extension[race] ..0
-* extension[memberType] ..0
-* extension[type] ..0
-* extension[educationalAttainment] ..0
