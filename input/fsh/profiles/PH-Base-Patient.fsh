@@ -13,7 +13,7 @@ Description: "Captures key demographic and administrative information about indi
     Occupation named occupation 0..* and
     IndigenousGroup named indigenousGroup 0..* and
     IndigenousPeople named indigenousPeople 0..* and
-    Religion named religion 0..*
+    Religion named religion 0..* and
     RecordedDate named recordedDate 0..1
 * identifier ^slicing.discriminator.type = #value
 * identifier ^slicing.discriminator.path = "system"
@@ -44,7 +44,7 @@ Description: "Captures key demographic and administrative information about indi
 
 
 //  Marked as minimum data sets from the JAO
-* identifier 0..* MS
+// * identifier 0..* MS
 * active MS
 * name MS
 * telecom MS
