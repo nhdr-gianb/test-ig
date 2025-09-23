@@ -1,5 +1,5 @@
 Profile: PH_Core_Patient_Claims
-Parent: PH_Base_Patient
+Parent: PH-Base-Patient
 Id: PH-Core-Patient-Claims
 Title: "PH Core Patient (Claims)"
 Description: "Captures key demographic and administrative information about individuals receiving care or other health-related services."
