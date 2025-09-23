@@ -1,4 +1,4 @@
-Profile: PH_Core_Encounter-Claims
+Profile: PH_Core_Encounter_Claims
 Parent: PH-Base-Encounter
 Id: PH-Core-Encounter-Claims
 Title: "PH Core Encounter (Claims)"
