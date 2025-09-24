@@ -12,7 +12,5 @@ Description: "An interaction between a patient and healthcare provider(s) for th
 * extension[interviewer] ..0
 * extension[investigatorName] ..0
 * extension[dateInterview] ..0
-* extension[dateInvestigation] ..0
-* extension[reporterName] ..0
 * hospitalization.destination only Reference(Location or PH_Base_Organization)
 * serviceProvider only Reference(PH_Base_Organization)
