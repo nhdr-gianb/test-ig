@@ -6,7 +6,7 @@ Description: "An address for the individual."
 * ^url = "https://test.ph/fhir/StructureDefinition/PH-Address"
 * insert MetaData
 * extension contains
-    Region named region 0..* and
-    Province named province 0..* and
-    CityMunicipality named cityMunicipality 0..* and
-    Barangay named barangay 0..*
+    Region named regcode 0..* and
+    Province named provcode 0..* and
+    CityMunicipality named citycode 0..* and
+    Barangay named bgycode 0..*

@@ -216,7 +216,7 @@ groups:
     - StructureDefinition/PH-Base-Patient'
     - StructureDefinition/PH-Base-Procedure
     # - StructureDefinition/PH-Person
-    # - StructureDefinition/PH-Practitioner
+    - StructureDefinition/PH-Base-Practitioner
     # - StructureDefinition/PH-PractitionerRole
     - StructureDefinition/PH-Base-RelatedPerson
     - StructureDefinition/PH-Base-Specimen
