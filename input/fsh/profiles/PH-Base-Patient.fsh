@@ -44,14 +44,14 @@ Description: "Captures key demographic and administrative information about indi
 
 
 //  Marked as minimum data sets from the JAO
-// * identifier 0..* MS
-// * active MS
-// * name MS
-// * telecom MS
-// * extension[sex] MS
-// * birthDate MS
-// * deceased[x] MS
-// * address MS
-// * maritalStatus MS
-// * extension[nationality] MS
-// * extension[occupation] MS
+* identifier 0..* MS
+* active MS
+* name MS
+* telecom MS
+* extension[sex] MS
+* birthDate MS
+* deceased[x] MS
+* address MS
+* maritalStatus MS
+* extension[nationality] MS
+* extension[occupation] MS
