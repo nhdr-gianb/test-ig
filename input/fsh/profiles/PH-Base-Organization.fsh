@@ -6,6 +6,7 @@ Description: "A formally or informally recognized grouping of people or organiza
 * ^url = "https://test.ph/fhir/StructureDefinition/PH-Base-Organization"
 * insert MetaData
 * . ^definition = "A formally or informally recognized grouping of people or organizations formed for the purpose of achieving some form of collective action. Includes companies, institutions, corporations, departments, community groups, healthcare practice groups, payer/insurer, etc.\n\nAlternate Name: Health Facility Registry."
+* . ^alias = "DOH National Health Facility Registry"
 * address only $SD_Address
 * contact.address only $SD_Address
 
