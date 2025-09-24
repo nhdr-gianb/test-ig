@@ -1,3 +1,3 @@
-## mustSupport
-* PhilHealth ID <span style="color:red">**MUST**</span> be captured for Claims Forms.
-* Elements marked with the mustSupport flag must be supplied in the bundle. Refer to the detailed mapping table for instructions on how to fill-in fields when data is absent.
+## Implementation Rules
+* PhilHealth ID <span style="color:red">**MUST**</span> be captured for Claims forms.
+* Elements marked with the mustSupport (<span style="padding-left: 3px; padding-right: 3px; color: white; background-color: red" title="This element must be supported">S</span>) flag must be supplied in the bundle. Refer to the detailed mapping table for instructions on how to fill-in fields when data is absent.
