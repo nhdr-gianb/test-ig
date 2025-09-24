@@ -1,6 +1,7 @@
 Extension: Province
 Id: Province
 Context: Address
+Title: "Province Code"
 Description: "Code of the province from the standard geographic code."
 * ^url = "https://test.ph/fhir/StructureDefinition/Province"
 * insert MetaData

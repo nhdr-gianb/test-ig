@@ -1,7 +1,7 @@
 Extension: Region
 Id: Region
 Context: Address
-Title: "Region code"
+Title: "Region Code"
 Description: "Code of the region from the standard geographic code."
 * ^url = "https://test.ph/fhir/StructureDefinition/Region"
 * insert MetaData

@@ -202,7 +202,9 @@ groups:
   GroupA:
     name: Base Profiles
     resources:
+    - StructureDefinition/PH-Base-AllergyIntolerance
     # - StructureDefinition/PH-Appointment
+    - StructureDefinition/PH-Base-Condition
     - StructureDefinition/PH-Base-Encounter
     - StructureDefinition/PH-Base-Organization
     - StructureDefinition/PH-Base-Patient
