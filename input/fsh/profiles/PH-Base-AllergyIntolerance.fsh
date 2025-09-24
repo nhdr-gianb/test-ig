@@ -6,8 +6,8 @@ Description: "Risk of harmful or undesirable, physiological response which is un
 * ^url = "https://test.ph/fhir/StructureDefinition/PH-Base-AllergyIntolerance"
 * insert MetaData
 * extension contains
-    OrganizationExtension named organization and
-    RecordedDate named recordedDate
+    OrganizationExtension named organization 0..1 and
+    RecordedDate named recordedDate 0..1
 * extension[recordedDate] ^definition = "The recordedDate represents when this particular record was uploaded into the NHDR."
 
 //  Marked as minimum data sets from the JAO
