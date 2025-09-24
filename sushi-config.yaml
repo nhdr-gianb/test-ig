@@ -213,7 +213,7 @@ groups:
     - StructureDefinition/PH-Base-MedicationStatement
     - StructureDefinition/PH-Base-Observation
     - StructureDefinition/PH-Base-Organization
-    - StructureDefinition/PH-Base-Patient'
+    - StructureDefinition/PH-Base-Patient
     - StructureDefinition/PH-Base-Procedure
     # - StructureDefinition/PH-Person
     - StructureDefinition/PH-Base-Practitioner
