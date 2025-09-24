@@ -205,13 +205,21 @@ groups:
     - StructureDefinition/PH-Base-AllergyIntolerance
     # - StructureDefinition/PH-Appointment
     - StructureDefinition/PH-Base-Condition
+    - StructureDefinition/PH-Base-DiagnosticReport
     - StructureDefinition/PH-Base-Encounter
+    - StructureDefinition/PH-Base-FamilyMemberHistory
+    - StructureDefinition/PH-Base-Immunization
+    - StructureDefinition/PH-Base-MedicationAdministration
+    - StructureDefinition/PH-Base-MedicationStatement
+    - StructureDefinition/PH-Base-Observation
     - StructureDefinition/PH-Base-Organization
-    - StructureDefinition/PH-Base-Patient
+    - StructureDefinition/PH-Base-Patient'
+    - StructureDefinition/PH-Base-Procedure
     # - StructureDefinition/PH-Person
     # - StructureDefinition/PH-Practitioner
     # - StructureDefinition/PH-PractitionerRole
     - StructureDefinition/PH-Base-RelatedPerson
+    - StructureDefinition/PH-Base-Specimen
 
   GroupB:
     name: Core Profiles
