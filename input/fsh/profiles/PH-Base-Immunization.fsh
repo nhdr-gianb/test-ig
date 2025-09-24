@@ -15,7 +15,7 @@ Description: "Describes the event of a patient being administered a vaccine or a
 * extension[organization] MS
 * identifier MS
 * vaccineCode MS
-* occurence[x] MS
+* occurrence[x] MS
 * note MS
 * reasonCode MS
 * reaction MS
