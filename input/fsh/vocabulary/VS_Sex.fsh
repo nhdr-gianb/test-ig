@@ -2,7 +2,7 @@ ValueSet: SexVS
 Id: SexVS
 Title: "Sex"
 Description: "A person's sex at birth"
-* ^url = "https://nhdr.gov.ph/fhir/ValueSet/SexVS"
+* ^url = "https://test.ph/fhir/ValueSet/SexVS"
 * insert MetaData
 * ^experimental = false
 * include codes from system $SexCS

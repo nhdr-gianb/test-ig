@@ -27,16 +27,22 @@ Description: "Captures key demographic and administrative information about indi
     passportNo 0..1
 * identifier[philhealthID].system = "http://test.ph/fhir/Identifier/philhealth-id"
 * identifier[philhealthID].type.coding = #NIIP
+* identifier[philhealthID].value obeys PH-00001 and PH-00002
 * identifier[tinNo].system = "http://test.ph/fhir/Identifier/pdd-id"
 * identifier[tinNo].type.coding = #TAX
+* identifier[tinNo].value obeys PH-00001 
 * identifier[sssNo].system = "http://test.ph/fhir/Identifier/tin-id"
 * identifier[sssNo].type.coding = #SB
+* identifier[sssNo].value obeys PH-00001 
 * identifier[gsisNo].system = "http://test.ph/fhir/Identifier/sss-gsis-id"
 * identifier[gsisNo].type.coding = #SB
+* identifier[gsisNo].value obeys PH-00001 
 * identifier[driverLicense].system = "http://test.ph/fhir/Identifier/driverslicense"
 * identifier[driverLicense].type.coding = #DL
+* identifier[driverLicense].value obeys PH-00001 
 * identifier[passportNo].system = "http://test.ph/fhir/Identifier/passportnumber"
 * identifier[passportNo].type.coding = #PPN
+* identifier[passportNo].value obeys PH-00001 
 * address only $SD_Address
 * contact.address only $SD_Address
 * generalPractitioner only Reference(PH_Base_Organization)
