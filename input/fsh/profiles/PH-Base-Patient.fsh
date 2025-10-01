@@ -15,6 +15,7 @@ Description: "Captures key demographic and administrative information about indi
     IndigenousPeople named indigenousPeople 0..* and
     Religion named religion 0..* and
     RecordedDate named recordedDate 0..1
+* identifier obeys PH-00002
 * identifier ^slicing.discriminator.type = #value
 * identifier ^slicing.discriminator.path = "system"
 * identifier ^slicing.rules = #open
